@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_1_5" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<lib name="Maven: junit:junit:3.8.1" scope="TEST"/>
+	<levels>
+		<level name="Maven: junit:junit:3.8.1" value="project"/>
+		<level name="Maven: org.springframework:spring-core:4.3.3.RELEASE" value="project"/>
+		<level name="Maven: commons-logging:commons-logging:1.2" value="project"/>
+		<level name="Maven: org.springframework:spring-webmvc:4.3.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-aop:4.3.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-beans:4.3.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-context:4.3.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-expression:4.3.3.RELEASE" value="project"/>
+		<level name="Maven: org.springframework:spring-web:4.3.3.RELEASE" value="project"/>
+	</levels>
+</component>
