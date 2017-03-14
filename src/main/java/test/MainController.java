@@ -1,5 +1,7 @@
 package test;
 
+import com.zsf.flashextract.model.FlashExtract;
+import com.zsf.interpreter.expressions.regex.Regex;
 import org.apache.commons.fileupload.disk.DiskFileItem;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +28,7 @@ public class MainController {
     List<Integer> positiveLineIndex = new ArrayList<Integer>();
     List<Integer> negataiveLineIndex = new ArrayList<Integer>();
 
+    FlashExtract flashExtract;
 
     @RequestMapping("/fun")
     public String fun() {
@@ -42,10 +45,10 @@ public class MainController {
         StringBuilder builder = new StringBuilder();
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(f),"UTF-8"));
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
             String line;
             while ((line = reader.readLine()) != null) {
-                builder.append(line);
+                builder.append(line + "\n");
 //                System.out.println(line);
             }
             inputDocument = builder.toString();
@@ -60,16 +63,68 @@ public class MainController {
                 }
             }
         }
-        Map<String ,Object> data=new HashMap<String,Object>();
-        data.put("inputDocument",inputDocument);
-        return new ModelAndView("redirect:/t/main",data);
-    }
+        Map<String, Object> data = new HashMap<String, Object>();
+        data.put("inputDocument", inputDocument);
+        flashExtract = new FlashExtract();
+        flashExtract.setInputDocument(inputDocument);
 
+        return new ModelAndView("handle_data", data);
+    }
 
     @RequestMapping(value = "/select_region")
-    public void selectRegion(int startPos,int endPos,int color) {
-        System.out.println(inputDocument.substring(startPos,endPos));
+    public void selectRegion(int startPos, int endPos) {
+        String selectedText = inputDocument.substring(startPos, endPos);
+
+        String textBeforeSelect = inputDocument.substring(0, startPos);
+        int lineIndex = getLineIndex(textBeforeSelect);
+
+        int lineBeginTag = textBeforeSelect.lastIndexOf("\n");
+        if (lineBeginTag <= 0) {
+            // 如果上文不存在/n换行符的话，那么要和下面的操作相互抵消
+            lineBeginTag = -2;
+        }
+        // TODO: 2017/3/13 将结果记录到FE中，
+        // +2是因为textBeforeSelect截取到'/n'之前，还不包含/n
+        int lineStartPos = startPos - (lineBeginTag + 2);
+        int lineEndPos = endPos - (lineBeginTag + 2);
+        flashExtract.doSelectRegion(curColor, lineIndex, lineStartPos, lineEndPos, selectedText);
+
+        if (flashExtract.needGenerateLineReions(curColor)) {
+            List<Regex> boolLineSelector = flashExtract.getLineSelector(curColor);
+            System.out.println(boolLineSelector);
+            int lineRegionColor = 0;
+            // TODO: 2017/3/13 selector的排序
+            flashExtract.selectRegionBySelector(boolLineSelector.get(0), lineRegionColor);
+            // TODO: 产生LineSelector之后，自动在LineRegion中根据提供的例子产生childRegion
+            // FIXME: 2017/3/14 这一整块的逻辑比较混乱，急需大规模重构
+            flashExtract.generateChildRegionsInLineRegions(curColor);
+        }
     }
 
+    private int curColor;
+    @RequestMapping(value = "set_color", method = RequestMethod.POST)
+    public void setColor(int color) {
+        System.out.println("setColor"+color);
+        curColor=color;
+    }
 
+    /**
+     * 根据beginPos之前的区域中出现的/n次数来判断选中的是第几行
+     *
+     * @param textBeforeSelect
+     * @return
+     */
+    private int getLineIndex(String textBeforeSelect) {
+        int count = 0;
+        int index = 0;
+        while (true) {
+            index = textBeforeSelect.indexOf("\n", index + 1);
+            if (index > 0) {
+                count++;
+            } else {
+                break;
+            }
+        }
+        return count;
+    }
 }

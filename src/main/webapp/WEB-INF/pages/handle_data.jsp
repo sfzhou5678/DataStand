@@ -7,10 +7,54 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+
 <head>
     <title>Title</title>
+
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/jquery/jquery-1.10.2.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.js"></script>
+    <link rel="stylesheet" media="screen"
+          href="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.css">
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/lodash/lodash.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/underscore.string/underscore.string.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/moment/moment.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numeral/numeral.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numericjs/numeric.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/js-md5/md5.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/jstat/jstat.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/formulajs/formula.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/parser.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/ruleJS.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.formula.js"></script>
+
+    <script type="text/javascript" src="../../../resource/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        var colorCounter = 1;
+        function addColor() {
+            var colorDiv = document.getElementById("color-div");
+            var newColorBtn = document.createElement("input");
+            newColorBtn.type = "button";
+            newColorBtn.value = "color" + (colorCounter++);
+            colorDiv.appendChild(newColorBtn);
+            newColorBtn.addEventListener("click", function(){
+                var curColor=this.value.substring(5);
+                $.ajax({
+                    url: "set_color",
+                    type: "POST",
+                    data: {"color":curColor},
+                    error: function () {
+                        alert("请求失败，请稍候重试");
+                    }
+                });
+            });
+        }
+    </script>
 </head>
 <body>
+<div id="color-div">
+    <input id="btnReg" type="button" value="+" onclick="addColor()"/>
+</div>
+<div style="clear: both;"></div>
 <textarea style="float: left" id="content" cols="100" rows="50">${inputDocument}</textarea>
 <input style="float: left" type="button" id="wrapText" value="选择"/>
 
@@ -154,9 +198,9 @@
     document.getElementById('wrapText').onclick = function () {
         alert(selectionStart + ',' + selectionEnd);
         $.ajax({
-            url: "http://localhost:8080/demo/main/select_region",
+            url: "select_region",
             type: "POST",
-            data: {"startPos": selectionStart, "endPos": selectionEnd, "color": 1},
+            data: {"startPos": selectionStart, "endPos": selectionEnd},
             success: function (data) {
                 alert("success");
             },
