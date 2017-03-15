@@ -34,7 +34,7 @@ public class Document {
     /**
      * 当前使用的selector方案(可以选出selectedRegions)
      */
-    private Regex curSelector;
+    private Regex curSelector = null;
     private List<SelectedLineRegion> selectedLineRegions = new ArrayList<SelectedLineRegion>();
 
     public Document(String inputDocument, List<Regex> usefulRegex) {
@@ -56,17 +56,73 @@ public class Document {
         }
     }
 
-    public void doSelectRegion(int color, int lineIndex, int beginPos, int endPos, String selectedText) {
+    /**
+     * 外部调用此方法框选新的region，此方法判断之后分别分派给doSelectReion()或者doSelectRegionInLineRegions()进行操作
+     *
+     * @param color
+     * @param lineIndex
+     * @param beginPos
+     * @param endPos
+     * @param selectedText
+     */
+    public void selectRegion(int color, int lineIndex, int beginPos, int endPos, String selectedText) {
+        SelectedLineRegion lineRegion = null;
+        for (SelectedLineRegion someLineRegion : selectedLineRegions) {
+            if (someLineRegion.getLineIndex() == lineIndex) {
+                lineRegion = someLineRegion;
+                break;
+            }
+        }
+        if (lineRegion == null) {
+            // 如果当前选中不在selectedLine之中,则认为是一次普通的select(即初始化选取)
+            doSelectRegion(color, lineIndex, beginPos, endPos, selectedText);
+        } else {
+            doSelectRegionInLineRegions(lineRegion, color, lineIndex, beginPos, endPos, selectedText);
+        }
+    }
+
+    /**
+     * 在已经通过lineSelector选中的lineRegion中选择子region
+     *
+     * @param lineRegion
+     * @param color
+     * @param lineIndex
+     * @param beginPos
+     * @param endPos
+     * @param selectedText
+     */
+    private void doSelectRegionInLineRegions(SelectedLineRegion lineRegion, int color, int lineIndex, int beginPos, int endPos, String selectedText) {
+        // TODO: 2017/3/15 有必要的话可能要记录一下positive和negative？
+        ExpressionGroup expressionGroup = null;
+        if (lineRegion != null) {
+            expressionGroup = lineRegion.selectChildRegion(color, selectedText);
+        }
+        if (expressionGroup != null) {
+            for (SelectedLineRegion region : selectedLineRegions) {
+                region.setColorfulRegionExpressions(color, expressionGroup);
+            }
+        }
+    }
+
+    /**
+     * 在document全文中某个小region(非LineRegion)
+     * @param color
+     * @param lineIndex
+     * @param beginPos
+     * @param endPos
+     * @param selectedText
+     */
+    private void doSelectRegion(int color, int lineIndex, int beginPos, int endPos, String selectedText) {
         List<Region> regions = colorfulRegions.get(color);
+        // TODO: 2017/3/15 判断color是否合法(暂时跳过，当作不会遇到)
+
         if (regions == null) {
             regions = new ArrayList<Region>();
             colorfulRegions.put(color, regions);
         }
-        // 注意这个新选择的region还不是ParentRegion的ChildRegion, 只有LineSelector选出来的region才是childRegion
-//        regions.add(new Region(documentRegions.get(lineIndex), beginPos, endPos, selectedText));
         // 这里加入的是带颜色的被选中的region，而不是普通region
-        // FIXME: 2017/3/14 逻辑有点混乱，可能这里不需要加入这个？？
-        regions.add(new SelectedLineRegion(documentRegions.get(lineIndex), beginPos, endPos, selectedText, color,lineIndex));
+        // FIXME: 2017/3/14 逻辑有点混乱
+        regions.add(new SelectedLineRegion(documentRegions.get(lineIndex), beginPos, endPos, selectedText, color, lineIndex));
         // 直接将这一行设置为positiveLine
         addPositiveLineIndex(color, lineIndex);
     }
@@ -359,11 +415,11 @@ public class Document {
     public List<SelectedLineRegion> selectRegionsBySelector(Regex selector, int color) {
         this.curSelector = selector;
         this.selectedLineRegions = new ArrayList<SelectedLineRegion>();
-        for (int i=0;i<documentRegions.size();i++){
-            Region region=documentRegions.get(i);
+        for (int i = 0; i < documentRegions.size(); i++) {
+            Region region = documentRegions.get(i);
             if (region.canMatch(selector)) {
                 selectedLineRegions.add(new SelectedLineRegion(region.getParentRegion(),
-                        region.getBeginPos(), region.getEndPos(), region.getText(), color,i));
+                        region.getBeginPos(), region.getEndPos(), region.getText(), color, i));
             }
         }
         return selectedLineRegions;
@@ -371,60 +427,37 @@ public class Document {
 
     /**
      * 产生LineSelector之后，自动在LineRegion中根据提供的例子产生childRegion
-     * @param color
+     *
+     * 可以处理乱序选择的问题：比如蓝色先选择了一个，然后绿色在相应数据行内选择了两次
+     * 那么标记所有绿色数据的同时也会标记蓝色数据
      */
-    public void generateChildRegionsInLineRegions(int color) {
-        // TODO 利用上面的所有positiveExamples通过FF产生expressions
-        List<Region> regions=colorfulRegions.get(color);
-        List<ExamplePair> examplePairs=new ArrayList<ExamplePair>();
-        for (Region region:regions){
-            examplePairs.add(new ExamplePair(region.getParentRegion().getText(),region.getText()));
-        }
-
-        // TODO: 2017/3/14 expressionGroup=FF.generateExp()...
-        StringProcessor stringProcessor=new StringProcessor();
-        List<ResultMap> resultMaps=stringProcessor.generateExpressionsByExamples(examplePairs);
-        ExpressionGroup expressionGroup=stringProcessor.selectTopKExps(resultMaps,10);
-
-        if (expressionGroup!=null){
-            for (SelectedLineRegion lineRegion:selectedLineRegions){
-                lineRegion.setColorfulRegionExpressions(color,expressionGroup);
+    public void generateChildRegionsInLineRegions() {
+        for (int color : colorfulRegions.keySet()) {
+            List<Region> regions = colorfulRegions.get(color);
+            List<ExamplePair> examplePairs = new ArrayList<ExamplePair>();
+            for (Region region : regions) {
+                examplePairs.add(new ExamplePair(region.getParentRegion().getText(), region.getText()));
             }
-        }
 
-    }
+            StringProcessor stringProcessor = new StringProcessor();
+            List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
+            ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
 
-    public void doSelectRegionInLineRegions(int color, int lineIndex, int beginPos, int endPos, String selectedText) {
-        // FIXME: 2017/3/14 这个函数最终要个doSelectRegion合并
-        boolean IisindexInSelectLineRegion=true;
-        if (IisindexInSelectLineRegion){
-            SelectedLineRegion lineRegion=null;
-            for (SelectedLineRegion r:selectedLineRegions){
-                if (r.getLineIndex()==lineIndex){
-                    lineRegion=r;
-                    break;
+            if (expressionGroup != null) {
+                for (SelectedLineRegion lineRegion : selectedLineRegions) {
+                    lineRegion.setColorfulRegionExpressions(color, expressionGroup);
                 }
             }
-
-            ExpressionGroup expressionGroup= null;
-            if (lineRegion != null) {
-                expressionGroup = lineRegion.selectChildRegion(color,selectedText);
-            }
-            if (expressionGroup!=null){
-                for (SelectedLineRegion region:selectedLineRegions){
-                    region.setColorfulRegionExpressions(color,expressionGroup);
-                }
-            }
-
         }
     }
 
     /**
      * 当某种color的个数大于等于2时，就可以产生lineRegion了(简化处理)
+     *
      * @param color
      * @return
      */
     public boolean needGenerateLineReions(int color) {
-        return colorfulRegions.get(color).size()>=2;
+        return colorfulRegions.get(color).size() >= 2 && curSelector == null;
     }
 }

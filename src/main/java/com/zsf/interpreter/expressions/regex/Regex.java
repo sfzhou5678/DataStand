@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * 代表正则token
  * Created by hasee on 2017/1/22.
  */
-public abstract class Regex implements Score {
+public abstract class Regex implements Score{
     private String regexName;
     private String reg;
     private Pattern pattern;

@@ -67,24 +67,18 @@ public class FlashExtract {
      *
      * @param selector
      */
-    public void selectRegionBySelector(Regex selector, int color) {
-        List<SelectedLineRegion> selectedLineRegions = document.selectRegionsBySelector(selector, color);
+    public void selectRegionBySelector(Regex selector) {
+        int lineRegionDefaultColor=0;
+        List<SelectedLineRegion> selectedLineRegions = document.selectRegionsBySelector(selector, lineRegionDefaultColor);
         for (SelectedLineRegion region : selectedLineRegions) {
             System.out.println(region.getText());
         }
-//        for (Region region:document.getDocumentRegions()){
-//            if (region.canMatch(selector)){
-//                System.out.println(region.getText());
-//            }
-//        }
+        // 产生LineSelector之后，自动在LineRegion中根据提供的例子产生childRegion
+        document.generateChildRegionsInLineRegions();
     }
 
     public void setInputDocument(String inputDocument) {
         this.document = new Document(inputDocument, usefulRegex);
-    }
-
-    public void doSelectRegion(int color, int lineIndex, int beginPos, int endPos, String selectedText) {
-        document.doSelectRegion(color, lineIndex, beginPos, endPos, selectedText);
     }
 
     public List<Regex> getLineSelector(int color) {
@@ -93,18 +87,16 @@ public class FlashExtract {
 
     /**
      * 产生LineSelector之后，自动在LineRegion中根据提供的例子产生childRegion
-     * @param color
      */
-    public void generateChildRegionsInLineRegions(int color) {
-        document.generateChildRegionsInLineRegions(color);
-    }
-
-    public void doSelectRegionInLineRegions(int color, int lineIndex, int beginPos, int endPos, String selectedText) {
-        // FIXME: 2017/3/14 这个函数最终要个doSelectRegion合并
-        document.doSelectRegionInLineRegions(color,lineIndex,beginPos,endPos,selectedText);
+    public void generateChildRegionsInLineRegions() {
+        document.generateChildRegionsInLineRegions();
     }
 
     public boolean needGenerateLineReions(int color) {
         return document.needGenerateLineReions(color);
+    }
+
+    public void selectRegion(int color, int lineIndex, int beginPos, int endPos, String selectedText) {
+        document.selectRegion(color, lineIndex, beginPos, endPos, selectedText);
     }
 }

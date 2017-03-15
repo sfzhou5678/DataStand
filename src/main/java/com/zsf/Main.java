@@ -783,15 +783,13 @@ public class Main {
 
         StringProcessor stringProcessor=new StringProcessor();
 
-//        List<ExpressionGroup> expressionList = generateExpressionsByExamples(examplePairs);
-//        List<ExpressionGroup> expressionList=stringProcessor.generateExpressionsByExamples(examplePairs);
         List<ResultMap> resultMaps=stringProcessor.generateExpressionsByExamples(examplePairs);
 
 
 //        List<ExamplePartition> partitions = generatePartitions(expressionList, examplePairs);
 //        List<ExamplePartition> partitions=stringProcessor.generatePartitions(expressionList,examplePairs);
 //        showPartitions(partitions);
-        ExpressionGroup topKExps=stringProcessor.selectTopKExps(resultMaps,10);
+        ExpressionGroup topKExps=stringProcessor.selectTopKExps(resultMaps,5);
         stringProcessor.handleNewInput(testPairs, topKExps);
 
 

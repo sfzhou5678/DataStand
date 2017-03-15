@@ -87,21 +87,23 @@ public class MainController {
         // +2是因为textBeforeSelect截取到'/n'之前，还不包含/n
         int lineStartPos = startPos - (lineBeginTag + 2);
         int lineEndPos = endPos - (lineBeginTag + 2);
-        flashExtract.doSelectRegion(curColor, lineIndex, lineStartPos, lineEndPos, selectedText);
+        flashExtract.selectRegion(curColor, lineIndex, lineStartPos, lineEndPos, selectedText);
 
-        if (flashExtract.needGenerateLineReions(curColor)) {
-            List<Regex> boolLineSelector = flashExtract.getLineSelector(curColor);
-            System.out.println(boolLineSelector);
-            int lineRegionColor = 0;
-            // TODO: 2017/3/13 selector的排序
-            flashExtract.selectRegionBySelector(boolLineSelector.get(0), lineRegionColor);
-            // TODO: 产生LineSelector之后，自动在LineRegion中根据提供的例子产生childRegion
+        // FIXME: 2017/3/13 现在假设所有要提取的数据都处于同一行，不存在跨行的结构化数据
+        // 当region达到2个时，可以自动产生LineSelector并应用
+        if (flashExtract.needGenerateLineReions(curColor)){
             // FIXME: 2017/3/14 这一整块的逻辑比较混乱，急需大规模重构
-            flashExtract.generateChildRegionsInLineRegions(curColor);
+            List<Regex> boolLineSelector=flashExtract.getLineSelector(curColor);
+            System.out.println(boolLineSelector);
+
+            // TODO: 2017/3/13 selector需要排序，排序后默认选择第一个并且应用
+            Regex curSelector=boolLineSelector.get(0);
+            // 然后根据selector选择LineRegion并且自动选择出所有应该小region(所有颜色)
+            flashExtract.selectRegionBySelector(curSelector);
         }
     }
 
-    private int curColor;
+    private int curColor=1;
     @RequestMapping(value = "set_color", method = RequestMethod.POST)
     public void setColor(int color) {
         System.out.println("setColor"+color);

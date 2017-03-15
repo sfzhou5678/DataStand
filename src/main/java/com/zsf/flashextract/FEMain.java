@@ -77,37 +77,30 @@ public class FEMain {
         flashExtract.setInputDocument(inputDocument);
 
         int color=1;
-        flashExtract.doSelectRegion(color,5,45,52,"Ran Liu");
-        flashExtract.doSelectRegion(color,13,45,48,"陈波");
+        flashExtract.selectRegion(color,5,45,53,"Ran Liu");
+
+        int color2=2;
+        flashExtract.selectRegion(color2,5,86,121,"Associate Professor/Senior Engineer");
+
+        flashExtract.selectRegion(color,13,45,48,"陈波");
 
 //        flashExtract.doSelectRegion(color,4,7,21,"Russell Smith");
 //        flashExtract.doSelectRegion(color,5,7,19,"John Cameron");
 
         // FIXME: 2017/3/13 现在假设所有要提取的数据都处于同一行，不存在跨行的结构化数据
-        // TODO: 2017/3/14 下面几个方法可以整合到一起
         // 当region达到2个时，可以自动产生LineSelector并应用
         if (flashExtract.needGenerateLineReions(color)){
+            // FIXME: 2017/3/14 这一整块的逻辑比较混乱，急需大规模重构
             List<Regex> boolLineSelector=flashExtract.getLineSelector(color);
             System.out.println(boolLineSelector);
-            int lineRegionColor=0;
-            // TODO: 2017/3/13 selector的排序
-            flashExtract.selectRegionBySelector(boolLineSelector.get(0),lineRegionColor);
-            // TODO: 产生LineSelector之后，自动在LineRegion中根据提供的例子产生childRegion
-            // FIXME: 2017/3/14 这一整块的逻辑比较混乱，急需大规模重构
-            flashExtract.generateChildRegionsInLineRegions(color);
+
+            // TODO: 2017/3/13 selector需要排序，排序后默认选择第一个并且应用
+            Regex curSelector=boolLineSelector.get(0);
+            // 然后根据selector选择LineRegion并且自动选择出所有应该小region(所有颜色)
+            flashExtract.selectRegionBySelector(curSelector);
         }
-
-//        showRegionNeedSelect(flashExtract.getDocumentRegions(), boolLineSelector);
-
-        int color2=2;
-        flashExtract.doSelectRegionInLineRegions(color2,5,86,121,"Associate Professor/Senior Engineer");
-
         int color3=3;
-        // TODO if has lineSelector: call FF.extract() else doSelectRegion
-        // FF.extract: 根据input(selectedTextRegion)和output(mouseSecletedRegion)产生program
-        // 再对其他所有lineSelector选出的needSelectedsRegion使用program，并且标注
-        flashExtract.doSelectRegionInLineRegions(color3,5,214,284,"Medical and stereo image processing; IC design; Biomedical Engineering");
-
+        flashExtract.selectRegion(color3,5,214,284,"Medical and stereo image processing; IC design; Biomedical Engineering");
         // TODO 异常处理：选中的是needSelectesRegions以外的region就提示错误，忽略本次输入
     }
 

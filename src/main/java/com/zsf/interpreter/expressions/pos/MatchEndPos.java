@@ -17,7 +17,7 @@ public class MatchEndPos extends PosExpression {
     private int maxCount;
 
 
-    public MatchEndPos(Regex r, int count,int maxCount) {
+    public MatchEndPos(Regex r, int count, int maxCount) {
         this.r = r;
         this.count = count;
         this.maxCount=maxCount;
