@@ -64,6 +64,7 @@ public class MainController {
             }
         }
         Map<String, Object> data = new HashMap<String, Object>();
+//        inputDocument="abc";
         data.put("inputDocument", inputDocument);
         flashExtract = new FlashExtract();
         flashExtract.setInputDocument(inputDocument);

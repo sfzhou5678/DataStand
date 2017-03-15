@@ -36,34 +36,60 @@
             newColorBtn.type = "button";
             newColorBtn.value = "color" + (colorCounter++);
             colorDiv.appendChild(newColorBtn);
-            newColorBtn.addEventListener("click", function(){
-                var curColor=this.value.substring(5);
+            newColorBtn.addEventListener("click", function () {
+                var curColor = this.value.substring(5);
                 $.ajax({
                     url: "set_color",
                     type: "POST",
-                    data: {"color":curColor},
+                    data: {"color": curColor},
                     error: function () {
                         alert("请求失败，请稍候重试");
                     }
                 });
             });
         }
+
+        function initPreDocument() {
+//            alert("sdaf");
+            <%--alert(${inputDocument});--%>
+//            textarea.innerHTML="SDAsadfsdafdsafdsf";
+        }
     </script>
 </head>
-<body>
+<body onload="initPreDocument()">
 <div id="color-div">
     <input id="btnReg" type="button" value="+" onclick="addColor()"/>
 </div>
 <div style="clear: both;"></div>
-<textarea style="float: left" id="content" cols="100" rows="50">${inputDocument}</textarea>
+<textarea id="hidden-document-area" style="display: none;">${inputDocument}</textarea>
+<pre id="pre-document" class="" style="overFlow-x: scroll ; border-width: 10px; height:500px;width: 1049.55px;"></pre>
+
 <input style="float: left" type="button" id="wrapText" value="选择"/>
 
 
 <div id="handsontable-code" style="float: left"></div>
 
 <script type="text/javascript">
-    $(document).ready(function () {
 
+    this.REGX_HTML_ENCODE = /"|&|'|<|>|[\x00-\x20]|[\x7F-\xFF]|[\u0100-\u2700]/g;
+    function encodeHtml(s) {
+        return (typeof s != "string") ? s :
+                s.replace(this.REGX_HTML_ENCODE,
+                        function ($0) {
+                            var c = $0.charCodeAt(0), r = ["&#"];
+                            c = (c == 0x20) ? 0xA0 : c;
+                            r.push(c);
+                            r.push(";");
+                            return r.join("");
+                        });
+    }
+
+    var textarea = document.getElementById("pre-document");
+    $(document).ready(function () {
+        <%--alert(encodeHtml(${inputDocument}));--%>
+        <%--textarea.innerHTML=encodeHtml(${inputDocument});--%>
+
+        // 下面是table相关的，暂时屏蔽
         var data1 = [
             ["", "Ford", "Volvo", "Toyota", "Honda"],
             ["2016", 10, 11, 12, 13],
@@ -128,7 +154,6 @@
 
         }
 
-
         //类似excel进行拖放，公式会变
         var container1 = $('#handsontable-code');
         Handsontable.renderers.registerRenderer('negativeValueRenderer', negativeValueRenderer);
@@ -152,54 +177,15 @@
             }
         });
 
+        textarea.innerHTML=encodeHtml($("#hidden-document-area").val());
     });
 
-</script>
-<script type="text/javascript">
-    var selectionStart, selectionEnd;
-    var textarea = document.getElementById("content");
-
-    document.onkeyup = document.onmouseup = function (event) {
-        var userSelection;
-        if (window.getSelection) { //现代浏览器
-            userSelection = window.getSelection();
-        } else if (document.selection) { //IE浏览器 考虑到Opera，应该放在后面
-            userSelection = document.selection.createRange();
-        }
-
-        var getRangeIndex = function (selectionObject) {
-            if (window.getSelection)
-                return [textarea.selectionStart, textarea.selectionEnd];
-            else { // 较老版本Safari!
-                var range = document.selection.createRange();             //对选择的文字create Range
-// var selectText          = range.text;                                //选中的文字
-                var selectTextLength = range.text.length;                            //选中文字长度
-                textarea.select();                                                      //textarea全选
-//StartToStart、StartToEnd、EndToStart、EndToEnd
-                range.setEndPoint("StartToStart", document.selection.createRange());    //指针移动到选中文字开始
-                var selectTextPosition = range.text.length;                            //选中文字的结束位置
-                range.collapse(false);                                                  //将插入点移动到当前范围的开始
-                range.moveEnd("character", -selectTextLength);   //更改范围的结束位置，减去长度，字符开始位置，character不能改
-                range.moveEnd("character", selectTextLength);   //再更改范围的结束位置，到字符结束位置
-                range.select();                                                         //然后选中字符
-
-//返回字符的开始和结束位置
-                return [selectTextPosition - selectTextLength, selectTextPosition];
-            }
-        };
-
-        var rangeIndex = getRangeIndex(userSelection);
-        selectionStart = rangeIndex[0];
-        selectionEnd = rangeIndex[1];
-    };
-
-    //加粗
     document.getElementById('wrapText').onclick = function () {
-        alert(selectionStart + ',' + selectionEnd);
+        alert(se + "," + se.anchorOffset + "," + se.focusOffset);
         $.ajax({
             url: "select_region",
             type: "POST",
-            data: {"startPos": selectionStart, "endPos": selectionEnd},
+            data: {"startPos": se.anchorOffset, "endPos": se.focusOffset},
             success: function (data) {
                 alert("success");
             },
@@ -209,6 +195,13 @@
         });
         return false;
     };
+
+</script>
+<script type="text/javascript">
+    var se;
+    $("#pre-document").mouseup(function (e) {
+        se = window.getSelection();
+    });
 </script>
 </body>
 </html>
