@@ -71,7 +71,6 @@
             ["2018", 30, 15, 12, 13]
         ];
 
-
         function negativeValueRenderer(instance, td, row, col, prop, value, cellProperties) {
             Handsontable.renderers.TextRenderer.apply(this, arguments);
 
