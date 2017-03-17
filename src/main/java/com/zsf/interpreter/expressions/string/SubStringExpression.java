@@ -10,6 +10,9 @@ public class SubStringExpression extends StringExpression {
     private PosExpression posExpression1;
     private PosExpression posExpression2;
 
+    private int pos1;
+    private int pos2;
+
     public SubStringExpression(PosExpression posExpression1, PosExpression posExpression2) {
         this.posExpression1 = posExpression1;
         this.posExpression2 = posExpression2;
@@ -26,7 +29,10 @@ public class SubStringExpression extends StringExpression {
         pos1=pos1<0?pos1+len:pos1;
 //        pos1=pos1==PosExpression.END_POS?len:pos1;
         pos2=pos2<0?pos2+len:pos2;
-        pos2=pos2== PosExpression.END_POS?len:pos2;
+        pos2=pos2==PosExpression.END_POS?len:pos2;
+
+        this.pos1=pos1;
+        this.pos2=pos2;
 
         if (isIllegalPos(inputString,pos1,pos2)){
 //            System.out.println("ILLEGAL_POS");
@@ -102,7 +108,14 @@ public class SubStringExpression extends StringExpression {
     public void setPosExpression2(PosExpression posExpression2) {
         this.posExpression2 = posExpression2;
     }
+    
+    public int getPos1() {
+        return pos1;
+    }
 
+    public int getPos2() {
+        return pos2;
+    }
 
     @Override
     public double score() {

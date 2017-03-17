@@ -15,7 +15,7 @@ public class AbsPosExpression extends PosExpression {
 
     @Override
     public String toString() {
-        return String.format("absPos(%s)",pos==PosExpression.END_POS?"END_POS":String.valueOf(pos));
+        return String.format("absPos(%s)",pos== PosExpression.END_POS?"END_POS":String.valueOf(pos));
     }
 
     @Override

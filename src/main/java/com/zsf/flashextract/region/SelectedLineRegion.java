@@ -37,7 +37,7 @@ public class SelectedLineRegion extends Region {
         this.lineIndex=lineIndex;
     }
 
-    public ExpressionGroup selectChildRegion(int color,String targetString){
+    public ExpressionGroup selectChildRegion(int color, String targetString){
         //调用FF input为本地text, output为target, 返回一组有效的Expressions
 
         StringProcessor stringProcessor=new StringProcessor();
