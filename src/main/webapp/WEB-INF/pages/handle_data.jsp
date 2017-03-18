@@ -83,33 +83,11 @@
                         });
     }
 
-    function decodeHtml(s) {
-        return (typeof s != "string") ? s :
-                s.replace(this.REGX_HTML_DECODE,
-                        function ($0, $1) {
-                            var c = this.HTML_ENCODE[$0]; // 尝试查表
-                            if (c === undefined) {
-                                // Maybe is Entity Number
-                                if (!isNaN($1)) {
-                                    c = String.fromCharCode(($1 == 160) ? 32 : $1);
-                                } else {
-                                    // Not Entity Number
-                                    c = $0;
-                                }
-                            }
-                            return c;
-                        });
-    }
-
     var textarea = document.getElementById("pre-document");
-
     var inputDocument = "";
-    var colors = ["#87cbff", "#95f090", "#EEAD0E"];
+    var colors = ["#dddddd","#87cbff", "#95f090", "#EEAD0E"];
 
     $(document).ready(function () {
-        <%--alert(encodeHtml(${inputDocument}));--%>
-        <%--textarea.innerHTML=encodeHtml(${inputDocument});--%>
-
         // 下面是table相关的，暂时屏蔽
         var data1 = [
             ["", "Ford", "Volvo", "Toyota", "Honda"],
@@ -221,7 +199,6 @@
 
         for (var index in childRegions) {
             var region = childRegions[index];
-
             // 先处理这个region之前的内容
             if (region.beginPos != lastBeginPos) {
                 var baseSpan = generateSpan(parentClasses, parentStyle, encodeHtml(inputDocument.substr(lastBeginPos, region.beginPos - lastBeginPos)),
@@ -230,8 +207,7 @@
             }
             // 在处理当前region
 //            style="background: "+colors[region.color];
-            style = "background: " + colors[0];
-
+            style = "background: " + colors[region.color.color];
             // 情况2. 普通的着色region
             var curSpan = generateSpan("justtext", style,
                     encodeHtml(inputDocument.substr(region.beginPos, (region.endPos - region.beginPos))),
