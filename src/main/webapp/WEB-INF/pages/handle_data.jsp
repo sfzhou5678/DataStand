@@ -26,35 +26,6 @@
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/parser.js"></script>
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/ruleJS.js"></script>
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.formula.js"></script>
-
-    <script type="text/javascript" src="../../../resource/js/jquery-1.9.1.js"></script>
-    <script type="text/javascript">
-        var colorCounter = 1;
-        function addColor() {
-            var colorDiv = document.getElementById("color-div");
-            var newColorBtn = document.createElement("input");
-            newColorBtn.type = "button";
-            newColorBtn.value = "color" + (colorCounter++);
-            colorDiv.appendChild(newColorBtn);
-            newColorBtn.addEventListener("click", function () {
-                var curColor = this.value.substring(5);
-                $.ajax({
-                    url: "set_color",
-                    type: "POST",
-                    data: {"color": curColor},
-                    error: function () {
-                        alert("请求失败，请稍候重试");
-                    }
-                });
-            });
-        }
-
-        function initPreDocument() {
-//            alert("sdaf");
-            <%--alert(${inputDocument});--%>
-//            textarea.innerHTML="SDAsadfsdafdsafdsf";
-        }
-    </script>
 </head>
 <body onload="initPreDocument()">
 <div id="color-div">
@@ -66,7 +37,7 @@
 
 <input style="float: left" type="button" value="选择" onclick="selectField()"/>
 
-<div id="handsontable-code" style="float: left"></div>
+<div id="handsontable-container" style="float: left"></div>
 
 <script type="text/javascript">
 
@@ -84,103 +55,51 @@
     }
 
     var textarea = document.getElementById("pre-document");
+    var container = $('#handsontable-container');
+    var colors = ["#dddddd", "#87cbff", "#95f090", "#EEAD0E"];
+
     var inputDocument = "";
-    var colors = ["#dddddd","#87cbff", "#95f090", "#EEAD0E"];
+    var regionList;
+    var tableData = [];
+
+    var beginPos, endPos;
 
     $(document).ready(function () {
-        // 下面是table相关的，暂时屏蔽
-        var data1 = [
-            ["", "Ford", "Volvo", "Toyota", "Honda"],
-            ["2016", 10, 11, 12, 13],
-            ["2017", 20, 11, 14, 13],
-            ["2018", 30, 15, 12, 13]
-        ];
-
-        function negativeValueRenderer(instance, td, row, col, prop, value, cellProperties) {
-            Handsontable.renderers.TextRenderer.apply(this, arguments);
-
-            var escaped = Handsontable.helper.stringify(value),
-                    newvalue;
-
-            if (escaped.indexOf('return') === 0) {
-                //计算列为只读
-                //cellProperties.readOnly = true;
-                td.style.background = '#EEE';
-                newvalue = document.createElement('span');
-                $.ajax({
-                    //提交数据的类型 POST GET
-                    type: "POST",
-                    //提交的网址
-                    url: "/services/CSEngine.ashx",
-                    //提交的数据
-                    data: {code: value, code2: escaped},
-                    //返回数据的格式
-                    datatype: "html",//"xml", "html", "script", "json", "jsonp", "text".
-                    //在请求之前调用的函数
-                    //beforeSend: function () { $("#msg").html("logining"); },
-                    //成功返回之后调用的函数
-                    success: function (data) {
-                        // $("#msg").html(decodeURI(data));
-                        newvalue.innerHTML = decodeURI(data);
-                    },
-                    //调用执行后调用的函数
-                    complete: function (XMLHttpRequest, textStatus) {
-                        //alert(XMLHttpRequest.responseText);
-                        // alert(textStatus);
-                        //HideLoading();
-                    },
-                    //调用出错执行的函数
-                    error: function () {
-                        //请求出错处理
-                        // alert('error')
-                    }
-                });
-
-
-                Handsontable.Dom.addEvent(newvalue, 'mousedown', function (e) {
-                    e.preventDefault(); // prevent selection quirk
-                });
-
-                Handsontable.Dom.empty(td);
-                td.appendChild(newvalue);
-            }
-            // if row contains negative number
-            if (parseInt(value, 10) < 0) {
-                // add class "negative"
-                td.className = 'negative';
-            }
-
-
-        }
-
-        //类似excel进行拖放，公式会变
-        var container1 = $('#handsontable-code');
-        Handsontable.renderers.registerRenderer('negativeValueRenderer', negativeValueRenderer);
-        container1.handsontable({
-            data: data1,
-            minSpareRows: 1,
+        container.handsontable({
+            data: tableData,
             colHeaders: true,
             rowHeaders: true,
             contextMenu: true,
             manualColumnResize: true,
-            formulas: true,
-            cells: function (row, col, prop) {
-                var cellProperties = {};
-                var escaped = Handsontable.helper.stringify(this.instance.getData()[row][col]);
-                if (escaped.indexOf('return') === 0) {
-                    cellProperties.renderer = "negativeValueRenderer";
-                }
-
-
-                return cellProperties;
-            }
+            formulas: true
         });
 
         textarea.innerHTML = encodeHtml($("#hidden-document-area").val());
         inputDocument = $("#hidden-document-area").val();
     });
 
-    var regionList;
+    function selectField() {
+        alert(se + "," + beginPos + "," + endPos);
+        $.ajax({
+            url: "select_region",
+            type: "POST",
+            data: {"startPos": beginPos, "endPos": endPos},
+            success: function (data) {
+                regionList = JSON.parse(data);
+                showRegions();
+                generateTableDatas();
+            },
+            error: function () {
+                // TODO 提示
+                alert("请求失败，请稍候重试");
+            }
+        });
+        return false;
+    }
+
+    function showRegions() {
+        textarea.innerHTML = doSelect("jusettext", "", 0, inputDocument.length, regionList);
+    }
 
     /**
      * select就是替换掉pre的内容
@@ -205,10 +124,8 @@
                         lastBeginPos, region.beginPos);
                 innerHtml += baseSpan;
             }
-            // 在处理当前region
-//            style="background: "+colors[region.color];
+            // 再处理当前region
             style = "background: " + colors[region.color.color];
-            // 情况2. 普通的着色region
             var curSpan = generateSpan("justtext", style,
                     encodeHtml(inputDocument.substr(region.beginPos, (region.endPos - region.beginPos))),
                     region.beginPos, region.endPos);
@@ -223,27 +140,34 @@
         return innerHtml;
     }
 
-    function showRegions() {
-        textarea.innerHTML = doSelect("jusettext", "", 0, inputDocument.length, regionList);
-    }
+    function generateTableDatas() {
+        // todo header的title跟颜色
+        tableData = [];
 
-    var beginPos, endPos;
-    function selectField() {
-        alert(se + "," + beginPos + "," + endPos);
-        $.ajax({
-            url: "select_region",
-            type: "POST",
-            data: {"startPos": beginPos, "endPos": endPos},
-            success: function (data) {
-                regionList = JSON.parse(data);
-                showRegions();
-            },
-            error: function () {
-                // TODO 提示
-                alert("请求失败，请稍候重试");
+        colorSet = new Set();
+        tmpData = [];
+        for (var index in regionList) {
+            var region = regionList[index];
+            if (colorSet.has(region.color.color)) {
+                tableData.push(tmpData);
+                tmpData = [];
+                colorSet = new Set();
             }
+            colorSet.add(region.color.color);
+            tmpData.push(region.text);
+        }
+        if (tmpData.length > 0) {
+            alert(tmpData);
+            tableData.push(tmpData);
+        }
+        container.handsontable({
+            data: tableData,
+            colHeaders: true,
+            rowHeaders: true,
+            contextMenu: true,
+            manualColumnResize: true,
+            formulas: true
         });
-        return false;
     }
 
 </script>
@@ -259,6 +183,27 @@
         beginPos = parseInt(dataStart) + parseInt(se.anchorOffset);
         endPos = parseInt(dataStart) + parseInt(se.focusOffset);
     });
+</script>
+<script type="text/javascript">
+    var colorCounter = 1;
+    function addColor() {
+        var colorDiv = document.getElementById("color-div");
+        var newColorBtn = document.createElement("input");
+        newColorBtn.type = "button";
+        newColorBtn.value = "color" + (colorCounter++);
+        colorDiv.appendChild(newColorBtn);
+        newColorBtn.addEventListener("click", function () {
+            var curColor = this.value.substring(5);
+            $.ajax({
+                url: "set_color",
+                type: "POST",
+                data: {"color": curColor},
+                error: function () {
+                    alert("请求失败，请稍候重试");
+                }
+            });
+        });
+    }
 </script>
 </body>
 </html>

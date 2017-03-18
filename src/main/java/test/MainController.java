@@ -84,8 +84,16 @@ public class MainController {
         fieldList=document.showSelectedFields();
         showField(fieldList);
 
+        // TODO: 2017/3/18 1. get header (干脆不要了 直接在前端处理header)
+
+
+        // TODO: 2017/3/18 2. get text(碰到相同的颜色就换行)
+
         Gson gson=new Gson();
         System.out.println(gson.toJson(fieldList));
+
+
+
         return gson.toJson(fieldList);
     }
 
