@@ -64,8 +64,7 @@
 <textarea id="hidden-document-area" style="display: none;">${inputDocument}</textarea>
 <pre id="pre-document" class="" style="overFlow-x: scroll ; border-width: 10px; height:500px;width: 1049.55px;"></pre>
 
-<input style="float: left" type="button" id="wrapText" value="选择"/>
-
+<input style="float: left" type="button" value="选择" onclick="selectField()"/>
 
 <div id="handsontable-code" style="float: left"></div>
 
@@ -84,7 +83,29 @@
                         });
     }
 
+    function decodeHtml(s) {
+        return (typeof s != "string") ? s :
+                s.replace(this.REGX_HTML_DECODE,
+                        function ($0, $1) {
+                            var c = this.HTML_ENCODE[$0]; // 尝试查表
+                            if (c === undefined) {
+                                // Maybe is Entity Number
+                                if (!isNaN($1)) {
+                                    c = String.fromCharCode(($1 == 160) ? 32 : $1);
+                                } else {
+                                    // Not Entity Number
+                                    c = $0;
+                                }
+                            }
+                            return c;
+                        });
+    }
+
     var textarea = document.getElementById("pre-document");
+
+    var inputDocument = "";
+    var colors = ["#87cbff", "#95f090", "#EEAD0E"];
+
     $(document).ready(function () {
         <%--alert(encodeHtml(${inputDocument}));--%>
         <%--textarea.innerHTML=encodeHtml(${inputDocument});--%>
@@ -177,30 +198,90 @@
             }
         });
 
-        textarea.innerHTML=encodeHtml($("#hidden-document-area").val());
+        textarea.innerHTML = encodeHtml($("#hidden-document-area").val());
+        inputDocument = $("#hidden-document-area").val();
     });
 
-    document.getElementById('wrapText').onclick = function () {
-        alert(se + "," + se.anchorOffset + "," + se.focusOffset);
+    var regionList;
+
+    /**
+     * select就是替换掉pre的内容
+     *
+     * 替换规则根据regionList的index确定。由<没选中的>+<选中的>一段一段拼接而成
+     */
+    function doSelect(parentClasses, parentStyle, parentBeginPos, parentEndPos, childRegions) {
+        // fixme 可能还要看情况加一个parentText？
+        var innerHtml = "";
+        var lastBeginPos = parentBeginPos;
+        // 假设regionList的pos都是有序的
+        function generateSpan(classes, style, text, beginPos, endPos) {
+            var span = "<span class=\"" + classes + "\" style=\"" + style + "\" data-start=\"" + beginPos + "\" data-end=\"" + endPos + "\">" + text + "</span>";
+            return span;
+        }
+
+        for (var index in childRegions) {
+            var region = childRegions[index];
+
+            // 先处理这个region之前的内容
+            if (region.beginPos != lastBeginPos) {
+                var baseSpan = generateSpan(parentClasses, parentStyle, encodeHtml(inputDocument.substr(lastBeginPos, region.beginPos - lastBeginPos)),
+                        lastBeginPos, region.beginPos);
+                innerHtml += baseSpan;
+            }
+            // 在处理当前region
+//            style="background: "+colors[region.color];
+            style = "background: " + colors[0];
+
+            // 情况2. 普通的着色region
+            var curSpan = generateSpan("justtext", style,
+                    encodeHtml(inputDocument.substr(region.beginPos, (region.endPos - region.beginPos))),
+                    region.beginPos, region.endPos);
+            innerHtml += curSpan;
+            lastBeginPos = region.endPos;
+        }
+        var lastSpan = generateSpan("justtext", parentStyle,
+                encodeHtml(inputDocument.substr(lastBeginPos, parentEndPos - lastBeginPos)),
+                lastBeginPos, inputDocument.length);
+        innerHtml += lastSpan;
+
+        return innerHtml;
+    }
+
+    function showRegions() {
+        textarea.innerHTML = doSelect("jusettext", "", 0, inputDocument.length, regionList);
+    }
+
+    var beginPos, endPos;
+    function selectField() {
+        alert(se + "," + beginPos + "," + endPos);
         $.ajax({
             url: "select_region",
             type: "POST",
-            data: {"startPos": se.anchorOffset, "endPos": se.focusOffset},
+            data: {"startPos": beginPos, "endPos": endPos},
             success: function (data) {
-                alert("success");
+                regionList = JSON.parse(data);
+                showRegions();
             },
             error: function () {
+                // TODO 提示
                 alert("请求失败，请稍候重试");
             }
         });
         return false;
-    };
+    }
 
 </script>
 <script type="text/javascript">
     var se;
     $("#pre-document").mouseup(function (e) {
         se = window.getSelection();
+        var curSpan = se.focusNode.parentElement;
+        dataStart = curSpan.getAttribute("data-start");
+        if (!dataStart || typeof(dataStart) == "undefined") {
+            dataStart = 0;
+        }
+        beginPos = parseInt(dataStart) + parseInt(se.anchorOffset);
+        endPos = parseInt(dataStart) + parseInt(se.focusOffset);
     });
 </script>
 </body>

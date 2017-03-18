@@ -1,12 +1,18 @@
 package test;
 
+import com.google.gson.Gson;
 import com.zsf.flashextract.model.FlashExtract;
+import com.zsf.flashextract.region.newregion.MainDocument;
+import com.zsf.flashextract.region.newregion.field.Field;
+import com.zsf.flashextract.region.newregion.field.PlainField;
+import com.zsf.flashextract.region.newregion.tools.Color;
 import com.zsf.interpreter.expressions.regex.Regex;
 import org.apache.commons.fileupload.disk.DiskFileItem;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,11 +30,11 @@ import java.util.Map;
 @RequestMapping("/main")
 public class MainController {
 
-    String inputDocument = "";
-    List<Integer> positiveLineIndex = new ArrayList<Integer>();
-    List<Integer> negataiveLineIndex = new ArrayList<Integer>();
+    private String inputDocument = "";
 
-    FlashExtract flashExtract;
+    private MainDocument document;
+    private List<Field> fieldList;
+
 
     @RequestMapping("/fun")
     public String fun() {
@@ -64,70 +70,37 @@ public class MainController {
             }
         }
         Map<String, Object> data = new HashMap<String, Object>();
-//        inputDocument="abc";
         data.put("inputDocument", inputDocument);
-        flashExtract = new FlashExtract();
-        flashExtract.setInputDocument(inputDocument);
+        document=new MainDocument(inputDocument);
+
 
         return new ModelAndView("handle_data", data);
     }
-
     @RequestMapping(value = "/select_region")
-    public void selectRegion(int startPos, int endPos) {
+    @ResponseBody
+    public String selectRegion(int startPos, int endPos) {
         String selectedText = inputDocument.substring(startPos, endPos);
+        document.selectField(curColor,startPos,endPos,selectedText);
+        fieldList=document.showSelectedFields();
+        showField(fieldList);
 
-        String textBeforeSelect = inputDocument.substring(0, startPos);
-        int lineIndex = getLineIndex(textBeforeSelect);
-
-        int lineBeginTag = textBeforeSelect.lastIndexOf("\n");
-        if (lineBeginTag <= 0) {
-            // 如果上文不存在/n换行符的话，那么要和下面的操作相互抵消
-            lineBeginTag = -2;
-        }
-        // TODO: 2017/3/13 将结果记录到FE中，
-        // +2是因为textBeforeSelect截取到'/n'之前，还不包含/n
-        int lineStartPos = startPos - (lineBeginTag + 2);
-        int lineEndPos = endPos - (lineBeginTag + 2);
-        flashExtract.selectRegion(curColor, lineIndex, lineStartPos, lineEndPos, selectedText);
-
-        // FIXME: 2017/3/13 现在假设所有要提取的数据都处于同一行，不存在跨行的结构化数据
-        // 当region达到2个时，可以自动产生LineSelector并应用
-        if (flashExtract.needGenerateLineReions(curColor)){
-            // FIXME: 2017/3/14 这一整块的逻辑比较混乱，急需大规模重构
-            List<Regex> boolLineSelector=flashExtract.getLineSelector(curColor);
-            System.out.println(boolLineSelector);
-
-            // TODO: 2017/3/13 selector需要排序，排序后默认选择第一个并且应用
-            Regex curSelector=boolLineSelector.get(0);
-            // 然后根据selector选择LineRegion并且自动选择出所有应该小region(所有颜色)
-            flashExtract.selectRegionBySelector(curSelector);
-        }
+        Gson gson=new Gson();
+        System.out.println(gson.toJson(fieldList));
+        return gson.toJson(fieldList);
     }
 
-    private int curColor=1;
+    private Color curColor=Color.BLUE;
     @RequestMapping(value = "set_color", method = RequestMethod.POST)
     public void setColor(int color) {
-        System.out.println("setColor"+color);
-        curColor=color;
+        curColor=Color.getColor(color);
+        System.out.println("setColor:"+curColor.toString());
     }
 
-    /**
-     * 根据beginPos之前的区域中出现的/n次数来判断选中的是第几行
-     *
-     * @param textBeforeSelect
-     * @return
-     */
-    private int getLineIndex(String textBeforeSelect) {
-        int count = 0;
-        int index = 0;
-        while (true) {
-            index = textBeforeSelect.indexOf("\n", index + 1);
-            if (index > 0) {
-                count++;
-            } else {
-                break;
-            }
+    private void showField(List<Field> fieldList) {
+        System.out.println("+++++++++++++++++++++++++++++++++");
+        for (Field field:fieldList){
+            System.out.println(String.format("%s,%s,%d,%d",field.getColor(),field.getText(),field.getBeginPos(),field.getEndPos()));
         }
-        return count;
+        System.out.println("+++++++++++++++++++++++++++++++++");
     }
 }
