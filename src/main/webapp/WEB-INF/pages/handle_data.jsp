@@ -59,7 +59,7 @@
 
     var textarea = document.getElementById("pre-document");
     var container = $('#handsontable-container');
-    var colors = ["#dddddd", "#87cbff", "#95f090", "#EEAD0E"];
+    var colors = ["#dddddd", "#87cbff", "#95f090", "#EEAD0E","#FF69B4","#DEB887","#9F79EE"];
 
     var inputDocument = "";
     var regionList;
@@ -81,10 +81,12 @@
 
         textarea.innerHTML = encodeHtml($("#hidden-document-area").val());
         inputDocument = $("#hidden-document-area").val();
+
+        addColor();
     });
 
     function selectField() {
-        alert(se + "," + beginPos + "," + endPos);
+//        alert(se + "," + beginPos + "," + endPos);
         $.ajax({
             url: "select_region",
             type: "POST",
@@ -179,11 +181,31 @@
         }
         beginPos = parseInt(dataStart) + parseInt(se.anchorOffset);
         endPos = parseInt(dataStart) + parseInt(se.focusOffset);
+        if(beginPos>endPos){
+            var t=beginPos;
+            beginPos=endPos;
+            endPos=t;
+        }
     });
 </script>
 <script type="text/javascript">
     var colorCounter = 1;
+    function setColor() {
+        var curColor = this.value.substring(5);
+        $.ajax({
+            url: "set_color",
+            type: "POST",
+            data: {"color": curColor},
+            error: function () {
+            }
+        });
+    }
     function addColor() {
+        if (colorCounter>=colors.length){
+            alert("已达到颜色上限");
+            return;
+        }
+
         var colorDiv = document.getElementById("color-div");
         var newColorBtn = document.createElement("input");
         newColorBtn.type = "button";
@@ -196,10 +218,10 @@
                 type: "POST",
                 data: {"color": curColor},
                 error: function () {
-                    alert("请求失败，请稍候重试");
                 }
             });
         });
+        newColorBtn.click();
     }
 </script>
 </body>
