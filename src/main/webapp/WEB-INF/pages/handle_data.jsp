@@ -88,9 +88,13 @@
             type: "POST",
             data: {"startPos": beginPos, "endPos": endPos},
             success: function (data) {
-                regionList = JSON.parse(data);
+                regionList=data.selectedFields;
+
+                tableData=data.dataTables;
+                tableHeaderTitle=data.titles;
+                tableColColors=data.colors;
                 showRegions();
-                generateTableDatas();
+                updateDataTable();
             },
             error: function () {
                 // TODO 提示
@@ -143,27 +147,7 @@
         return innerHtml;
     }
 
-    function generateTableDatas() {
-        // todo header的title跟颜色
-        // fixme BUG: 蓝绿都是多个，橙色是单个，现在的方法就会错位出错
-        tableData = [];
-
-        colorSet = new Set();
-        tmpData = [];
-        for (var index in regionList) {
-            var region = regionList[index];
-            if (colorSet.has(region.color.color)) {
-                tableData.push(tmpData);
-                tmpData = [];
-                colorSet = new Set();
-            }
-            colorSet.add(region.color.color);
-            tmpData.push(region.text);
-        }
-        if (tmpData.length > 0) {
-            alert(tmpData);
-            tableData.push(tmpData);
-        }
+    function updateDataTable() {
         container.handsontable({
             data: tableData,
             colHeaders: true,
@@ -173,11 +157,16 @@
             formulas: true
         });
         setTableHeaderBgColor();
+        setTableTitles();
+
     }
 
     function setTableHeaderBgColor() {
-        var theadTr=container.find(".htCore").find('thead tr')[0];
-        var ths=theadTr.find("th");
+//        var theadTr=container.find(".htCore").find('thead tr')[0];
+//        var ths=theadTr.find("th");
+    }
+    function setTableTitles() {
+
     }
 
 </script>

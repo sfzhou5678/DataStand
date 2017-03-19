@@ -61,18 +61,18 @@ public class WebMain {
                 "                </div>";
         MainDocument document=new MainDocument(inputDocument);
 
-        List<Field> fieldList;
-        document.selectField(Color.BLUE,476,483,"Ran Liu");
-        fieldList=document.showSelectedFields();
-        showField(fieldList);
-
-        document.selectField(Color.BLUE,1197,1199,"陈波");
-        fieldList=document.showSelectedFields();
-        showField(fieldList);
-
-        document.selectField(Color.GREEN,516,551,"Associate Professor/Senior Engineer");
-        fieldList=document.showSelectedFields();
-        showField(fieldList);
+//        List<Field> fieldList;
+//        document.selectField(Color.BLUE,476,483,"Ran Liu");
+//        fieldList=document.showSelectedFields();
+//        showField(fieldList);
+//
+//        document.selectField(Color.BLUE,1197,1199,"陈波");
+//        fieldList=document.showSelectedFields();
+//        showField(fieldList);
+//
+//        document.selectField(Color.GREEN,516,551,"Associate Professor/Senior Engineer");
+//        fieldList=document.showSelectedFields();
+//        showField(fieldList);
 
         document.setRegionTitle(Color.BLUE,"姓名");
         document.setRegionTitle(Color.GREEN,"职称");

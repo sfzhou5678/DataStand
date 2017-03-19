@@ -2,6 +2,7 @@ package com.zsf.flashextract.region.newregion;
 
 import com.google.gson.Gson;
 import com.zsf.flashextract.region.newregion.field.Field;
+import com.zsf.flashextract.region.newregion.message.MessageSelectField;
 import com.zsf.flashextract.region.newregion.region.ColorRegion;
 import com.zsf.flashextract.region.newregion.tools.Color;
 import com.zsf.flashextract.region.newregion.tools.FieldComparator;
@@ -86,18 +87,19 @@ public class MainDocument {
     }
 
     private List<Field> fieldList;
-    public List<Field> showSelectedFields() {
+
+    public MessageSelectField showSelectedFields() {
         fieldList = new ArrayList<Field>();
-        int maxRow=0;
+        int maxRow = 0;
         for (ColorRegion colorRegion : colorRegionMap.values()) {
             for (Field field : colorRegion.getFieldsGenerated()) {
-                maxRow=Math.max(maxRow,colorRegion.getFieldsGenerated().size());
+                maxRow = Math.max(maxRow, colorRegion.getFieldsGenerated().size());
                 if (!fieldList.contains(field)) {
                     fieldList.add(field);
                 }
             }
             for (Field field : colorRegion.getFieldsByUser()) {
-                maxRow=Math.max(maxRow,colorRegion.getFieldsByUser().size());
+                maxRow = Math.max(maxRow, colorRegion.getFieldsByUser().size());
                 if (!fieldList.contains(field)) {
                     fieldList.add(field);
                 }
@@ -107,45 +109,56 @@ public class MainDocument {
         Collections.sort(fieldList, new FieldComparator());
 
         // 产生color和title
-        List<Color> colors=new ArrayList<Color>();
-        List<String> titles=new ArrayList<String>();
-        for (Field field:fieldList){
-            if (colors.contains(field.getColor())){
+        List<Color> colors = new ArrayList<Color>();
+        List<String> titles = new ArrayList<String>();
+        for (Field field : fieldList) {
+            if (colors.contains(field.getColor())) {
                 break;
-            }else{
+            } else {
                 colors.add(field.getColor());
                 titles.add(getRegioinTitle(field.getColor()));
             }
         }
 
         // 产生tableDatas
-        String[][] lists=new String[maxRow][colors.size()];
-        for (int i=0;i<maxRow;i++){
-            for (int j=0;j<colors.size();j++){
-                lists[i][j]="";
+        String[][] tableDatas = new String[maxRow][colors.size()];
+        for (int i = 0; i < maxRow; i++) {
+            for (int j = 0; j < colors.size(); j++) {
+                tableDatas[i][j] = "NULL";
             }
         }
-        int curRow=0;
-        for (Field field:fieldList){
-            int colIndex=colors.indexOf(field.getColor());
-            lists[curRow][colIndex]=field.getText();
-            if (colIndex==colors.size()-1){
+        int curRow = 0;
+        int lastColIndex=-1;
+        boolean needAddRow=false;
+        for (Field field : fieldList) {
+            int colIndex = colors.indexOf(field.getColor());
+
+            if (colIndex<=lastColIndex&&needAddRow){
                 curRow++;
             }
+            lastColIndex=colIndex;
+
+            tableDatas[curRow][colIndex] = field.getText();
+            if ((colIndex == colors.size() - 1)) {
+                curRow++;
+                needAddRow=false;
+            }else {
+                needAddRow=true;
+            }
         }
-        Gson gson=new Gson();
-        System.out.println(gson.toJson(lists));
-        return fieldList;
+        MessageSelectField messageSelectField = new MessageSelectField(fieldList, colors, titles, tableDatas);
+        return messageSelectField;
     }
 
-    public String getRegioinTitle(Color color){
+    public String getRegioinTitle(Color color) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
             return colorRegion.getRegionTitle();
-        }else {
+        } else {
             return "";
         }
     }
+
     public void setRegionTitle(Color color, String title) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {

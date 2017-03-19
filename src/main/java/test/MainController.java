@@ -5,6 +5,7 @@ import com.zsf.flashextract.model.FlashExtract;
 import com.zsf.flashextract.region.newregion.MainDocument;
 import com.zsf.flashextract.region.newregion.field.Field;
 import com.zsf.flashextract.region.newregion.field.PlainField;
+import com.zsf.flashextract.region.newregion.message.MessageSelectField;
 import com.zsf.flashextract.region.newregion.tools.Color;
 import com.zsf.interpreter.expressions.regex.Regex;
 import org.apache.commons.fileupload.disk.DiskFileItem;
@@ -33,8 +34,6 @@ public class MainController {
     private String inputDocument = "";
 
     private MainDocument document;
-    private List<Field> fieldList;
-
 
     @RequestMapping("/fun")
     public String fun() {
@@ -78,19 +77,16 @@ public class MainController {
     }
     @RequestMapping(value = "/select_region")
     @ResponseBody
-    public String selectRegion(int startPos, int endPos) {
+    public MessageSelectField selectRegion(int startPos, int endPos) {
         String selectedText = inputDocument.substring(startPos, endPos);
         document.selectField(curColor,startPos,endPos,selectedText);
-        fieldList=document.showSelectedFields();
-        showField(fieldList);
+        MessageSelectField selectField=document.showSelectedFields();
+        showField(selectField);
 
 
-        Gson gson=new Gson();
-        System.out.println(gson.toJson(fieldList));
-
-        // TODO: 2017/3/18 header+colors
-
-        return gson.toJson(fieldList);
+//        Gson gson=new Gson();
+        return selectField;
+//        return gson.toJson(fieldList);
     }
 
     private Color curColor=Color.BLUE;
@@ -100,9 +96,9 @@ public class MainController {
         System.out.println("setColor:"+curColor.toString());
     }
 
-    private void showField(List<Field> fieldList) {
+    private void showField(MessageSelectField selectField) {
         System.out.println("+++++++++++++++++++++++++++++++++");
-        for (Field field:fieldList){
+        for (Field field:selectField.getSelectedFields()){
             System.out.println(String.format("%s,%s,%d,%d",field.getColor(),field.getText(),field.getBeginPos(),field.getEndPos()));
         }
         System.out.println("+++++++++++++++++++++++++++++++++");
