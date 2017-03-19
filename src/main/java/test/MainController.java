@@ -47,39 +47,51 @@ public class MainController {
     }
 
     @RequestMapping(value = "/upload_file", method = RequestMethod.POST)
-    public ModelAndView uploadFile(@RequestParam(value = "file", required = false) MultipartFile file) {
-        CommonsMultipartFile cf = (CommonsMultipartFile) file;
-        DiskFileItem fi = (DiskFileItem) cf.getFileItem();
+    public ModelAndView uploadFile(HttpServletRequest request,
+                                   @RequestParam(value = "file", required = false) MultipartFile partFile) {
+        String basePath = request.getSession().getServletContext().getRealPath("upload\\files");
+        File dir=new File(basePath);
+        if (!dir.exists()){
+            dir.mkdirs();
+        }
 
-        // FIXME: 2017/3/13 读取文件并存储到disk上，再记录到数据库中
-        File f = new File("D:\\MyProjectsRepertory\\JAVA_project\\FlashExtract\\data\\teacher.txt");
-        StringBuilder builder = new StringBuilder();
-        BufferedReader reader = null;
+        String fileOriginalName=partFile.getOriginalFilename();
+        String newFileName=UUID.randomUUID()+fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
+        File file=new File(basePath+File.separator+newFileName);
+        //文件写入磁盘
         try {
-            reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                builder.append(line + "\n");
-//                System.out.println(line);
-            }
-            inputDocument = builder.toString();
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e1) {
+            // TODO: 2017/3/19 可以加一个md5判断？
+            partFile.transferTo(file);
+
+            StringBuilder builder = new StringBuilder();
+            BufferedReader reader = null;
+            try {
+                reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    builder.append(line + "\n");
+                }
+                inputDocument = builder.toString();
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (IOException e1) {
+                    }
                 }
             }
+            Map<String, Object> data = new HashMap<String, Object>();
+            data.put("inputDocument", inputDocument);
+            document = new MainDocument(inputDocument);
+
+            return new ModelAndView("handle_data", data);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        Map<String, Object> data = new HashMap<String, Object>();
-        data.put("inputDocument", inputDocument);
-        document = new MainDocument(inputDocument);
-
-
-        return new ModelAndView("handle_data", data);
+        return null;
     }
 
     private MessageSelectField curSelectField;
@@ -98,12 +110,12 @@ public class MainController {
     @RequestMapping(value = "/to_scv")
     public ResponseEntity<byte[]> tableToCsv(HttpServletRequest request) {
         try {
-            String basePath=request.getSession().getServletContext().getRealPath("output\\csv");
+            String basePath = request.getSession().getServletContext().getRealPath("output\\csv");
             Date date = new Date(System.currentTimeMillis());
-            SimpleDateFormat dateFormat= new SimpleDateFormat("MMddyyyyHHmmss");
-            String fileName = basePath+File.separator+dateFormat.format(date) + ".csv";
-            File dir=new File(basePath);
-            if (!dir.exists()){
+            SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
+            String fileName = basePath + File.separator + dateFormat.format(date) + ".csv";
+            File dir = new File(basePath);
+            if (!dir.exists()) {
                 dir.mkdirs();
             }
             FileWriter fileWriter = new FileWriter(fileName);
@@ -112,8 +124,8 @@ public class MainController {
             writer.writeHeaders(curSelectField.getTitles());
             writer.writeRowsAndClose(curSelectField.getDataTables());
 
-            File file=new File(fileName);
-            String dfileName = new String(fileName.getBytes("UTF-8"),"iso-8859-1");
+            File file = new File(fileName);
+            String dfileName = new String(fileName.getBytes("UTF-8"), "iso-8859-1");
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
             headers.setContentDispositionFormData("attachment", dfileName);
