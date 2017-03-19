@@ -27,7 +27,7 @@
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/ruleJS.js"></script>
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.formula.js"></script>
 </head>
-<body onload="initPreDocument()">
+<body>
 <div id="color-div">
     <input id="btnReg" type="button" value="+" onclick="addColor()"/>
 </div>
@@ -61,6 +61,9 @@
     var inputDocument = "";
     var regionList;
     var tableData = [];
+    var tableHeaderTitle=[];
+    var tableColColors=[];
+
 
     var beginPos, endPos;
 
@@ -142,6 +145,7 @@
 
     function generateTableDatas() {
         // todo header的title跟颜色
+        // fixme BUG: 蓝绿都是多个，橙色是单个，现在的方法就会错位出错
         tableData = [];
 
         colorSet = new Set();
@@ -168,6 +172,12 @@
             manualColumnResize: true,
             formulas: true
         });
+        setTableHeaderBgColor();
+    }
+
+    function setTableHeaderBgColor() {
+        var theadTr=container.find(".htCore").find('thead tr')[0];
+        var ths=theadTr.find("th");
     }
 
 </script>

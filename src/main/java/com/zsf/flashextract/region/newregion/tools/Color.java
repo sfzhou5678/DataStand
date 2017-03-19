@@ -28,6 +28,14 @@ public class Color {
         }
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Color){
+            return ((Color) obj).getColor()==this.color;
+        }
+        return false;
+    }
+
     public int getColor() {
         return color;
     }

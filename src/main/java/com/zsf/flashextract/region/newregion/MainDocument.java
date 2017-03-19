@@ -1,5 +1,6 @@
 package com.zsf.flashextract.region.newregion;
 
+import com.google.gson.Gson;
 import com.zsf.flashextract.region.newregion.field.Field;
 import com.zsf.flashextract.region.newregion.region.ColorRegion;
 import com.zsf.flashextract.region.newregion.tools.Color;
@@ -9,10 +10,7 @@ import com.zsf.interpreter.expressions.regex.NormalRegex;
 import com.zsf.interpreter.expressions.regex.RareRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by hasee on 2017/3/16.
@@ -87,15 +85,19 @@ public class MainDocument {
         colorRegion.selectField(lineIndex, beginPos, endPos, text);
     }
 
+    private List<Field> fieldList;
     public List<Field> showSelectedFields() {
-        List<Field> fieldList = new ArrayList<Field>();
+        fieldList = new ArrayList<Field>();
+        int maxRow=0;
         for (ColorRegion colorRegion : colorRegionMap.values()) {
             for (Field field : colorRegion.getFieldsGenerated()) {
+                maxRow=Math.max(maxRow,colorRegion.getFieldsGenerated().size());
                 if (!fieldList.contains(field)) {
                     fieldList.add(field);
                 }
             }
             for (Field field : colorRegion.getFieldsByUser()) {
+                maxRow=Math.max(maxRow,colorRegion.getFieldsByUser().size());
                 if (!fieldList.contains(field)) {
                     fieldList.add(field);
                 }
@@ -103,9 +105,47 @@ public class MainDocument {
         }
         // 按照beginPos从小到大sort
         Collections.sort(fieldList, new FieldComparator());
+
+        // 产生color和title
+        List<Color> colors=new ArrayList<Color>();
+        List<String> titles=new ArrayList<String>();
+        for (Field field:fieldList){
+            if (colors.contains(field.getColor())){
+                break;
+            }else{
+                colors.add(field.getColor());
+                titles.add(getRegioinTitle(field.getColor()));
+            }
+        }
+
+        // 产生tableDatas
+        String[][] lists=new String[maxRow][colors.size()];
+        for (int i=0;i<maxRow;i++){
+            for (int j=0;j<colors.size();j++){
+                lists[i][j]="";
+            }
+        }
+        int curRow=0;
+        for (Field field:fieldList){
+            int colIndex=colors.indexOf(field.getColor());
+            lists[curRow][colIndex]=field.getText();
+            if (colIndex==colors.size()-1){
+                curRow++;
+            }
+        }
+        Gson gson=new Gson();
+        System.out.println(gson.toJson(lists));
         return fieldList;
     }
 
+    public String getRegioinTitle(Color color){
+        ColorRegion colorRegion = colorRegionMap.get(color);
+        if (colorRegion != null) {
+            return colorRegion.getRegionTitle();
+        }else {
+            return "";
+        }
+    }
     public void setRegionTitle(Color color, String title) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
