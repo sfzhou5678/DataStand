@@ -37,6 +37,9 @@
 
 <input style="float: left" type="button" value="选择" onclick="selectField()"/>
 
+<a style=" color: #000000;    text-decoration: none;   " href="to_scv">导出CSV</a>
+
+
 <div id="handsontable-container" style="float: left"></div>
 
 <script type="text/javascript">
@@ -149,27 +152,21 @@
     function updateDataTable() {
         container.handsontable({
             data: tableData,
-            colHeaders: true,
+            colHeaders: tableHeaderTitle,
             rowHeaders: true,
             contextMenu: true,
             manualColumnResize: true,
             formulas: true
         });
         setTableHeaderBgColor();
-        setTableTitles();
-
     }
 
     function setTableHeaderBgColor() {
         var theadTr = container.find(".htCore").find('thead > tr').eq(1);
         for (var i = 1; i <= tableColColors.length; i++) {
-            theadTr.find("th").eq(i).css('background',colors[parseInt(tableColColors[i-1].color)]);
+            theadTr.find("th").eq(i).css('background', colors[parseInt(tableColColors[i - 1].color)]);
         }
     }
-    function setTableTitles() {
-
-    }
-
 </script>
 <script type="text/javascript">
     var se;
