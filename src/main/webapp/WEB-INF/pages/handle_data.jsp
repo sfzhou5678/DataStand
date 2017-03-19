@@ -61,9 +61,8 @@
     var inputDocument = "";
     var regionList;
     var tableData = [];
-    var tableHeaderTitle=[];
-    var tableColColors=[];
-
+    var tableHeaderTitle = [];
+    var tableColColors = [];
 
     var beginPos, endPos;
 
@@ -88,11 +87,11 @@
             type: "POST",
             data: {"startPos": beginPos, "endPos": endPos},
             success: function (data) {
-                regionList=data.selectedFields;
+                regionList = data.selectedFields;
 
-                tableData=data.dataTables;
-                tableHeaderTitle=data.titles;
-                tableColColors=data.colors;
+                tableData = data.dataTables;
+                tableHeaderTitle = data.titles;
+                tableColColors = data.colors;
                 showRegions();
                 updateDataTable();
             },
@@ -162,8 +161,10 @@
     }
 
     function setTableHeaderBgColor() {
-//        var theadTr=container.find(".htCore").find('thead tr')[0];
-//        var ths=theadTr.find("th");
+        var theadTr = container.find(".htCore").find('thead > tr').eq(1);
+        for (var i = 1; i <= tableColColors.length; i++) {
+            theadTr.find("th").eq(i).css('background',colors[parseInt(tableColColors[i-1].color)]);
+        }
     }
     function setTableTitles() {
 
