@@ -141,8 +141,8 @@ public class ColorRegion {
         List<Regex> startWithLineSelector = RegexCommomTools.deDuplication(startWithReges, true);
         List<Regex> endWithLineSelector = RegexCommomTools.deDuplication(endWithReges, false);
 
-        System.out.println(startWithLineSelector);
-        System.out.println(endWithLineSelector);
+//        System.out.println(startWithLineSelector);
+//        System.out.println(endWithLineSelector);
 
         // 利用positive和negativeExamples对selectors进行筛选
         List<Regex> usefulLineSelector = new ArrayList<Regex>();
@@ -153,6 +153,7 @@ public class ColorRegion {
 
         if (usefulLineSelector.size()>0){
             this.lineSelectors = usefulLineSelector;
+            System.out.println(lineSelectors);
             this.curLineSelector = lineSelectors.get(0);
             return true;
         }else {
@@ -184,6 +185,7 @@ public class ColorRegion {
     }
 
     private void generateExpressionGroup() {
+        // FIXME: 2017/3/27 加入多example协同作用
         List<ExamplePair> examplePairs = new ArrayList<ExamplePair>();
         for (Field field : fieldsByUser) {
             examplePairs.add(new ExamplePair(field.getParentField().getText(), field.getText()));
@@ -201,9 +203,9 @@ public class ColorRegion {
 
     private void generatePlainFieldsByCurExp() {
         if (curExpression != null) {
+            this.fieldsGenerated=new ArrayList<Field>();
             for (int lineIndex : needSelectLineIndex) {
                 // TODO: 2017/3/16 去重复？
-                // TODO: 2017/3/16 ChildField。坐标
                 this.fieldsGenerated.addAll(
                         lineFields.get(lineIndex).selectChildFieldByExp(curExpression, color));
             }

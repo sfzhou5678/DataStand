@@ -63,14 +63,16 @@ public class LineField implements Field {
 
     public List<PlainField> selectChildFieldByExp(Expression curExpression, Color color) {
         List<PlainField> plainFields = new ArrayList<PlainField>();
-        // TODO: 2017/3/16 不要sout，要new Field
         if (curExpression instanceof NonTerminalExpression) {
             if (curExpression instanceof SubStringExpression) {
+                // FIXME: 2017/3/27 有时会出现无法正确匹配的方式，导致 text="null"(可接受) pos=-无穷(不可接受)。
                 String txt=((SubStringExpression) curExpression).interpret(text);
-                plainFields.add(new PlainField(this, color,
-                        this.beginPos + ((SubStringExpression) curExpression).getPos1(),
-                        this.beginPos + ((SubStringExpression) curExpression).getPos2(),
-                        txt));
+                if (txt!=null){
+                    plainFields.add(new PlainField(this, color,
+                            this.beginPos + ((SubStringExpression) curExpression).getPos1(),
+                            this.beginPos + ((SubStringExpression) curExpression).getPos2(),
+                            txt));
+                }
             }
         }
         return plainFields;
