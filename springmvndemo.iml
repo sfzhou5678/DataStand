@@ -53,5 +53,6 @@
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.4" level="project" />
     <orderEntry type="library" name="Maven: com.univocity:univocity-parsers:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" name="jquery-1.10.2" level="application" />
   </component>
 </module>

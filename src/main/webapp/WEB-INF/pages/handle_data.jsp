@@ -78,7 +78,8 @@
             manualColumnResize: true,
             formulas: true
         });
-
+        var tmp =$("#hidden-document-area").val();
+        tmp=encodeHtml(tmp);
         textarea.innerHTML = encodeHtml($("#hidden-document-area").val());
         inputDocument = $("#hidden-document-area").val();
 
@@ -86,7 +87,7 @@
     });
 
     function selectField() {
-//        alert(se + "," + beginPos + "," + endPos);
+        alert(se + "," + beginPos + "," + endPos);
         $.ajax({
             url: "select_region",
             type: "POST",

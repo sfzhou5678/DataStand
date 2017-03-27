@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -47,23 +49,25 @@ public class MainController {
     }
 
     @RequestMapping(value = "/upload_file", method = RequestMethod.POST)
-    public ModelAndView uploadFile(HttpServletRequest request,
-                                   @RequestParam(value = "file", required = false) MultipartFile partFile) {
-        String basePath = request.getSession().getServletContext().getRealPath("upload\\files");
-        File dir=new File(basePath);
-        if (!dir.exists()){
+    public ModelAndView uploadFile(@RequestParam(value = "file", required = false) MultipartFile partFile) {
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+
+        String basePath = request.getSession().getServletContext().getRealPath("upload"+File.separator+"files");
+        File dir = new File(basePath);
+        if (!dir.exists()) {
             dir.mkdirs();
         }
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
         Date date = new Date(System.currentTimeMillis());
 
-        if (partFile.isEmpty()){
+        if (partFile.isEmpty()) {
             // TODO: 2017/3/27 还是要换成ajax 给出错误提示(1. 未上传文件 2. 文件类型不对 3. 文件过大 20M+)
             return new ModelAndView("redirect:/");
         }
-        String fileOriginalName=partFile.getOriginalFilename();
-        String newFileName=dateFormat.format(date)+fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
-        File file=new File(basePath+File.separator+newFileName);
+        String fileOriginalName = partFile.getOriginalFilename();
+        String newFileName = dateFormat.format(date) + fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
+        File file = new File(basePath + File.separator + newFileName);
+
         //文件写入磁盘
         try {
             // TODO: 2017/3/19 可以加一个md5判断？
@@ -97,14 +101,14 @@ public class MainController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
+        return new ModelAndView("redirect:/");
     }
 
     private MessageSelectField curSelectField;
 
     @RequestMapping(value = "/select_region")
     @ResponseBody
-    public MessageSelectField selectRegion(int startPos, int endPos) {
+    public MessageSelectField selectRegion(@RequestParam int startPos, @RequestParam int endPos) {
         String selectedText = inputDocument.substring(startPos, endPos);
         document.selectField(curColor, startPos, endPos, selectedText);
         curSelectField = document.showSelectedFields();
@@ -114,9 +118,11 @@ public class MainController {
     }
 
     @RequestMapping(value = "/to_scv")
-    public ResponseEntity<byte[]> tableToCsv(HttpServletRequest request) {
+    public ResponseEntity<byte[]> tableToCsv() {
         try {
-            String basePath = request.getSession().getServletContext().getRealPath("output\\csv");
+            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+
+            String basePath = request.getSession().getServletContext().getRealPath("output"+File.separator+"csv");
             Date date = new Date(System.currentTimeMillis());
             SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
             String fileName = basePath + File.separator + dateFormat.format(date) + ".csv";
@@ -145,7 +151,7 @@ public class MainController {
     private Color curColor = Color.BLUE;
 
     @RequestMapping(value = "set_color", method = RequestMethod.POST)
-    public void setColor(int color) {
+    public void setColor(@RequestParam int color) {
         curColor = Color.getColor(color);
         System.out.println("setColor:" + curColor.toString());
     }
