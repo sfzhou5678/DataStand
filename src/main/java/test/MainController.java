@@ -54,9 +54,15 @@ public class MainController {
         if (!dir.exists()){
             dir.mkdirs();
         }
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
+        Date date = new Date(System.currentTimeMillis());
 
+        if (partFile.isEmpty()){
+            // TODO: 2017/3/27 还是要换成ajax 给出错误提示(1. 未上传文件 2. 文件类型不对 3. 文件过大 20M+)
+            return new ModelAndView("redirect:/");
+        }
         String fileOriginalName=partFile.getOriginalFilename();
-        String newFileName=UUID.randomUUID()+fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
+        String newFileName=dateFormat.format(date)+fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
         File file=new File(basePath+File.separator+newFileName);
         //文件写入磁盘
         try {
