@@ -50,7 +50,7 @@ public class MainController {
     @RequestMapping(value = "/upload_file", method = RequestMethod.POST)
     public ModelAndView uploadFile(HttpServletRequest request,
                                    @RequestParam(value = "file", required = false) MultipartFile partFile) {
-        String basePath = request.getSession().getServletContext().getRealPath("upload\\files");
+        String basePath = request.getSession().getServletContext().getRealPath("upload"+File.separator+"files");
         File dir=new File(basePath);
         if (!dir.exists()){
             dir.mkdirs();
@@ -118,7 +118,7 @@ public class MainController {
     @RequestMapping(value = "/to_scv")
     public ResponseEntity<byte[]> tableToCsv(HttpServletRequest request) {
         try {
-            String basePath = request.getSession().getServletContext().getRealPath("output\\csv");
+            String basePath = request.getSession().getServletContext().getRealPath("output"+File.separator+"csv");
             Date date = new Date(System.currentTimeMillis());
             SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
             String fileName = basePath + File.separator + dateFormat.format(date) + ".csv";
