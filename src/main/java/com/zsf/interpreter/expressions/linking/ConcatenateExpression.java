@@ -142,10 +142,10 @@ public class ConcatenateExpression extends LinkingExpression {
 
     @Override
     public double score() {
-        // TODO: 2017/3/3 对于constr(如, - 等连接符)不要计算deepth
         double sum=0.0;
         int deepth=deepth();
         for (Expression expression:expressionList){
+            //  对于constr(如, - 等连接符)不计算deepth
             if (isConnector(expression)){
                 deepth--;
                 continue;

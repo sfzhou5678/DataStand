@@ -70,13 +70,16 @@ public class ColorRegion {
             addPositiveLineIndex(lineIndex);
         }
         if (needGenerateLineSelectors()) {
-            doGenerateLineSelectors();
+            if (doGenerateLineSelectors()){
+                // FIXME: 2017/3/16 下面几个可能要一起调用？
+                generateLineFieldsByCurSelector();
 
-            // FIXME: 2017/3/16 下面几个可能要一起调用？
-            generateLineFieldsByCurSelector();
-
-            generateExpressionGroup();
-            generatePlainFieldsByCurExp();
+                generateExpressionGroup();
+                generatePlainFieldsByCurExp();
+            }else {
+                // FIXME 需要产生lineSelector，但是没能成功产生，需要返回一个错误提示
+                System.out.println("doGenerateLineSelectors()失败");
+            }
         }
     }
 
@@ -115,7 +118,7 @@ public class ColorRegion {
     /**
      * 在selectField()时，如果判断需要产生LineSelectors就会调用此方法，产生LineSelecotr,排序结果后设置curSelector
      */
-    private void doGenerateLineSelectors() {
+    private boolean doGenerateLineSelectors() {
         RegexCommomTools.addDynamicToken(fieldsByUser, MainDocument.usefulRegex);
 
         List<List<Regex>> startWithReges = new ArrayList<List<Regex>>();
@@ -129,10 +132,12 @@ public class ColorRegion {
             endWithReges.add(RegexCommomTools.buildEndWith(curDeepth, maxDeepth, matches, lineFields.get(index).getText().length(), new DynamicRegex("", "")));
         }
         System.out.println("start with:");
-        System.out.println(startWithReges.get(1));
+        System.out.println(startWithReges);
         System.out.println("end with:");
         System.out.println(endWithReges);
 
+
+        // 在deDuplication()中分别为startWith和endWith加上了^和$
         List<Regex> startWithLineSelector = RegexCommomTools.deDuplication(startWithReges, true);
         List<Regex> endWithLineSelector = RegexCommomTools.deDuplication(endWithReges, false);
 
@@ -145,8 +150,15 @@ public class ColorRegion {
         usefulLineSelector.addAll(RegexCommomTools.filterUsefulSelector(endWithLineSelector, lineFields, positiveLineIndex, getNegativeLineIndex()));
 
         // TODO: 2017/3/16 lineSelector的ranking
-        this.lineSelectors = usefulLineSelector;
-        this.curLineSelector = lineSelectors.get(0);
+
+        if (usefulLineSelector.size()>0){
+            this.lineSelectors = usefulLineSelector;
+            this.curLineSelector = lineSelectors.get(0);
+            return true;
+        }else {
+            // 没有产生合适的selector，此次generate失败
+            return false;
+        }
     }
 
     private void addPositiveLineIndex(int lineIndex) {
@@ -183,6 +195,7 @@ public class ColorRegion {
         this.expressionGroup = expressionGroup;
         if (expressionGroup != null) {
             curExpression = expressionGroup.getExpressions().get(0);
+            System.out.println(curExpression.score());
         }
     }
 

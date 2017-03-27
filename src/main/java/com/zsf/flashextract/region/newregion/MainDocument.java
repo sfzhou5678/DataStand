@@ -77,6 +77,7 @@ public class MainDocument {
         int lineIndex = colorRegion.calculateLineIndex(beginPos, endPos);
         for (ColorRegion region : colorRegionMap.values()) {
             if (region != colorRegion) {
+                // FIXME: 2017/3/27 如果补充选择positiveExample 现在会变成重复选择多次(带来n行NULL数据)！
                 if (region.getNeedSelectLineIndex().contains(lineIndex)) {
                     colorRegion.selectFieldByOuterSelector(lineIndex, beginPos, endPos, text, region.getCurLineSelector());
                     break;

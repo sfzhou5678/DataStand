@@ -172,36 +172,45 @@ public class RegexCommomTools {
      * @param fieldsByUser
      */
     public static void addDynamicToken(List<Field> fieldsByUser, List<Regex> usefulRegex) {
-        Field field=fieldsByUser.get(0);
+        Field field = fieldsByUser.get(0);
 
         // 左匹配
-        String textBeforeSelected = field.getParentField().getText().substring(0, field.getBeginPos()-field.getParentField().getBeginPos());
+        String textBeforeSelected = field.getParentField().getText().substring(0, field.getBeginPos() - field.getParentField().getBeginPos());
         String leftCommonStr = textBeforeSelected;
         System.out.println(textBeforeSelected);
         for (int i = 1; i < fieldsByUser.size(); i++) {
             Field curField = fieldsByUser.get(i);
             leftCommonStr = getCommonStr(getReversedStr(leftCommonStr),
-                    getReversedStr(curField.getParentField().getText().substring(0, curField.getBeginPos()-curField.getParentField().getBeginPos())));
+                    getReversedStr(curField.getParentField().getText().substring(0, curField.getBeginPos() - curField.getParentField().getBeginPos())));
             leftCommonStr = getReversedStr(leftCommonStr);
             System.out.println("leftCommonStr:  " + leftCommonStr);
         }
 
         // 右匹配
-        String textAfterSelected = field.getParentField().getText().substring(field.getEndPos()-field.getParentField().getBeginPos());
+        String textAfterSelected = field.getParentField().getText().substring(field.getEndPos() - field.getParentField().getBeginPos());
         String rightCommonStr = textAfterSelected;
         System.out.println(textAfterSelected);
         for (int i = 1; i < fieldsByUser.size(); i++) {
-            Field curField= fieldsByUser.get(i);
+            Field curField = fieldsByUser.get(i);
             rightCommonStr = getCommonStr(rightCommonStr,
-                    curField.getParentField().getText().substring(curField.getEndPos()-curField.getParentField().getBeginPos()));
+                    curField.getParentField().getText().substring(curField.getEndPos() - curField.getParentField().getBeginPos()));
             System.out.println("rightCommonStr:  " + rightCommonStr);
         }
 
-        Regex leftRegex = new DynamicRegex("DynamicTok(" + leftCommonStr + ")", leftCommonStr);
-        Regex rightRegex = new DynamicRegex("DynamicTok(" + rightCommonStr + ")", rightCommonStr);
-
-        usefulRegex.add(leftRegex);
-        usefulRegex.add(rightRegex);
+        try {
+            Regex leftRegex = new DynamicRegex("DynamicTok(" + leftCommonStr + ")", leftCommonStr);
+            if (!usefulRegex.contains(leftRegex)) {
+                usefulRegex.add(leftRegex);
+            }
+        } catch (Exception e) {
+        }
+        try {
+            Regex rightRegex = new DynamicRegex("DynamicTok(" + rightCommonStr + ")", rightCommonStr);
+            if (!usefulRegex.contains(rightRegex)) {
+                usefulRegex.add(rightRegex);
+            }
+        } catch (Exception e) {
+        }
     }
 
     public static int indexNOf(String inputString, String target, int n) {
