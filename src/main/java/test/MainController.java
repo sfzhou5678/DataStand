@@ -12,6 +12,7 @@ import com.zsf.flashextract.region.newregion.tools.Color;
 import com.zsf.interpreter.expressions.regex.Regex;
 import org.apache.commons.fileupload.disk.DiskFileItem;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -78,6 +79,7 @@ public class MainController {
                     builder.append(line + "\n");
                 }
                 inputDocument = builder.toString();
+                inputDocument= StringEscapeUtils.unescapeHtml4(inputDocument);
                 reader.close();
             } catch (IOException e) {
                 e.printStackTrace();
