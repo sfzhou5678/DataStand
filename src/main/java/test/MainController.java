@@ -59,13 +59,14 @@ public class MainController {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
         Date date = new Date(System.currentTimeMillis());
 
-        if (partFile.isEmpty()){
+        if (partFile.isEmpty()) {
             // TODO: 2017/3/27 还是要换成ajax 给出错误提示(1. 未上传文件 2. 文件类型不对 3. 文件过大 20M+)
             return new ModelAndView("redirect:/");
         }
-        String fileOriginalName=partFile.getOriginalFilename();
-        String newFileName=dateFormat.format(date)+fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
-        File file=new File(basePath+File.separator+newFileName);
+        String fileOriginalName = partFile.getOriginalFilename();
+        String newFileName = dateFormat.format(date) + fileOriginalName.substring(fileOriginalName.lastIndexOf("."));
+        File file = new File(basePath + File.separator + newFileName);
+
         //文件写入磁盘
         try {
             // TODO: 2017/3/19 可以加一个md5判断？
@@ -100,7 +101,7 @@ public class MainController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
+        return new ModelAndView("redirect:/");
     }
 
     private MessageSelectField curSelectField;
