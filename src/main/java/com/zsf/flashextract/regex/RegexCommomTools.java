@@ -174,6 +174,24 @@ public class RegexCommomTools {
      * @param fieldsByUser
      */
     public static void addDynamicToken(List<Field> fieldsByUser, List<Regex> usefulRegex) {
+        // TODO: 2017/3/28 重构dynamicToken方法
+        // TODO: 2017/3/28 如果产生的匹配可以被regex库中的某个成功匹配，那么就break；
+        // TODO: 2017/3/28 对于末尾的数字，是否要处理？ 就是这种href="/p/4
+
+//        private static void func(String str1, String str2) {
+//            int len1=str1.length();
+//            for (int i=0;i<len1;i++){
+//                for (int j=len1;j>i;j--){
+//                    String subStr=str1.substring(i,j);
+//                    if (str2.contains(subStr)){
+//                        System.out.println(subStr);
+//                        i=j-1;break;
+//                    }
+//                }
+//            }
+//        }
+
+
         Field field = fieldsByUser.get(0);
 
         // 左匹配
