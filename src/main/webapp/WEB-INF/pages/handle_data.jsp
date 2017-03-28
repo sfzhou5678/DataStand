@@ -87,7 +87,7 @@
     });
 
     function selectField() {
-        alert(se + "," + beginPos + "," + endPos);
+//        alert(se + "," + beginPos + "," + endPos);
         $.ajax({
             url: "select_region",
             type: "POST",

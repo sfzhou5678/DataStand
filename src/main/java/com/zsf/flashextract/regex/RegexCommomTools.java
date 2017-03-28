@@ -35,7 +35,9 @@ public class RegexCommomTools {
 
     public static List<Regex> deDuplication(List<List<Regex>> regexs, boolean isStartWith) {
         List<Regex> deDuplicatedList = new ArrayList<Regex>();
-
+        if (regexs.size()<=0){
+            return deDuplicatedList;
+        }
         List<Regex> baseRegexList = regexs.get(0);
         for (Regex baseRegex : baseRegexList) {
             boolean needAddIn = false;
