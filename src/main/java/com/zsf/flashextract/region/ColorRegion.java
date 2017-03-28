@@ -1,8 +1,8 @@
 package com.zsf.flashextract.region;
 
-import com.zsf.StringProcessor;
+import com.zsf.interpreter.StringProcessor;
 import com.zsf.flashextract.tools.RegexCommomTools;
-import com.zsf.flashextract.MainDocument;
+import com.zsf.flashextract.FlashExtract;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.field.LineField;
 import com.zsf.flashextract.field.PlainField;
@@ -120,7 +120,7 @@ public class ColorRegion {
      * 在selectField()时，如果判断需要产生LineSelectors就会调用此方法，产生LineSelecotr,排序结果后设置curSelector
      */
     private boolean doGenerateLineSelectors() {
-        RegexCommomTools.addDynamicToken(fieldsByUser, MainDocument.usefulRegex);
+        RegexCommomTools.addDynamicToken(fieldsByUser, FlashExtract.usefulRegex);
 
         List<List<Regex>> startWithReges = new ArrayList<List<Regex>>();
         List<List<Regex>> endWithReges = new ArrayList<List<Regex>>();
@@ -128,7 +128,7 @@ public class ColorRegion {
         int maxDeepth = 3;
 
         for (int index : positiveLineIndex) {
-            List<Match> matches = RegexCommomTools.buildStringMatches(lineFields.get(index).getText(), MainDocument.usefulRegex);
+            List<Match> matches = RegexCommomTools.buildStringMatches(lineFields.get(index).getText(), FlashExtract.usefulRegex);
             startWithReges.add(RegexCommomTools.buildStartWith(curDeepth, maxDeepth, matches, 0, new DynamicRegex("", "")));
             endWithReges.add(RegexCommomTools.buildEndWith(curDeepth, maxDeepth, matches, lineFields.get(index).getText().length(), new DynamicRegex("", "")));
         }

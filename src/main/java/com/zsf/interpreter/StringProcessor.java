@@ -1,4 +1,4 @@
-package com.zsf;
+package com.zsf.interpreter;
 
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;

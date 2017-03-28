@@ -1,5 +1,6 @@
-package com.zsf.flashextract;
+package com.zsf;
 
+import com.zsf.flashextract.FlashExtract;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.tools.Color;
 
@@ -59,7 +60,7 @@ public class WebMain {
                 "                        姓名：<span class=\"name\">葛亮</span> <br> 职称：<span class=\"zc\">副教授</span><br> 联系方式：<span class=\"lxfs\">geliang@cqu.edu.cn</span><br> 主要研究方向:<span class=\"major\">计算机视觉，数据挖据，Web应用技术</span><br>\n" +
                 "                    </div>\n" +
                 "                </div>";
-        MainDocument document=new MainDocument(inputDocument);
+        FlashExtract flashExtract=new FlashExtract(inputDocument);
 
 //        List<Field> fieldList;
 //        document.selectField(Color.BLUE,476,483,"Ran Liu");
@@ -74,8 +75,8 @@ public class WebMain {
 //        fieldList=document.showSelectedFields();
 //        showField(fieldList);
 
-        document.setRegionTitle(Color.BLUE,"姓名");
-        document.setRegionTitle(Color.GREEN,"职称");
+        flashExtract.setRegionTitle(Color.BLUE,"姓名");
+        flashExtract.setRegionTitle(Color.GREEN,"职称");
 
 //        // FIXME: 2017/3/13 现在假设所有要提取的数据都处于同一行，不存在跨行的结构化数据
 //        // 当region达到2个时，可以自动产生LineSelector并应用

@@ -16,7 +16,7 @@ import java.util.*;
  * 最高层的FE容器，包含输入文本document和所有ColorReiongs
  * Created by hasee on 2017/3/16.
  */
-public class MainDocument {
+public class FlashExtract {
     private String document;
     private HashMap<Color, ColorRegion> colorRegionMap = new HashMap<Color, ColorRegion>();
 
@@ -62,7 +62,7 @@ public class MainDocument {
         return regexList;
     }
 
-    public MainDocument(String document) {
+    public FlashExtract(String document) {
         this.document = document;
     }
 

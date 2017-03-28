@@ -2,7 +2,7 @@ package test;
 
 import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
-import com.zsf.flashextract.MainDocument;
+import com.zsf.flashextract.FlashExtract;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageSelectField;
 import com.zsf.flashextract.tools.Color;
@@ -34,7 +34,7 @@ public class MainController {
 
     private String inputDocument = "";
 
-    private MainDocument document;
+    private FlashExtract flashExtract;
 
     @RequestMapping("/fun")
     public String fun() {
@@ -88,7 +88,7 @@ public class MainController {
             }
             Map<String, Object> data = new HashMap<String, Object>();
             data.put("inputDocument", inputDocument);
-            document = new MainDocument(inputDocument);
+            flashExtract = new FlashExtract(inputDocument);
 
             return new ModelAndView("handle_data", data);
         } catch (IOException e) {
@@ -103,8 +103,8 @@ public class MainController {
     @ResponseBody
     public MessageSelectField selectRegion(int startPos, int endPos) {
         String selectedText = inputDocument.substring(startPos, endPos);
-        document.selectField(curColor, startPos, endPos, selectedText);
-        curSelectField = document.showSelectedFields();
+        flashExtract.selectField(curColor, startPos, endPos, selectedText);
+        curSelectField = flashExtract.showSelectedFields();
         showField(curSelectField);
 
         return curSelectField;
