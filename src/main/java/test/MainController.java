@@ -1,6 +1,7 @@
 package test;
 
 import com.google.gson.Gson;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
 import com.zsf.flashextract.model.FlashExtract;
@@ -126,11 +127,12 @@ public class MainController {
             if (!dir.exists()) {
                 dir.mkdirs();
             }
-            FileWriter fileWriter = new FileWriter(fileName);
-            CsvWriter writer = new CsvWriter(fileWriter, new CsvWriterSettings());
+            FileOutputStream fileOutputStream=new FileOutputStream(fileName);
+            fileOutputStream.write(new byte[] { (byte)0xEF, (byte)0xBB, (byte)0xBF });
 
-            writer.writeHeaders(curSelectField.getTitles());
-            writer.writeRowsAndClose(curSelectField.getDataTables());
+            CsvWriter csvWriter=new CsvWriter(fileOutputStream,"utf-8", new CsvWriterSettings());
+            csvWriter.writeHeaders(curSelectField.getTitles());
+            csvWriter.writeRowsAndClose(curSelectField.getDataTables());
 
             File file = new File(fileName);
             String dfileName = new String(fileName.getBytes("UTF-8"), "iso-8859-1");
