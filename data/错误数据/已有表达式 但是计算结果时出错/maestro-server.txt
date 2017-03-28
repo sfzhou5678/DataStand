@@ -1,0 +1,432 @@
+﻿INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: No clients are currently connected.
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: No clients are currently connected.
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_ABANDONED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_ABANDONED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: SendMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: SendMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: SendMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: No clients are currently connected.
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_ABANDONED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_ABANDONED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: SendMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: SendMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: No clients are currently connected.
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: SendMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: [MaestroMessageAgent_WriteToSocketInternal] 操作成功完成。
+WARNING: Failed to send to socket.
+INFO: maestro exiting...
+INFO: maestro [server] initializing...
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: Using registered HWND: 00000000 to launch the air client.
+INFO: StartProcess [MAESTROPROCESSTYPE_AIR] successful
+INFO: Launcher init of maestro completed.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CREATE]
+INFO: New thread go!
+INFO: Starting Process Thread Spinning
+INFO: StartProcess [MAESTROPROCESSTYPE_GAME] successful
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_LAUNCHED]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_CONNECTED_TO_SERVER]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_FROM_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: SendMessage [MAESTROMESSAGETYPE_CHATMESSAGE_TO_GAME]
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: SendMessage [MAESTROMESSAGETYPE_GAMECLIENT_STOPPED]
+INFO: [MaestroMessageAgent_ReadFromSocketInternal] 操作成功完成。
+WARNING: Received 0 bytes on Maestro socket when data was expected.
+INFO: ReceiveMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: SendMessage [MAESTROMESSAGETYPE_CLOSE]
+INFO: maestro exiting...
