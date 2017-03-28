@@ -1,17 +1,11 @@
 package test;
 
-import com.google.gson.Gson;
-import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
-import com.zsf.flashextract.model.FlashExtract;
-import com.zsf.flashextract.region.newregion.MainDocument;
-import com.zsf.flashextract.region.newregion.field.Field;
-import com.zsf.flashextract.region.newregion.field.PlainField;
-import com.zsf.flashextract.region.newregion.message.MessageSelectField;
-import com.zsf.flashextract.region.newregion.tools.Color;
-import com.zsf.interpreter.expressions.regex.Regex;
-import org.apache.commons.fileupload.disk.DiskFileItem;
+import com.zsf.flashextract.MainDocument;
+import com.zsf.flashextract.field.Field;
+import com.zsf.flashextract.message.MessageSelectField;
+import com.zsf.flashextract.tools.Color;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.springframework.http.HttpHeaders;
@@ -24,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;

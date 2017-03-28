@@ -1,6 +1,6 @@
-package com.zsf.flashextract.region.newregion.field;
+package com.zsf.flashextract.field;
 
-import com.zsf.flashextract.region.newregion.tools.Color;
+import com.zsf.flashextract.tools.Color;
 
 /**
  * Created by hasee on 2017/3/16.

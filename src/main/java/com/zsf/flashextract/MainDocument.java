@@ -1,11 +1,10 @@
-package com.zsf.flashextract.region.newregion;
+package com.zsf.flashextract;
 
-import com.google.gson.Gson;
-import com.zsf.flashextract.region.newregion.field.Field;
-import com.zsf.flashextract.region.newregion.message.MessageSelectField;
-import com.zsf.flashextract.region.newregion.region.ColorRegion;
-import com.zsf.flashextract.region.newregion.tools.Color;
-import com.zsf.flashextract.region.newregion.tools.FieldComparator;
+import com.zsf.flashextract.region.ColorRegion;
+import com.zsf.flashextract.field.Field;
+import com.zsf.flashextract.message.MessageSelectField;
+import com.zsf.flashextract.tools.Color;
+import com.zsf.flashextract.tools.FieldComparator;
 import com.zsf.interpreter.expressions.regex.EpicRegex;
 import com.zsf.interpreter.expressions.regex.NormalRegex;
 import com.zsf.interpreter.expressions.regex.RareRegex;
@@ -14,6 +13,7 @@ import com.zsf.interpreter.expressions.regex.Regex;
 import java.util.*;
 
 /**
+ * 最高层的FE容器，包含输入文本document和所有ColorReiongs
  * Created by hasee on 2017/3/16.
  */
 public class MainDocument {
@@ -129,22 +129,22 @@ public class MainDocument {
             }
         }
         int curRow = 0;
-        int lastColIndex=-1;
-        boolean needAddRow=false;
+        int lastColIndex = -1;
+        boolean needAddRow = false;
         for (Field field : fieldList) {
             int colIndex = colors.indexOf(field.getColor());
 
-            if (colIndex<=lastColIndex&&needAddRow){
+            if (colIndex <= lastColIndex && needAddRow) {
                 curRow++;
             }
-            lastColIndex=colIndex;
+            lastColIndex = colIndex;
 
             tableDatas[curRow][colIndex] = field.getText();
             if ((colIndex == colors.size() - 1)) {
                 curRow++;
-                needAddRow=false;
-            }else {
-                needAddRow=true;
+                needAddRow = false;
+            } else {
+                needAddRow = true;
             }
         }
         MessageSelectField messageSelectField = new MessageSelectField(fieldList, colors, titles, tableDatas);

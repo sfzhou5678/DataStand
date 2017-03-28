@@ -1,7 +1,7 @@
-package com.zsf.flashextract.regex;
+package com.zsf.flashextract.feregex;
 
-import com.zsf.flashextract.region.newregion.field.Field;
-import com.zsf.flashextract.region.newregion.field.LineField;
+import com.zsf.flashextract.field.Field;
+import com.zsf.flashextract.field.LineField;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
 import com.zsf.interpreter.model.Match;
@@ -10,9 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static com.zsf.interpreter.tool.StringTools.getCommonStr;
-import static com.zsf.interpreter.tool.StringTools.getReversedStr;
 
 /**
  * Created by hasee on 2017/3/16.

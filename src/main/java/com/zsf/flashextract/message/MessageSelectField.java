@@ -1,11 +1,12 @@
-package com.zsf.flashextract.region.newregion.message;
+package com.zsf.flashextract.message;
 
-import com.zsf.flashextract.region.newregion.field.Field;
-import com.zsf.flashextract.region.newregion.tools.Color;
+import com.zsf.flashextract.field.Field;
+import com.zsf.flashextract.tools.Color;
 
 import java.util.List;
 
 /**
+ * 和前端通信用的Message容器
  * Created by zsf on 2017/3/19.
  */
 public class MessageSelectField {

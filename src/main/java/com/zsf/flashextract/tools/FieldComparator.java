@@ -1,6 +1,6 @@
-package com.zsf.flashextract.region.newregion.tools;
+package com.zsf.flashextract.tools;
 
-import com.zsf.flashextract.region.newregion.field.Field;
+import com.zsf.flashextract.field.Field;
 
 import java.util.Comparator;
 

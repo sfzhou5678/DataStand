@@ -1,4 +1,4 @@
-package com.zsf.flashextract.regex;
+package com.zsf.flashextract.feregex;
 
 /**
  * Created by zsf on 2017/3/28.

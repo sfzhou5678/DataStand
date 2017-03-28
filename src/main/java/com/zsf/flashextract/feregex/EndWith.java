@@ -1,4 +1,4 @@
-package com.zsf.flashextract.regex;
+package com.zsf.flashextract.feregex;
 
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 

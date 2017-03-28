@@ -1,12 +1,12 @@
-package com.zsf.flashextract.region.newregion.region;
+package com.zsf.flashextract.region;
 
 import com.zsf.StringProcessor;
-import com.zsf.flashextract.regex.RegexCommomTools;
-import com.zsf.flashextract.region.newregion.MainDocument;
-import com.zsf.flashextract.region.newregion.field.Field;
-import com.zsf.flashextract.region.newregion.field.LineField;
-import com.zsf.flashextract.region.newregion.field.PlainField;
-import com.zsf.flashextract.region.newregion.tools.Color;
+import com.zsf.flashextract.feregex.RegexCommomTools;
+import com.zsf.flashextract.MainDocument;
+import com.zsf.flashextract.field.Field;
+import com.zsf.flashextract.field.LineField;
+import com.zsf.flashextract.field.PlainField;
+import com.zsf.flashextract.tools.Color;
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 每种颜色对应一个ColorRegion 属于比较高层的容器
  * Created by hasee on 2017/3/16.
  */
 public class ColorRegion {

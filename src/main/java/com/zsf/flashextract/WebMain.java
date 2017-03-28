@@ -1,29 +1,16 @@
 package com.zsf.flashextract;
 
-import com.zsf.flashextract.model.FlashExtract;
-import com.zsf.flashextract.region.Region;
-import com.zsf.interpreter.expressions.regex.Regex;
+import com.zsf.flashextract.field.Field;
+import com.zsf.flashextract.tools.Color;
 
 import java.util.List;
 
 /**
- * Created by zsf on 2017/2/26.
+ * Created by hasee on 2017/3/16.
  */
-public class FEMain {
-
+public class WebMain {
 
     public static void main(String[] args) {
-//        String inputDocument="<HTML>\n" +
-//                "<body>\n" +
-//                "<table>\n" +
-//                "<tr><td>Name</td><td>Email</td><td>Office</td></tr>\n" +
-//                "<tr><td>Russell Smith</td><td>Russell.Smith@contoso.com</td><td>London</td></tr>\n" +
-//                "<tr><td>David Jones</td><td>David.Jones@contoso.com</td><td>Manchester</td></tr>\n" +
-//                "<tr><td>John Cameron</td><td>John.Cameron@contoso.com</td><td>New York</td></tr>\n" +
-//                "</table>\n" +
-//                "</body>\n" +
-//                "</HTML>";
-
         String inputDocument = "<div class=\"teacherdiv\">\n" +
                 "                    <div style=\"position: relative;float:left;width:100px;height:140px;margin: 5px 5px\">\n" +
                 "                        <a href=\"/public/tindex/30452\"><img src=\"/uploaded/filename/public/teacherportrait/30452.jpg?id=F856496028532ICUJO3\" style=\"width:100%;\"></a>\n" +
@@ -72,52 +59,46 @@ public class FEMain {
                 "                        姓名：<span class=\"name\">葛亮</span> <br> 职称：<span class=\"zc\">副教授</span><br> 联系方式：<span class=\"lxfs\">geliang@cqu.edu.cn</span><br> 主要研究方向:<span class=\"major\">计算机视觉，数据挖据，Web应用技术</span><br>\n" +
                 "                    </div>\n" +
                 "                </div>";
+        MainDocument document=new MainDocument(inputDocument);
 
-        FlashExtract flashExtract=new FlashExtract();
-        flashExtract.setInputDocument(inputDocument);
+//        List<Field> fieldList;
+//        document.selectField(Color.BLUE,476,483,"Ran Liu");
+//        fieldList=document.showSelectedFields();
+//        showField(fieldList);
+//
+//        document.selectField(Color.BLUE,1197,1199,"陈波");
+//        fieldList=document.showSelectedFields();
+//        showField(fieldList);
+//
+//        document.selectField(Color.GREEN,516,551,"Associate Professor/Senior Engineer");
+//        fieldList=document.showSelectedFields();
+//        showField(fieldList);
 
-        int color=1;
-        flashExtract.selectRegion(color,5,45,53,"Ran Liu");
+        document.setRegionTitle(Color.BLUE,"姓名");
+        document.setRegionTitle(Color.GREEN,"职称");
 
-        int color2=2;
-        flashExtract.selectRegion(color2,5,86,121,"Associate Professor/Senior Engineer");
-
-        flashExtract.selectRegion(color,13,45,48,"陈波");
-
-//        flashExtract.doSelectRegion(color,4,7,21,"Russell Smith");
-//        flashExtract.doSelectRegion(color,5,7,19,"John Cameron");
-
-        // FIXME: 2017/3/13 现在假设所有要提取的数据都处于同一行，不存在跨行的结构化数据
-        // 当region达到2个时，可以自动产生LineSelector并应用
-        if (flashExtract.needGenerateLineReions(color)){
-            // FIXME: 2017/3/14 这一整块的逻辑比较混乱，急需大规模重构
-            List<Regex> boolLineSelector=flashExtract.getLineSelector(color);
-            System.out.println(boolLineSelector);
-
-            // TODO: 2017/3/13 selector需要排序，排序后默认选择第一个并且应用
-            Regex curSelector=boolLineSelector.get(0);
-            // 然后根据selector选择LineRegion并且自动选择出所有应该小region(所有颜色)
-            flashExtract.selectRegionBySelector(curSelector);
-        }
-        int color3=3;
-        flashExtract.selectRegion(color3,5,214,284,"Medical and stereo image processing; IC design; Biomedical Engineering");
+//        // FIXME: 2017/3/13 现在假设所有要提取的数据都处于同一行，不存在跨行的结构化数据
+//        // 当region达到2个时，可以自动产生LineSelector并应用
+//        if (flashExtract.needGenerateLineReions(color)){
+//            // FIXME: 2017/3/14 这一整块的逻辑比较混乱，急需大规模重构
+//            List<Regex> boolLineSelector=flashExtract.getLineSelector(color);
+//            System.out.println(boolLineSelector);
+//
+//            // TODO: 2017/3/13 selector需要排序，排序后默认选择第一个并且应用
+//            Regex curSelector=boolLineSelector.get(0);
+//            // 然后根据selector选择LineRegion并且自动选择出所有应该小region(所有颜色)
+//            flashExtract.selectRegionBySelector(curSelector);
+//        }
+//        int color3=3;
+//        flashExtract.selectRegion(color3,5,214,284,"Medical and stereo image processing; IC design; Biomedical Engineering");
         // TODO 异常处理：选中的是needSelectesRegions以外的region就提示错误，忽略本次输入
     }
 
-    /**
-     * 根据boolLineSelector对documentRegion进行筛选，输出(显示)需要显示的行
-     * @param documentRegions
-     * @param boolLineSelector
-     */
-    private static void showRegionNeedSelect(List<Region> documentRegions, List<Regex> boolLineSelector) {
-        for (Regex selector:boolLineSelector){
-            System.out.println("========="+"selector:"+selector.toString()+"=========");
-            for (Region region:documentRegions){
-                if (region.canMatch(selector)){
-                    System.out.println(region.getText());
-                }
-            }
+    private static void showField(List<Field> fieldList) {
+        System.out.println("+++++++++++++++++++++++++++++++++");
+        for (Field field:fieldList){
+            System.out.println(String.format("%s,%s,%d,%d",field.getColor(),field.getText(),field.getBeginPos(),field.getEndPos()));
         }
+        System.out.println("+++++++++++++++++++++++++++++++++");
     }
-
 }
