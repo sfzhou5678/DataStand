@@ -174,62 +174,49 @@ public class RegexCommomTools {
      * @param fieldsByUser
      */
     public static void addDynamicToken(List<Field> fieldsByUser, List<Regex> usefulRegex) {
-        // TODO: 2017/3/28 重构dynamicToken方法
-        // TODO: 2017/3/28 如果产生的匹配可以被regex库中的某个成功匹配，那么就break；
         // TODO: 2017/3/28 对于末尾的数字，是否要处理？ 就是这种href="/p/4
-
-//        private static void func(String str1, String str2) {
-//            int len1=str1.length();
-//            for (int i=0;i<len1;i++){
-//                for (int j=len1;j>i;j--){
-//                    String subStr=str1.substring(i,j);
-//                    if (str2.contains(subStr)){
-//                        System.out.println(subStr);
-//                        i=j-1;break;
-//                    }
-//                }
-//            }
-//        }
-
-
-        Field field = fieldsByUser.get(0);
-
-        // 左匹配
-        String textBeforeSelected = field.getParentField().getText().substring(0, field.getBeginPos() - field.getParentField().getBeginPos());
-        String leftCommonStr = textBeforeSelected;
-        System.out.println(textBeforeSelected);
-        for (int i = 1; i < fieldsByUser.size(); i++) {
-            Field curField = fieldsByUser.get(i);
-            leftCommonStr = getCommonStr(getReversedStr(leftCommonStr),
-                    getReversedStr(curField.getParentField().getText().substring(0, curField.getBeginPos() - curField.getParentField().getBeginPos())));
-            leftCommonStr = getReversedStr(leftCommonStr);
-            System.out.println("leftCommonStr:  " + leftCommonStr);
+        List<String> strings=new ArrayList<String>();
+        for (Field field:fieldsByUser){
+            strings.add(field.getParentField().getText());
         }
-
-        // 右匹配
-        String textAfterSelected = field.getParentField().getText().substring(field.getEndPos() - field.getParentField().getBeginPos());
-        String rightCommonStr = textAfterSelected;
-        System.out.println(textAfterSelected);
-        for (int i = 1; i < fieldsByUser.size(); i++) {
-            Field curField = fieldsByUser.get(i);
-            rightCommonStr = getCommonStr(rightCommonStr,
-                    curField.getParentField().getText().substring(curField.getEndPos() - curField.getParentField().getBeginPos()));
-            System.out.println("rightCommonStr:  " + rightCommonStr);
-        }
-
-        try {
-            Regex leftRegex = new DynamicRegex("DynamicTok(" + leftCommonStr + ")", leftCommonStr);
-            if (!usefulRegex.contains(leftRegex)) {
-                usefulRegex.add(leftRegex);
+        String str0 = strings.get(0);
+        int len=str0.length();
+        for (int i=0;i<len;i++){
+            for (int j=len;j>i;j--){
+                String subStr=str0.substring(i,j);
+                boolean needAddIn=true;
+                for (int k=1;k<strings.size();k++){
+                    if (!strings.get(k).contains(subStr)){
+                        needAddIn=false;
+                        break;
+                    }
+                }
+                if (needAddIn){
+                    doAddDynamicToken(subStr,usefulRegex);
+                    i=j-1;
+                    break;
+                }
             }
-        } catch (Exception e) {
         }
+    }
+
+    /**
+     * 若subStr不能被usefulRegex中的任何一个匹配，那么就将他加入作为dynamicToken
+     * @param subStr
+     * @param usefulRegex
+     */
+    private static void doAddDynamicToken(String subStr,List<Regex> usefulRegex) {
         try {
-            Regex rightRegex = new DynamicRegex("DynamicTok(" + rightCommonStr + ")", rightCommonStr);
+            for (Regex regex:usefulRegex){
+                if (!regex.needAddDynimicToken(subStr)){
+                    return;
+                }
+            }
+            Regex rightRegex = new DynamicRegex("DynamicTok(" + subStr + ")", subStr);
             if (!usefulRegex.contains(rightRegex)) {
                 usefulRegex.add(rightRegex);
             }
-        } catch (Exception e) {
+        }catch (Exception e){
         }
     }
 

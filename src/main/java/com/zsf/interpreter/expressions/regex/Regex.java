@@ -1,5 +1,6 @@
 package com.zsf.interpreter.expressions.regex;
 
+import com.zsf.flashextract.regex.DynimicRegexTools;
 import com.zsf.interpreter.expressions.Score;
 import com.zsf.interpreter.model.Match;
 
@@ -12,7 +13,7 @@ import java.util.regex.Pattern;
  * 代表正则token
  * Created by hasee on 2017/1/22.
  */
-public abstract class Regex implements Score {
+public abstract class Regex implements Score,DynimicRegexTools {
     private String regexName;
     private String reg;
     private Pattern pattern;
@@ -61,6 +62,16 @@ public abstract class Regex implements Score {
         this.pattern = pattern;
     }
 
+    /**
+     * 在inputString中 利用this.pattern做match
+     *
+     * 例子：
+     * inputString="hello-123-aaa"
+     * this.reg="[a-z]+"
+     * 那么matches分别为hello和aaa
+     * @param inputString
+     * @return
+     */
     public List<Match> doMatch(String inputString) {
         if (pattern==null){
             return null;
@@ -76,5 +87,19 @@ public abstract class Regex implements Score {
             match.setMaxCount(count);
         }
         return matches;
+    }
+
+    @Override
+    public boolean needAddDynimicToken(String subStr) {
+        if (pattern==null){
+            return true;
+        }
+        Matcher matcher=pattern.matcher(subStr);
+        while (matcher.find()){
+            if (matcher.group().equals(subStr)){
+                return false;
+            }
+        }
+        return true;
     }
 }

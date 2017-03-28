@@ -195,7 +195,7 @@ public class ColorRegion {
         ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
 
         this.expressionGroup = expressionGroup;
-        if (expressionGroup != null) {
+        if (expressionGroup != null && expressionGroup.getExpressions().size()>0) {
             curExpression = expressionGroup.getExpressions().get(0);
             System.out.println(curExpression.score());
         }
