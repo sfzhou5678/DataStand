@@ -5,18 +5,11 @@ import com.zsf.flashextract.tools.Color;
 /**
  * Created by hasee on 2017/3/16.
  */
-public class PlainField implements Field {
-    private Field parentField;
-    private Color color;
-    private int beginPos;
-    private int endPos;
+public class PlainField extends Field {
     private String text;
 
     public PlainField(Field parentField, Color color, int beginPos, int endPos, String text) {
-        this.parentField = parentField;
-        this.color = color;
-        this.beginPos = beginPos;
-        this.endPos = endPos;
+        super(parentField, color, beginPos, endPos);
         this.text = text;
     }
 

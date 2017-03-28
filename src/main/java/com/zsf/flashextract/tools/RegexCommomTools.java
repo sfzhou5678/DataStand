@@ -1,4 +1,4 @@
-package com.zsf.flashextract.feregex;
+package com.zsf.flashextract.tools;
 
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.field.LineField;

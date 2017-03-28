@@ -1,5 +1,6 @@
 package com.zsf.flashextract.feregex;
 
+import com.zsf.flashextract.feregex.feinterfaces.LineSelector;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 
 /**

@@ -1,4 +1,4 @@
-package com.zsf.flashextract.feregex;
+package com.zsf.flashextract.feregex.feinterfaces;
 
 /**
  * Created by zsf on 2017/3/28.

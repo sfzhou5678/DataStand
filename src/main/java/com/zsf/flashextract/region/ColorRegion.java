@@ -1,7 +1,7 @@
 package com.zsf.flashextract.region;
 
 import com.zsf.StringProcessor;
-import com.zsf.flashextract.feregex.RegexCommomTools;
+import com.zsf.flashextract.tools.RegexCommomTools;
 import com.zsf.flashextract.MainDocument;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.field.LineField;
@@ -52,7 +52,7 @@ public class ColorRegion {
             String line = splitedLines[i];
             int beginPos = RegexCommomTools.indexNOf(parentDocument, "\n", i) + 1;
             int endPos = beginPos + line.length();
-            lineFields.add(new LineField(null, beginPos, endPos, line));
+            lineFields.add(new LineField(null,Color.DEFAULT, beginPos, endPos, line));
         }
     }
 

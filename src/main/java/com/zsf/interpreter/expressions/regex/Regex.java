@@ -1,6 +1,6 @@
 package com.zsf.interpreter.expressions.regex;
 
-import com.zsf.flashextract.feregex.DynimicRegexTools;
+import com.zsf.flashextract.feregex.feinterfaces.DynimicRegexTools;
 import com.zsf.interpreter.expressions.Score;
 import com.zsf.interpreter.model.Match;
 

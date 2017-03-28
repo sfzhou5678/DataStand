@@ -13,28 +13,19 @@ import java.util.List;
 /**
  * Created by hasee on 2017/3/16.
  */
-public class LineField implements Field {
+public class LineField extends Field {
 
-    private Color color;
-    private Field parentField;
-    private int beginPos;
-    private int endPos;
     private String text;
 
-    public LineField(Field parentField, int beginPos, int endPos, String text) {
-        this.parentField = parentField;
-        this.beginPos = beginPos;
-        this.endPos = endPos;
+    public LineField(Field parentField, Color color, int beginPos, int endPos, String text) {
+        super(parentField, color, beginPos, endPos);
         this.text = text;
-
-        this.color=Color.DEFAULT;
     }
 
     @Override
     public Field getParentField() {
         return parentField;
     }
-
 
     @Override
     public int getBeginPos() {
@@ -65,7 +56,6 @@ public class LineField implements Field {
         List<PlainField> plainFields = new ArrayList<PlainField>();
         if (curExpression instanceof NonTerminalExpression) {
             if (curExpression instanceof SubStringExpression) {
-                // FIXME: 2017/3/27 有时会出现无法正确匹配的方式，导致 text="null"(可接受) pos=-无穷(不可接受)。
                 String txt=((SubStringExpression) curExpression).interpret(text);
                 if (txt!=null){
                     plainFields.add(new PlainField(this, color,
