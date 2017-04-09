@@ -8,14 +8,17 @@ import com.zsf.flashextract.field.LineField;
 import com.zsf.flashextract.field.PlainField;
 import com.zsf.flashextract.tools.Color;
 import com.zsf.interpreter.expressions.Expression;
+import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
 import com.zsf.interpreter.model.ExamplePair;
 import com.zsf.interpreter.model.ExpressionGroup;
 import com.zsf.interpreter.model.Match;
 import com.zsf.interpreter.model.ResultMap;
+import com.zsf.interpreter.tool.ExpScoreComparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -24,7 +27,7 @@ import java.util.List;
  */
 public class ColorRegion {
     private Color color;
-    private String regionTitle="unnamed";
+    private String regionTitle = "unnamed";
     private String parentDocument;
 
     private List<Field> fieldsByUser = new ArrayList<Field>();
@@ -52,7 +55,7 @@ public class ColorRegion {
             String line = splitedLines[i];
             int beginPos = RegexCommomTools.indexNOf(parentDocument, "\n", i) + 1;
             int endPos = beginPos + line.length();
-            lineFields.add(new LineField(null,Color.DEFAULT, beginPos, endPos, line));
+            lineFields.add(new LineField(null, Color.DEFAULT, beginPos, endPos, line));
         }
     }
 
@@ -70,24 +73,24 @@ public class ColorRegion {
             fieldsByUser.add(field);
             addPositiveLineIndex(lineIndex);
         }
-        if (this.curLineSelector!=null){
-            for (int line : needSelectLineIndex){
-                if (line>lineIndex){
+        if (this.curLineSelector != null) {
+            for (int line : needSelectLineIndex) {
+                if (line > lineIndex) {
                     break;
-                }else {
+                } else {
                     addPositiveLineIndex(line);
                 }
             }
         }
 
         if (needGenerateLineSelectors()) {
-            if (doGenerateLineSelectors()){
+            if (doGenerateLineSelectors()) {
                 // FIXME: 2017/3/16 下面几个可能要一起调用？
                 generateLineFieldsByCurSelector();
 
                 generateExpressionGroup();
                 generatePlainFieldsByCurExp();
-            }else {
+            } else {
                 // FIXME 需要产生lineSelector，但是没能成功产生，需要返回一个错误提示
                 System.out.println("doGenerateLineSelectors()失败");
             }
@@ -162,12 +165,12 @@ public class ColorRegion {
 
         // TODO: 2017/3/16 lineSelector的ranking
 
-        if (usefulLineSelector.size()>0){
+        if (usefulLineSelector.size() > 0) {
             this.lineSelectors = usefulLineSelector;
             System.out.println(lineSelectors);
             this.curLineSelector = lineSelectors.get(0);
             return true;
-        }else {
+        } else {
             // 没有产生合适的selector，此次generate失败
             return false;
         }
@@ -206,15 +209,39 @@ public class ColorRegion {
         ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
 
         this.expressionGroup = expressionGroup;
-        if (expressionGroup != null && expressionGroup.getExpressions().size()>0) {
+        if (expressionGroup != null && expressionGroup.getExpressions().size() > 0) {
+            sortExpsAccordingScene(expressionGroup);
+
             curExpression = expressionGroup.getExpressions().get(0);
             System.out.println(curExpression.score());
         }
     }
 
+    /**
+     * 结合所有exps应用到needSelectedLines上能选出结果的比例来更新权重并排序
+     *
+     * @param expressionGroup
+     */
+    private void sortExpsAccordingScene(ExpressionGroup expressionGroup) {
+        int totalLines = needSelectLineIndex.size();
+        for (Expression expression : expressionGroup.getExpressions()) {
+            if (expression instanceof NonTerminalExpression) {
+                int count = 0;
+                for (int index : needSelectLineIndex) {
+                    if (((NonTerminalExpression) expression).interpret(lineFields.get(index).getText()) != null) {
+                        count++;
+                    }
+                }
+                expression.setSceneWeight((double) count / totalLines);
+            }
+        }
+        Collections.sort(expressionGroup.getExpressions(), new ExpScoreComparator());
+    }
+
+
     private void generatePlainFieldsByCurExp() {
         if (curExpression != null) {
-            this.fieldsGenerated=new ArrayList<Field>();
+            this.fieldsGenerated = new ArrayList<Field>();
             for (int lineIndex : needSelectLineIndex) {
                 // TODO: 2017/3/16 去重复？
                 this.fieldsGenerated.addAll(
