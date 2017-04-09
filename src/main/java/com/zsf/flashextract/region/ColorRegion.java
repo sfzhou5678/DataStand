@@ -70,6 +70,16 @@ public class ColorRegion {
             fieldsByUser.add(field);
             addPositiveLineIndex(lineIndex);
         }
+        if (this.curLineSelector!=null){
+            for (int line : needSelectLineIndex){
+                if (line>lineIndex){
+                    break;
+                }else {
+                    addPositiveLineIndex(line);
+                }
+            }
+        }
+
         if (needGenerateLineSelectors()) {
             if (doGenerateLineSelectors()){
                 // FIXME: 2017/3/16 下面几个可能要一起调用？

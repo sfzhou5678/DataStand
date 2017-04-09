@@ -37,6 +37,7 @@ public class UsefulRegex {
         regexList.add(new NormalRegex("LowerToken", "[a-z]+"));
         regexList.add(new NormalRegex("UpperToken", "[A-Z]+"));
         regexList.add(new NormalRegex("AlphaToken", "[a-zA-Z]+"));
+        regexList.add(new NormalRegex("AlphaDigitToken", "[a-zA-Z0-9]+"));
         regexList.add(new NormalRegex("ChineseToken", "[\\u4E00-\\u9FFF]+"));
 
 //        regexList.add(new Regex("WordToken","[a-z\\sA-Z]+")); // 匹配单词的token，会导致结果爆炸增长几十万倍
