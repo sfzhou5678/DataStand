@@ -73,6 +73,9 @@ public class ColorRegion {
             fieldsByUser.add(field);
             addPositiveLineIndex(lineIndex);
         }
+
+        // 手动选择了1,2两行，然后lineSelector选出了1-5，7-n行(符合要求的)，
+        // 此时手动选择第6行时应该把3-5行也标记为positive
         if (this.curLineSelector != null) {
             for (int line : needSelectLineIndex) {
                 if (line > lineIndex) {

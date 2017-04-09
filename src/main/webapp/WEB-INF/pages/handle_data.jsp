@@ -58,7 +58,9 @@
     }
 
     var textarea = document.getElementById("pre-document");
-    var container = $('#handsontable-container');
+    var container=document.getElementById("handsontable-container");
+    var htable;
+    // 0号颜色作为未来背景色，暂时不用 所以color的编号是从1开始的
     var colors = ["#dddddd", "#87cbff", "#95f090", "#EEAD0E","#FF69B4","#DEB887","#9F79EE"];
 
     var inputDocument = "";
@@ -69,17 +71,53 @@
 
     var beginPos, endPos;
 
+    htable = new Handsontable(container, {
+        data: tableData,
+        colHeaders: true,
+        rowHeaders: true,
+        contextMenu: true,
+        manualColumnResize: true,
+        formulas: true
+    });
+
+    var curSelectedDataCol;
+
+    htable.updateSettings({
+        contextMenu: {
+            callback: function (key, options) {
+                alert(curSelectedDataCol+","+parseInt(tableColColors[curSelectedDataCol].color));
+                if (key === 'editName') {
+                    $.ajax({
+                        url: "edit_header",
+                        type: "POST",
+                        data: {"colorNum": parseInt(tableColColors[curSelectedDataCol].color), "newHeader": "zzzz"},
+                        success: function (data) {
+//                            htable.updateSettings({
+//                                // todo 弹出dialog 输入新的header 跟index一起传到后台，后台返回新的headers
+//                                colHeaders: ["a", "b", "c", "d", "Honda"]
+//                            });
+                        },
+                        error: function () {
+                            // TODO 提示
+                            alert("请求失败，请稍候重试");
+                        }
+                    });
+                }else if (key==='flashFill'){
+                    alert("FF");
+                    // todo 弹出dialog 左边n个原始数据，右边是n个输入框，右上方是开始处理的按钮
+                    // 点击处理后，要把index和输入的所有样例(及行数)传给后台，后台处理完后返回处理后的所有数据和表达式列表
+                }
+                setTableHeaderBgColor();
+            },
+            items: {
+                "editName":{name:'修改列名'},
+                "hsep": "---------",
+                "flashFill": {name: '批量编辑数据'}
+            }
+        }
+    });
+
     $(document).ready(function () {
-        container.handsontable({
-            data: tableData,
-            colHeaders: true,
-            rowHeaders: true,
-            contextMenu: true,
-            manualColumnResize: true,
-            formulas: true
-        });
-        var tmp =$("#hidden-document-area").val();
-        tmp=encodeHtml(tmp);
         textarea.innerHTML = encodeHtml($("#hidden-document-area").val());
         inputDocument = $("#hidden-document-area").val();
 
@@ -153,19 +191,21 @@
     }
 
     function updateDataTable() {
-        container.handsontable({
-            data: tableData,
-            colHeaders: tableHeaderTitle,
-            rowHeaders: true,
-            contextMenu: true,
-            manualColumnResize: true,
-            formulas: true
+        htable.updateSettings({
+            data:tableData,
+            colHeaders: tableHeaderTitle
+        });
+        $('#handsontable-container thead tr th').mousedown(function(e) {
+            if (e.which==3){
+                curSelectedDataCol = $(this).index()-1;
+            }
         });
         setTableHeaderBgColor();
     }
 
     function setTableHeaderBgColor() {
-        var theadTr = container.find(".htCore").find('thead > tr').eq(1);
+        var table = $('#handsontable-container');
+        var theadTr = table.find(".htCore").find('thead > tr').eq(1);
         for (var i = 1; i <= tableColColors.length; i++) {
             theadTr.find("th").eq(i).css('background', colors[parseInt(tableColColors[i - 1].color)]);
         }
@@ -191,16 +231,6 @@
 </script>
 <script type="text/javascript">
     var colorCounter = 1;
-    function setColor() {
-        var curColor = this.value.substring(5);
-        $.ajax({
-            url: "set_color",
-            type: "POST",
-            data: {"color": curColor},
-            error: function () {
-            }
-        });
-    }
     function addColor() {
         if (colorCounter>=colors.length){
             alert("已达到颜色上限");

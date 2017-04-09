@@ -105,9 +105,17 @@ public class MainController {
         String selectedText = inputDocument.substring(startPos, endPos);
         flashExtract.selectField(curColor, startPos, endPos, selectedText);
         curSelectField = flashExtract.showSelectedFields();
-        showField(curSelectField);
+//        showField(curSelectField);
 
         return curSelectField;
+    }
+
+    @RequestMapping(value = "/edit_header", method = RequestMethod.POST)
+    public void editHeader(int colorNum,String newHeader){
+        System.out.println("editHeader"+colorNum);
+        Color color=Color.getColor(colorNum);
+        flashExtract.setRegionTitle(color,newHeader);
+
     }
 
     @RequestMapping(value = "/to_scv")
@@ -140,9 +148,10 @@ public class MainController {
         return null;
     }
 
+    // 0号颜色作为未来背景色，暂时不用 所以color的编号是从1(Blue)开始的
     private Color curColor = Color.BLUE;
 
-    @RequestMapping(value = "set_color", method = RequestMethod.POST)
+    @RequestMapping(value = "/set_color", method = RequestMethod.POST)
     public void setColor(int color) {
         curColor = Color.getColor(color);
         System.out.println("setColor:" + curColor.toString());
