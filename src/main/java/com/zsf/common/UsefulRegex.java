@@ -22,6 +22,10 @@ public class UsefulRegex {
         return usefulRegex;
     }
 
+    public static void init(){
+        usefulRegex=initUsefulRegex();
+    }
+
     /**
      * 增加有效的token可以强化匹配能力
      * <p>

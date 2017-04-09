@@ -130,7 +130,7 @@ public class ColorRegion {
      * 在selectField()时，如果判断需要产生LineSelectors就会调用此方法，产生LineSelecotr,排序结果后设置curSelector
      */
     private boolean doGenerateLineSelectors() {
-        RegexCommomTools.addDynamicToken(fieldsByUser, FlashExtract.usefulRegex);
+        RegexCommomTools.addDynamicToken(fieldsByUser, FlashExtract.usefulRegex,lineFields);
 
         List<List<Regex>> startWithReges = new ArrayList<List<Regex>>();
         List<List<Regex>> endWithReges = new ArrayList<List<Regex>>();

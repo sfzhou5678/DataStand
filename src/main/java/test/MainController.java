@@ -2,6 +2,7 @@ package test;
 
 import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
+import com.zsf.common.UsefulRegex;
 import com.zsf.flashextract.FlashExtract;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageSelectField;
@@ -88,6 +89,8 @@ public class MainController {
             }
             Map<String, Object> data = new HashMap<String, Object>();
             data.put("inputDocument", inputDocument);
+
+            UsefulRegex.init();
             flashExtract = new FlashExtract(inputDocument);
 
             return new ModelAndView("handle_data", data);

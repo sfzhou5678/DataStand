@@ -6,8 +6,7 @@ import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
 import com.zsf.interpreter.model.Match;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,7 +31,7 @@ public class RegexCommomTools {
 
     public static List<Regex> deDuplication(List<List<Regex>> regexs, boolean isStartWith) {
         List<Regex> deDuplicatedList = new ArrayList<Regex>();
-        if (regexs.size()<=0){
+        if (regexs.size() <= 0) {
             return deDuplicatedList;
         }
         List<Regex> baseRegexList = regexs.get(0);
@@ -169,51 +168,107 @@ public class RegexCommomTools {
      * 从当前新选择的区域出发，分别向左&向右匹配相同str作为dynamicToken添加到usefulRegex中
      *
      * @param fieldsByUser
+     * @param lineFields
      */
-    public static void addDynamicToken(List<Field> fieldsByUser, List<Regex> usefulRegex) {
+    public static void addDynamicToken(List<Field> fieldsByUser, List<Regex> usefulRegex, List<LineField> lineFields) {
         // TODO: 2017/3/28 对于末尾的数字，是否要处理？ 就是这种href="/p/4
-        List<String> strings=new ArrayList<String>();
-        for (Field field:fieldsByUser){
+        List<String> strings = new ArrayList<String>();
+        for (Field field : fieldsByUser) {
             strings.add(field.getParentField().getText());
         }
+        Map<String, Integer> dynamicStrMap = new HashMap<String, Integer>();
+        List<Integer> timesList = new ArrayList<Integer>();
         String str0 = strings.get(0);
-        int len=str0.length();
-        for (int i=0;i<len;i++){
-            for (int j=len;j>i;j--){
-                String subStr=str0.substring(i,j);
-                boolean needAddIn=true;
-                for (int k=1;k<strings.size();k++){
-                    if (!strings.get(k).contains(subStr)){
-                        needAddIn=false;
+        int len = str0.length();
+        for (int i = 0; i < len; i++) {
+            for (int j = len; j > i; j--) {
+                String subStr = str0.substring(i, j);
+                boolean needAddIn = true;
+                for (int k = 1; k < strings.size(); k++) {
+                    if (!strings.get(k).contains(subStr)) {
+                        needAddIn = false;
                         break;
                     }
                 }
-                if (needAddIn){
-                    doAddDynamicToken(subStr,usefulRegex);
-                    i=j-1;
+                if (needAddIn) {
+                    for (Regex regex : usefulRegex) {
+                        if (!regex.needAddDynimicToken(subStr)) {
+                            needAddIn = false;
+                            break;
+                        }
+                    }
+                }
+                if (needAddIn) {
+                    int times = calculateAppearTimes(subStr, lineFields);
+                    timesList.add(times);
+                    dynamicStrMap.put(subStr, times);
+//                    doAddDynamicToken(subStr,usefulRegex);
+                    i = j - 1;
                     break;
                 }
             }
         }
+        // FIXME: 2017/4/9 tieba数据中 dynamicStrMap只有"</a"和"xxx/p" 但是startwith却又"</a>" 和"xxx/p/4"???
+        int mediumTimes = calculateMedian(timesList);
+        for (Map.Entry<String, Integer> entry : dynamicStrMap.entrySet()) {
+            doAddDynamicToken(entry.getKey(), entry.getValue(), mediumTimes, usefulRegex);
+        }
+    }
+
+    /**
+     * 计算中位数
+     *
+     * @param scoreList
+     * @return
+     */
+    private static int calculateMedian(List<Integer> scoreList) {
+        Collections.sort(scoreList);
+        int size = scoreList.size();
+        if (size % 2 == 0) {
+            return (scoreList.get(size / 2 - 1) + scoreList.get(size / 2)) / 2;
+        } else {
+            return scoreList.get(size / 2);
+        }
+    }
+
+    /**
+     * 计算字符串str在全文中出现的次数，用于辅助确定dynamicToken的权重
+     *
+     * @param str
+     * @param lineFields
+     * @return
+     */
+    private static int calculateAppearTimes(String str, List<LineField> lineFields) {
+        int count = 0;
+        Pattern pattern = Pattern.compile(str);
+        for (LineField lineField : lineFields) {
+            Matcher matcher = pattern.matcher(lineField.getText());
+            while (matcher.find()) {
+                count++;
+            }
+        }
+        return count;
     }
 
     /**
      * 若subStr不能被usefulRegex中的任何一个匹配，那么就将他加入作为dynamicToken
+     *
      * @param subStr
+     * @param times
+     * @param medium
      * @param usefulRegex
      */
-    private static void doAddDynamicToken(String subStr,List<Regex> usefulRegex) {
+    private static void doAddDynamicToken(String subStr, Integer times, int medium, List<Regex> usefulRegex) {
         try {
-            for (Regex regex:usefulRegex){
-                if (!regex.needAddDynimicToken(subStr)){
-                    return;
-                }
-            }
-            Regex rightRegex = new DynamicRegex("DynamicTok(" + subStr + ")", subStr);
+            /**
+             * 倍数
+             */
+            double beishu = times * 1.0 / medium;
+            Regex rightRegex = new DynamicRegex("DynamicTok(" + subStr + ")", subStr, beishu > 1 ? Math.min(beishu, 3) : Math.max(1 / 3, beishu));
             if (!usefulRegex.contains(rightRegex)) {
                 usefulRegex.add(rightRegex);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
         }
     }
 
