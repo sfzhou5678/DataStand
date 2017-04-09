@@ -6,10 +6,7 @@ import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.RegExpression;
 import com.zsf.interpreter.expressions.linking.DeprecatedConcatenateExpression;
 import com.zsf.interpreter.expressions.pos.PosExpression;
-import com.zsf.interpreter.expressions.regex.EpicRegex;
-import com.zsf.interpreter.expressions.regex.NormalRegex;
-import com.zsf.interpreter.expressions.regex.RareRegex;
-import com.zsf.interpreter.expressions.regex.Regex;
+import com.zsf.interpreter.expressions.regex.*;
 import com.zsf.interpreter.expressions.string.ConstStrExpression;
 import com.zsf.interpreter.expressions.string.SubString2Expression;
 import com.zsf.interpreter.expressions.string.SubStringExpression;
@@ -433,37 +430,13 @@ public class Main {
      * @return
      */
     private static List<Regex> initUsefulRegex() {
-        List<Regex> regexList = new ArrayList<Regex>();
-        regexList.add(new NormalRegex("SimpleNumberTok", "[0-9]+"));
-        regexList.add(new NormalRegex("DigitToken", "[-+]?(([0-9]+)([.]([0-9]+))?)"));
-        regexList.add(new NormalRegex("LowerToken", "[a-z]+"));
-        regexList.add(new NormalRegex("UpperToken", "[A-Z]+"));
-        regexList.add(new NormalRegex("AlphaToken", "[a-zA-Z]+"));
-//        regexList.add(new Regex("WordToken","[a-z\\sA-Z]+")); // 匹配单词的token，会导致结果爆炸增长几十万倍
+        // TODO 这个函数已经弃用，真正的regex在StringProcessor和FlashExtract中
 
-        // TimeToken可匹配[12:15 | 10:26:59 PM| 22:01:15 aM]形式的时间数据
-        regexList.add(new RareRegex("TimeToken", "(([0-1]?[0-9])|([2][0-3])):([0-5]?[0-9])(:([0-5]?[0-9]))?([ ]*[aApP][mM])?"));
-        // YMDToken可匹配[10/03/1979 | 1-1-02 | 01.1.2003]形式的年月日数据
-        regexList.add(new RareRegex("YMDToken", "([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})"));
-        // YMDToken2可匹配[2004-04-30 | 2004-02-29],不匹配[2004-04-31 | 2004-02-30 | 2004-2-15 | 2004-5-7]
-        regexList.add(new RareRegex("YMDToken2", "[0-9]{4}-(((0[13578]|(10|12))-(0[1-9]|[1-2][0-9]|3[0-1]))|(02-(0[1-9]|[1-2][0-9]))|((0[469]|11)-(0[1-9]|[1-2][0-9]|30)))"));
-        // TextDate可匹配[Apr 03 | February 28 | November 02] (PS:简化版，没处理日期的逻辑错误)
-        regexList.add(new RareRegex("TextDate", "(Jan(uary)?|Feb(ruary)?|Ma(r(ch)?|y)|Apr(il)?|Jul(y)?|Ju((ly?)|(ne?))|Aug(ust)?|Oct(ober)?|(Sept|Nov|Dec)(ember)?)[ -]?(0[1-9]|[1-2][0-9]|3[01])"));
-        regexList.add(new RareRegex("WhichDayToken", "(Mon|Tues|Fri|Sun)(day)?|Wed(nesday)?|(Thur|Tue)(sday)?|Sat(urday)?"));
-//        regices.add(new Regex("AlphaNumToken", "[a-z A-Z 0-9]+"));
-
-        // special tokens
-        regexList.add(new EpicRegex("TestSymbolToken", "[-]+"));
-        regexList.add(new EpicRegex("CommaToken", "[,]+"));
-        regexList.add(new EpicRegex("<", "[<]+"));
-        regexList.add(new EpicRegex(">", "[>]+"));
-        regexList.add(new EpicRegex("/", "[/]+"));
-//        regexList.add(new Regex("SpaceToken", "[ ]+")); // 加上之后就出不了结果？？
-        // FIXME: 2017/2/5 如果开启这个SpTok在当前算法下会导致解过于庞大
-//        regexList.add(new Regex("SpecialTokens","[ -+()\\[\\],.:]+"));
-
-        return regexList;
+        return null;
     }
+
+    // region # 暂时不需要
+
 
     /**
      * 在每次有新的input时就调用此方法，可以返回 各个pos上所有能够和input匹配的集合
@@ -686,6 +659,7 @@ public class Main {
         }
     }
 
+    // endregion
     private static List<ExamplePair> getExamplePairs() {
 
         // 对于提取IBM形式的句子，最后W的规模大致为3*(len(o))^2
@@ -713,8 +687,18 @@ public class Main {
 
         // endregion
 
-        examplePairs.add(new ExamplePair("                        姓名：<span class=\"name\">陈自郁</span> <br> 职称：<span class=\"zc\">讲师</span><br> 联系方式：<span class=\"lxfs\">chenziyu@cqu.edu.cn</span><br> 主要研究方向:<span class=\"major\">群智能、图像处理和智能控制</span><br>", "陈自郁,讲师,群智能、图像处理和智能控制"));
-//        examplePairs.add(new ExamplePair("姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Ran Liu,Associate Professor/Senior Engineer,Medical and stereo image processing; IC design; Biomedical Engineering"));
+
+        examplePairs.add(new ExamplePair("\t\t\t<a href=\"http://www.leiphone.com/news/201704/ifbHBRsm6MRdkjsY.html\" target=\"_blank\" title=\"在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎\" class=\"headTit\">", "在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎"));
+//        examplePairs.add(new ExamplePair("    <a href=\"/p/4922950830\" title=\"sadfasdf\" target=\"_blank\" class=\"j_th_tit \">二手、租房、兼职——2017第一季度交易集中帖</a>", "二手、租房、兼职——2017第一季度交易集中帖"));
+//        examplePairs.add(new ExamplePair("    <a href=\"/p/4922950830\" title=\"sadfasdf\" target=\"_blank\" class=\"j_th_tit \">在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎</a>", "在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎"));
+//        examplePairs.add(new ExamplePair("    <a href=\"/p/4922950830\" title=\"在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎\" target=\"_blank\" class=\"j_th_tit \">sdfsd</a>", "在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎"));
+
+
+
+
+
+
+
 
         // region # error
         // FIXME: 2017/2/16 错误原因初步判定为相似度(classifier)错误
@@ -741,29 +725,29 @@ public class Main {
 
         // region # success
         // 提取结构化数据
-        testPairs.add(new ValidationPair("Coffee Shop,40.73340972,-74.00285648,Wed Jul 13 12:27:07 +0800 2012", "Coffee Shop,Jul 13"));
-        testPairs.add(new ValidationPair("Bridge,43,-73,Tue Apr 03 18:00:25 +0800 2012", "Coffee Shop,Jul 13"));
-
-        testPairs.add(new ValidationPair("40.69990191,,Sat Nov 17 20:36:26 +0800,Food & Drink Shop", "Food & Drink Shop,Nov 17"));
-        testPairs.add(new ValidationPair("40.74218831,-73.98792419,Park,Wed Jul 11 11:42:00 +0800 2012", "Park,Jul 11"));
-
-        // 初级Loop
-        testPairs.add(new ValidationPair("Foundation of Software Engineering","FSE"));
-        testPairs.add(new ValidationPair("European Software Engineering Conference","ESEC"));
-        testPairs.add(new ValidationPair("International Conference on Software Engineering","ICSE"));
-        // endregion
-
-
-        // region # error
-        testPairs.add(new ValidationPair("姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Ran Liu,Associate Professor/Senior Engineer,Medical and stereo image processing; IC design; Biomedical Engineering"));
-        testPairs.add(new ValidationPair("姓名：<span class=\"name\">陈波</span> <br> 职称：<span class=\"zc\"></span><br> 联系方式：<span class=\"lxfs\"></span><br> 主要研究方向:<span class=\"major\"></span><br>", ""));
-        testPairs.add(new ValidationPair("                        姓名：<span class=\"name\">陈自郁</span> <br> 职称：<span class=\"zc\">讲师</span><br> 联系方式：<span class=\"lxfs\">chenziyu@cqu.edu.cn</span><br> 主要研究方向:<span class=\"major\">群智能、图像处理和智能控制</span><br>", "讲师"));
-        testPairs.add(new ValidationPair("                        姓名：<span class=\"name\">但静培</span> <br> 职称：<span class=\"zc\">讲师</span><br> 联系方式：<span class=\"lxfs\"></span><br> 主要研究方向:<span class=\"major\">时间序列数据挖掘、计算智能、神经网络等</span><br>", "讲师"));
-
-
-        // FIXME: 2017/2/16 错误原因初步判定为相似度(classifier)错误
-        testPairs.add(new ValidationPair("2014年3月23日","3"));
-        testPairs.add(new ValidationPair("9/23/2012","09"));
+//        testPairs.add(new ValidationPair("Coffee Shop,40.73340972,-74.00285648,Wed Jul 13 12:27:07 +0800 2012", "Coffee Shop,Jul 13"));
+//        testPairs.add(new ValidationPair("Bridge,43,-73,Tue Apr 03 18:00:25 +0800 2012", "Coffee Shop,Jul 13"));
+//
+//        testPairs.add(new ValidationPair("40.69990191,,Sat Nov 17 20:36:26 +0800,Food & Drink Shop", "Food & Drink Shop,Nov 17"));
+//        testPairs.add(new ValidationPair("40.74218831,-73.98792419,Park,Wed Jul 11 11:42:00 +0800 2012", "Park,Jul 11"));
+//
+//        // 初级Loop
+//        testPairs.add(new ValidationPair("Foundation of Software Engineering","FSE"));
+//        testPairs.add(new ValidationPair("European Software Engineering Conference","ESEC"));
+//        testPairs.add(new ValidationPair("International Conference on Software Engineering","ICSE"));
+//        // endregion
+//
+//
+//        // region # error
+//        testPairs.add(new ValidationPair("姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Ran Liu,Associate Professor/Senior Engineer,Medical and stereo image processing; IC design; Biomedical Engineering"));
+//        testPairs.add(new ValidationPair("姓名：<span class=\"name\">陈波</span> <br> 职称：<span class=\"zc\"></span><br> 联系方式：<span class=\"lxfs\"></span><br> 主要研究方向:<span class=\"major\"></span><br>", ""));
+//        testPairs.add(new ValidationPair("                        姓名：<span class=\"name\">陈自郁</span> <br> 职称：<span class=\"zc\">讲师</span><br> 联系方式：<span class=\"lxfs\">chenziyu@cqu.edu.cn</span><br> 主要研究方向:<span class=\"major\">群智能、图像处理和智能控制</span><br>", "讲师"));
+//        testPairs.add(new ValidationPair("                        姓名：<span class=\"name\">但静培</span> <br> 职称：<span class=\"zc\">讲师</span><br> 联系方式：<span class=\"lxfs\"></span><br> 主要研究方向:<span class=\"major\">时间序列数据挖掘、计算智能、神经网络等</span><br>", "讲师"));
+//
+//
+//        // FIXME: 2017/2/16 错误原因初步判定为相似度(classifier)错误
+//        testPairs.add(new ValidationPair("2014年3月23日","3"));
+//        testPairs.add(new ValidationPair("9/23/2012","09"));
 
         // FIXME: 2017/2/16 未知错误，运行时很久没有结果，可能在哪里死循环了，需要debug
 //        testPairs.add(new ValidationPair("1234-2345-23", "1234-2345-23"));
