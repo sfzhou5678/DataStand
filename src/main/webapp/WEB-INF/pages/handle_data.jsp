@@ -26,6 +26,11 @@
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/parser.js"></script>
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/ruleJS.js"></script>
     <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.formula.js"></script>
+
+    <%--dialog相关--%>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="color-div">
@@ -92,20 +97,27 @@
                         type: "POST",
                         data: {"colorNum": parseInt(tableColColors[curSelectedDataCol].color), "newHeader": "zzzz"},
                         success: function (data) {
-//                            htable.updateSettings({
-//                                // todo 弹出dialog 输入新的header 跟index一起传到后台，后台返回新的headers
-//                                colHeaders: ["a", "b", "c", "d", "Honda"]
-//                            });
+                            tableHeaderTitle=data;
+                            updateDataTable();
                         },
                         error: function () {
-                            // TODO 提示
                             alert("请求失败，请稍候重试");
                         }
                     });
                 }else if (key==='flashFill'){
-                    alert("FF");
                     // todo 弹出dialog 左边n个原始数据，右边是n个输入框，右上方是开始处理的按钮
                     // 点击处理后，要把index和输入的所有样例(及行数)传给后台，后台处理完后返回处理后的所有数据和表达式列表
+                    $.ajax({
+                        url: "getColData",
+                        type: "POST",
+                        data: {"colorNum": parseInt(tableColColors[curSelectedDataCol].color)},
+                        success: function (data) {
+                            alert(data);
+                        },
+                        error: function () {
+                            alert("请求失败，请稍候重试");
+                        }
+                    });
                 }
                 setTableHeaderBgColor();
             },

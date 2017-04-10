@@ -3,12 +3,9 @@ package com.zsf.flashextract;
 import com.zsf.common.UsefulRegex;
 import com.zsf.flashextract.region.ColorRegion;
 import com.zsf.flashextract.field.Field;
-import com.zsf.flashextract.message.MessageSelectField;
+import com.zsf.flashextract.message.MessageContainer;
 import com.zsf.flashextract.tools.Color;
 import com.zsf.flashextract.tools.FieldComparator;
-import com.zsf.interpreter.expressions.regex.EpicRegex;
-import com.zsf.interpreter.expressions.regex.NormalRegex;
-import com.zsf.interpreter.expressions.regex.RareRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
 
 import java.util.*;
@@ -22,6 +19,7 @@ public class FlashExtract {
     private HashMap<Color, ColorRegion> colorRegionMap = new HashMap<Color, ColorRegion>();
 
     public static List<Regex> usefulRegex = UsefulRegex.getUsefulRegex();
+    private MessageContainer messageContainer;
 
     public FlashExtract(String document) {
         this.document = document;
@@ -48,10 +46,8 @@ public class FlashExtract {
         colorRegion.selectField(lineIndex, beginPos, endPos, text);
     }
 
-    private List<Field> fieldList;
-
-    public MessageSelectField showSelectedFields() {
-        fieldList = new ArrayList<Field>();
+    public MessageContainer showSelectedFields() {
+        List<Field> fieldList = new ArrayList<Field>();
         int maxRow = 0;
         for (ColorRegion colorRegion : colorRegionMap.values()) {
             for (Field field : colorRegion.getFieldsGenerated()) {
@@ -108,8 +104,8 @@ public class FlashExtract {
                 needAddRow = true;
             }
         }
-        MessageSelectField messageSelectField = new MessageSelectField(fieldList, colors, titles, tableDatas);
-        return messageSelectField;
+        messageContainer = new MessageContainer(fieldList, colors, titles, tableDatas);
+        return messageContainer;
     }
 
     public String getRegioinTitle(Color color) {
@@ -125,6 +121,19 @@ public class FlashExtract {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
             colorRegion.setRegionTitle(title);
+            messageContainer.modifyTitle(color,title);
         }
+    }
+
+    public MessageContainer getMessageContainer() {
+        return messageContainer;
+    }
+
+    public void setMessageContainer(MessageContainer messageContainer) {
+        this.messageContainer = messageContainer;
+    }
+
+    public List<String> getDatasByColor(Color color) {
+        return messageContainer.getDatasByColor(color);
     }
 }

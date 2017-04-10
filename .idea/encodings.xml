@@ -2,14 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/Main.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/FEMain.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/feregex/EndWith.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/feregex/StartWith.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/feregex/feinterfaces/LineSelector.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/model/Document.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/model/FlashExtract.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/Region.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/SelectedLineRegion.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/message/MessageContainer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/StringProcessor.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/DAG.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/Expression.java" charset="UTF-8" />
@@ -48,6 +44,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/StringTools.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/WordSegmentation.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/test/MainController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/demopages/dialog示范.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/demopages/textarea中获取index.jsp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/index.jsp" charset="UTF-8" />
     <file url="PROJECT" charset="GB2312" />

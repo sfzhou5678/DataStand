@@ -4,8 +4,12 @@ import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
 import com.zsf.flashextract.FlashExtract;
 import com.zsf.flashextract.field.Field;
-import com.zsf.flashextract.message.MessageSelectField;
+import com.zsf.flashextract.message.MessageContainer;
 import com.zsf.flashextract.tools.Color;
+import com.zsf.interpreter.StringProcessor;
+import com.zsf.interpreter.model.ExamplePair;
+import com.zsf.interpreter.model.ExpressionGroup;
+import com.zsf.interpreter.model.ResultMap;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.springframework.http.HttpHeaders;
@@ -97,11 +101,11 @@ public class MainController {
         return new ModelAndView("redirect:/");
     }
 
-    private MessageSelectField curSelectField;
+    private MessageContainer curSelectField;
 
     @RequestMapping(value = "/select_region")
     @ResponseBody
-    public MessageSelectField selectRegion(int startPos, int endPos) {
+    public MessageContainer selectRegion(int startPos, int endPos) {
         String selectedText = inputDocument.substring(startPos, endPos);
         flashExtract.selectField(curColor, startPos, endPos, selectedText);
         curSelectField = flashExtract.showSelectedFields();
@@ -111,11 +115,36 @@ public class MainController {
     }
 
     @RequestMapping(value = "/edit_header", method = RequestMethod.POST)
-    public void editHeader(int colorNum,String newHeader){
+    @ResponseBody
+    public List<String>  editHeader(int colorNum,String newHeader){
         System.out.println("editHeader"+colorNum);
         Color color=Color.getColor(colorNum);
         flashExtract.setRegionTitle(color,newHeader);
 
+        List<String> titles=flashExtract.getMessageContainer().getTitles();
+        return titles;
+    }
+
+    @RequestMapping(value = "/getColData", method = RequestMethod.POST)
+    @ResponseBody
+    public List<String>  getColData(int colorNum){
+        Color color=Color.getColor(colorNum);
+        List<String> datas=flashExtract.getDatasByColor(color);
+
+        return datas;
+    }
+
+    @RequestMapping(value = "/ffByExamples", method = RequestMethod.POST)
+    @ResponseBody
+    public List<String>  flashFillByExamples(int colorNum, List<ExamplePair> examplePairs){
+        Color color=Color.getColor(colorNum);
+
+        StringProcessor stringProcessor = new StringProcessor();
+        List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
+        ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
+
+
+        return null;
     }
 
     @RequestMapping(value = "/to_scv")
@@ -157,7 +186,7 @@ public class MainController {
         System.out.println("setColor:" + curColor.toString());
     }
 
-    private void showField(MessageSelectField selectField) {
+    private void showField(MessageContainer selectField) {
         System.out.println("+++++++++++++++++++++++++++++++++");
         for (Field field : selectField.getSelectedFields()) {
             System.out.println(String.format("%s,%s,%d,%d", field.getColor(), field.getText(), field.getBeginPos(), field.getEndPos()));
