@@ -1,6 +1,7 @@
 package com.zsf.flashextract;
 
 import com.zsf.common.UsefulRegex;
+import com.zsf.flashextract.field.PlainField;
 import com.zsf.flashextract.region.ColorRegion;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageContainer;
@@ -49,16 +50,18 @@ public class FlashExtract {
     }
 
     public MessageContainer showSelectedFields() {
-        List<Field> fieldList = new ArrayList<Field>();
+        List<PlainField> fieldList = new ArrayList<PlainField>();
         int maxRow = 0;
         for (ColorRegion colorRegion : colorRegionMap.values()) {
-            for (Field field : colorRegion.getFieldsGenerated()) {
+            for (PlainField field : colorRegion.getFieldsGenerated()) {
+                // FIXME: 2017/4/10 maxRow是不是应该上移到for外面？
                 maxRow = Math.max(maxRow, colorRegion.getFieldsGenerated().size());
                 if (!fieldList.contains(field)) {
                     fieldList.add(field);
                 }
             }
-            for (Field field : colorRegion.getFieldsByUser()) {
+            for (PlainField field : colorRegion.getFieldsByUser()) {
+                // FIXME: 2017/4/10 maxRow是不是应该上移到for外面？
                 maxRow = Math.max(maxRow, colorRegion.getFieldsByUser().size());
                 if (!fieldList.contains(field)) {
                     fieldList.add(field);
@@ -71,7 +74,7 @@ public class FlashExtract {
         // 产生color和title
         List<Color> colors = new ArrayList<Color>();
         List<String> titles = new ArrayList<String>();
-        for (Field field : fieldList) {
+        for (PlainField field : fieldList) {
             if (colors.contains(field.getColor())) {
                 break;
             } else {
@@ -90,7 +93,7 @@ public class FlashExtract {
         int curRow = 0;
         int lastColIndex = -1;
         boolean needAddRow = false;
-        for (Field field : fieldList) {
+        for (PlainField field : fieldList) {
             int colIndex = colors.indexOf(field.getColor());
 
             if (colIndex <= lastColIndex && needAddRow) {
@@ -98,7 +101,11 @@ public class FlashExtract {
             }
             lastColIndex = colIndex;
 
-            tableDatas[curRow][colIndex] = field.getText();
+            // 为了应对FF系统，这里特地将
+            // tableDatas[curRow][colIndex] = field.getText()
+            // 改为
+            // tableDatas[curRow][colIndex] = field.getEditedText()
+            tableDatas[curRow][colIndex] = field.getEditedText();
             if ((colIndex == colors.size() - 1)) {
                 curRow++;
                 needAddRow = false;
@@ -123,20 +130,20 @@ public class FlashExtract {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
             colorRegion.setRegionTitle(title);
-            messageContainer.modifyTitle(color,title);
+            messageContainer.modifyTitle(color, title);
         }
     }
 
     public ExpressionGroup sortExpsAccSceneByColor(Color color, ExpressionGroup expressionGroup, int k) {
-        ColorRegion colorRegion=colorRegionMap.get(color);
-        if (colorRegion!=null){
-            List<Field> fieldsGenerated=colorRegion.getFieldsGenerated();
-            List<String> strings=new ArrayList<String>();
-            for (Field field:fieldsGenerated){
+        ColorRegion colorRegion = colorRegionMap.get(color);
+        if (colorRegion != null) {
+            List<PlainField> fieldsGenerated = colorRegion.getFieldsGenerated();
+            List<String> strings = new ArrayList<String>();
+            for (Field field : fieldsGenerated) {
                 strings.add(field.getText());
             }
-            colorRegion.sortExpsAccordingScene(strings,expressionGroup);
-            expressionGroup=expressionGroup.selecTopK(k);
+            colorRegion.sortExpsAccordingScene(strings, expressionGroup);
+            expressionGroup = expressionGroup.selecTopK(k);
         }
         return expressionGroup;
     }
@@ -154,12 +161,31 @@ public class FlashExtract {
     }
 
 
-    public List<String> extraFFByColor(Color color, Expression expression) {
+    /**
+     * 在CR上用ff产生的exp进行预览
+     * @param color
+     * @param expression
+     * @return
+     */
+    public List<String> previewExpOnCR(Color color, Expression expression) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
-            return colorRegion.extraFF(expression);
-        }else {
+            return colorRegion.previewExp(expression);
+        } else {
             return null;
+        }
+    }
+
+    /**
+     * 外部确认通过FF产生的某个表达式生效，就把这个EXP加入到对应的colorRegion中去
+     *
+     * @param color
+     * @param curExtraExpression
+     */
+    public void confirmExtraExp(Color color, Expression curExtraExpression) {
+        ColorRegion colorRegion = colorRegionMap.get(color);
+        if (colorRegion != null) {
+            colorRegion.addExtraExp(curExtraExpression);
         }
     }
 }

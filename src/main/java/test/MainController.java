@@ -43,9 +43,15 @@ public class MainController {
 
     private FlashExtract flashExtract;
 
-    @RequestMapping("/fun")
-    public String fun() {
-        return "hello";
+    ExpressionGroup curExtraExpressionGroup;
+    Expression curExtraExpression;
+    /**
+     * 每次上传文件就初始化某些常用的变量
+     */
+    private void init() {
+        flashExtract = new FlashExtract(inputDocument);
+        curExtraExpressionGroup=null;
+        curExtraExpression=null;
     }
 
     @RequestMapping(value = "/upload_file", method = RequestMethod.POST)
@@ -95,7 +101,7 @@ public class MainController {
             }
             Map<String, Object> data = new HashMap<String, Object>();
             data.put("inputDocument", inputDocument);
-            flashExtract = new FlashExtract(inputDocument);
+            init();
 
             return new ModelAndView("handle_data", data);
         } catch (IOException e) {
@@ -104,17 +110,16 @@ public class MainController {
         return new ModelAndView("redirect:/");
     }
 
-    private MessageContainer curSelectField;
 
     @RequestMapping(value = "/select_region")
     @ResponseBody
     public MessageContainer selectRegion(int startPos, int endPos) {
         String selectedText = inputDocument.substring(startPos, endPos);
         flashExtract.selectField(curColor, startPos, endPos, selectedText);
-        curSelectField = flashExtract.showSelectedFields();
+        MessageContainer messageContainer = flashExtract.showSelectedFields();
 //        showField(curSelectField);
 
-        return curSelectField;
+        return messageContainer;
     }
 
     @RequestMapping(value = "/edit_header", method = RequestMethod.POST)
@@ -137,6 +142,7 @@ public class MainController {
         return datas;
     }
 
+
     @RequestMapping(value = "/learnByExamples", method = RequestMethod.POST)
     @ResponseBody
     public List<String> learnByExamples(int colorNum, String jsonExamplePairs) {
@@ -147,12 +153,35 @@ public class MainController {
         StringProcessor stringProcessor = new StringProcessor();
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
         ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
-        ExpressionGroup bestExpressions=flashExtract.sortExpsAccSceneByColor(color,expressionGroup,5);
 
-        // 现在只需要fields中的text，但是未来可能会用到fileds中的pos信息，所以先保留下来
-        List<String> previewDatas=flashExtract.extraFFByColor(color,bestExpressions.getExpressions().get(0));
+        // TODO 下面这一坨待重构
+        if (expressionGroup!=null){
+            ExpressionGroup bestExpressions=flashExtract.sortExpsAccSceneByColor(color,expressionGroup,5);
+            curExtraExpressionGroup=bestExpressions;
+            if (curExtraExpressionGroup!=null){
+                curExtraExpression=curExtraExpressionGroup.getExpressions().get(0);
+                // 由于FF可能会带来新的字符串(CONST)，所以普通的field就不再适用了。直接返回string即可
+                List<String> previewDatas=flashExtract.previewExpOnCR(color,curExtraExpression);
+                return previewDatas;
+            }else {
+                return null;
+            }
+        }else {
+            return null;
+        }
+    }
 
-        return previewDatas;
+    @RequestMapping(value = "/confirmExtraExp", method = RequestMethod.POST)
+    @ResponseBody
+    public MessageContainer confirmExtraExp(int colorNum) {
+        if (curExtraExpression!=null){
+            Color color = Color.getColor(colorNum);
+            flashExtract.confirmExtraExp(color,curExtraExpression);
+        }
+        // else : do nothing
+
+        MessageContainer messageContainer = flashExtract.showSelectedFields();
+        return messageContainer;
     }
 
     @RequestMapping(value = "/to_scv")
@@ -170,8 +199,9 @@ public class MainController {
             fileOutputStream.write(new byte[]{(byte) 0xEF, (byte) 0xBB, (byte) 0xBF});
 
             CsvWriter csvWriter = new CsvWriter(fileOutputStream, "utf-8", new CsvWriterSettings());
-            csvWriter.writeHeaders(curSelectField.getTitles());
-            csvWriter.writeRowsAndClose(curSelectField.getDataTables());
+            MessageContainer messageContainer=flashExtract.getMessageContainer();
+            csvWriter.writeHeaders(messageContainer.getTitles());
+            csvWriter.writeRowsAndClose(messageContainer.getDataTables());
 
             File file = new File(fileName);
             String dfileName = new String(fileName.getBytes("UTF-8"), "iso-8859-1");

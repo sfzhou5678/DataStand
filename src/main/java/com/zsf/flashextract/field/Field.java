@@ -15,33 +15,19 @@ import java.util.List;
 public abstract class Field {
 
     protected Field parentField;
-    protected String text;
     protected Color color;
+    protected String text;
     protected int beginPos;
     protected int endPos;
 
-    public Field(Field parentField, Color color, int beginPos, int endPos) {
+    public Field(Field parentField, Color color, String text, int beginPos, int endPos) {
         this.parentField = parentField;
         this.color = color;
+        this.text = text;
         this.beginPos = beginPos;
         this.endPos = endPos;
     }
 
-    public List<PlainField> selectChildFieldByExp(Expression curExpression, Color color) {
-        List<PlainField> plainFields = new ArrayList<PlainField>();
-        if (curExpression instanceof NonTerminalExpression) {
-            if (curExpression instanceof SubStringExpression) {
-                String txt=((SubStringExpression) curExpression).interpret(text);
-                if (txt!=null){
-                    plainFields.add(new PlainField(this, color,
-                            this.beginPos + ((SubStringExpression) curExpression).getPos1(),
-                            this.beginPos + ((SubStringExpression) curExpression).getPos2(),
-                            txt));
-                }
-            }
-        }
-        return plainFields;
-    }
 
     public abstract Color getColor();
     public abstract int getBeginPos();

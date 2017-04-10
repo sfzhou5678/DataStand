@@ -40,11 +40,13 @@
     <input id="btnReg" type="button" value="+" onclick="addColor()"/>
 </div>
 <div style="clear: both;"></div>
+
+<!-- 模态框（Modal） -->
 <div class="modal fade" id="ff-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
+                <button type="button" id="ff-dialog-close-btn" class="close" data-dismiss="modal"
                         aria-hidden="true">×
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
@@ -56,7 +58,7 @@
                 <input type="button" value="学习" onclick="learn()">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="learn()">
+                <button type="button" class="btn btn-primary" onclick="confirmExtraExp()">
                     提交更改
                 </button>
             </div>
@@ -75,7 +77,6 @@
 
 <button id="ff-dialog-btn" style="display: none;" class="btn btn-primary btn-lg" data-toggle="modal"
         data-target="#ff-dialog">
-    <!-- 模态框（Modal） -->
     <script>
     </script>
     <script type="text/javascript">
@@ -139,20 +140,18 @@
                             success: function (data) {
                                 tableHeaderTitle = data;
                                 updateDataTable();
+//                                $('#ff-dialog-close-btn').click();
                             },
                             error: function () {
                                 alert("请求失败，请稍候重试");
                             }
                         });
                     } else if (key === 'flashFill') {
-                        // todo 弹出dialog 左边n个原始数据，右边是n个输入框，右上方是开始处理的按钮
-                        // 点击处理后，要把index和输入的所有样例(及行数)传给后台，后台处理完后返回处理后的所有数据和表达式列表
                         $.ajax({
                             url: "getColData",
                             type: "POST",
                             data: {"colorNum": parseInt(tableColColors[curSelectedDataCol].color)},
                             success: function (data) {
-//                                alert(data);
                                 var dialogTableData = [];
                                 for (var i = 0; i < data.length; i++) {
                                     dialogTableData.push([data[i], '→', ""]);
@@ -161,6 +160,7 @@
                                     data: dialogTableData
                                 });
                                 $('#ff-dialog-btn').click();
+//                                $('#ff-dialog').modal({backdrop: 'static', keyboard: false});
                             },
                             error: function () {
                                 alert("请求失败，请稍候重试");
@@ -224,7 +224,6 @@
                     examplePairs.push('{"inputString":"' + inputDatas[i] + '","outputString":"' + outputDatas[i] + '"}');
                 }
             }
-            alert(examplePairs);
             $.ajax({
                 url: "learnByExamples",
                 type: "POST",
@@ -247,6 +246,25 @@
             });
         }
 
+        /**
+         * 在弹出ffDialog中点击'确认修改' 此时向后台传输请求，成功的话则关闭dialog并且更新datatable
+         */
+        function confirmExtraExp() {
+            $.ajax({
+                url: "confirmExtraExp",
+                type: "POST",
+                data: {
+                    "colorNum": parseInt(tableColColors[curSelectedDataCol].color)
+                },
+                success: function (data) {
+                    tableData = data.dataTables;
+                    updateDataTable();
+                },
+                error: function () {
+                    alert("请求失败，请稍候重试");
+                }
+            });
+        }
         function showRegions() {
             textarea.innerHTML = doSelect("jusettext", "", 0, inputDocument.length, regionList);
         }

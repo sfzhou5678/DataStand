@@ -1,6 +1,7 @@
 package com.zsf.flashextract.message;
 
 import com.zsf.flashextract.field.Field;
+import com.zsf.flashextract.field.PlainField;
 import com.zsf.flashextract.tools.Color;
 
 import java.util.ArrayList;
@@ -11,19 +12,19 @@ import java.util.List;
  * Created by zsf on 2017/3/19.
  */
 public class MessageContainer {
-    private List<Field> selectedFields;
+    private List<PlainField> selectedFields;
     private List<Color> colors;
     private List<String> titles;
     private String[][] dataTables;
 
-    public MessageContainer(List<Field> selectedFields, List<Color> colors, List<String> titles, String[][] dataTables) {
+    public MessageContainer(List<PlainField> selectedFields, List<Color> colors, List<String> titles, String[][] dataTables) {
         this.selectedFields = selectedFields;
         this.colors = colors;
         this.titles = titles;
         this.dataTables = dataTables;
     }
 
-    public List<Field> getSelectedFields() {
+    public List<PlainField> getSelectedFields() {
         return selectedFields;
     }
 

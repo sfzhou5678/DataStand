@@ -6,10 +6,11 @@ import com.zsf.flashextract.tools.Color;
  * Created by hasee on 2017/3/16.
  */
 public class PlainField extends Field {
+    private String editedText;
 
-    public PlainField(Field parentField, Color color, int beginPos, int endPos, String text) {
-        super(parentField, color, beginPos, endPos);
-        this.text = text;
+    public PlainField(Field parentField, Color color, String text, int beginPos, int endPos) {
+        super(parentField, color, text, beginPos, endPos);
+        this.editedText=text;
     }
 
     @Override
@@ -44,5 +45,11 @@ public class PlainField extends Field {
         return text;
     }
 
+    public String getEditedText() {
+        return editedText;
+    }
 
+    public void setEditedText(String editedText) {
+        this.editedText = editedText;
+    }
 }

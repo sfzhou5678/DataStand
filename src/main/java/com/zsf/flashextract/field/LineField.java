@@ -15,10 +15,8 @@ import java.util.List;
  */
 public class LineField extends Field {
 
-
-    public LineField(Field parentField, Color color, int beginPos, int endPos, String text) {
-        super(parentField, color, beginPos, endPos);
-        this.text = text;
+    public LineField(Field parentField, Color color, String text, int beginPos, int endPos) {
+        super(parentField, color, text, beginPos, endPos);
     }
 
     @Override
@@ -55,12 +53,13 @@ public class LineField extends Field {
         List<PlainField> plainFields = new ArrayList<PlainField>();
         if (curExpression instanceof NonTerminalExpression) {
             if (curExpression instanceof SubStringExpression) {
-                String txt=((SubStringExpression) curExpression).interpret(text);
-                if (txt!=null){
+                String txt = ((SubStringExpression) curExpression).interpret(text);
+                if (txt != null) {
                     plainFields.add(new PlainField(this, color,
+                            txt,
                             this.beginPos + ((SubStringExpression) curExpression).getPos1(),
-                            this.beginPos + ((SubStringExpression) curExpression).getPos2(),
-                            txt));
+                            this.beginPos + ((SubStringExpression) curExpression).getPos2()
+                    ));
                 }
             }
         }

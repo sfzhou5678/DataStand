@@ -2,6 +2,7 @@ package com.zsf.flashextract.tools;
 
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.field.LineField;
+import com.zsf.flashextract.field.PlainField;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
 import com.zsf.interpreter.model.Match;
@@ -170,10 +171,10 @@ public class RegexCommomTools {
      *
      * @param fieldsByUser
      */
-    public static void addDynamicToken(List<Field> fieldsByUser, List<Regex> usefulRegex) {
+    public static void addDynamicToken(List<PlainField> fieldsByUser, List<Regex> usefulRegex) {
         // TODO: 2017/3/28 对于末尾的数字，是否要处理？ 就是这种href="/p/4
         List<String> strings=new ArrayList<String>();
-        for (Field field:fieldsByUser){
+        for (PlainField field:fieldsByUser){
             strings.add(field.getParentField().getText());
         }
         String str0 = strings.get(0);

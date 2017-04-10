@@ -31,8 +31,8 @@ public class ColorRegion {
     private String regionTitle = "unnamed";
     private String parentDocument;
 
-    private List<Field> fieldsByUser = new ArrayList<Field>();
-    private List<Field> fieldsGenerated = new ArrayList<Field>();
+    private List<PlainField> fieldsByUser = new ArrayList<PlainField>();
+    private List<PlainField> fieldsGenerated = new ArrayList<PlainField>();
 
     private List<Integer> positiveLineIndex = new ArrayList<Integer>();
     private List<Integer> negativeLineIndex = new ArrayList<Integer>();
@@ -48,11 +48,11 @@ public class ColorRegion {
     /**
      * extraExpressions指的是第一步提取出plainField之后又进行了n次FF进一步处理数据
      * 每一次的FF对应的exp会按顺序加入到extraExps中
-     *
+     * <p>
      * 只要保留原始的lineFields和lineSelector，然后依次用curExpression、extraExpression中的表达式interpret就可以得到最终的text
      * (这么做是因为现在表达式还没有嵌套的功能)
      */
-    private List<Expression> extraExpressions=new ArrayList<Expression>();
+    private List<Expression> extraExpressions = new ArrayList<Expression>();
 
     public ColorRegion(Color color, String parentDocument) {
         this.color = color;
@@ -64,7 +64,7 @@ public class ColorRegion {
             String line = splitedLines[i];
             int beginPos = RegexCommomTools.indexNOf(parentDocument, "\n", i) + 1;
             int endPos = beginPos + line.length();
-            lineFields.add(new LineField(null, Color.DEFAULT, beginPos, endPos, line));
+            lineFields.add(new LineField(null, Color.DEFAULT, line, beginPos, endPos));
         }
     }
 
@@ -77,7 +77,7 @@ public class ColorRegion {
      * @param text
      */
     public void selectField(int lineIndex, int beginPos, int endPos, String text) {
-        Field field = new PlainField(lineFields.get(lineIndex), color, beginPos, endPos, text);
+        PlainField field = new PlainField(lineFields.get(lineIndex), color, text, beginPos, endPos);
         if (!fieldsByUser.contains(field)) {
             fieldsByUser.add(field);
             addPositiveLineIndex(lineIndex);
@@ -123,7 +123,7 @@ public class ColorRegion {
     public void selectFieldByOuterSelector(int lineIndex, int beginPos, int endPos, String text, Regex selector) {
         this.curLineSelector = selector;
 
-        Field field = new PlainField(lineFields.get(lineIndex), color, beginPos, endPos, text);
+        PlainField field = new PlainField(lineFields.get(lineIndex), color, text,beginPos, endPos);
         if (!fieldsByUser.contains(field)) {
             fieldsByUser.add(field);
             addPositiveLineIndex(lineIndex);
@@ -255,13 +255,36 @@ public class ColorRegion {
     }
 
 
+    /**
+     * 只负责产生普通的plainFields,然后调用updateFieldByExtraExps更新plainFields的editedText
+     */
     private void generatePlainFieldsByCurExp() {
         if (curExpression != null) {
-            this.fieldsGenerated = new ArrayList<Field>();
+            this.fieldsGenerated = new ArrayList<PlainField>();
             for (int lineIndex : needSelectLineIndex) {
                 // TODO: 2017/3/16 去重复？
                 this.fieldsGenerated.addAll(
                         lineFields.get(lineIndex).selectChildFieldByExp(curExpression, color));
+            }
+            updateFieldByExtraExps();
+        }
+    }
+
+    /**
+     * 用通过FF系统得到的extraExps更新plainFields的editedText
+     */
+    private void updateFieldByExtraExps() {
+        if (extraExpressions.size() > 0) {
+            for (PlainField field : fieldsGenerated){
+                String str=field.getText();
+                for (Expression expression:extraExpressions){
+                    if (expression instanceof NonTerminalExpression){
+                        if (str!=null){
+                            str= ((NonTerminalExpression) expression).interpret(str);
+                        }
+                    }
+                }
+                field.setEditedText(str);
             }
         }
     }
@@ -289,7 +312,7 @@ public class ColorRegion {
         this.regionTitle = regionTitle;
     }
 
-    public List<Field> getFieldsGenerated() {
+    public List<PlainField> getFieldsGenerated() {
         return fieldsGenerated;
     }
 
@@ -313,7 +336,7 @@ public class ColorRegion {
         return needSelectLineIndex;
     }
 
-    public List<Field> getFieldsByUser() {
+    public List<PlainField> getFieldsByUser() {
         return fieldsByUser;
     }
 
@@ -333,15 +356,16 @@ public class ColorRegion {
 
     /**
      * 将新的expression应用到plainField上(只返回预览效果，不保存结果)
+     *
      * @param expression
      */
-    public List<String> extraFF(Expression expression) {
-        if (fieldsGenerated != null && fieldsGenerated.size()>0) {
-            List<String> previewDatas=new ArrayList<String>();
-            for (Field field:fieldsGenerated){
+    public List<String> previewExp(Expression expression) {
+        if (fieldsGenerated != null && fieldsGenerated.size() > 0) {
+            List<String> previewDatas = new ArrayList<String>();
+            for (PlainField field : fieldsGenerated) {
                 if (expression instanceof NonTerminalExpression) {
-                    String txt=((NonTerminalExpression) expression).interpret(field.getText());
-                    if (txt!=null){
+                    String txt = ((NonTerminalExpression) expression).interpret(field.getEditedText());
+                    if (txt != null) {
                         previewDatas.add(txt);
                     }
                 }
@@ -349,5 +373,19 @@ public class ColorRegion {
             return previewDatas;
         }
         return null;
+    }
+
+
+    /**
+     * 添加通过FF产生的额外的表达式
+     *
+     * @param curExtraExpression
+     */
+    public void addExtraExp(Expression curExtraExpression) {
+        if (this.extraExpressions == null) {
+            extraExpressions = new ArrayList<Expression>();
+        }
+        this.extraExpressions.add(curExtraExpression);
+        updateFieldByExtraExps();
     }
 }
