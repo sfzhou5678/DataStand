@@ -9,6 +9,7 @@ import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageContainer;
 import com.zsf.flashextract.tools.Color;
 import com.zsf.interpreter.StringProcessor;
+import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.model.ExamplePair;
 import com.zsf.interpreter.model.ExpressionGroup;
 import com.zsf.interpreter.model.ResultMap;
@@ -146,9 +147,12 @@ public class MainController {
         StringProcessor stringProcessor = new StringProcessor();
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
         ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
+        ExpressionGroup bestExpressions=flashExtract.sortExpsAccSceneByColor(color,expressionGroup,5);
 
-        List<String> xxx=new ArrayList<String>();
-        return xxx;
+        // 现在只需要fields中的text，但是未来可能会用到fileds中的pos信息，所以先保留下来
+        List<String> previewDatas=flashExtract.extraFFByColor(color,bestExpressions.getExpressions().get(0));
+
+        return previewDatas;
     }
 
     @RequestMapping(value = "/to_scv")

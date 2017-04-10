@@ -233,7 +233,13 @@
                     "jsonExamplePairs": '[' + String(examplePairs) + ']'
                 },
                 success: function (data) {
-                    alert(data);
+                    var newffTableData=[];
+                    for (var i=0;i<data.length;i++){
+                        newffTableData.push([inputDatas[i],"→",data[i]]);
+                    }
+                    ffhtable.updateSettings({
+                        data:newffTableData
+                    });
                 },
                 error: function () {
                     alert("请求失败，请稍候重试");

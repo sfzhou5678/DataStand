@@ -6,7 +6,9 @@ import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageContainer;
 import com.zsf.flashextract.tools.Color;
 import com.zsf.flashextract.tools.FieldComparator;
+import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.regex.Regex;
+import com.zsf.interpreter.model.ExpressionGroup;
 
 import java.util.*;
 
@@ -125,6 +127,24 @@ public class FlashExtract {
         }
     }
 
+    public ExpressionGroup sortExpsAccSceneByColor(Color color, ExpressionGroup expressionGroup, int k) {
+        ColorRegion colorRegion=colorRegionMap.get(color);
+        if (colorRegion!=null){
+            List<Field> fieldsGenerated=colorRegion.getFieldsGenerated();
+            List<String> strings=new ArrayList<String>();
+            for (Field field:fieldsGenerated){
+                strings.add(field.getText());
+            }
+            colorRegion.sortExpsAccordingScene(strings,expressionGroup);
+            expressionGroup=expressionGroup.selecTopK(k);
+        }
+        return expressionGroup;
+    }
+
+    public List<String> getDatasByColor(Color color) {
+        return messageContainer.getDatasByColor(color);
+    }
+
     public MessageContainer getMessageContainer() {
         return messageContainer;
     }
@@ -133,7 +153,13 @@ public class FlashExtract {
         this.messageContainer = messageContainer;
     }
 
-    public List<String> getDatasByColor(Color color) {
-        return messageContainer.getDatasByColor(color);
+
+    public List<String> extraFFByColor(Color color, Expression expression) {
+        ColorRegion colorRegion = colorRegionMap.get(color);
+        if (colorRegion != null) {
+            return colorRegion.extraFF(expression);
+        }else {
+            return null;
+        }
     }
 }

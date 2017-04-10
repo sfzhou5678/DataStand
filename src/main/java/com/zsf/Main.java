@@ -686,17 +686,7 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
 
         // endregion
-
-
-        examplePairs.add(new ExamplePair("\t\t\t<a href=\"http://www.leiphone.com/news/201704/ifbHBRsm6MRdkjsY.html\" target=\"_blank\" title=\"在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎\" class=\"headTit\">", "在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎"));
-//        examplePairs.add(new ExamplePair("    <a href=\"/p/4922950830\" title=\"sadfasdf\" target=\"_blank\" class=\"j_th_tit \">二手、租房、兼职——2017第一季度交易集中帖</a>", "二手、租房、兼职——2017第一季度交易集中帖"));
-//        examplePairs.add(new ExamplePair("    <a href=\"/p/4922950830\" title=\"sadfasdf\" target=\"_blank\" class=\"j_th_tit \">在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎</a>", "在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎"));
-//        examplePairs.add(new ExamplePair("    <a href=\"/p/4922950830\" title=\"在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎\" target=\"_blank\" class=\"j_th_tit \">sdfsd</a>", "在美国成年人群体中，语音助手Siri已经成了第二大移动搜索引擎"));
-
-
-
-
-
+        examplePairs.add(new ExamplePair("2015-05-10 23:59:00","05.10.2015"));
 
 
 
@@ -730,7 +720,8 @@ public class Main {
 //
 //        testPairs.add(new ValidationPair("40.69990191,,Sat Nov 17 20:36:26 +0800,Food & Drink Shop", "Food & Drink Shop,Nov 17"));
 //        testPairs.add(new ValidationPair("40.74218831,-73.98792419,Park,Wed Jul 11 11:42:00 +0800 2012", "Park,Jul 11"));
-//
+        testPairs.add(new ValidationPair("2125-11-02 23:50:00", "Park,Jul 11"));
+
 //        // 初级Loop
 //        testPairs.add(new ValidationPair("Foundation of Software Engineering","FSE"));
 //        testPairs.add(new ValidationPair("European Software Engineering Conference","ESEC"));

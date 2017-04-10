@@ -11,6 +11,7 @@ import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
+import com.zsf.interpreter.expressions.string.SubStringExpression;
 import com.zsf.interpreter.model.ExamplePair;
 import com.zsf.interpreter.model.ExpressionGroup;
 import com.zsf.interpreter.model.Match;
@@ -44,6 +45,14 @@ public class ColorRegion {
 
     private ExpressionGroup expressionGroup;
     private Expression curExpression;
+    /**
+     * extraExpressions指的是第一步提取出plainField之后又进行了n次FF进一步处理数据
+     * 每一次的FF对应的exp会按顺序加入到extraExps中
+     *
+     * 只要保留原始的lineFields和lineSelector，然后依次用curExpression、extraExpression中的表达式interpret就可以得到最终的text
+     * (这么做是因为现在表达式还没有嵌套的功能)
+     */
+    private List<Expression> extraExpressions=new ArrayList<Expression>();
 
     public ColorRegion(Color color, String parentDocument) {
         this.color = color;
@@ -213,7 +222,11 @@ public class ColorRegion {
 
         this.expressionGroup = expressionGroup;
         if (expressionGroup != null && expressionGroup.getExpressions().size() > 0) {
-            sortExpsAccordingScene(expressionGroup);
+            List<String> strings = new ArrayList<String>();
+            for (int index : needSelectLineIndex) {
+                strings.add(lineFields.get(index).getText());
+            }
+            sortExpsAccordingScene(strings, expressionGroup);
 
             curExpression = expressionGroup.getExpressions().get(0);
             System.out.println(curExpression.score());
@@ -225,13 +238,13 @@ public class ColorRegion {
      *
      * @param expressionGroup
      */
-    private void sortExpsAccordingScene(ExpressionGroup expressionGroup) {
-        int totalLines = needSelectLineIndex.size();
+    public void sortExpsAccordingScene(List<String> strings, ExpressionGroup expressionGroup) {
+        int totalLines = strings.size();
         for (Expression expression : expressionGroup.getExpressions()) {
             if (expression instanceof NonTerminalExpression) {
                 int count = 0;
-                for (int index : needSelectLineIndex) {
-                    if (((NonTerminalExpression) expression).interpret(lineFields.get(index).getText()) != null) {
+                for (String str : strings) {
+                    if (((NonTerminalExpression) expression).interpret(str) != null) {
                         count++;
                     }
                 }
@@ -316,5 +329,25 @@ public class ColorRegion {
             }
         }
         return negativeLineIndex;
+    }
+
+    /**
+     * 将新的expression应用到plainField上(只返回预览效果，不保存结果)
+     * @param expression
+     */
+    public List<String> extraFF(Expression expression) {
+        if (fieldsGenerated != null && fieldsGenerated.size()>0) {
+            List<String> previewDatas=new ArrayList<String>();
+            for (Field field:fieldsGenerated){
+                if (expression instanceof NonTerminalExpression) {
+                    String txt=((NonTerminalExpression) expression).interpret(field.getText());
+                    if (txt!=null){
+                        previewDatas.add(txt);
+                    }
+                }
+            }
+            return previewDatas;
+        }
+        return null;
     }
 }

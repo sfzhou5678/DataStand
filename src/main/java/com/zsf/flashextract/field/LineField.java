@@ -15,7 +15,6 @@ import java.util.List;
  */
 public class LineField extends Field {
 
-    private String text;
 
     public LineField(Field parentField, Color color, int beginPos, int endPos, String text) {
         super(parentField, color, beginPos, endPos);
