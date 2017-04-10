@@ -1,5 +1,7 @@
 package test;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
 import com.zsf.flashextract.FlashExtract;
@@ -48,9 +50,9 @@ public class MainController {
     @RequestMapping(value = "/upload_file", method = RequestMethod.POST)
     public ModelAndView uploadFile(HttpServletRequest request,
                                    @RequestParam(value = "file", required = false) MultipartFile partFile) {
-        String basePath = request.getSession().getServletContext().getRealPath("upload"+File.separator+"files");
-        File dir=new File(basePath);
-        if (!dir.exists()){
+        String basePath = request.getSession().getServletContext().getRealPath("upload" + File.separator + "files");
+        File dir = new File(basePath);
+        if (!dir.exists()) {
             dir.mkdirs();
         }
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
@@ -78,7 +80,7 @@ public class MainController {
                     builder.append(line + "\n");
                 }
                 inputDocument = builder.toString();
-                inputDocument= StringEscapeUtils.unescapeHtml4(inputDocument);
+                inputDocument = StringEscapeUtils.unescapeHtml4(inputDocument);
                 reader.close();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -116,41 +118,43 @@ public class MainController {
 
     @RequestMapping(value = "/edit_header", method = RequestMethod.POST)
     @ResponseBody
-    public List<String>  editHeader(int colorNum,String newHeader){
-        System.out.println("editHeader"+colorNum);
-        Color color=Color.getColor(colorNum);
-        flashExtract.setRegionTitle(color,newHeader);
+    public List<String> editHeader(int colorNum, String newHeader) {
+        System.out.println("editHeader" + colorNum);
+        Color color = Color.getColor(colorNum);
+        flashExtract.setRegionTitle(color, newHeader);
 
-        List<String> titles=flashExtract.getMessageContainer().getTitles();
+        List<String> titles = flashExtract.getMessageContainer().getTitles();
         return titles;
     }
 
     @RequestMapping(value = "/getColData", method = RequestMethod.POST)
     @ResponseBody
-    public List<String>  getColData(int colorNum){
-        Color color=Color.getColor(colorNum);
-        List<String> datas=flashExtract.getDatasByColor(color);
+    public List<String> getColData(int colorNum) {
+        Color color = Color.getColor(colorNum);
+        List<String> datas = flashExtract.getDatasByColor(color);
 
         return datas;
     }
 
-    @RequestMapping(value = "/ffByExamples", method = RequestMethod.POST)
+    @RequestMapping(value = "/learnByExamples", method = RequestMethod.POST)
     @ResponseBody
-    public List<String>  flashFillByExamples(int colorNum, List<ExamplePair> examplePairs){
-        Color color=Color.getColor(colorNum);
+    public List<String> learnByExamples(int colorNum, String jsonExamplePairs) {
+        Color color = Color.getColor(colorNum);
+        Gson gson=new Gson();
+        List<ExamplePair> examplePairs=gson.fromJson(jsonExamplePairs,new TypeToken<List<ExamplePair>>(){}.getType());
 
         StringProcessor stringProcessor = new StringProcessor();
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
         ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
 
-
-        return null;
+        List<String> xxx=new ArrayList<String>();
+        return xxx;
     }
 
     @RequestMapping(value = "/to_scv")
     public ResponseEntity<byte[]> tableToCsv(HttpServletRequest request) {
         try {
-            String basePath = request.getSession().getServletContext().getRealPath("output"+File.separator+"csv");
+            String basePath = request.getSession().getServletContext().getRealPath("output" + File.separator + "csv");
             Date date = new Date(System.currentTimeMillis());
             SimpleDateFormat dateFormat = new SimpleDateFormat("MMddyyyyHHmmss");
             String fileName = basePath + File.separator + dateFormat.format(date) + ".csv";
@@ -158,10 +162,10 @@ public class MainController {
             if (!dir.exists()) {
                 dir.mkdirs();
             }
-            FileOutputStream fileOutputStream=new FileOutputStream(fileName);
-            fileOutputStream.write(new byte[] { (byte)0xEF, (byte)0xBB, (byte)0xBF });
+            FileOutputStream fileOutputStream = new FileOutputStream(fileName);
+            fileOutputStream.write(new byte[]{(byte) 0xEF, (byte) 0xBB, (byte) 0xBF});
 
-            CsvWriter csvWriter=new CsvWriter(fileOutputStream,"utf-8", new CsvWriterSettings());
+            CsvWriter csvWriter = new CsvWriter(fileOutputStream, "utf-8", new CsvWriterSettings());
             csvWriter.writeHeaders(curSelectField.getTitles());
             csvWriter.writeRowsAndClose(curSelectField.getDataTables());
 
