@@ -23,6 +23,13 @@ public class UsefulRegex {
     }
 
     /**
+     * 每次上传新的文件时，就调用这个方法初始化regex(以免过多无用的dynamicTken干扰结果)
+     */
+    public static void init(){
+        usefulRegex=initUsefulRegex();
+    }
+
+    /**
      * 增加有效的token可以强化匹配能力
      * <p>
      * 但是每添加一个token，答案数就要乘以这个token能产生的结果数

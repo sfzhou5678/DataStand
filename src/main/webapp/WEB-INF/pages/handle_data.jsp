@@ -133,19 +133,22 @@
             contextMenu: {
                 callback: function (key, options) {
                     if (key === 'editName') {
-                        $.ajax({
-                            url: "edit_header",
-                            type: "POST",
-                            data: {"colorNum": parseInt(tableColColors[curSelectedDataCol].color), "newHeader": "zzzz"},
-                            success: function (data) {
-                                tableHeaderTitle = data;
-                                updateDataTable();
+                        var newTitle = prompt("请输入新标题:",tableHeaderTitle[curSelectedDataCol]);
+                        if (newTitle != null){
+                            $.ajax({
+                                url: "edit_header",
+                                type: "POST",
+                                data: {"colorNum": parseInt(tableColColors[curSelectedDataCol].color), "newHeader": newTitle},
+                                success: function (data) {
+                                    tableHeaderTitle = data;
+                                    updateDataTable();
 //                                $('#ff-dialog-close-btn').click();
-                            },
-                            error: function () {
-                                alert("请求失败，请稍候重试");
-                            }
-                        });
+                                },
+                                error: function () {
+                                    alert("请求失败，请稍候重试");
+                                }
+                            });
+                        }
                     } else if (key === 'flashFill') {
                         $.ajax({
                             url: "getColData",

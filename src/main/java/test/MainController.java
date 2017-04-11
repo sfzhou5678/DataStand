@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.univocity.parsers.csv.CsvWriter;
 import com.univocity.parsers.csv.CsvWriterSettings;
+import com.zsf.common.UsefulRegex;
 import com.zsf.flashextract.FlashExtract;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageContainer;
@@ -49,6 +50,7 @@ public class MainController {
      * 每次上传文件就初始化某些常用的变量
      */
     private void init() {
+        UsefulRegex.init();
         flashExtract = new FlashExtract(inputDocument);
         curExtraExpressionGroup=null;
         curExtraExpression=null;
