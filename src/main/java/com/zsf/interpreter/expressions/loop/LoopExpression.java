@@ -143,6 +143,7 @@ public class LoopExpression extends NonTerminalExpression {
                 this.maxMatchesCount =((SubString2Expression) expression).getTotalC();
             }
             endCount=count;
+            this.baseExpression=expression;
         }else if (expression instanceof LoopExpression){
             int count=((LoopExpression) expression).getEndCount();
             endCount=count;
@@ -150,6 +151,7 @@ public class LoopExpression extends NonTerminalExpression {
             if (totalExpsCount==1){
                 startCount=count;
             }
+            this.baseExpression=((LoopExpression) expression).getBaseExpression();
         }
         endCount=transformInteger(endCount, maxMatchesCount);
         startCount=transformInteger(startCount, maxMatchesCount);

@@ -119,6 +119,13 @@ public class StringProcessor {
         // FIXME: 2017/3/2 复杂度是n^2的 只能应对小规模数据集
         ExpressionGroup eg = new ExpressionGroup();
         for (Expression exp : loopExpressions.getExpressions()) {
+            if (!(exp instanceof LoopExpression)){
+                // 要求exp必须是loop，而且size必须大于等于2
+                continue;
+            }
+            if (((LoopExpression) exp).getTotalExpsCount()<2){
+                continue;
+            }
             boolean needAdd = true;
             for (Expression e : eg.getExpressions()) {
                 try {
@@ -157,8 +164,12 @@ public class StringProcessor {
 
             for (Expression expression : curExpressions.getExpressions()) {
                 if (baseLoopExpression.isLegalExpression(expression)) {
-                    // FIXME: 2017/4/16 这里的逻辑完全是错误的，不应该直接向curExpressions中添加substr2等表达式，应该和当前的Loop结合？
-                    validLoopExpressionGroup.insert(expression);
+                    // 注意这里产生的LoopExpression的size只有1，通常他们是其他表达式服务
+                    // 比如1->3 + 3->5 + 5->6 这是5->6就是一个单节点的Loop，而整个1->6是一个3节点的Loop
+                    // 对于单节点的LoopExp会在deDuplicateLoopExps()中被过滤掉
+                    LoopExpression loopExpression = new LoopExpression();
+                    loopExpression.addNode(expression);
+                    validLoopExpressionGroup.insert(loopExpression);
                 }
             }
             memorizeLoopMap.put(new Pair<Integer, Integer>(start,end),validLoopExpressionGroup);
@@ -430,7 +441,7 @@ public class StringProcessor {
     /**
      * 用于selectTopK记忆化搜索的Map
      */
-    private Map<Pair<Integer, Integer>, ExpressionGroup> memoryTopKMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+    private Map<Pair<Integer, Integer>, ExpressionGroup> memorizeTopKMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
     public ExpressionGroup selectTopKExps(List<ResultMap> resultMaps, int k) {
         if (resultMaps == null && resultMaps.size() <= 0) {
             return null;
@@ -438,7 +449,7 @@ public class StringProcessor {
         RunTimeMeasurer.startTiming();
         List<ExpressionGroup> ansList = new ArrayList<ExpressionGroup>();
         for (ResultMap resultMap : resultMaps) {
-            memoryTopKMap=new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+            memorizeTopKMap =new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
             ExpressionGroup g = doSelectTopKExps(resultMap, 0, resultMap.getCol(), k);
             ansList.add(g);
             for (Expression e : g.getExpressions()) {
@@ -465,7 +476,7 @@ public class StringProcessor {
         if (start + 1 == end) {
             return resultMap.getData(start, end);
         }
-        ExpressionGroup expressionGroup=memoryTopKMap.get(new Pair<Integer, Integer>(start,end));
+        ExpressionGroup expressionGroup= memorizeTopKMap.get(new Pair<Integer, Integer>(start,end));
         if (expressionGroup!=null){
             return expressionGroup;
         }
@@ -487,7 +498,7 @@ public class StringProcessor {
             }
         }
         ExpressionGroup res=newExpressions.selecTopK(k);
-        memoryTopKMap.put(new Pair<Integer, Integer>(start,end),res);
+        memorizeTopKMap.put(new Pair<Integer, Integer>(start,end),res);
         return res;
     }
 }
