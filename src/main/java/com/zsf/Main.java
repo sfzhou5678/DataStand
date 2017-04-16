@@ -686,8 +686,10 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
 
         // endregion
-        examplePairs.add(new ExamplePair("2015-05-10 23:59:00","05.10.2015"));
-
+//        examplePairs.add(new ExamplePair("2015-05-10 23:59:00","05.10.2015"));
+        //        examplePairs.add(new ExamplePair("                       姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Ran Liu"));
+//        examplePairs.add(new ExamplePair("                       姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Associate Professor/Senior Engineer"));
+        examplePairs.add(new ExamplePair("                       姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Medical and stereo image processing; IC design; Biomedical Engineering"));
 
 
         // region # error

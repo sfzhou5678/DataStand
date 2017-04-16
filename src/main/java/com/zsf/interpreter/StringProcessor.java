@@ -12,9 +12,12 @@ import com.zsf.interpreter.expressions.string.SubString2Expression;
 import com.zsf.interpreter.expressions.string.SubStringExpression;
 import com.zsf.interpreter.model.*;
 import com.zsf.interpreter.tool.RunTimeMeasurer;
+import javafx.util.Pair;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 
 /**
@@ -65,7 +68,7 @@ public class StringProcessor {
                 String subString = outputString.substring(j, j + i);
 
                 ExpressionGroup expressionGroup = new ExpressionGroup();
-                ExpressionGroup tmpExpressgionGroup=generateSubString(inputString, subString, matches);
+                ExpressionGroup tmpExpressgionGroup = generateSubString(inputString, subString, matches);
                 expressionGroup.insert(tmpExpressgionGroup);
                 if (needBeAddedIn(subString, inputString)) {
                     expressionGroup.insert(new ConstStrExpression(subString));
@@ -78,33 +81,38 @@ public class StringProcessor {
         // 上面的resultMap结合DAG就有了跳跃能力，而且无需存储中间结果(只需要存储跳跃边), 再resultMap的基础上再加上一些Loop语句就可实现全局搜索
         // DAG在选择答案时可以结合loss func+bean search极大减小搜索空间。
         // TODO: 2017/3/1 直接更新 resultMap，加入Loop
-        newGenerateLoop(outputString, resultMap);
+        generateLoop(outputString, resultMap);
 
 
         // TODO: 2017/3/1 返回的是一个DAG(或者就是resultMap)
         return resultMap;
     }
 
-    private void newGenerateLoop(String outputString, ResultMap resultMap) {
-        /**
-         * 从某个节点出发，搜寻所有后续路径上一样的exp来构成loop
-         *
-         * Loop的基本条件：
-         * 1. 层数>=2
-         *
-         * 一样的判定：
-         * 1. substr2的reg一样
-         * 2. loop的baseExp一样
-         * 3. concat的左右的baseExp全都一样(递归包含情况1和2)
-         */
+    /**
+     * 从某个节点出发，搜寻所有后续路径上一样的exp来构成loop
+     * <p>
+     * Loop的基本条件：
+     * 1. 层数>=2
+     * <p>
+     * 一样的判定：
+     * 1. substr2的reg一样
+     * 2. loop的baseExp一样
+     * 3. concat的左右的baseExp全都一样(递归包含情况1和2)
+     */
+    private void generateLoop(String outputString, ResultMap resultMap) {
+        RunTimeMeasurer.startTiming();
+        memorizeLoopMap=new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+        // FIXME: 2017/4/16 当resultMap中map[i:j]的解较多时(比如60+)求解时间就会爆炸
+        // FIXME: 2017/4/16 根本原因是doGenerateLoop()中重复求解次数太多，用记忆画搜索来解决
         for (int start = 0; start < outputString.length(); start++) {
+
             for (int end = start + 1; end <= outputString.length(); end++) {
-                // // TODO: 2017/3/2 doGenerateLoop(start,end,resultMap)
                 ExpressionGroup loopExpressions = doGenerateLoop(new LoopExpression(), start, end, resultMap);
                 loopExpressions = deDuplicateLoopExps(loopExpressions);
                 resultMap.getData(start, end).insert(loopExpressions);
             }
         }
+        RunTimeMeasurer.endTiming("generateLoop");
     }
 
     private ExpressionGroup deDuplicateLoopExps(ExpressionGroup loopExpressions) {
@@ -113,10 +121,15 @@ public class StringProcessor {
         for (Expression exp : loopExpressions.getExpressions()) {
             boolean needAdd = true;
             for (Expression e : eg.getExpressions()) {
-                if (e.equals(exp)) {
-                    needAdd = false;
-                    break;
+                try {
+                    if (e.equals(exp)) {
+                        needAdd = false;
+                        break;
+                    }
+                }catch (Exception e1){
+                    e1.printStackTrace();
                 }
+
             }
             if (needAdd) {
                 eg.insert(exp);
@@ -125,27 +138,37 @@ public class StringProcessor {
         return eg;
     }
 
-    private ExpressionGroup doGenerateLoop(LoopExpression baseExpression, int start, int end, ResultMap resultMap) {
+    /**
+     * 用于Loop的记忆化搜索的map
+     */
+    private HashMap<Pair<Integer,Integer>,ExpressionGroup> memorizeLoopMap=new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+    private ExpressionGroup doGenerateLoop(LoopExpression baseLoopExpression, int start, int end, ResultMap resultMap) {
         // TODO: 2017/3/2 此方法内嵌到EG中去
 
         // FIXME:直接这么做肯定会产生很多重复，比如计算[1:5]时统计过[3:4]的数据(并且更新到resultMap中), 然后计算[2:7]时又统计了一次[3:4]的数据(并且又更新了resultMap)
         // FIXME: 2017/3/2 应该还是已DAG的形式保留, 而且能够【去重复】
+        ExpressionGroup expressionGroup=memorizeLoopMap.get(new Pair<Integer, Integer>(start,end));
+        if (expressionGroup!=null){
+            return expressionGroup;
+        }
         ExpressionGroup validLoopExpressionGroup = new ExpressionGroup();
         if (start + 1 == end) {
             ExpressionGroup curExpressions = resultMap.getData(start, end).deepClone();
 
             for (Expression expression : curExpressions.getExpressions()) {
-                if (baseExpression.isLegalExpression(expression)) {
+                if (baseLoopExpression.isLegalExpression(expression)) {
+                    // FIXME: 2017/4/16 这里的逻辑完全是错误的，不应该直接向curExpressions中添加substr2等表达式，应该和当前的Loop结合？
                     validLoopExpressionGroup.insert(expression);
                 }
             }
+            memorizeLoopMap.put(new Pair<Integer, Integer>(start,end),validLoopExpressionGroup);
             return validLoopExpressionGroup;
         }
 
         for (int j = start + 1; j < end; j++) {
             ExpressionGroup curExpressions = resultMap.getData(start, j).deepClone();
             for (Expression expression : curExpressions.getExpressions()) {
-                if (baseExpression.isLegalExpression(expression)) {
+                if (baseLoopExpression.isLegalExpression(expression)) {
                     LoopExpression loopExpression = new LoopExpression();
                     loopExpression.addNode(expression);
 
@@ -158,6 +181,7 @@ public class StringProcessor {
                 }
             }
         }
+        memorizeLoopMap.put(new Pair<Integer, Integer>(start,end),validLoopExpressionGroup);
         return validLoopExpressionGroup;
     }
 
@@ -402,12 +426,19 @@ public class StringProcessor {
         }
     }
 
+
+    /**
+     * 用于selectTopK记忆化搜索的Map
+     */
+    private Map<Pair<Integer, Integer>, ExpressionGroup> memoryTopKMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
     public ExpressionGroup selectTopKExps(List<ResultMap> resultMaps, int k) {
         if (resultMaps == null && resultMaps.size() <= 0) {
             return null;
         }
+        RunTimeMeasurer.startTiming();
         List<ExpressionGroup> ansList = new ArrayList<ExpressionGroup>();
         for (ResultMap resultMap : resultMaps) {
+            memoryTopKMap=new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
             ExpressionGroup g = doSelectTopKExps(resultMap, 0, resultMap.getCol(), k);
             ansList.add(g);
             for (Expression e : g.getExpressions()) {
@@ -417,8 +448,11 @@ public class StringProcessor {
         ExpressionGroup validExpressions = new ExpressionGroup();
         // FIXME: 2017/3/14 现在只返回了第一个example产生的exp集合，后期修正
         validExpressions = ansList.get(0);
+
+        RunTimeMeasurer.endTiming("selectTopKExps");
         return validExpressions;
     }
+
 
     /**
      * 应对IBM这种跳跃式的output，可以先用Concate把o[0],o[1],o[2]连接起来
@@ -431,18 +465,29 @@ public class StringProcessor {
         if (start + 1 == end) {
             return resultMap.getData(start, end);
         }
-        ExpressionGroup newExpressions = resultMap.getData(start, end).deepClone();
-        for (int j = start + 1; j < end; j++) {
-            ExpressionGroup curExpressions = resultMap.getData(start, j);
-            if (curExpressions.size() > 0) {
-                ExpressionGroup topExpressionGroup = curExpressions.selecTopK(k);
-                ExpressionGroup sub = doSelectTopKExps(resultMap, j, end, k);
-                ExpressionGroup tmpConcatedExps = ConcatenateExpression.concatenateExp(topExpressionGroup, sub);
+        ExpressionGroup expressionGroup=memoryTopKMap.get(new Pair<Integer, Integer>(start,end));
+        if (expressionGroup!=null){
+            return expressionGroup;
+        }
+        // TODO: 2017/4/16 在这里加入记忆画搜索，如果[start,end]的结果已经计算过，那么就直接返回
+        // TODO: 2017/4/16 相应的，还需要在return之间将当前start和end的结果保存起来
 
-                newExpressions.insert(tmpConcatedExps.selecTopK(k));
+        ExpressionGroup newExpressions = resultMap.getData(start, end).deepClone();
+
+        for (int j = start + 1; j < end; j++) {
+            ExpressionGroup prefixExpressionGroup = resultMap.getData(start, j);
+            if (prefixExpressionGroup.size() > 0) {
+                ExpressionGroup topKPrefixExpGroup = prefixExpressionGroup.selecTopK(k);
+
+                ExpressionGroup topKPostfixExpreessionGroup = doSelectTopKExps(resultMap, j, end, k);
+                ExpressionGroup concatedTotalExpGroup = ConcatenateExpression.concatenateExp(topKPrefixExpGroup, topKPostfixExpreessionGroup);
+
+                newExpressions.insert(concatedTotalExpGroup.selecTopK(k));
                 newExpressions = newExpressions.selecTopK(k);
             }
         }
-        return newExpressions.selecTopK(k);
+        ExpressionGroup res=newExpressions.selecTopK(k);
+        memoryTopKMap.put(new Pair<Integer, Integer>(start,end),res);
+        return res;
     }
 }

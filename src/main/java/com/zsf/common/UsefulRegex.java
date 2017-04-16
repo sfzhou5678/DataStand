@@ -66,6 +66,7 @@ public class UsefulRegex {
         regexList.add(new EpicRegex("<", "[<]+"));
         regexList.add(new EpicRegex(">", "[>]+"));
         regexList.add(new EpicRegex("/", "[/]+"));
+        // FIXME: 2017/4/16 开启space会导致Ran Liu的研究方向无法求解？ 原因未排查
         regexList.add(new EpicRegex("SpaceToken", "[ ]+"));
         regexList.add(new EpicRegex("\"", "[\"]+"));
 

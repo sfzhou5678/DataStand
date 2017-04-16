@@ -189,6 +189,7 @@ public class LoopExpression extends NonTerminalExpression {
             return false;
         }
         if (baseExpression == null) {
+            // FIXME: 2017/4/16 这段的意义忘了，可能会导致bug？
             if (expression instanceof LoopExpression) {
                 baseExpression = ((LoopExpression) expression).getBaseExpression();
             } else if (expression instanceof SubString2Expression) {
