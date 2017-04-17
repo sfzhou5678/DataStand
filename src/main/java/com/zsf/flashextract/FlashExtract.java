@@ -7,10 +7,13 @@ import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageContainer;
 import com.zsf.flashextract.tools.Color;
 import com.zsf.flashextract.tools.FieldComparator;
+import com.zsf.interpreter.StringProcessor;
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.regex.Regex;
+import com.zsf.interpreter.model.ExamplePair;
 import com.zsf.interpreter.model.ExamplePartition;
 import com.zsf.interpreter.model.ExpressionGroup;
+import com.zsf.interpreter.model.ResultMap;
 
 import java.util.*;
 
@@ -164,12 +167,16 @@ public class FlashExtract {
     /**
      * 在CR上用ff产生的exp进行预览
      * @param color
-     * @param expression
      * @return
      */
-    public List<String> previewExpOnCR(Color color, List<ExamplePartition> partitions) {
+    public List<String> previewExpOnCR(Color color, List<ExamplePair> examplePairs) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
+            StringProcessor stringProcessor = new StringProcessor();
+            List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
+            List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
+            List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
+
             return colorRegion.previewExp(partitions);
         } else {
             return null;
@@ -182,10 +189,10 @@ public class FlashExtract {
      * @param color
      * @param curExtraExpression
      */
-    public void confirmExtraExp(Color color, Expression curExtraExpression) {
+    public void confirmExtraExp(Color color) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
-            colorRegion.confirmExtraExp(curExtraExpression);
+            colorRegion.confirmExtraExp();
         }
     }
 }

@@ -42,19 +42,14 @@ import java.util.*;
 public class MainController {
 
     private String inputDocument = "";
-
     private FlashExtract flashExtract;
 
-    ExpressionGroup curExtraExpressionGroup;
-    Expression curExtraExpression;
     /**
      * 每次上传文件就初始化某些常用的变量
      */
     private void init() {
         UsefulRegex.init();
         flashExtract = new FlashExtract(inputDocument);
-        curExtraExpressionGroup=null;
-        curExtraExpression=null;
     }
 
     @RequestMapping(value = "/upload_file", method = RequestMethod.POST)
@@ -153,12 +148,7 @@ public class MainController {
         Gson gson=new Gson();
         List<ExamplePair> examplePairs=gson.fromJson(jsonExamplePairs,new TypeToken<List<ExamplePair>>(){}.getType());
 
-        StringProcessor stringProcessor = new StringProcessor();
-        List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
-        List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
-        List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
-
-        List<String> previewDatas=flashExtract.previewExpOnCR(color,partitions);
+        List<String> previewDatas=flashExtract.previewExpOnCR(color,examplePairs);
         return previewDatas;
     }
 
@@ -166,8 +156,7 @@ public class MainController {
     @ResponseBody
     public MessageContainer confirmExtraExp(int colorNum) {
         Color color = Color.getColor(colorNum);
-        flashExtract.confirmExtraExp(color,curExtraExpression);
-        // else : do nothing
+        flashExtract.confirmExtraExp(color);
 
         MessageContainer messageContainer = flashExtract.showSelectedFields();
         return messageContainer;

@@ -263,27 +263,7 @@ public class ColorRegion {
                 this.fieldsGenerated.addAll(
                         lineFields.get(lineIndex).selectChildFieldByExp(curExpression, color));
             }
-            updateFieldByExtraExps();
         }
-    }
-
-    /**
-     * 用通过FF系统得到的extraExps更新plainFields的editedText
-     */
-    private void updateFieldByExtraExps() {
-//        if (extraExpressions.size() > 0) {
-//            for (PlainField field : fieldsGenerated){
-//                String str=field.getText();
-//                for (Expression expression:extraExpressions){
-//                    if (expression instanceof NonTerminalExpression){
-//                        if (str!=null){
-//                            str= ((NonTerminalExpression) expression).interpret(str);
-//                        }
-//                    }
-//                }
-//                field.setEditedText(str);
-//            }
-//        }
     }
 
     public int calculateLineIndex(int beginPos, int endPos) {
@@ -381,10 +361,8 @@ public class ColorRegion {
 
     /**
      * 添加通过FF产生的额外的表达式
-     *
-     * @param curExtraExpression
      */
-    public void confirmExtraExp(Expression curExtraExpression) {
+    public void confirmExtraExp() {
         for (PlainField field : fieldsGenerated) {
             field.confirmExtraExp();
         }
