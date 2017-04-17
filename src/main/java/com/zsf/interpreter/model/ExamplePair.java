@@ -27,4 +27,9 @@ public class ExamplePair {
     public void setOutputString(String outputString) {
         this.outputString = outputString;
     }
+
+    @Override
+    public String toString() {
+        return String.format("[input]:%s\t[output]:%s",inputString,outputString);
+    }
 }

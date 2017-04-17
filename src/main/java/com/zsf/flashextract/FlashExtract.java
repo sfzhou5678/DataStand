@@ -9,6 +9,7 @@ import com.zsf.flashextract.tools.Color;
 import com.zsf.flashextract.tools.FieldComparator;
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.regex.Regex;
+import com.zsf.interpreter.model.ExamplePartition;
 import com.zsf.interpreter.model.ExpressionGroup;
 
 import java.util.*;
@@ -34,13 +35,12 @@ public class FlashExtract {
             colorRegion = new ColorRegion(color, document);
             colorRegionMap.put(color, colorRegion);
         }
-        // TODO: 2017/3/16 判断当前区域是否在其他color的lineSelector之内！！
-        // TODO: 2017/3/17 判断是否已经产生过selector了
         int lineIndex = colorRegion.calculateLineIndex(beginPos, endPos);
         for (ColorRegion region : colorRegionMap.values()) {
             if (region != colorRegion) {
-                // FIXME: 2017/3/27 如果补充选择positiveExample 现在会变成重复选择多次(带来n行NULL数据)！
+                // 判断是否已经产生过selector了
                 if (region.getNeedSelectLineIndex().contains(lineIndex)) {
+                    // 判断当前区域是否在其他color的lineSelector之内
                     colorRegion.selectFieldByOuterSelector(lineIndex, beginPos, endPos, text, region.getCurLineSelector());
                     break;
                 }
@@ -167,10 +167,10 @@ public class FlashExtract {
      * @param expression
      * @return
      */
-    public List<String> previewExpOnCR(Color color, Expression expression) {
+    public List<String> previewExpOnCR(Color color, List<ExamplePartition> partitions) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
-            return colorRegion.previewExp(expression);
+            return colorRegion.previewExp(partitions);
         } else {
             return null;
         }
@@ -185,7 +185,7 @@ public class FlashExtract {
     public void confirmExtraExp(Color color, Expression curExtraExpression) {
         ColorRegion colorRegion = colorRegionMap.get(color);
         if (colorRegion != null) {
-            colorRegion.addExtraExp(curExtraExpression);
+            colorRegion.confirmExtraExp(curExtraExpression);
         }
     }
 }

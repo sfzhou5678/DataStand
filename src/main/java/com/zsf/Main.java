@@ -300,124 +300,7 @@ public class Main {
     }
 
 
-    /**
-     * 当有多个IOPair时，每个IOPair都会对应一组解，但是实际上很多例子属于同一类别
-     * generatePartition就是为所有IOPairs做一个划分，将相同类别的例子归到同一类(然后配合Classifier就可以做switch了)
-     * <p>
-     * 基本思想：
-     * 1. while所有pairs中存在某两个pair相互兼容(难点1.相互兼容的定义)
-     * 2. 找到所有配对中CS(Compatibility Score)最高的一对(难点2.CS分的定义 难点3.快速求最高分的方法,可用模拟退火？)
-     * 3. T=T-(原有两个pairs)+(pairs合并后的结果)(小难点.合并？)
-     * <p>
-     * 改进：
-     * 1. 上面的基本思想是基于贪心的，可以改成启发式搜索
-     * 2. 类似试卷分配，可以改成基于swap的模拟退火
-     * <p>
-     * 备注:
-     * 如果当前的lookupPartition所用的str相似度方法靠谱的话，就可以把generatePartition改造成聚类算法
-     *
-     * @param expressionList
-     * @param examplePairs
-     */
-    private static List<ExamplePartition> generatePartitions(List<ExpressionGroup> expressionList, List<ExamplePair> examplePairs) {
-        // init
-        RunTimeMeasurer.startTiming();
-        List<ExamplePartition> partitions = new ArrayList<ExamplePartition>();
-        for (int i = 0; i < examplePairs.size(); i++) {
-            partitions.add(new ExamplePartition(examplePairs.get(i), expressionList.get(i)));
-        }
 
-        boolean needMerge = true;
-        while (needMerge) {
-            needMerge = false;
-            int max = 0;
-            // findPartitions
-            ExamplePartition partition1 = null;
-            ExamplePartition partition2 = null;
-            ExpressionGroup p12TheSameExpressions = null;
-
-            int index1 = 0;
-            int index2 = 0;
-            for (int i = 0; i < partitions.size(); i++) {
-                for (int j = i + 1; j < partitions.size(); j++) {
-                    ExpressionGroup theSameExpressions = findSameExps(partitions.get(i), partitions.get(j));
-                    if (theSameExpressions.size() > max) {
-                        max = theSameExpressions.size();
-                        partition1 = partitions.get(i);
-                        partition2 = partitions.get(j);
-                        p12TheSameExpressions = theSameExpressions;
-                        index1 = i;
-                        index2 = j;
-                        needMerge = true;
-                    }
-                }
-            }
-
-            // mergePartitions
-            if (needMerge) {
-                // TODO: 2017/2/5 假设存在某两个partition的sameExp.size()只有1，不知道此时还要不要进行合并(但是目前还没有遇见这种情况)。
-                System.out.println(String.format("Merge %d and %d,max=%d", index1, index2, max));
-                partitions.remove(partition1);
-                partitions.remove(partition2);
-
-                List<ExamplePair> pairs = new ArrayList<ExamplePair>();
-                pairs.addAll(partition1.getExamplePairs());
-                pairs.addAll(partition2.getExamplePairs());
-
-                partitions.add(new ExamplePartition(pairs, p12TheSameExpressions));
-            }
-        }
-        RunTimeMeasurer.endTiming("generatePartition");
-        return partitions;
-    }
-
-    /**
-     * 在generatePartition中使用
-     * 用于找出两个partition可共用的expressionList
-     * <p>
-     * 当返回的theSameExpressions.size()>0 说明两个partition可以合并
-     *
-     * @param partition1
-     * @param partition2
-     * @return
-     */
-    private static ExpressionGroup findSameExps(ExamplePartition partition1, ExamplePartition partition2) {
-        // FIXME: 2017/2/6 这个函数运行时间较长，根本原因应该还是partition中的expression过于庞大
-        ExpressionGroup expressions1 = partition1.getUsefulExpression();
-        ExpressionGroup expressions2 = partition2.getUsefulExpression();
-
-        List<ExamplePair> pairs1 = partition1.getExamplePairs();
-        List<ExamplePair> pairs2 = partition2.getExamplePairs();
-
-        ExpressionGroup theSameExpressions = new ExpressionGroup();
-        for (Expression e1 : expressions1.getExpressions()) {
-            for (Expression e2 : expressions2.getExpressions()) {
-                if (e1.equals(e2)) {
-                    boolean isTwoExpSame = true;
-                    if (e1 instanceof NonTerminalExpression && e2 instanceof NonTerminalExpression) {
-                        for (ExamplePair pair : pairs1) {
-                            if (!((NonTerminalExpression) e2).interpret(pair.getInputString()).equals(pair.getOutputString())) {
-                                isTwoExpSame = false;
-                                break;
-                            }
-                        }
-                        if (isTwoExpSame) {
-                            for (ExamplePair pair : pairs2) {
-                                if (!((NonTerminalExpression) e1).interpret(pair.getInputString()).equals(pair.getOutputString())) {
-                                    isTwoExpSame = false;
-                                    break;
-                                }
-                            }
-                        }
-                        if (isTwoExpSame) {
-                            theSameExpressions.insert(e1);
-                        }
-                    }
-                }
-            }
-        }
-        return theSameExpressions;
-    }
 
     public static List<Regex> usefulRegex = initUsefulRegex();
 
@@ -564,25 +447,7 @@ public class Main {
         }
     }
 
-    /**
-     * 找到当前String应该所属的分类(取代了论文中的classifier)
-     *
-     * @param string
-     * @param partitions
-     * @return
-     */
-    private static int lookupPartitionIndex(String string, List<ExamplePartition> partitions) {
-        int index = -1;
-        double maxScore = -1;
-        for (int i = 0; i < partitions.size(); i++) {
-            Double curScore = partitions.get(i).calculateSimilarity(string);
-            if (curScore > maxScore) {
-                maxScore = curScore;
-                index = i;
-            }
-        }
-        return index;
-    }
+
 
     /**
      * 根据example得到partitions之后可以开始处理新的输入
@@ -595,38 +460,14 @@ public class Main {
      * @param partitions
      */
     private static ExpressionGroup predictOutput(String newInput, List<ExamplePartition> partitions) {
-        int partitionIndex = lookupPartitionIndex(newInput, partitions);
+        int partitionIndex = StringProcessor.lookupPartitionIndex(newInput, partitions);
 
         System.out.println("==========所属partition=" + partitionIndex + " ==========");
         ExamplePartition partition = partitions.get(partitionIndex);
 
-        ExpressionGroup topNExpression = getTopNExpressions(partition, newInput, 5000000);
+        ExpressionGroup topNExpression = StringProcessor.getTopNExpressions(partition, newInput, 5);
 
         return topNExpression;
-    }
-
-    /**
-     * 找出rank得分最高的n个Expression，从前往后排序
-     * 【需要一个有效的rank】
-     *
-     * @param partition
-     * @param testString
-     * @param n          取出rank前n的结果
-     * @return
-     */
-    private static ExpressionGroup getTopNExpressions(ExamplePartition partition, String testString, int n) {
-        ExpressionGroup topN = new ExpressionGroup();
-        // TODO: 2017/2/6 等待rank算法
-        List<Expression> expressions = partition.getUsefulExpression().getExpressions();
-        Collections.sort(expressions, new ExpressionComparator());
-        int count = 1;
-        for (Expression exp : expressions) {
-            topN.insert(exp);
-            if (count++ >= n) {
-                break;
-            }
-        }
-        return topN;
     }
 
     /**
@@ -678,12 +519,25 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Wed Jul 11 11:17:44 +0800 2012,40.23213,German Restaurant", "German Restaurant,Jul 11"));
 //        examplePairs.add(new ExamplePair("40.7451638,-73.98251878,Tue Apr 03 18:02:41 +0800 2012,Medical Center", "Medical Center,Apr 03"));
 
+//        examplePairs.add(new ExamplePair("2016-09","2016-09"));
+//        examplePairs.add(new ExamplePair("2016-12","2016-12"));
+//
+//        examplePairs.add(new ExamplePair("1-1","2017-1"));
+//        examplePairs.add(new ExamplePair("10:20","2017-4"));
+
+        examplePairs.add(new ExamplePair("2000 Block of THOMAS AV","2000"));
+        examplePairs.add(new ExamplePair("3RD ST / REVERE AV","3"));
+
+        examplePairs.add(new ExamplePair("BROAD ST / CAPITOL AV","null"));
+
+
+
         // 单个较长output
 //        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03,Tue"));
 
         // 初级Loop能力
 //        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEA"));
-        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
+//        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
 
         // endregion
 //        examplePairs.add(new ExamplePair("2015-05-10 23:59:00","05.10.2015"));
@@ -722,7 +576,14 @@ public class Main {
 //
 //        testPairs.add(new ValidationPair("40.69990191,,Sat Nov 17 20:36:26 +0800,Food & Drink Shop", "Food & Drink Shop,Nov 17"));
 //        testPairs.add(new ValidationPair("40.74218831,-73.98792419,Park,Wed Jul 11 11:42:00 +0800 2012", "Park,Jul 11"));
-        testPairs.add(new ValidationPair("2125-11-02 23:50:00", "Park,Jul 11"));
+//        testPairs.add(new ValidationPair("2125-11-02 23:50:00", "Park,Jul 11"));
+//        testPairs.add(new ValidationPair("3-25", "2017-3"));
+//        testPairs.add(new ValidationPair("08:19", "2017-4"));
+//        testPairs.add(new ValidationPair("2016-07", "2016-07"));
+        testPairs.add(new ValidationPair("IRVING ST / 7TH AV","null"));
+        testPairs.add(new ValidationPair("1500 Block of CALIFORNIA ST","1500"));
+
+
 
 //        // 初级Loop
 //        testPairs.add(new ValidationPair("Foundation of Software Engineering","FSE"));
@@ -764,25 +625,23 @@ public class Main {
         List<ResultMap> resultMaps=stringProcessor.generateExpressionsByExamples(examplePairs);
 
 
-//        List<ExamplePartition> partitions = generatePartitions(expressionList, examplePairs);
 //        List<ExamplePartition> partitions=stringProcessor.generatePartitions(expressionList,examplePairs);
 //        showPartitions(partitions);
-        ExpressionGroup topKExps=stringProcessor.selectTopKExps(resultMaps,5);
-        stringProcessor.handleNewInput(testPairs, topKExps);
+//        ExpressionGroup topKExps=stringProcessor.selectTopKExps(resultMaps,5);
+        List<ExpressionGroup> expressionGroups=stringProcessor.selectTopKExps(resultMaps,10);
+        List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
 
+        for (ExamplePartition partition:partitions){
+            System.out.println("============================");
+            for (ExamplePair examplePair:partition.getExamplePairs()){
+                System.out.println(examplePair);
+            }
+            for (Expression expression:partition.getUsefulExpression().getExpressions()){
+                System.out.println(expression);
+            }
+        }
 
-
-
-        //        boolean needVerifyResult = false;
-//        boolean needToString = false;
-//        int deepth = 4;
-//        if (needVerifyResult) {
-//            System.out.println("--------------------------------------------");
-//            for (ValidationPair v:validationPairs){
-//                verifyResult(resExps, v.getInputString(), v.getTargetString(), needToString, deepth);
-//            }
-//            System.out.println("============================================\n");
-//        }
+        handleNewInput(testPairs, partitions);
 
 
     }

@@ -12,6 +12,7 @@ import com.zsf.flashextract.tools.Color;
 import com.zsf.interpreter.StringProcessor;
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.model.ExamplePair;
+import com.zsf.interpreter.model.ExamplePartition;
 import com.zsf.interpreter.model.ExpressionGroup;
 import com.zsf.interpreter.model.ResultMap;
 import org.apache.commons.io.FileUtils;
@@ -154,32 +155,18 @@ public class MainController {
 
         StringProcessor stringProcessor = new StringProcessor();
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
-        ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
+        List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
+        List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
 
-        // TODO 下面这一坨待重构
-        if (expressionGroup!=null){
-            ExpressionGroup bestExpressions=flashExtract.sortExpsAccSceneByColor(color,expressionGroup,5);
-            curExtraExpressionGroup=bestExpressions;
-            if (curExtraExpressionGroup!=null){
-                curExtraExpression=curExtraExpressionGroup.getExpressions().get(0);
-                // 由于FF可能会带来新的字符串(CONST)，所以普通的field就不再适用了。直接返回string即可
-                List<String> previewDatas=flashExtract.previewExpOnCR(color,curExtraExpression);
-                return previewDatas;
-            }else {
-                return null;
-            }
-        }else {
-            return null;
-        }
+        List<String> previewDatas=flashExtract.previewExpOnCR(color,partitions);
+        return previewDatas;
     }
 
     @RequestMapping(value = "/confirmExtraExp", method = RequestMethod.POST)
     @ResponseBody
     public MessageContainer confirmExtraExp(int colorNum) {
-        if (curExtraExpression!=null){
-            Color color = Color.getColor(colorNum);
-            flashExtract.confirmExtraExp(color,curExtraExpression);
-        }
+        Color color = Color.getColor(colorNum);
+        flashExtract.confirmExtraExp(color,curExtraExpression);
         // else : do nothing
 
         MessageContainer messageContainer = flashExtract.showSelectedFields();

@@ -158,7 +158,7 @@ public class ConcatenateExpression extends LinkingExpression {
 
     private boolean isConnector(Expression expression) {
         if (expression instanceof ConstStrExpression){
-            return ((ConstStrExpression) expression).getConstStr().length()<=1;
+            return ((ConstStrExpression) expression).getConstStr().length()==1;
         }
         return false;
     }

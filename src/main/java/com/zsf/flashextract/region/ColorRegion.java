@@ -11,11 +11,7 @@ import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
-import com.zsf.interpreter.expressions.string.SubStringExpression;
-import com.zsf.interpreter.model.ExamplePair;
-import com.zsf.interpreter.model.ExpressionGroup;
-import com.zsf.interpreter.model.Match;
-import com.zsf.interpreter.model.ResultMap;
+import com.zsf.interpreter.model.*;
 import com.zsf.interpreter.tool.ExpScoreComparator;
 
 import java.util.ArrayList;
@@ -218,9 +214,10 @@ public class ColorRegion {
         }
         StringProcessor stringProcessor = new StringProcessor();
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
-        ExpressionGroup expressionGroup = stringProcessor.selectTopKExps(resultMaps, 10);
+        // FIXME: 2017/4/17 这里为了测试partition刚刚改过
+        List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
 
-        this.expressionGroup = expressionGroup;
+        this.expressionGroup = expressionGroups.get(0);
         if (expressionGroup != null && expressionGroup.getExpressions().size() > 0) {
             List<String> strings = new ArrayList<String>();
             for (int index : needSelectLineIndex) {
@@ -274,19 +271,19 @@ public class ColorRegion {
      * 用通过FF系统得到的extraExps更新plainFields的editedText
      */
     private void updateFieldByExtraExps() {
-        if (extraExpressions.size() > 0) {
-            for (PlainField field : fieldsGenerated){
-                String str=field.getText();
-                for (Expression expression:extraExpressions){
-                    if (expression instanceof NonTerminalExpression){
-                        if (str!=null){
-                            str= ((NonTerminalExpression) expression).interpret(str);
-                        }
-                    }
-                }
-                field.setEditedText(str);
-            }
-        }
+//        if (extraExpressions.size() > 0) {
+//            for (PlainField field : fieldsGenerated){
+//                String str=field.getText();
+//                for (Expression expression:extraExpressions){
+//                    if (expression instanceof NonTerminalExpression){
+//                        if (str!=null){
+//                            str= ((NonTerminalExpression) expression).interpret(str);
+//                        }
+//                    }
+//                }
+//                field.setEditedText(str);
+//            }
+//        }
     }
 
     public int calculateLineIndex(int beginPos, int endPos) {
@@ -356,17 +353,23 @@ public class ColorRegion {
 
     /**
      * 将新的expression应用到plainField上(只返回预览效果，不保存结果)
-     *
-     * @param expression
      */
-    public List<String> previewExp(Expression expression) {
+    public List<String> previewExp(List<ExamplePartition> partitions) {
         if (fieldsGenerated != null && fieldsGenerated.size() > 0) {
             List<String> previewDatas = new ArrayList<String>();
             for (PlainField field : fieldsGenerated) {
+                // 下面这一块加入了partition，暂时未发现问题
+                int partitionIndex = StringProcessor.lookupPartitionIndex(field.getEditedText(), partitions);
+                ExamplePartition partition = partitions.get(partitionIndex);
+
+                ExpressionGroup topNExpression = StringProcessor.getTopNExpressions(partition, field.getEditedText(), 5);
+                Expression expression=topNExpression.getExpressions().get(0);
+
                 if (expression instanceof NonTerminalExpression) {
                     String txt = ((NonTerminalExpression) expression).interpret(field.getEditedText());
                     if (txt != null) {
                         previewDatas.add(txt);
+                        field.setUnConfirmedExtraExp(expression);
                     }
                 }
             }
@@ -381,11 +384,9 @@ public class ColorRegion {
      *
      * @param curExtraExpression
      */
-    public void addExtraExp(Expression curExtraExpression) {
-        if (this.extraExpressions == null) {
-            extraExpressions = new ArrayList<Expression>();
+    public void confirmExtraExp(Expression curExtraExpression) {
+        for (PlainField field : fieldsGenerated) {
+            field.confirmExtraExp();
         }
-        this.extraExpressions.add(curExtraExpression);
-        updateFieldByExtraExps();
     }
 }
