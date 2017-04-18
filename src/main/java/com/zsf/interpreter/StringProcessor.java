@@ -77,8 +77,7 @@ public class StringProcessor {
         RunTimeMeasurer.endTiming("generateSubString");
 
         // 上面的resultMap结合DAG就有了跳跃能力，而且无需存储中间结果(只需要存储跳跃边), 再resultMap的基础上再加上一些Loop语句就可实现全局搜索
-        // DAG在选择答案时可以结合loss func+bean search极大减小搜索空间。
-        // TODO: 2017/3/1 直接更新 resultMap，加入Loop
+        // DAG在选择答案时可以结合loss func+beam search极大减小搜索空间。
         generateLoop(outputString, resultMap);
 
 
@@ -100,10 +99,7 @@ public class StringProcessor {
     private void generateLoop(String outputString, ResultMap resultMap) {
         RunTimeMeasurer.startTiming();
         memorizeLoopMap=new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
-        // FIXME: 2017/4/16 当resultMap中map[i:j]的解较多时(比如60+)求解时间就会爆炸
-        // FIXME: 2017/4/16 根本原因是doGenerateLoop()中重复求解次数太多，用记忆画搜索来解决
         for (int start = 0; start < outputString.length(); start++) {
-
             for (int end = start + 1; end <= outputString.length(); end++) {
                 ExpressionGroup loopExpressions = doGenerateLoop(new LoopExpression(), start, end, resultMap);
                 loopExpressions = deDuplicateLoopExps(loopExpressions);
@@ -150,8 +146,6 @@ public class StringProcessor {
     private ExpressionGroup doGenerateLoop(LoopExpression baseLoopExpression, int start, int end, ResultMap resultMap) {
         // TODO: 2017/3/2 此方法内嵌到EG中去
 
-        // FIXME:直接这么做肯定会产生很多重复，比如计算[1:5]时统计过[3:4]的数据(并且更新到resultMap中), 然后计算[2:7]时又统计了一次[3:4]的数据(并且又更新了resultMap)
-        // FIXME: 2017/3/2 应该还是已DAG的形式保留, 而且能够【去重复】
         ExpressionGroup expressionGroup=memorizeLoopMap.get(new Pair<Integer, Integer>(start,end));
         if (expressionGroup!=null){
             return expressionGroup;

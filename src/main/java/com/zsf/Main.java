@@ -525,10 +525,10 @@ public class Main {
 //        examplePairs.add(new ExamplePair("1-1","2017-1"));
 //        examplePairs.add(new ExamplePair("10:20","2017-4"));
 
-        examplePairs.add(new ExamplePair("2000 Block of THOMAS AV","2000"));
-        examplePairs.add(new ExamplePair("3RD ST / REVERE AV","3"));
+//        examplePairs.add(new ExamplePair("2000 Block of THOMAS AV","2000"));
+//        examplePairs.add(new ExamplePair("3RD ST / REVERE AV","3"));
 
-        examplePairs.add(new ExamplePair("BROAD ST / CAPITOL AV","null"));
+//        examplePairs.add(new ExamplePair("BROAD ST / CAPITOL AV","null"));
 
 
 
@@ -536,7 +536,7 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03,Tue"));
 
         // 初级Loop能力
-//        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEA"));
+        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEA"));
 //        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
 
         // endregion
