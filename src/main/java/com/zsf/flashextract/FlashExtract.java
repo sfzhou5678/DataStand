@@ -187,7 +187,6 @@ public class FlashExtract {
      * 外部确认通过FF产生的某个表达式生效，就把这个EXP加入到对应的colorRegion中去
      *
      * @param color
-     * @param curExtraExpression
      */
     public void confirmExtraExp(Color color) {
         ColorRegion colorRegion = colorRegionMap.get(color);

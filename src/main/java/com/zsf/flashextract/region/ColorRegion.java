@@ -93,7 +93,6 @@ public class ColorRegion {
 
         if (needGenerateLineSelectors()) {
             if (doGenerateLineSelectors()) {
-                // FIXME: 2017/3/16 下面几个可能要一起调用？
                 generateLineFieldsByCurSelector();
 
                 generateExpressionGroup();
@@ -214,7 +213,6 @@ public class ColorRegion {
         }
         StringProcessor stringProcessor = new StringProcessor();
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
-        // FIXME: 2017/4/17 这里为了测试partition刚刚改过
         List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
 
         this.expressionGroup = expressionGroups.get(0);

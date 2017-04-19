@@ -24,88 +24,6 @@ import java.util.regex.Matcher;
 public class Main {
 
     /**
-     * 根据I->O的examples，利用generateStr()+generatePatrition()...得到能够正确处理I->0转换的表达式
-     * 整个过程类似中缀表达式求值：中缀表达式->后缀表达式->求值
-     * 对应本程序的inputString->[★根据examples得到的expression★]->outputString
-     * <p>
-     * 难点：
-     * 1. 如何找到能够正确映射I->0的表达式集合？
-     * 2. 如何给这些表达式排序找出最优解？
-     * <p>
-     * generateExpressionByEaxmples求得expression之后返回这个表达式，之后的所有I利用这个E来求得O即可
-     */
-    private static List<ExpressionGroup> generateExpressionsByExamples(List<ExamplePair> examplePairs) {
-        List<ExpressionGroup> expressionGroups = new ArrayList<ExpressionGroup>();
-        for (ExamplePair pair : examplePairs) {
-            String input = pair.getInputString();
-            String output = pair.getOutputString();
-
-            ExpressionGroup expressionGroup = generateStr(input, output,examplePairs);
-            System.out.println(String.format("Input=%s  Output=%s", input, output));
-            System.out.println(expressionGroup.size());
-            for (Expression exp : expressionGroup.getExpressions()) {
-                System.out.println(exp.toString());
-            }
-            if (expressionGroup != null) {
-                expressionGroups.add(expressionGroup);
-            }
-        }
-        return expressionGroups;
-    }
-
-
-    /**
-     * generate阶段要调用的函数
-     * 返回一个能够从input中生产output的expressions集合
-     *  @param inputString
-     * @param outputString
-     * @param examplePairs
-     */
-    public static ExpressionGroup generateStr(String inputString, String outputString, List<ExamplePair> examplePairs) {
-        // 论文中记作W W指能产生outputString[i，j]的所有方法集合,包括constStr[s[i,j]]以及动态获得子串方法generateSubString().
-        int len = outputString.length();
-        ResultMap resultMap = new ResultMap(len, len);
-
-        RunTimeMeasurer.startTiming();
-        List<Match> matches = buildStringMatches(inputString);
-
-        for (int i = 1; i <= len; i++) {
-            for (int j = 0; i + j <= len; j++) {
-                String subString = outputString.substring(j, j + i);
-
-                ExpressionGroup expressionGroup = new ExpressionGroup();
-                expressionGroup.insert(generateSubString(inputString, subString, matches));
-                if (needBeAddedIn(subString, inputString)) {
-                    expressionGroup.insert(new ConstStrExpression(subString));
-                }
-                resultMap.setData(j, i + j, expressionGroup);
-            }
-        }
-        RunTimeMeasurer.endTiming("generateSubString");
-
-        // FIXME: 2017/2/3 此方法过于耗时，当item数和每个item的长度增加时，解会爆炸增长
-        // FIXME: 2017/2/3 初步推测这和constStr过多有关
-        RunTimeMeasurer.startTiming();
-        resultMap.setData(0, len, generateJumpingExps(examplePairs,resultMap, 0, len));
-        RunTimeMeasurer.endTiming("generateJumpingExps");
-
-        RunTimeMeasurer.startTiming();
-        // FIXME: 2017/1/25 BUG:如果类似IBMHW，输出为IBM,HW，其中IBM是一个Loop，HW是一个LOOP但是现在程序不能产生这种Loop
-        // FIXME 原因应该是处在generateLoop的位置，应该和论文一样把他放到generateStr的每个循环中
-        // FIXME: 2017/2/3 当前的方法也比较耗时(约为concatRes的20%)
-        for (int i = 0; i < len; i++) {
-            for (int j = i + 1; j <= len; j++) {
-                resultMap.getData(i, j).insert(generateLoop(i, j, resultMap, len));
-            }
-        }
-        RunTimeMeasurer.endTiming("generateLoop");
-
-        ExpressionGroup usefulExpressions = resultMap.getData(0, len);
-        return usefulExpressions;
-    }
-
-
-    /**
      * 新方法：应对IBM这种跳跃式的output，可以先用Concate把o[0],o[1],o[2]连接起来
      * 之后generateLoop中只要把表达式全都一样的concate合并成一个Loop即可。
      * <p>
@@ -146,87 +64,6 @@ public class Main {
         return expressionGroup;
     }
 
-    /**
-     * 已经在concatResExp()中处理过跳跃性的res(如首字母提取)
-     * generateLoop()中只要找到是拼接起来的，而且左右表达式一致的exp即可。
-     */
-    private static ExpressionGroup generateLoop(int passbyNode, int endNode, ResultMap resultMap, int outputLen) {
-        // TODO: 2017/1/23 效率存在问题，output一旦变长，程序就运行不出来了
-
-        ExpressionGroup outputExpressions = resultMap.getData(passbyNode, endNode);
-        ExpressionGroup loopExpressions = new ExpressionGroup();
-//        for (Expression exp : outputExpressions.getExpressions()) {
-//            if (exp instanceof DeprecatedConcatenateExpression) {
-//                // TODO: 2017/2/16 这里也许可以改为：1. 左做loop 2. 右做loop 3. 合并左右 ，这样可以解决类似“1 2 3 Bank Of China”->"1-2-3 BOC"之类的问题
-//                if (isSameExpression(((DeprecatedConcatenateExpression) exp).getLeftExp(), ((DeprecatedConcatenateExpression) exp).getRightExp())) {
-////                    System.out.println("same:");
-////                    System.out.println(exp);
-//                    LoopExpression loop = new LoopExpression(LoopExpression.LINKING_MODE_CONCATENATE, exp, passbyNode, endNode);
-////                    System.out.println(loop.toString());
-//                    loopExpressions.insert(loop);
-//                    if (endNode == outputLen) {
-//                        LoopExpression loopToEnd = new LoopExpression(LoopExpression.LINKING_MODE_CONCATENATE, exp, passbyNode, PosExpression.END_POS);
-//                        loopExpressions.insert(loopToEnd);
-//                    }
-//                }
-//            }
-//        }
-        return loopExpressions;
-    }
-
-    /**
-     * 返回从intputString中得到target的所有方式
-     * 如：
-     * inputString=123-456-123,targetString=123
-     * 那么就返回s[0：3]+s[-3：-1]...
-     * <p>
-     * 返回一组对subStr(s,p1,p2)方法的引用，其中p1,p2则是通过generatePos()得到。
-     *
-     * @param inputString  输入数据
-     * @param targetString 要从intputString中截取的字符串
-     * @param matches
-     */
-    public static ExpressionGroup generateSubString(String inputString, String targetString, List<Match> matches) {
-        ExpressionGroup result = new ExpressionGroup();
-
-        ExpressionGroup substr2Expressions = generateSubStr2(inputString, targetString);
-        result.insert(substr2Expressions);
-
-        int targetLen = targetString.length();
-        for (int k = 0; k <= inputString.length() - targetLen; k++) {
-            // 如果input中的某一段能够和target匹配(因为target定长，所以遍历input，每次抽取I中长度为targetLen的一段进行比较)，那么就把此时的posExpression添加到res中
-            // TODO: 2017/1/22 这里可能也可以利用matches加速处理
-            if (inputString.substring(k, k + targetLen).equals(targetString)) {
-                List<PosExpression> res1 = generatePos(inputString, k, matches);
-                List<PosExpression> res2 = generatePos(inputString, k + targetLen, matches);
-
-                // 把找到的pos转换为subString
-                for (PosExpression expression1 : res1) {
-                    for (PosExpression expression2 : res2) {
-                        result.insert(new SubStringExpression(expression1, expression2));
-                    }
-                }
-                break;
-            }
-        }
-        return result;
-    }
-
-    private static ExpressionGroup generateSubStr2(String inputString, String targetString) {
-        ExpressionGroup res = new ExpressionGroup();
-        for (int i = 0; i < usefulRegex.size(); i++) {
-            Regex regex = usefulRegex.get(i);
-            Matcher matcher = regex.getPattern().matcher(inputString);
-            int count = 0;
-            while (matcher.find()) {
-                count++;
-                if (matcher.group().equals(targetString)) {
-                    res.insert(new SubString2Expression(regex, count));
-                }
-            }
-        }
-        return res;
-    }
 
     /**
      * 返回一组能够取得相应位置的'表达式!'，如Pos(r1,r2,c),其中r是正则表达式(在这里是token)，c代表第c个匹配
@@ -299,43 +136,9 @@ public class Main {
         return result;
     }
 
-
-
-
-    public static List<Regex> usefulRegex = initUsefulRegex();
-
-    /**
-     * 增加有效的token可以强化匹配能力
-     * <p>
-     * 但是每添加一个token，答案数就要乘以这个token能产生的结果数
-     * token过多会导致结果爆炸增长(很容易伤几千万)
-     *
-     * @return
-     */
-    private static List<Regex> initUsefulRegex() {
-        // TODO 这个函数已经弃用，真正的regex在StringProcessor和FlashExtract中
-
-        return null;
-    }
-
     // region # 暂时不需要
 
 
-    /**
-     * 在每次有新的input时就调用此方法，可以返回 各个pos上所有能够和input匹配的集合
-     * 当generatePosition()需要时，直接根据match的pos(index)去查找使用，避免重复计算
-     */
-    private static List<Match> buildStringMatches(String inputString) {
-        // TODO: 2017/2/5 加入match次数的能力
-        // TODO: 2017/2/5 加入不match的能力
-        List<Match> matches = new ArrayList<Match>();
-        for (int i = 0; i < usefulRegex.size(); i++) {
-            Regex regex = usefulRegex.get(i);
-            List<Match> curMatcher = regex.doMatch(inputString);
-            matches.addAll(curMatcher);
-        }
-        return matches;
-    }
 
     /**
      * 注：r=TokenSeq(T1,T2..Tn)表示Str要符合[T1]+[T2]+...[Tn]+这种形式
@@ -623,11 +426,6 @@ public class Main {
         StringProcessor stringProcessor=new StringProcessor();
 
         List<ResultMap> resultMaps=stringProcessor.generateExpressionsByExamples(examplePairs);
-
-
-//        List<ExamplePartition> partitions=stringProcessor.generatePartitions(expressionList,examplePairs);
-//        showPartitions(partitions);
-//        ExpressionGroup topKExps=stringProcessor.selectTopKExps(resultMaps,5);
         List<ExpressionGroup> expressionGroups=stringProcessor.selectTopKExps(resultMaps,10);
         List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
 
@@ -640,9 +438,6 @@ public class Main {
                 System.out.println(expression);
             }
         }
-
         handleNewInput(testPairs, partitions);
-
-
     }
 }
