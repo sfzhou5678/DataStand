@@ -6,20 +6,13 @@ import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.RegExpression;
 import com.zsf.interpreter.expressions.linking.DeprecatedConcatenateExpression;
 import com.zsf.interpreter.expressions.pos.PosExpression;
-import com.zsf.interpreter.expressions.regex.*;
-import com.zsf.interpreter.expressions.string.ConstStrExpression;
-import com.zsf.interpreter.expressions.string.SubString2Expression;
-import com.zsf.interpreter.expressions.string.SubStringExpression;
+import com.zsf.interpreter.expressions.string.RegSubStringExpression;
 import com.zsf.interpreter.model.*;
-import com.zsf.interpreter.tool.ExpressionComparator;
-import com.zsf.interpreter.tool.RunTimeMeasurer;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.regex.Matcher;
 
 public class Main {
 
@@ -37,26 +30,26 @@ public class Main {
         for (int j = start + 1; j < end; j++) {
             ExpressionGroup curExpressions = resultMap.getData(start, j);
             if (curExpressions.size() > 0) {
-                ExpressionGroup tmpConcatedExps = DeprecatedConcatenateExpression.concatenateExp(curExpressions, generateJumpingExps(examplePairs,resultMap, j, end));
-                newExpressions.insert(getValidExpressions(examplePairs,tmpConcatedExps));
+                ExpressionGroup tmpConcatedExps = DeprecatedConcatenateExpression.concatenateExp(curExpressions, generateJumpingExps(examplePairs, resultMap, j, end));
+                newExpressions.insert(getValidExpressions(examplePairs, tmpConcatedExps));
             }
         }
         return newExpressions;
     }
 
     private static ExpressionGroup getValidExpressions(List<ExamplePair> examplePairs, ExpressionGroup tmpConcatedExps) {
-        ExpressionGroup expressionGroup=new ExpressionGroup();
-        for (Expression exp:tmpConcatedExps.getExpressions()){
-            if (exp instanceof NonTerminalExpression){
-                boolean needAddIn=true;
-                for (ExamplePair examplePair:examplePairs){
-                    String ans=((NonTerminalExpression) exp).interpret(examplePair.getInputString());
-                    if (!examplePair.getOutputString().contains(ans)){
-                        needAddIn=false;
+        ExpressionGroup expressionGroup = new ExpressionGroup();
+        for (Expression exp : tmpConcatedExps.getExpressions()) {
+            if (exp instanceof NonTerminalExpression) {
+                boolean needAddIn = true;
+                for (ExamplePair examplePair : examplePairs) {
+                    String ans = ((NonTerminalExpression) exp).interpret(examplePair.getInputString());
+                    if (!examplePair.getOutputString().contains(ans)) {
+                        needAddIn = false;
                         break;
                     }
                 }
-                if (needAddIn){
+                if (needAddIn) {
                     expressionGroup.insert(exp);
                 }
             }
@@ -139,7 +132,6 @@ public class Main {
     // region # 暂时不需要
 
 
-
     /**
      * 注：r=TokenSeq(T1,T2..Tn)表示Str要符合[T1]+[T2]+...[Tn]+这种形式
      * 如：r=TokenSea(num，letter)，那么str必须是123abc或1Abb这种形式才能和r匹配
@@ -198,8 +190,8 @@ public class Main {
                 return false;
             }
         }
-        if (left instanceof SubString2Expression) {
-            return ((SubString2Expression) left).loopEquals(right);
+        if (left instanceof RegSubStringExpression) {
+            return ((RegSubStringExpression) left).loopEquals(right);
         } else {
             return false;
         }
@@ -251,7 +243,6 @@ public class Main {
     }
 
 
-
     /**
      * 根据example得到partitions之后可以开始处理新的输入
      * 首先在partition找到newInput所属的分类
@@ -297,8 +288,9 @@ public class Main {
         System.out.println("期望输出：" + v.getTargetString());
         for (Expression expression : topNExpression.getExpressions()) {
             if (expression instanceof NonTerminalExpression) {
-                if (v.getTargetString().equals(((NonTerminalExpression) expression).interpret(v.getInputString())))
-                    System.out.println(((NonTerminalExpression) expression).interpret(v.getInputString()) + " , " + expression.toString());
+                System.out.println(((NonTerminalExpression) expression).interpret(v.getInputString()) + " , " + expression.toString());
+
+//                if (v.getTargetString().equals(((NonTerminalExpression) expression).interpret(v.getInputString())))
             }
         }
     }
@@ -314,8 +306,8 @@ public class Main {
         List<ExamplePair> examplePairs = new ArrayList<ExamplePair>();
         // region # success
         // 提取结构化数据能力
-//        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03"));
-//        examplePairs.add(new ExamplePair("Airport,40.77446436,-73.86970997,Sun Jul 15 14:51:15 +0800 2012", "Airport,Jul 15"));
+//        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03,18:08:57"));
+//        examplePairs.add(new ExamplePair("Airport,40.77446436,-73.86970997,Sun Jul 15 14:51:15 +0800 2012", "Airport,Jul 15,14:51:15"));
 //        examplePairs.add(new ExamplePair("Bridge,Tue Apr 03 18:00:25 +0800 2012", "Bridge,Apr 03"));
 //        examplePairs.add(new ExamplePair("Arts & Crafts Store,40.71981038,-74.00258103,Tue Apr 03 18:00:09 +0800 2012", "Arts & Crafts Store,Apr 03,Tue"));
 //
@@ -328,22 +320,29 @@ public class Main {
 //        examplePairs.add(new ExamplePair("1-1","2017-1"));
 //        examplePairs.add(new ExamplePair("10:20","2017-4"));
 
-//        examplePairs.add(new ExamplePair("2000 Block of THOMAS AV","2000"));
+//        examplePairs.add(new ExamplePair("2000 Block of THOMAS AV","2000 Block of THOMAS AV"));
 //        examplePairs.add(new ExamplePair("3RD ST / REVERE AV","3"));
 
-//        examplePairs.add(new ExamplePair("BROAD ST / CAPITOL AV","null"));
-
+//        examplePairs.add(new ExamplePair("BROAD ST / CAPITOL AV","BROAD ST / CAPITOL AV"));
 
 
         // 单个较长output
 //        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03,Tue"));
 
         // 初级Loop能力
-        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEA"));
+//        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEA"));
 //        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
+//        examplePairs.add(new ExamplePair("the Association for the Advancement of Artificial Intelligence","AAAI"));
+//        examplePairs.add(new ExamplePair("Association for Computing Machinery", "ACM"));
+//        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
+        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
+        examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
+        examplePairs.add(new ExamplePair("15688888888", "手机"));
+        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "NULL"));
+        examplePairs.add(new ExamplePair("NULL", "缺失"));
 
         // endregion
-//        examplePairs.add(new ExamplePair("2015-05-10 23:59:00","05.10.2015"));
+//        examplePairs.add(new ExamplePair("2015-05","于2015年05月"));
         //        examplePairs.add(new ExamplePair("                       姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Ran Liu"));
 //        examplePairs.add(new ExamplePair("                       姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Associate Professor/Senior Engineer"));
 //        examplePairs.add(new ExamplePair("                       姓名：<span class=\"name\">Ran Liu</span> <br> 职称：<span class=\"zc\">Associate Professor/Senior Engineer</span><br> 联系方式：<span class=\"lxfs\">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class=\"major\">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>","Medical and stereo image processing; IC design; Biomedical Engineering"));
@@ -383,9 +382,8 @@ public class Main {
 //        testPairs.add(new ValidationPair("3-25", "2017-3"));
 //        testPairs.add(new ValidationPair("08:19", "2017-4"));
 //        testPairs.add(new ValidationPair("2016-07", "2016-07"));
-        testPairs.add(new ValidationPair("IRVING ST / 7TH AV","null"));
-        testPairs.add(new ValidationPair("1500 Block of CALIFORNIA ST","1500"));
-
+//        testPairs.add(new ValidationPair("IRVING ST / 7TH AV","null"));
+//        testPairs.add(new ValidationPair("1500 Block of CALIFORNIA ST","1500"));
 
 
 //        // 初级Loop
@@ -411,7 +409,8 @@ public class Main {
 //        testPairs.add(new ValidationPair("1.3213.02", "1-3213-02"));
 
         // FIXME: 2017/2/21 去掉注释
-//        testPairs.add(new ValidationPair("testPairs.add(new ValidationPair(\"Foundation of Software Engineering\",\"FSE\")); //测试","Coffee Shop,Jul 13"));
+
+        testPairs.add(new ValidationPair("System.out.println(\"Hello World!\"); //测试代码","System.out.println(\"Hello World!\"); "));
 //        testPairs.add(new ValidationPair("40.69990191,//,Sat Nov 17 20:36:26 +0800,Food & Drink Shop","Food & Drink Shop,Nov 17"));
 //        testPairs.add(new ValidationPair("40.74218831,-73.9879//2419,Park,Wed Jul 11 11:42:00 +0800 2012","Park,Jul 11"));
 
@@ -423,18 +422,18 @@ public class Main {
         List<ExamplePair> examplePairs = getExamplePairs();
         List<ValidationPair> testPairs = getTestPairs();
 
-        StringProcessor stringProcessor=new StringProcessor();
+        StringProcessor stringProcessor = new StringProcessor();
 
-        List<ResultMap> resultMaps=stringProcessor.generateExpressionsByExamples(examplePairs);
-        List<ExpressionGroup> expressionGroups=stringProcessor.selectTopKExps(resultMaps,10);
+        List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
+        List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
         List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
 
-        for (ExamplePartition partition:partitions){
+        for (ExamplePartition partition : partitions) {
             System.out.println("============================");
-            for (ExamplePair examplePair:partition.getExamplePairs()){
+            for (ExamplePair examplePair : partition.getExamplePairs()) {
                 System.out.println(examplePair);
             }
-            for (Expression expression:partition.getUsefulExpression().getExpressions()){
+            for (Expression expression : partition.getUsefulExpression().getExpressions()) {
                 System.out.println(expression);
             }
         }

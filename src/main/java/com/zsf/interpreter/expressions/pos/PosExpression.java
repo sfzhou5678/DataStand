@@ -8,6 +8,7 @@ import com.zsf.interpreter.expressions.TerminalExpression;
 public abstract class PosExpression extends TerminalExpression {
 
     public static final int ILLEGAL_POS=Integer.MIN_VALUE;
+    public static final int START_POS=-Integer.MAX_VALUE;
     public static final int END_POS=Integer.MAX_VALUE;
 
     @Override

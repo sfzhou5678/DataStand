@@ -137,19 +137,19 @@ public class WordSegmentation {
         List<String> segmentation1= getSegmentationByRMM(str1,maxWordLength);
         List<String> segmentation2= getSegmentationByRMM(str2,maxWordLength);
 
-        StringBuilder sb1=new StringBuilder("[");
-        for (String s:segmentation1){
-            sb1.append(s+" ");
-        }
-        sb1.append("]");
-        System.out.println(sb1.toString());
-
-        StringBuilder sb2=new StringBuilder("[");
-        for (String s:segmentation2){
-            sb2.append(s+" ");
-        }
-        sb2.append("]");
-        System.out.println(sb2.toString());
+//        StringBuilder sb1=new StringBuilder("[");
+//        for (String s:segmentation1){
+//            sb1.append(s+" ");
+//        }
+//        sb1.append("]");
+//        System.out.println(sb1.toString());
+//
+//        StringBuilder sb2=new StringBuilder("[");
+//        for (String s:segmentation2){
+//            sb2.append(s+" ");
+//        }
+//        sb2.append("]");
+//        System.out.println(sb2.toString());
 
         int distance= calculateLevenshtein(segmentation1,segmentation2);
 

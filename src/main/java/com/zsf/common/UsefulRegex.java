@@ -66,6 +66,7 @@ public class UsefulRegex {
         regexList.add(new EpicRegex("<", "[<]+"));
         regexList.add(new EpicRegex(">", "[>]+"));
         regexList.add(new EpicRegex("/", "[/]+"));
+        regexList.add(new EpicRegex("@", "[@]+"));
         regexList.add(new EpicRegex("SpaceToken", "[ ]+"));
         regexList.add(new EpicRegex("\"", "[\"]+"));
 

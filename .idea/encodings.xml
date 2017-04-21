@@ -29,8 +29,8 @@
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/RareRegex.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/Regex.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/ConstStrExpression.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/RegSubStringExpression.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/StringExpression.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/SubString2Expression.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/SubStringExpression.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ExamplePair.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ExamplePartition.java" charset="UTF-8" />

@@ -4,7 +4,7 @@ import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.pos.PosExpression;
 import com.zsf.interpreter.expressions.regex.Regex;
-import com.zsf.interpreter.expressions.string.SubString2Expression;
+import com.zsf.interpreter.expressions.string.RegSubStringExpression;
 import com.zsf.interpreter.model.Match;
 
 import java.util.List;
@@ -65,14 +65,14 @@ public class LoopExpression extends NonTerminalExpression {
         if (baseExpression == null) {
             System.out.println("Loop(error)");
         }
-        if (baseExpression instanceof SubString2Expression) {
+        if (baseExpression instanceof RegSubStringExpression) {
             if (endCount == PosExpression.END_POS) {
                 ans = String.format("Loop(%s(%s(%s,%d,%d,%s)))", linkingMode,
-                        "subStr2", ((SubString2Expression) baseExpression).getRegex().getRegexName(),
+                        "subStr2", ((RegSubStringExpression) baseExpression).getRegex().getRegexName(),
                         startCount, stepSize, "END");
             } else {
                 ans = String.format("Loop(%s(%s(%s,%d,%d,%d)))", linkingMode,
-                        "subStr2", ((SubString2Expression) baseExpression).getRegex().getRegexName(),
+                        "subStr2", ((RegSubStringExpression) baseExpression).getRegex().getRegexName(),
                         startCount, stepSize, endCount);
             }
         } else {
@@ -90,9 +90,9 @@ public class LoopExpression extends NonTerminalExpression {
     public String interpret(String inputString) {
         // TODO: 2017/3/2 改成count形式
         String ans = "";
-        if (baseExpression instanceof SubString2Expression) {
+        if (baseExpression instanceof RegSubStringExpression) {
             // TODO: 2017/2/16 ans+=的方式有问题，改成linkedExp
-            Regex regex = ((SubString2Expression) baseExpression).getRegex();
+            Regex regex = ((RegSubStringExpression) baseExpression).getRegex();
             List<Match> matches = regex.doMatch(inputString);
             if (endCount == PosExpression.END_POS) {
                 for (Match match : matches) {
@@ -135,12 +135,12 @@ public class LoopExpression extends NonTerminalExpression {
 
 
     public void addNode(Expression expression) {
-        if (expression instanceof SubString2Expression) {
-            int count = ((SubString2Expression) expression).getC();
+        if (expression instanceof RegSubStringExpression) {
+            int count = ((RegSubStringExpression) expression).getC();
             totalExpsCount++;
             if (totalExpsCount==1){
                 startCount=count;
-                this.maxMatchesCount =((SubString2Expression) expression).getTotalC();
+                this.maxMatchesCount =((RegSubStringExpression) expression).getTotalC();
             }
             endCount=count;
             this.baseExpression=expression;
@@ -186,7 +186,7 @@ public class LoopExpression extends NonTerminalExpression {
     public boolean isLegalExpression(Expression expression) {
         // TODO 因为本程序中Loop是从前往后产生的，所以curStart一定要>=endCount(上一个结束的Node)
         // TODO: 2017/3/2 还有更多判断，后期处理
-        if (!(expression instanceof LoopExpression || expression instanceof SubString2Expression)) {
+        if (!(expression instanceof LoopExpression || expression instanceof RegSubStringExpression)) {
             // 暂时假设新的exp必须是loop或者substr2
             return false;
         }
@@ -194,12 +194,12 @@ public class LoopExpression extends NonTerminalExpression {
             // FIXME: 2017/4/16 这段的意义忘了，可能会导致bug？
             if (expression instanceof LoopExpression) {
                 baseExpression = ((LoopExpression) expression).getBaseExpression();
-            } else if (expression instanceof SubString2Expression) {
+            } else if (expression instanceof RegSubStringExpression) {
                 baseExpression = expression;
             }
         }
-        if (expression instanceof SubString2Expression) {
-            int count = ((SubString2Expression) expression).getC();
+        if (expression instanceof RegSubStringExpression) {
+            int count = ((RegSubStringExpression) expression).getC();
             if (count <= endCount) {
                 return false;
             }
@@ -227,8 +227,8 @@ public class LoopExpression extends NonTerminalExpression {
     private boolean isSameExpressionInLoop(Expression baseExpression, Expression expression) {
         if (expression instanceof LoopExpression){
             return baseExpression.equals(((LoopExpression) expression).getBaseExpression());
-        }else if (expression instanceof SubString2Expression){
-            return ((SubString2Expression) expression).loopEquals(baseExpression);
+        }else if (expression instanceof RegSubStringExpression){
+            return ((RegSubStringExpression) expression).loopEquals(baseExpression);
         }
         return false;
     }

@@ -8,7 +8,7 @@ import com.zsf.interpreter.expressions.loop.LoopExpression;
 import com.zsf.interpreter.expressions.pos.*;
 import com.zsf.interpreter.expressions.regex.*;
 import com.zsf.interpreter.expressions.string.ConstStrExpression;
-import com.zsf.interpreter.expressions.string.SubString2Expression;
+import com.zsf.interpreter.expressions.string.RegSubStringExpression;
 import com.zsf.interpreter.expressions.string.SubStringExpression;
 import com.zsf.interpreter.model.*;
 import com.zsf.interpreter.tool.ExpressionComparator;
@@ -236,12 +236,12 @@ public class StringProcessor {
             while (matcher.find()) {
                 count++;
                 if (matcher.group().equals(targetString)) {
-                    curRegExpressions.insert(new SubString2Expression(regex, count));
+                    curRegExpressions.insert(new RegSubStringExpression(regex, count));
                 }
             }
             for (Expression expression : curRegExpressions.getExpressions()) {
-                if (expression instanceof SubString2Expression) {
-                    ((SubString2Expression) expression).setTotalC(count);
+                if (expression instanceof RegSubStringExpression) {
+                    ((RegSubStringExpression) expression).setTotalC(count);
                 }
             }
             res.insert(curRegExpressions);
@@ -267,7 +267,7 @@ public class StringProcessor {
         List<PosExpression> result = new ArrayList<PosExpression>();
         // 首先把k这个位置(正向数底k个，逆向数第-(inputString.length()-k)个)加到res中
         if (k == 0) {
-            result.add(new AbsPosExpression(k));
+            result.add(new AbsPosExpression(PosExpression.START_POS));
         }
         if (k == inputString.length()) {
             result.add(new AbsPosExpression(PosExpression.END_POS));
