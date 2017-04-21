@@ -68,9 +68,6 @@ public class StringProcessor {
                 ExpressionGroup expressionGroup = new ExpressionGroup();
                 ExpressionGroup tmpExpressgionGroup = generateSubString(inputString, subString, matches);
                 expressionGroup.insert(tmpExpressgionGroup);
-                if (needBeAddedIn(subString, inputString)) {
-                    expressionGroup.insert(new ConstStrExpression(subString));
-                }
                 resultMap.setData(j, i + j, expressionGroup);
             }
         }
@@ -222,6 +219,9 @@ public class StringProcessor {
                 }
                 break;
             }
+        }
+        if (needBeAddedIn(targetString, inputString)) {
+            result.insert(new ConstStrExpression(targetString));
         }
         return result;
     }
