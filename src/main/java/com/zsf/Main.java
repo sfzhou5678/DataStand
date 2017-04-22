@@ -402,7 +402,7 @@ public class Main {
 
         // FIXME: 2017/2/21 去掉注释
 
-        testPairs.add(new ValidationPair("System.out.println(\"Hello World!\"); //测试代码","System.out.println(\"Hello World!\"); "));
+//        testPairs.add(new ValidationPair("System.out.println(\"Hello World!\"); //测试代码","System.out.println(\"Hello World!\"); "));
 //        testPairs.add(new ValidationPair("40.69990191,//,Sat Nov 17 20:36:26 +0800,Food & Drink Shop","Food & Drink Shop,Nov 17"));
 //        testPairs.add(new ValidationPair("40.74218831,-73.9879//2419,Park,Wed Jul 11 11:42:00 +0800 2012","Park,Jul 11"));
 

@@ -88,10 +88,10 @@ public class LoopExpression extends NonTerminalExpression {
             // TODO: 2017/2/16 ans+=的方式有问题，改成linkedExp
             Regex regex = ((RegSubStringExpression) baseExpression).getRegex();
             List<Match> matches = regex.doMatch(inputString);
-            endCount = endCount < 0 ? endCount + matches.size()+1 : endCount;
-            startCount = startCount < 0 ? startCount + matches.size()+1 : startCount;
+            int endCountCopy = endCount < 0 ? endCount + matches.size()+1 : endCount;
+            int startCountCopy = startCount < 0 ? startCount + matches.size()+1 : startCount;
             try {
-                for (int i = startCount - 1; i < endCount; i += stepSize) {
+                for (int i = startCountCopy - 1; i < endCountCopy; i += stepSize) {
                     ans += matches.get(i).getMatchedString();
                 }
             } catch (IndexOutOfBoundsException e) {
