@@ -10,13 +10,13 @@ import java.util.List;
 /**
  * Created by hasee on 2017/2/28.
  */
-public class MatchStartPos extends PosExpression {
+public class StartRegPos extends PosExpression {
 
     private Regex r;
     private int count;
     private int maxCount;
 
-    public MatchStartPos(Regex r, int count,int maxCount) {
+    public StartRegPos(Regex r, int count, int maxCount) {
         this.r = r;
         this.count = count;
         this.maxCount=maxCount;
@@ -49,12 +49,12 @@ public class MatchStartPos extends PosExpression {
 
     @Override
     public String toString() {
-        return String.format("sRegPos(%s,%d)", r.toString(), count);
+        return String.format("startRegPos(%s,%d)", r.toString(), count);
     }
 
     @Override
     public Expression deepClone() {
-        return new MatchStartPos(r, count,maxCount);
+        return new StartRegPos(r, count,maxCount);
     }
 
     @Override
@@ -64,8 +64,8 @@ public class MatchStartPos extends PosExpression {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof MatchStartPos) {
-            return r.equals(((MatchStartPos) obj).getR()) && count == ((MatchStartPos) obj).getCount();
+        if (obj instanceof StartRegPos) {
+            return r.equals(((StartRegPos) obj).getR()) && count == ((StartRegPos) obj).getCount();
         }
         return false;
     }

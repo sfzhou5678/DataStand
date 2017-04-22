@@ -95,7 +95,7 @@ public class StringProcessor {
      */
     private void generateLoop(String outputString, ResultMap resultMap) {
         RunTimeMeasurer.startTiming();
-        memorizeLoopMap=new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+        memorizeLoopMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
         for (int start = 0; start < outputString.length(); start++) {
             for (int end = start + 1; end <= outputString.length(); end++) {
                 ExpressionGroup loopExpressions = doGenerateLoop(new LoopExpression(), start, end, resultMap);
@@ -110,11 +110,11 @@ public class StringProcessor {
         // FIXME: 2017/3/2 复杂度是n^2的 只能应对小规模数据集
         ExpressionGroup eg = new ExpressionGroup();
         for (Expression exp : loopExpressions.getExpressions()) {
-            if (!(exp instanceof LoopExpression)){
+            if (!(exp instanceof LoopExpression)) {
                 // 要求exp必须是loop，而且size必须大于等于2
                 continue;
             }
-            if (((LoopExpression) exp).getTotalExpsCount()<2){
+            if (((LoopExpression) exp).getTotalExpsCount() < 2) {
                 continue;
             }
             boolean needAdd = true;
@@ -124,7 +124,7 @@ public class StringProcessor {
                         needAdd = false;
                         break;
                     }
-                }catch (Exception e1){
+                } catch (Exception e1) {
                     e1.printStackTrace();
                 }
 
@@ -139,12 +139,13 @@ public class StringProcessor {
     /**
      * 用于Loop的记忆化搜索的map
      */
-    private HashMap<Pair<Integer,Integer>,ExpressionGroup> memorizeLoopMap=new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+    private HashMap<Pair<Integer, Integer>, ExpressionGroup> memorizeLoopMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+
     private ExpressionGroup doGenerateLoop(LoopExpression baseLoopExpression, int start, int end, ResultMap resultMap) {
         // TODO: 2017/3/2 此方法内嵌到EG中去
 
-        ExpressionGroup expressionGroup=memorizeLoopMap.get(new Pair<Integer, Integer>(start,end));
-        if (expressionGroup!=null){
+        ExpressionGroup expressionGroup = memorizeLoopMap.get(new Pair<Integer, Integer>(start, end));
+        if (expressionGroup != null) {
             return expressionGroup;
         }
         ExpressionGroup validLoopExpressionGroup = new ExpressionGroup();
@@ -161,7 +162,7 @@ public class StringProcessor {
                     validLoopExpressionGroup.insert(loopExpression);
                 }
             }
-            memorizeLoopMap.put(new Pair<Integer, Integer>(start,end),validLoopExpressionGroup);
+            memorizeLoopMap.put(new Pair<Integer, Integer>(start, end), validLoopExpressionGroup);
             return validLoopExpressionGroup;
         }
 
@@ -181,7 +182,7 @@ public class StringProcessor {
                 }
             }
         }
-        memorizeLoopMap.put(new Pair<Integer, Integer>(start,end),validLoopExpressionGroup);
+        memorizeLoopMap.put(new Pair<Integer, Integer>(start, end), validLoopExpressionGroup);
         return validLoopExpressionGroup;
     }
 
@@ -200,8 +201,8 @@ public class StringProcessor {
     private ExpressionGroup generateSubString(String inputString, String targetString, List<Match> matches) {
         ExpressionGroup result = new ExpressionGroup();
 
-        ExpressionGroup substr2Expressions = generateSubStr2(inputString, targetString);
-        result.insert(substr2Expressions);
+        ExpressionGroup regSubstrExpressions = generateRegSubStr(inputString, targetString);
+        result.insert(regSubstrExpressions);
 
         int targetLen = targetString.length();
         for (int k = 0; k <= inputString.length() - targetLen; k++) {
@@ -226,7 +227,16 @@ public class StringProcessor {
         return result;
     }
 
-    private ExpressionGroup generateSubStr2(String inputString, String targetString) {
+    /**
+     * 产生RegSubStr(r,c)
+     * <p>
+     * 这种截取子串的方法不需要通过r1和r2夹逼确定位置，有时会取得比substr更好的效果
+     *
+     * @param inputString
+     * @param targetString
+     * @return
+     */
+    private ExpressionGroup generateRegSubStr(String inputString, String targetString) {
         ExpressionGroup res = new ExpressionGroup();
         for (int i = 0; i < usefulRegex.size(); i++) {
             Regex regex = usefulRegex.get(i);
@@ -276,7 +286,7 @@ public class StringProcessor {
         // 找到MatchPos形式的pos表达式
         for (Match match : matches) {
             if (match.getMatchedIndex() == k) {
-                result.add(new MatchStartPos(match.getRegex(), match.getCount(), match.getMaxCount()));
+                result.add(new StartRegPos(match.getRegex(), match.getCount(), match.getMaxCount()));
             } else if ((match.getMatchedIndex() + match.getMatchedString().length()) == k) {
                 result.add(new MatchEndPos(match.getRegex(), match.getCount(), match.getMaxCount()));
             }
@@ -284,7 +294,7 @@ public class StringProcessor {
 
         /**
          * 新方法：
-         * TODO 重构代码
+         * TODO 2017/2/15 重构代码
          */
         for (int k1 = k - 1; k1 >= 0; k1--) {
             for (int m1 = 0; m1 < matches.size(); m1++) {
@@ -414,6 +424,7 @@ public class StringProcessor {
      * 用于selectTopK记忆化搜索的Map
      */
     private Map<Pair<Integer, Integer>, ExpressionGroup> memorizeTopKMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+
     public List<ExpressionGroup> selectTopKExps(List<ResultMap> resultMaps, int k) {
         if (resultMaps == null && resultMaps.size() <= 0) {
             return null;
@@ -421,7 +432,7 @@ public class StringProcessor {
         RunTimeMeasurer.startTiming();
         List<ExpressionGroup> ansList = new ArrayList<ExpressionGroup>();
         for (ResultMap resultMap : resultMaps) {
-            memorizeTopKMap =new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
+            memorizeTopKMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
             ExpressionGroup g = doSelectTopKExps(resultMap, 0, resultMap.getCol(), k);
             ansList.add(g);
             for (Expression e : g.getExpressions()) {
@@ -444,8 +455,8 @@ public class StringProcessor {
         if (start + 1 == end) {
             return resultMap.getData(start, end);
         }
-        ExpressionGroup expressionGroup= memorizeTopKMap.get(new Pair<Integer, Integer>(start,end));
-        if (expressionGroup!=null){
+        ExpressionGroup expressionGroup = memorizeTopKMap.get(new Pair<Integer, Integer>(start, end));
+        if (expressionGroup != null) {
             return expressionGroup;
         }
         // TODO: 2017/4/16 在这里加入记忆画搜索，如果[start,end]的结果已经计算过，那么就直接返回
@@ -465,8 +476,8 @@ public class StringProcessor {
                 newExpressions = newExpressions.selecTopK(k);
             }
         }
-        ExpressionGroup res=newExpressions.selecTopK(k);
-        memorizeTopKMap.put(new Pair<Integer, Integer>(start,end),res);
+        ExpressionGroup res = newExpressions.selecTopK(k);
+        memorizeTopKMap.put(new Pair<Integer, Integer>(start, end), res);
         return res;
     }
 
@@ -499,15 +510,14 @@ public class StringProcessor {
 
         boolean needMerge = true;
         while (needMerge) {
-            needMerge = false;
-            int max = 0;
-            // findPartitions
             ExamplePartition partition1 = null;
             ExamplePartition partition2 = null;
             ExpressionGroup p12TheSameExpressions = null;
 
             int index1 = 0;
             int index2 = 0;
+            needMerge = false;
+            int max = 0;
             for (int i = 0; i < partitions.size(); i++) {
                 for (int j = i + 1; j < partitions.size(); j++) {
                     ExpressionGroup theSameExpressions = findSameExps(partitions.get(i), partitions.get(j));
@@ -540,6 +550,7 @@ public class StringProcessor {
         RunTimeMeasurer.endTiming("generatePartition");
         return partitions;
     }
+
     /**
      * 在generatePartition中使用
      * 用于找出两个partition可共用的expressionList

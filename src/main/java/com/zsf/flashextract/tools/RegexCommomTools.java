@@ -210,6 +210,10 @@ public class RegexCommomTools {
                     return;
                 }
             }
+            // [和]必须写成\[和\]才能作为regex
+            // FIXME: 2017/4/22 还有一些其他的特殊符号，以后再处理
+            subStr=subStr.replaceAll("\\[","\\\\[");
+            subStr=subStr.replaceAll("\\]","\\\\]");
             Regex rightRegex = new DynamicRegex("DynamicTok(" + subStr + ")", subStr);
             if (!usefulRegex.contains(rightRegex)) {
                 usefulRegex.add(rightRegex);

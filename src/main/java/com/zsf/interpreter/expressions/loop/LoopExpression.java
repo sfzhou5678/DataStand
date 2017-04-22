@@ -130,7 +130,7 @@ public class LoopExpression extends NonTerminalExpression {
 
     @Override
     public double score() {
-        return baseExpression.score()/2+totalExpsCount*0.1;
+        return 0.15+baseExpression.score()/2+totalExpsCount*0.1;
     }
 
 

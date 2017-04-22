@@ -13,6 +13,7 @@ import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
 import com.zsf.interpreter.model.*;
 import com.zsf.interpreter.tool.ExpScoreComparator;
+import com.zsf.interpreter.tool.RunTimeMeasurer;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -140,6 +141,7 @@ public class ColorRegion {
      * 在selectField()时，如果判断需要产生LineSelectors就会调用此方法，产生LineSelecotr,排序结果后设置curSelector
      */
     private boolean doGenerateLineSelectors() {
+        RunTimeMeasurer.startTiming();
         RegexCommomTools.addDynamicToken(fieldsByUser, FlashExtract.usefulRegex);
 
         List<List<Regex>> startWithReges = new ArrayList<List<Regex>>();
@@ -152,11 +154,6 @@ public class ColorRegion {
             startWithReges.add(RegexCommomTools.buildStartWith(curDeepth, maxDeepth, matches, 0, new DynamicRegex("", "")));
             endWithReges.add(RegexCommomTools.buildEndWith(curDeepth, maxDeepth, matches, lineFields.get(index).getText().length(), new DynamicRegex("", "")));
         }
-        System.out.println("start with:");
-        System.out.println(startWithReges);
-        System.out.println("end with:");
-        System.out.println(endWithReges);
-
 
         // 在deDuplication()中分别为startWith和endWith加上了^和$
         List<Regex> startWithLineSelector = RegexCommomTools.deDuplication(startWithReges, true);
@@ -170,8 +167,8 @@ public class ColorRegion {
         usefulLineSelector.addAll(RegexCommomTools.filterUsefulSelector(startWithLineSelector, lineFields, positiveLineIndex, getNegativeLineIndex()));
         usefulLineSelector.addAll(RegexCommomTools.filterUsefulSelector(endWithLineSelector, lineFields, positiveLineIndex, getNegativeLineIndex()));
 
+        RunTimeMeasurer.endTiming("doGenerateLineSelectors");
         // TODO: 2017/3/16 lineSelector的ranking
-
         if (usefulLineSelector.size() > 0) {
             this.lineSelectors = usefulLineSelector;
             System.out.println(lineSelectors);
@@ -181,6 +178,7 @@ public class ColorRegion {
             // 没有产生合适的selector，此次generate失败
             return false;
         }
+
     }
 
     private void addPositiveLineIndex(int lineIndex) {

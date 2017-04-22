@@ -84,7 +84,7 @@ public class Main {
 //
 //        for (Match match:matches){
 //            if (match.getMatchedIndex()==k){
-//                result.add(new MatchStartPos(match.getRegex(),match.getCount()));
+//                result.add(new StartRegPos(match.getRegex(),match.getCount()));
 //            }else if ((match.getMatchedIndex()+match.getMatchedString().length())==k){
 //                result.add(new MatchEndPos(match.getRegex(),match.getCount()));
 //            }
@@ -307,8 +307,8 @@ public class Main {
         // region # success
         // 提取结构化数据能力
 //        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03,18:08:57"));
-        examplePairs.add(new ExamplePair("Airport,40.77446436,-73.86970997,Sun Jul 15 14:51:15 +0800 2012", "Airport,Jul 15,14:51:15"));
-        examplePairs.add(new ExamplePair("Bridge,Tue Apr 03 18:00:25 +0800 2012", "Bridge,Apr 03"));
+//        examplePairs.add(new ExamplePair("Airport,40.77446436,-73.86970997,Sun Jul 15 14:51:15 +0800 2012", "Airport,Jul 15,14:51:15"));
+//        examplePairs.add(new ExamplePair("Bridge,Tue Apr 03 18:00:25 +0800 2012", "Bridge,Apr 03"));
 //        examplePairs.add(new ExamplePair("Arts & Crafts Store,40.71981038,-74.00258103,Tue Apr 03 18:00:09 +0800 2012", "Arts & Crafts Store,Apr 03,Tue"));
 //
 //        examplePairs.add(new ExamplePair("Wed Jul 11 11:17:44 +0800 2012,40.23213,German Restaurant", "German Restaurant,Jul 11"));
@@ -325,10 +325,10 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03,Tue"));
 
         // 初级Loop能力
-//        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEA"));
+//        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEAHWZPSEA"));
 //        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
 //        examplePairs.add(new ExamplePair("the Association for the Advancement of Artificial Intelligence","AAAI"));
-//        examplePairs.add(new ExamplePair("Association for Computing Machinery", "ACM"));
+        examplePairs.add(new ExamplePair("Association for Computing Machinery", "ACM"));
 //        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
 
 
@@ -337,6 +337,8 @@ public class Main {
 //        examplePairs.add(new ExamplePair("15688888888", "手机"));
 //        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "NULL"));
 //        examplePairs.add(new ExamplePair("NULL", "缺失"));
+
+//        examplePairs.add(new ExamplePair("[252166]:2011-12-20,Tuesday", "252166,2011-12-20,Tuesday"));
 
         // region # error
         // FIXME: 2017/2/16 错误原因初步判定为相似度(classifier)错误

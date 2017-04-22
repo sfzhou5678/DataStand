@@ -119,7 +119,7 @@ public class SubStringExpression extends StringExpression {
 
     @Override
     public double score() {
-        double score=0.5+(posExpression1.score()+posExpression2.score())/2.0;
+        double score=0.45+(posExpression1.score()+posExpression2.score())/2.0;
         return score*getSceneWeight();
     }
 }
