@@ -576,10 +576,14 @@ public class StringProcessor {
                     boolean isTwoExpSame = true;
                     if (e1 instanceof NonTerminalExpression && e2 instanceof NonTerminalExpression) {
                         for (ExamplePair pair : pairs1) {
-                            if (!((NonTerminalExpression) e2).interpret(pair.getInputString()).equals(pair.getOutputString())) {
+                            String strInterpreted=((NonTerminalExpression) e2).interpret(pair.getInputString());
+                            if (strInterpreted==null||!strInterpreted.equals(pair.getOutputString())){
                                 isTwoExpSame = false;
                                 break;
                             }
+//                            if (!((NonTerminalExpression) e2).interpret(pair.getInputString()).equals(pair.getOutputString())) {
+//
+//                            }
                         }
                         if (isTwoExpSame) {
                             for (ExamplePair pair : pairs2) {

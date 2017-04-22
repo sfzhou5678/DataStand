@@ -326,10 +326,10 @@ public class Main {
 
         // 初级Loop能力
 //        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Hello World Zsf the Program Synthesis Electronics Airport","HWZPSEAHWZPSEA"));
-//        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
-//        examplePairs.add(new ExamplePair("the Association for the Advancement of Artificial Intelligence","AAAI"));
+        examplePairs.add(new ExamplePair("Hello World Zsf the Program Synthesis Electronics Airport Bridge","HWZPSEAB"));
+        examplePairs.add(new ExamplePair("the Association for the Advancement of Artificial Intelligence","AAAI"));
         examplePairs.add(new ExamplePair("Association for Computing Machinery", "ACM"));
-//        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
+        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
 
 
 //        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));

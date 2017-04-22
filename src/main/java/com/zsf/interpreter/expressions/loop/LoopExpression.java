@@ -23,12 +23,6 @@ public class LoopExpression extends NonTerminalExpression {
      */
     private String linkingMode;
 
-//    /**
-//     * btotalExpressions表示当前这个Loop要代替的完整的表达式
-//     * 如IBM中totalExpressions就是一串SbuStr2(vi,UppderToken,w)；
-//     */
-//    private Expression totalExpressions;
-
     /**
      * baseExpression表示for的循环主体
      * 在IBM中就是SbuStr2(UppderToken,w)
@@ -40,11 +34,11 @@ public class LoopExpression extends NonTerminalExpression {
     private int startCount = 0;
     private int stepSize = 1;
     private int endCount = 0;
-    private int maxMatchesCount =0;
+    private int maxMatchesCount = 0;
     private int totalExpsCount = 0;
 
     public LoopExpression() {
-        this.linkingMode=LINKING_MODE_CONCATENATE;
+        this.linkingMode = LINKING_MODE_CONCATENATE;
     }
 
     public LoopExpression(String linkingMode, Expression baseExpression, int startCount, int stepSize, int endCount, int maxMatchesCount, int totalExpsCount) {
@@ -68,11 +62,11 @@ public class LoopExpression extends NonTerminalExpression {
         if (baseExpression instanceof RegSubStringExpression) {
             if (endCount == PosExpression.END_POS) {
                 ans = String.format("Loop(%s(%s(%s,%d,%d,%s)))", linkingMode,
-                        "subStr2", ((RegSubStringExpression) baseExpression).getRegex().getRegexName(),
+                        "regSubStr", ((RegSubStringExpression) baseExpression).getRegex().getRegexName(),
                         startCount, stepSize, "END");
             } else {
                 ans = String.format("Loop(%s(%s(%s,%d,%d,%d)))", linkingMode,
-                        "subStr2", ((RegSubStringExpression) baseExpression).getRegex().getRegexName(),
+                        "regSubStr", ((RegSubStringExpression) baseExpression).getRegex().getRegexName(),
                         startCount, stepSize, endCount);
             }
         } else {
@@ -83,7 +77,7 @@ public class LoopExpression extends NonTerminalExpression {
 
     @Override
     public Expression deepClone() {
-        return new LoopExpression(linkingMode,baseExpression,startCount,stepSize,endCount, maxMatchesCount,totalExpsCount);
+        return new LoopExpression(linkingMode, baseExpression, startCount, stepSize, endCount, maxMatchesCount, totalExpsCount);
     }
 
     @Override
@@ -94,19 +88,15 @@ public class LoopExpression extends NonTerminalExpression {
             // TODO: 2017/2/16 ans+=的方式有问题，改成linkedExp
             Regex regex = ((RegSubStringExpression) baseExpression).getRegex();
             List<Match> matches = regex.doMatch(inputString);
-            if (endCount == PosExpression.END_POS) {
-                for (Match match : matches) {
-                    ans += match.getMatchedString();
+            endCount = endCount < 0 ? endCount + matches.size()+1 : endCount;
+            startCount = startCount < 0 ? startCount + matches.size()+1 : startCount;
+            try {
+                for (int i = startCount - 1; i < endCount; i += stepSize) {
+                    ans += matches.get(i).getMatchedString();
                 }
-            } else {
-                // FIXME: 2017/2/16 begin endNode用法错误
-                try {
-                    for (int i = 0; i < endCount; i += stepSize) {
-                        ans += matches.get(i).getMatchedString();
-                    }
-                } catch (IndexOutOfBoundsException e) {
-                    ans = null;
-                }
+            } catch (IndexOutOfBoundsException e) {
+                // 有些Loop不是通用的，比如Loop(1,1,4)有时候就会越界
+                ans = null;
             }
         }
         return ans;
@@ -114,11 +104,12 @@ public class LoopExpression extends NonTerminalExpression {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof LoopExpression){
-            return baseExpression.equals(((LoopExpression) obj).getBaseExpression()) &&
-                    startCount==((LoopExpression) obj).getStartCount()&&
-                    endCount==((LoopExpression) obj).getEndCount()&&
-                    totalExpsCount==((LoopExpression) obj).getTotalExpsCount();
+        if (obj instanceof LoopExpression) {
+            // 这里使用反射机制判断baseExp是否属于同个类，可能会影响运行速度？
+            return ((LoopExpression) obj).getBaseExpression().getClass().equals(this.baseExpression.getClass()) &&
+                    startCount == ((LoopExpression) obj).getStartCount() &&
+                    endCount == ((LoopExpression) obj).getEndCount() &&
+                    stepSize == ((LoopExpression) obj).getStepSize();
         }
         return false;
     }
@@ -130,7 +121,7 @@ public class LoopExpression extends NonTerminalExpression {
 
     @Override
     public double score() {
-        return 0.15+baseExpression.score()/2+totalExpsCount*0.1;
+        return 0.15 + baseExpression.score() / 2 + totalExpsCount * 0.1;
     }
 
 
@@ -138,42 +129,49 @@ public class LoopExpression extends NonTerminalExpression {
         if (expression instanceof RegSubStringExpression) {
             int count = ((RegSubStringExpression) expression).getC();
             totalExpsCount++;
-            if (totalExpsCount==1){
-                startCount=count;
-                this.maxMatchesCount =((RegSubStringExpression) expression).getTotalC();
+            if (totalExpsCount == 1) {
+                startCount = count;
+                this.maxMatchesCount = ((RegSubStringExpression) expression).getTotalC();
             }
-            endCount=count;
-            this.baseExpression=expression;
-        }else if (expression instanceof LoopExpression){
-            int count=((LoopExpression) expression).getEndCount();
-            endCount=count;
-            totalExpsCount+=((LoopExpression) expression).getTotalExpsCount();
-            if (totalExpsCount==1){
-                startCount=count;
+            endCount = count;
+            this.baseExpression = expression;
+        } else if (expression instanceof LoopExpression) {
+            int count = ((LoopExpression) expression).getEndCount();
+            endCount = count;
+            totalExpsCount += ((LoopExpression) expression).getTotalExpsCount();
+            if (totalExpsCount == 1) {
+                startCount = count;
             }
-            this.baseExpression=((LoopExpression) expression).getBaseExpression();
+            this.baseExpression = ((LoopExpression) expression).getBaseExpression();
         }
-        endCount=transformInteger(endCount, maxMatchesCount);
-        startCount=transformInteger(startCount, maxMatchesCount);
+        endCount = transformInteger(endCount, maxMatchesCount);
+        startCount = transformInteger(startCount, maxMatchesCount);
         updateStepSize();
 
     }
 
     private void updateStepSize() {
-        if (totalExpsCount==1){
-            stepSize=0;
-        }else {
-            int end=endCount<0?endCount+(1+maxMatchesCount):endCount;
-            int start=startCount<0?startCount+(1+maxMatchesCount):startCount;
-            stepSize = (end - start) / (totalExpsCount-1);
+        if (totalExpsCount == 1) {
+            stepSize = 0;
+        } else {
+            int end = endCount < 0 ? endCount + (1 + maxMatchesCount) : endCount;
+            int start = startCount < 0 ? startCount + (1 + maxMatchesCount) : startCount;
+            stepSize = (end - start) / (totalExpsCount - 1);
         }
     }
 
-    private int transformInteger(int count,int total){
-        if (count<=(total+1)/2){
+    /**
+     * 将序号count根据在total中所处的位置转换成正数或倒数形式
+     *
+     * @param count
+     * @param total
+     * @return
+     */
+    private int transformInteger(int count, int total) {
+        if (count <= (total + 1) / 2) {
             return count;
-        }else {
-            return count-(total+1);
+        } else {
+            return count - (total + 1);
         }
     }
 
@@ -203,9 +201,9 @@ public class LoopExpression extends NonTerminalExpression {
             if (count <= endCount) {
                 return false;
             }
-            return isSameExpressionInLoop(baseExpression,expression);
-        }else if (expression instanceof LoopExpression){
-            return isSameExpressionInLoop(baseExpression,expression);
+            return isSameExpressionInLoop(baseExpression, expression);
+        } else if (expression instanceof LoopExpression) {
+            return isSameExpressionInLoop(baseExpression, expression);
         }
         return true;
     }
@@ -225,9 +223,9 @@ public class LoopExpression extends NonTerminalExpression {
      * @return
      */
     private boolean isSameExpressionInLoop(Expression baseExpression, Expression expression) {
-        if (expression instanceof LoopExpression){
+        if (expression instanceof LoopExpression) {
             return baseExpression.equals(((LoopExpression) expression).getBaseExpression());
-        }else if (expression instanceof RegSubStringExpression){
+        } else if (expression instanceof RegSubStringExpression) {
             return ((RegSubStringExpression) expression).loopEquals(baseExpression);
         }
         return false;
