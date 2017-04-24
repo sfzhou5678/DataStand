@@ -439,7 +439,7 @@ public class StringProcessor {
         List<ExpressionGroup> ansList = new ArrayList<ExpressionGroup>();
         for (ResultMap resultMap : resultMaps) {
             memorizeTopKMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
-            ExpressionGroup g = doSelectTopKExps(resultMap, 0, resultMap.getCol(), k);
+            ExpressionGroup g = searchDAG(resultMap, 0, resultMap.getCol(), k);
             ansList.add(g);
             for (Expression e : g.getExpressions()) {
                 System.out.println(e.deepth() + "  " + e.score() + "  " + e.toString());
@@ -456,8 +456,7 @@ public class StringProcessor {
      * <p>
      * 算法思想：dfs
      */
-    private ExpressionGroup doSelectTopKExps(ResultMap resultMap, int start, int end, int k) {
-        // TODO: 2017/3/1 如果有多个例子，还要考虑多个例子的作用(可能是要partition？)
+    private ExpressionGroup searchDAG(ResultMap resultMap, int start, int end, int k) {
         if (start + 1 == end) {
             return resultMap.getData(start, end);
         }
@@ -465,17 +464,15 @@ public class StringProcessor {
         if (expressionGroup != null) {
             return expressionGroup;
         }
-        // TODO: 2017/4/16 在这里加入记忆画搜索，如果[start,end]的结果已经计算过，那么就直接返回
-        // TODO: 2017/4/16 相应的，还需要在return之间将当前start和end的结果保存起来
-
         ExpressionGroup newExpressions = resultMap.getData(start, end).deepClone();
 
         for (int j = start + 1; j < end; j++) {
+            // FIXME 如果改成prefixExpressionGroup=searchDAG(resultMap,start,j,k)的话运行效率会降低而且结果出错，原因未知
             ExpressionGroup prefixExpressionGroup = resultMap.getData(start, j);
             if (prefixExpressionGroup.size() > 0) {
                 ExpressionGroup topKPrefixExpGroup = prefixExpressionGroup.selecTopK(k);
 
-                ExpressionGroup topKPostfixExpreessionGroup = doSelectTopKExps(resultMap, j, end, k);
+                ExpressionGroup topKPostfixExpreessionGroup = searchDAG(resultMap, j, end, k);
                 ExpressionGroup concatedTotalExpGroup = ConcatenateExpression.concatenateExp(topKPrefixExpGroup, topKPostfixExpreessionGroup);
 
                 newExpressions.insert(concatedTotalExpGroup.selecTopK(k));
@@ -483,10 +480,6 @@ public class StringProcessor {
             }
         }
         ExpressionGroup res = newExpressions.selecTopK(k);
-        System.out.println(String.format("=========%d,%d=========",start,end));
-        for (Expression e:res.getExpressions()){
-            System.out.println(e.deepth() + "  " + e.score() + "  " + e.toString());
-        }
         memorizeTopKMap.put(new Pair<Integer, Integer>(start, end), res);
         return res;
     }
@@ -572,7 +565,6 @@ public class StringProcessor {
      * @return
      */
     private static ExpressionGroup findSameExps(ExamplePartition partition1, ExamplePartition partition2) {
-        // FIXME: 2017/2/6 这个函数运行时间较长，根本原因应该还是partition中的expression过于庞大
         ExpressionGroup expressions1 = partition1.getUsefulExpression();
         ExpressionGroup expressions2 = partition2.getUsefulExpression();
 

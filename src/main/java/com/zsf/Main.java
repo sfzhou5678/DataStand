@@ -309,7 +309,7 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Electronics Store,40.74260751,-73.99270535,Tue Apr 03 18:08:57 +0800 2012", "Electronics Store,Apr 03,18:08:57"));
 //        examplePairs.add(new ExamplePair("Airport,40.77446436,-73.86970997,Sun Jul 15 14:51:15 +0800 2012", "Airport,Jul 15,14:51:15"));
 //        examplePairs.add(new ExamplePair("Bridge,Tue Apr 03 18:00:25 +0800 2012", "Bridge,Apr 03"));
-        examplePairs.add(new ExamplePair("Arts & Crafts Store,40.71981038,-74.00258103,Tue Apr 03 18:00:09 +0800 2012", "Arts & Crafts Store,Apr 03,Tue"));
+//        examplePairs.add(new ExamplePair("Arts & Crafts Store,40.71981038,-74.00258103,Tue Apr 03 18:00:09 +0800 2012", "Arts & Crafts Store,Apr 03,Tue"));
 //
 //        examplePairs.add(new ExamplePair("Wed Jul 11 11:17:44 +0800 2012,40.23213,German Restaurant", "German Restaurant,Jul 11"));
 //        examplePairs.add(new ExamplePair("40.7451638,-73.98251878,Tue Apr 03 18:02:41 +0800 2012,Medical Center", "Medical Center,Apr 03"));
@@ -332,7 +332,7 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
 
 
-//        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
+        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
 //        examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
 //        examplePairs.add(new ExamplePair("15688888888", "手机"));
 //        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "NULL"));
