@@ -98,6 +98,7 @@ public class StringProcessor {
         memorizeLoopMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
         for (int start = 0; start < outputString.length(); start++) {
             for (int end = start + 1; end <= outputString.length(); end++) {
+                // FIXME: 2017/4/24 整个doGenerateLoop()方法都不是很好，感觉应该改成前+后归并
                 ExpressionGroup loopExpressions = doGenerateLoop(new LoopExpression(), start, end, resultMap);
                 loopExpressions = deDuplicateLoopExps(loopExpressions);
                 resultMap.getData(start, end).insert(loopExpressions);
@@ -107,7 +108,6 @@ public class StringProcessor {
     }
 
     private ExpressionGroup deDuplicateLoopExps(ExpressionGroup loopExpressions) {
-        // FIXME: 2017/3/2 复杂度是n^2的 只能应对小规模数据集
         ExpressionGroup eg = new ExpressionGroup();
         for (Expression exp : loopExpressions.getExpressions()) {
             if (!(exp instanceof LoopExpression)) {
@@ -141,9 +141,15 @@ public class StringProcessor {
      */
     private HashMap<Pair<Integer, Integer>, ExpressionGroup> memorizeLoopMap = new HashMap<Pair<Integer, Integer>, ExpressionGroup>();
 
+    /**
+     *
+     * @param baseLoopExpression 目前只是用来做Loop类型的标注？？
+     * @param start
+     * @param end
+     * @param resultMap
+     * @return
+     */
     private ExpressionGroup doGenerateLoop(LoopExpression baseLoopExpression, int start, int end, ResultMap resultMap) {
-        // TODO: 2017/3/2 此方法内嵌到EG中去
-
         ExpressionGroup expressionGroup = memorizeLoopMap.get(new Pair<Integer, Integer>(start, end));
         if (expressionGroup != null) {
             return expressionGroup;
@@ -165,18 +171,18 @@ public class StringProcessor {
             memorizeLoopMap.put(new Pair<Integer, Integer>(start, end), validLoopExpressionGroup);
             return validLoopExpressionGroup;
         }
-
+        // FIXME: 2017/4/24 这段处理方法不好，以后改
         for (int j = start + 1; j < end; j++) {
-            ExpressionGroup curExpressions = resultMap.getData(start, j).deepClone();
-            for (Expression expression : curExpressions.getExpressions()) {
-                if (baseLoopExpression.isLegalExpression(expression)) {
+            ExpressionGroup prefixEG = resultMap.getData(start, j).deepClone();
+            for (Expression prefixExp : prefixEG.getExpressions()) {
+                if (baseLoopExpression.isLegalExpression(prefixExp)) {
                     LoopExpression loopExpression = new LoopExpression();
-                    loopExpression.addNode(expression);
+                    loopExpression.addNode(prefixExp);
 
-                    ExpressionGroup tmpExpressions = doGenerateLoop(loopExpression, j, end, resultMap);
-                    for (Expression exp : tmpExpressions.getExpressions()) {
+                    ExpressionGroup postfixLoopEG = doGenerateLoop(loopExpression, j, end, resultMap);
+                    for (Expression postfixLoopExp : postfixLoopEG.getExpressions()) {
                         LoopExpression newLoopExpression = (LoopExpression) loopExpression.deepClone();
-                        newLoopExpression.addNode(exp);
+                        newLoopExpression.addNode(postfixLoopExp);
                         validLoopExpressionGroup.insert(newLoopExpression);
                     }
                 }
@@ -477,6 +483,10 @@ public class StringProcessor {
             }
         }
         ExpressionGroup res = newExpressions.selecTopK(k);
+        System.out.println(String.format("=========%d,%d=========",start,end));
+        for (Expression e:res.getExpressions()){
+            System.out.println(e.deepth() + "  " + e.score() + "  " + e.toString());
+        }
         memorizeTopKMap.put(new Pair<Integer, Integer>(start, end), res);
         return res;
     }
