@@ -331,12 +331,11 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Association for Computing Machinery", "ACM"));
 //        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
 
-
         examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
         examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
         examplePairs.add(new ExamplePair("15688888888", "手机"));
         examplePairs.add(new ExamplePair("", "缺失"));
-        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "NULL"));
+        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "特殊"));
 
 //        examplePairs.add(new ExamplePair("[252166]:2011-12-20,Tuesday", "252166,2011-12-20,Tuesday"));
 
@@ -367,6 +366,16 @@ public class Main {
         // 提取结构化数据
 //        testPairs.add(new ValidationPair("Coffee Shop,40.73340972,-74.00285648,Wed Jul 13 12:27:07 +0800 2012", "Coffee Shop,Jul 13"));
 //        testPairs.add(new ValidationPair("Bridge,43,-73,Tue Apr 03 18:00:25 +0800 2012", "Coffee Shop,Jul 13"));
+
+        testPairs.add(new ValidationPair("guoping@cqu.edu.cn","cqu.edu.cn"));
+        testPairs.add(new ValidationPair("lijia@cqu.edu.cn","cqu.edu.cn"));
+        testPairs.add(new ValidationPair("13320218299","手机"));
+        testPairs.add(new ValidationPair("","缺失"));
+        testPairs.add(new ValidationPair("wqw AT cqu DOT edu DOT cn","特殊"));
+
+
+//        testPairs.add(new ValidationPair("guoping@cqu.edu.cn",""));
+//        testPairs.add(new ValidationPair("guoping@cqu.edu.cn",""));
 //
 //        testPairs.add(new ValidationPair("40.69990191,,Sat Nov 17 20:36:26 +0800,Food & Drink Shop", "Food & Drink Shop,Nov 17"));
 //        testPairs.add(new ValidationPair("40.74218831,-73.98792419,Park,Wed Jul 11 11:42:00 +0800 2012", "Park,Jul 11"));
@@ -420,8 +429,9 @@ public class Main {
         List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
         List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
 
+        int count=0;
         for (ExamplePartition partition : partitions) {
-            System.out.println("============================");
+            System.out.println("============"+count+++"================");
             for (ExamplePair examplePair : partition.getExamplePairs()) {
                 System.out.println(examplePair);
             }

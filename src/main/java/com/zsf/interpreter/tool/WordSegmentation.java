@@ -32,10 +32,15 @@ public class WordSegmentation {
      * @param maxWordLength 单词库中最长单词的长度,每次取词长度不超过2*maxWrodLength
      */
     private static List<String> getSegmentationByRMM(String string, int maxWordLength) {
+
         int step = 2*maxWordLength;
 
         // 逆向
         List<String> segmentation = new ArrayList<String>();
+        if (string.equals("")){
+            segmentation.add("EMPTY");
+            return segmentation;
+        }
         int len = string.length();
         for (int i = len; i > 0; ) {
             boolean matched = false;

@@ -346,6 +346,8 @@ public class ColorRegion {
                     if (txt != null) {
                         previewDatas.add(txt);
                         field.setUnConfirmedExtraExp(expression);
+                    }else {
+                        previewDatas.add("NULL");
                     }
                 }
             }
