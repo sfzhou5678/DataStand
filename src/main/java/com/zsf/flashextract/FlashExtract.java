@@ -78,9 +78,7 @@ public class FlashExtract {
         List<Color> colors = new ArrayList<Color>();
         List<String> titles = new ArrayList<String>();
         for (PlainField field : fieldList) {
-            if (colors.contains(field.getColor())) {
-                break;
-            } else {
+            if (!colors.contains(field.getColor())) {
                 colors.add(field.getColor());
                 titles.add(getRegioinTitle(field.getColor()));
             }

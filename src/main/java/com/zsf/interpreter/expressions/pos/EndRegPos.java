@@ -10,14 +10,14 @@ import java.util.List;
 /**
  * Created by hasee on 2017/2/28.
  */
-public class MatchEndPos extends PosExpression {
+public class EndRegPos extends PosExpression {
 
     private Regex r;
     private int count;
     private int maxCount;
 
 
-    public MatchEndPos(Regex r, int count,int maxCount) {
+    public EndRegPos(Regex r, int count, int maxCount) {
         this.r = r;
         this.count = count;
         this.maxCount=maxCount;
@@ -48,12 +48,12 @@ public class MatchEndPos extends PosExpression {
 
     @Override
     public String toString() {
-        return String.format("eRegPos(%s,%d)", r.toString(), count);
+        return String.format("endRegPos(%s,%d)", r.toString(), count);
     }
 
     @Override
     public Expression deepClone() {
-        return new MatchEndPos(r, count,maxCount);
+        return new EndRegPos(r, count,maxCount);
     }
 
     @Override
@@ -63,8 +63,8 @@ public class MatchEndPos extends PosExpression {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj instanceof MatchEndPos) {
-            return r.equals(((MatchEndPos) obj).getR()) && count == ((MatchEndPos) obj).getCount();
+        if (obj instanceof EndRegPos) {
+            return r.equals(((EndRegPos) obj).getR()) && count == ((EndRegPos) obj).getCount();
         }
         return false;
     }

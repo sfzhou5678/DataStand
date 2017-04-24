@@ -294,7 +294,7 @@ public class StringProcessor {
             if (match.getMatchedIndex() == k) {
                 result.add(new StartRegPos(match.getRegex(), match.getCount(), match.getMaxCount()));
             } else if ((match.getMatchedIndex() + match.getMatchedString().length()) == k) {
-                result.add(new MatchEndPos(match.getRegex(), match.getCount(), match.getMaxCount()));
+                result.add(new EndRegPos(match.getRegex(), match.getCount(), match.getMaxCount()));
             }
         }
 

@@ -86,7 +86,7 @@ public class Main {
 //            if (match.getMatchedIndex()==k){
 //                result.add(new StartRegPos(match.getRegex(),match.getCount()));
 //            }else if ((match.getMatchedIndex()+match.getMatchedString().length())==k){
-//                result.add(new MatchEndPos(match.getRegex(),match.getCount()));
+//                result.add(new EndRegPos(match.getRegex(),match.getCount()));
 //            }
 //        }
 //
@@ -332,11 +332,11 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
 
 
-//        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
+        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
         examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
-//        examplePairs.add(new ExamplePair("15688888888", "手机"));
-//        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "NULL"));
-//        examplePairs.add(new ExamplePair("NULL", "缺失"));
+        examplePairs.add(new ExamplePair("15688888888", "手机"));
+        examplePairs.add(new ExamplePair("", "缺失"));
+        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "NULL"));
 
 //        examplePairs.add(new ExamplePair("[252166]:2011-12-20,Tuesday", "252166,2011-12-20,Tuesday"));
 
