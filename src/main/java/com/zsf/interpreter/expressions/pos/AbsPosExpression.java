@@ -54,7 +54,7 @@ public class AbsPosExpression extends PosExpression {
     @Override
     public double score() {
         if (pos==PosExpression.START_POS||pos==PosExpression.END_POS){
-            return 0.5;
+            return 0.55;
         }
         return 0.1;
     }

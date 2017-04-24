@@ -72,7 +72,7 @@ public class StartRegPos extends PosExpression {
 
     @Override
     public double score() {
-        return 0.3+r.score();
+        return 0.25+r.score();
     }
 
     public Regex getR() {
