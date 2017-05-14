@@ -3,10 +3,7 @@ package com.zsf;
 import com.zsf.interpreter.StringProcessor;
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;
-import com.zsf.interpreter.expressions.RegExpression;
-import com.zsf.interpreter.expressions.linking.DeprecatedConcatenateExpression;
 import com.zsf.interpreter.expressions.pos.PosExpression;
-import com.zsf.interpreter.expressions.string.RegSubStringExpression;
 import com.zsf.interpreter.model.*;
 
 import java.io.FileWriter;
@@ -15,27 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-
-    /**
-     * 新方法：应对IBM这种跳跃式的output，可以先用Concate把o[0],o[1],o[2]连接起来
-     * 之后generateLoop中只要把表达式全都一样的concate合并成一个Loop即可。
-     * <p>
-     * 算法思想：dfs
-     */
-    private static ExpressionGroup generateJumpingExps(List<ExamplePair> examplePairs, ResultMap resultMap, int start, int end) {
-        if (start + 1 == end) {
-            return resultMap.getData(start, end);
-        }
-        ExpressionGroup newExpressions = resultMap.getData(start, end).deepClone();
-        for (int j = start + 1; j < end; j++) {
-            ExpressionGroup curExpressions = resultMap.getData(start, j);
-            if (curExpressions.size() > 0) {
-                ExpressionGroup tmpConcatedExps = DeprecatedConcatenateExpression.concatenateExp(curExpressions, generateJumpingExps(examplePairs, resultMap, j, end));
-                newExpressions.insert(getValidExpressions(examplePairs, tmpConcatedExps));
-            }
-        }
-        return newExpressions;
-    }
 
     private static ExpressionGroup getValidExpressions(List<ExamplePair> examplePairs, ExpressionGroup tmpConcatedExps) {
         ExpressionGroup expressionGroup = new ExpressionGroup();
@@ -132,70 +108,7 @@ public class Main {
     // region # 暂时不需要
 
 
-    /**
-     * 注：r=TokenSeq(T1,T2..Tn)表示Str要符合[T1]+[T2]+...[Tn]+这种形式
-     * 如：r=TokenSea(num，letter)，那么str必须是123abc或1Abb这种形式才能和r匹配
-     * TokenSeq中可能存在的token，如多次123abc456zxc会表示成{numToken，letterToken，numtoken，letterToken}形势，
-     * 上面例子得到的经过本方法去重复之后得到{numtoken，letterToken}
-     * <p>
-     * △ 但是：123abc456->{numToken，letterToken，numtoken}不可以变成{numToken，letterToken}
-     * <p>
-     * 不太理解，不知道是不是可以略去
-     * <p>
-     * 对于一个某次字符串s匹配，token1和token2会取得一样的效果，此时token1和token2就没有区别(indistinguishable)
-     *
-     * @param regExpression
-     * @param inputString
-     */
-    public static void generateRegex(RegExpression regExpression, String inputString) {
 
-    }
-
-    /**
-     * same的定义：
-     * constStr要求str相同
-     * 普通Expression要求token相同
-     * linkingExpression要求左右两边的普通Expression相同(如果linkingExpression左右均为LinkingExpression，)
-     * <p>
-     * FIXME: 现在只做了substr2的equals
-     *
-     * @param leftExp
-     * @param rightExp
-     * @return
-     */
-    private static boolean isSameExpression(Expression leftExp, Expression rightExp) {
-        // FIXME: 2017/2/5 现在(包括论文里)不能处理以下 这种LOOP:
-        // FIXME concat(subStr2(SimpleNumberTok,1),concat(constStr(-),concat(subStr2(SimpleNumberTok,2),concat(constStr(-),subStr2(SimpleNumberTok,3)))))
-        Expression left = leftExp.deepClone();
-        Expression right = rightExp.deepClone();
-        if (leftExp instanceof DeprecatedConcatenateExpression) {
-            if (isSameExpression(((DeprecatedConcatenateExpression) leftExp).getLeftExp(),
-                    ((DeprecatedConcatenateExpression) leftExp).getRightExp())) {
-                while (((DeprecatedConcatenateExpression) leftExp).getLeftExp() instanceof DeprecatedConcatenateExpression) {
-                    leftExp = ((DeprecatedConcatenateExpression) leftExp).getLeftExp();
-                }
-                left = ((DeprecatedConcatenateExpression) leftExp).getLeftExp().deepClone();
-            } else {
-                return false;
-            }
-        }
-        if (rightExp instanceof DeprecatedConcatenateExpression) {
-            if (isSameExpression(((DeprecatedConcatenateExpression) rightExp).getLeftExp(),
-                    ((DeprecatedConcatenateExpression) rightExp).getRightExp())) {
-                while (((DeprecatedConcatenateExpression) rightExp).getLeftExp() instanceof DeprecatedConcatenateExpression) {
-                    rightExp = ((DeprecatedConcatenateExpression) rightExp).getLeftExp();
-                }
-                right = ((DeprecatedConcatenateExpression) rightExp).getLeftExp().deepClone();
-            } else {
-                return false;
-            }
-        }
-        if (left instanceof RegSubStringExpression) {
-            return ((RegSubStringExpression) left).loopEquals(right);
-        } else {
-            return false;
-        }
-    }
 
 
     private static boolean needBeAddedIn(String subString, String inputString) {

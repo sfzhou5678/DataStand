@@ -34,10 +34,29 @@
 
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .colorBtn{
+            width:40px;
+            height:40px;
+            border-radius: 5px;
+            background: #dddddd;
+            float: left;
+            margin:0 2px;
+        }
+        .colorBtn:hover{
+            cursor: pointer;
+        }
+        .colorBtnChecked{
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-<div id="color-div">
-    <input id="btnReg" type="button" value="+" onclick="addColor()"/>
+<div id="color-div" style="margin: 5px 5px">
+    <div class="colorBtn" style="background: #ce8483;  text-align:center;  color: white" onclick="addColor()">
+        <span>添加颜色</span>
+    </div>
 </div>
 <div style="clear: both;"></div>
 
@@ -66,7 +85,7 @@
     </div>
 </div>
 <textarea id="hidden-document-area" style="display: none;">${inputDocument}</textarea>
-<pre id="pre-document" class="" style="overFlow-x: scroll ; border-width: 10px; height:500px;width: 1049.55px;"></pre>
+<pre id="pre-document" class="" style="margin-top: 5px; overFlow-x: scroll ; border-width: 10px; height:500px;width: 1049.55px;"></pre>
 
 <input style="float: left" type="button" value="选择" onclick="selectField()"/>
 
@@ -357,21 +376,27 @@
                 alert("已达到颜色上限");
                 return;
             }
-
             var colorDiv = document.getElementById("color-div");
-            var newColorBtn = document.createElement("input");
-            newColorBtn.type = "button";
-            newColorBtn.value = "color" + (colorCounter++);
+            var newColorBtn = document.createElement("div");
+            newColorBtn.style = "background: "+colors[colorCounter]+";";
+            newColorBtn.className="colorBtn";
+            newColorBtn.dataset.color_counter =(colorCounter++);
             colorDiv.appendChild(newColorBtn);
             newColorBtn.addEventListener("click", function () {
-                var curColor = this.value.substring(5);
+                var curColor = this.dataset.color_counter;
                 $.ajax({
                     url: "set_color",
                     type: "POST",
-                    data: {"color": curColor},
+                    data: {"color": parseInt(curColor)},
                     error: function () {
                     }
                 });
+                var colorDiv = document.getElementById("color-div");
+                checkedBtn = colorDiv.getElementsByClassName("colorBtnChecked");
+                for (var i = 0; i < checkedBtn.length; i++) {
+                    checkedBtn[i].className = "colorBtn";
+                }
+                this.className="colorBtn colorBtnChecked";
             });
             newColorBtn.click();
         }
