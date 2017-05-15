@@ -116,8 +116,7 @@
 
                     <div class="pull-right box-tools">
                         <!--导出csv等按钮-->
-                        <a style=" color: #000000;    text-decoration: none;   " href="to_scv">导出CSV</a>
-                        <button type="button" class="btn btn-success" data-widget="collapse"><i class="fa fa-minus"></i>
+                        <a  class="btn btn-success" style=" color: #ffffff;text-decoration: none;" href="to_scv">导出CSV</a>
                         </button>
                     </div>
                 </div>
