@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/AdminLTE.min.css">
+
     <style>
         .colorBtn {
             width: 40px;
@@ -63,41 +66,111 @@
             cursor: pointer;
             font-size: 20px;
         }
+        .pre-document {
+            border: 0;
+        }
     </style>
 </head>
 <body>
 
-<div id="input-box" style="float:left;">
-    <div id="input-box-header">
-        <div id="color-div" style="margin: 5px 5px; float:left;">
-            <div class="colorBtn" style="background: #ce8483;  text-align:center;  color: white" onclick="addColor()">
-                <span>添加颜色</span>
+<section class="content">
+    <div class="row">
+        <section id="section-document" class="col-md-12 col-lg-7">
+            <div class="box box-solid bg-aqua-gradient">
+                <div class="box-header">
+                    <i class="fa fa-calendar"></i>
+                    <h3 class="box-title">操作区</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class=" text-black">
+                    <div id="color-div" style="margin: 5px 5px; float:left;">
+                        <div class="colorBtn" style="background: #ce8483;  text-align:center;  color: white" onclick="addColor()">
+                            <span>添加颜色</span>
+                        </div>
+                    </div>
+                    <div id="btn-box" style="margin: 5px 5px; float:right; margin-right: 10px;">
+                        <div id="confirmBtn" class="confirmBtn" style="float:left;"
+                             onclick="selectField()">
+                            <span style="height:40px; line-height:40px; ">选择</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. color box & selectBtn-->
+                <div class="box-footer text-black" style="padding: 2px">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <textarea id="hidden-document-area" style="display: none;">${inputDocument}</textarea>
+                            <pre id="pre-document" class="pre-document"
+                                 style="margin-top: 5px; overFlow-x: scroll ; border-width: 10px; height:500px;"></pre>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
             </div>
-        </div>
+        </section>
+        <section id="section-datatable" class="col-md-12 col-lg-5">
+            <div class="box box-solid bg-green-gradient">
+                <div class="box-header">
+                    <i class="fa fa-calendar"></i>
+                    <h3 class="box-title">提取结果</h3>
 
-        <div id="btn-box" style="margin: 5px 5px; float:right; margin-right: 10px;">
-            <div id="confirmBtn" class="confirmBtn" style="float:left;"
-                 onclick="selectField()">
-                <span style="height:40px; line-height:40px; ">选择</span>
+                    <div class="pull-right box-tools">
+                        <!--导出csv等按钮-->
+                        <a style=" color: #000000;    text-decoration: none;   " href="to_scv">导出CSV</a>
+                        <button type="button" class="btn btn-success" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <!-- /.box-body -->
+                <div class="box-footer text-black" style="padding: 2px">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="dtable-info" class="callout callout-warning" style="margin-top: 10px;">
+                                <h3>请提取需要的数据</h3>
+                                <p>左上方选择颜色，用鼠标选中要提取的数据，再点击右上方的提取按钮</p>
+                            </div>
+                            <div id="handsontable-container" style="height: 500px; overflow :auto ; display: none;"></div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
             </div>
-        </div>
+        </section>
     </div>
+</section>
 
-    <div id="input-box-body">
-        <%--隐藏的输入框--%>
-        <textarea id="hidden-document-area" style="display: none;">${inputDocument}</textarea>
-        <pre id="pre-document" class=""
-             style="margin-top: 5px; overFlow-x: scroll ; border-width: 10px; height:500px;width: 100px; float:left;"></pre>
-    </div>
-</div>
+<%--<div id="input-box" style="float:left;">--%>
+    <%--<div id="input-box-header">--%>
+        <%--<div id="color-div" style="margin: 5px 5px; float:left;">--%>
+            <%--<div class="colorBtn" style="background: #ce8483;  text-align:center;  color: white" onclick="addColor()">--%>
+                <%--<span>添加颜色</span>--%>
+            <%--</div>--%>
+        <%--</div>--%>
 
-<div id="table-box" style="float:left;">
-    <%--数据表格--%>
-    <div>
-        <a style=" color: #000000;    text-decoration: none;   " href="to_scv">导出CSV</a>
-        <div id="handsontable-container"></div>
-    </div>
-</div>
+        <%--<div id="btn-box" style="margin: 5px 5px; float:right; margin-right: 10px;">--%>
+            <%--<div id="confirmBtn" class="confirmBtn" style="float:left;"--%>
+                 <%--onclick="selectField()">--%>
+                <%--<span style="height:40px; line-height:40px; ">选择</span>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+
+    <%--<div id="input-box-body">--%>
+        <%--&lt;%&ndash;隐藏的输入框&ndash;%&gt;--%>
+        <%--<textarea id="hidden-document-area" style="display: none;">${inputDocument}</textarea>--%>
+        <%--<pre id="pre-document" class=""--%>
+             <%--style="margin-top: 5px; overFlow-x: scroll ; border-width: 10px; height:500px;width: 100px; float:left;"></pre>--%>
+    <%--</div>--%>
+<%--</div>--%>
+
+<%--<div id="table-box" style="float:left;">--%>
+    <%--&lt;%&ndash;数据表格&ndash;%&gt;--%>
+    <%--<div>--%>
+        <%--<a style=" color: #000000;    text-decoration: none;   " href="to_scv">导出CSV</a>--%>
+        <%--<div id="handsontable-container"></div>--%>
+    <%--</div>--%>
+<%--</div>--%>
 
 
 <div style="clear: both;"></div>
@@ -258,6 +331,12 @@
             type: "POST",
             data: {"startPos": beginPos, "endPos": endPos},
             success: function (data) {
+                var htable=document.getElementById("handsontable-container");
+                var tableInfo=document.getElementById("dtable-info");
+
+                htable.style.display = "block";
+                tableInfo.style.display='none';
+
                 regionList = data.selectedFields;
 
                 tableData = data.dataTables;
@@ -418,18 +497,32 @@
 </script>
 <script>
     function adjustPreWidth() {
-//        var container=document.getElementById("input-box");
-//        var containerWith=container.clientWidth;
-        var containerWith = document.body.clientWidth;
+        var containerWidth = document.body.clientWidth;
 
         var preDocument = document.getElementById("pre-document");
-        // step1: 预处理调整文本框大小
-        if (preDocument.scrollLeft + preDocument.clientWidth < preDocument.scrollWidth
-                || preDocument.clientWidth > containerWith) {
-            // 出现滚动条，意味着pre不够长，所以就放大
-            // 如果文本框太大超出了container的宽度，那么久调小
-            // FIXME 注意这里没处理滚动条拉倒最右的情况
-            preDocument.style.width = Math.min(preDocument.scrollWidth, containerWith - 10) + 5 + 'px';
+//        if (preDocument.scrollLeft + preDocument.clientWidth < preDocument.scrollWidth
+//                || preDocument.clientWidth > containerWith) {
+//            // 出现滚动条，意味着pre不够长，所以就放大
+//            // 如果文本框太大超出了container的宽度，那么久调小
+//            // FIXME 注意这里没处理滚动条拉倒最右的情况
+//            preDocument.style.width = Math.min(preDocument.scrollWidth, containerWith - 10) + 5 + 'px';
+//        }
+
+        // 如果preDocument的滑动条窗口大于0.7个body.width 就修改clas
+        var sectionDocument=document.getElementById("section-document");
+        var sectionDatatable=document.getElementById("section-datatable");
+
+//        alert(preDocument.scrollWidth+","+sectionDocument.clientWidth+","+document.body.clientWidth);
+        if (preDocument.scrollWidth>1.5*sectionDocument.clientWidth){
+            if(sectionDocument.clientWidth<0.95*document.body.clientWidth){
+                sectionDocument.className="col-md-12 col-lg-12";
+                sectionDatatable.className="col-md-12 col-lg-12";
+            }
+        }else if(preDocument.scrollWidth<sectionDocument.clientWidth){
+            if(sectionDocument.clientWidth>0.95*document.body.clientWidth){
+                sectionDocument.className="col-md-7 col-lg-7";
+                sectionDatatable.className="col-md-5 col-lg-5";
+            }
         }
     }
 </script>
