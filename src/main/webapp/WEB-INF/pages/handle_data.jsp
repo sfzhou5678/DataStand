@@ -79,7 +79,7 @@
             <div class="box box-solid bg-aqua-gradient">
                 <div class="box-header">
                     <i class="fa fa-calendar"></i>
-                    <h3 class="box-title">操作区</h3>
+                    <h3 class="box-title">操作区域</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class=" text-black">
