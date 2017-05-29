@@ -38,13 +38,15 @@ public class UsefulRegex {
      * @return
      */
     private static List<Regex> initUsefulRegex() {
+
+
         List<Regex> regexList = new ArrayList<Regex>();
         regexList.add(new NormalRegex("SimpleNumberTok", "[0-9]+"));
         regexList.add(new NormalRegex("DigitTok", "[-+]?(([0-9]+)([.]([0-9]+))?)"));
         regexList.add(new NormalRegex("LowerTok", "[a-z]+"));
         regexList.add(new NormalRegex("UpperTok", "[A-Z]+"));
-        regexList.add(new NormalRegex("AlphaTok", "[a-zA-Z]+"));
-        regexList.add(new NormalRegex("AlphaDigitTok", "[a-zA-Z0-9]+"));
+        regexList.add(new NormalRegex("LetterTok", "[a-zA-Z]+"));
+        regexList.add(new NormalRegex("LetterDigitTok", "[a-zA-Z0-9]+"));
         regexList.add(new NormalRegex("ChineseTok", "[\\u4E00-\\u9FFF]+"));
         regexList.add(new NormalRegex("SpaceTok", "[ ]+"));
 

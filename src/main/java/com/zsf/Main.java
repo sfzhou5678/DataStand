@@ -244,11 +244,14 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Association for Computing Machinery", "ACM"));
 //        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
 
-        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
-        examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
-        examplePairs.add(new ExamplePair("15688888888", "手机"));
-        examplePairs.add(new ExamplePair("", "缺失"));
-        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "特殊"));
+        examplePairs.add(new ExamplePair("<td>Russell Smith</td> <td>1992-07-14</td>", "Russell Smith,生日:1992-07-14"));
+
+
+//        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
+//        examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
+//        examplePairs.add(new ExamplePair("15688888888", "手机"));
+//        examplePairs.add(new ExamplePair("", "缺失"));
+//        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "特殊"));
 
 //        examplePairs.add(new ExamplePair("[252166]:2011-12-20,Tuesday", "252166,2011-12-20,Tuesday"));
 

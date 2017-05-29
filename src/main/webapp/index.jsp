@@ -75,9 +75,9 @@
     <div class="contained"
          style=" text-align: center; padding-top:10px;background: url(resources/images/back.jpg) no-repeat; width: 100%; height: 760px;background-size:cover; ">
         <div class="info text-center" style="font-family: 'Microsoft YaHei UI'">
-            <h2>批量数据提取处理工具</h2>
-            <h3>运用自动编程技术，精准理解意图，毫秒级响应速度</h3>
-            <h3>结果实时反馈，一键导出成果</h3>
+            <h2>面向数据处理的程序合成器</h2>
+            <h3>运用样例编程技术，精准理解意图，毫秒级响应速度</h3>
+            <h3>批量处理数据，结果实时反馈，一键导出成果</h3>
         </div>
         <form action="main/upload_file" style="display: none;" method="post" enctype="multipart/form-data">
             <input id="hidden-file-uploader" type="file" name="file" onchange="uploaderChanged()">
