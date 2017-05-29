@@ -11,32 +11,47 @@
 <head>
     <title>Title</title>
 
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/jquery/jquery-1.10.2.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.js"></script>
-    <link rel="stylesheet" media="screen"
-          href="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.css">
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/lodash/lodash.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/underscore.string/underscore.string.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/moment/moment.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numeral/numeral.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numericjs/numeric.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/js-md5/md5.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/jstat/jstat.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/formulajs/formula.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/parser.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/ruleJS.js"></script>
-    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.formula.js"></script>
+        
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/jquery/jquery-1.10.2.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.js"></script>--%>
+    <%--<link rel="stylesheet" media="screen"--%>
+          <%--href="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.css">--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/lodash/lodash.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/underscore.string/underscore.string.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/moment/moment.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numeral/numeral.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numericjs/numeric.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/js-md5/md5.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/jstat/jstat.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/formulajs/formula.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/parser.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/ruleJS.js"></script>--%>
+    <%--<script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.formula.js"></script>--%>
 
-    <%--dialog相关--%>
-    <link rel="stylesheet" media="screen"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <%--&lt;%&ndash;dialog相关&ndash;%&gt;--%>
+    <%--<link rel="stylesheet" media="screen"--%>
+          <%--href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">--%>
+    <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>--%>
 
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <%--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">--%>
+    <%--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
 
+
+    <script type="text/javascript" src="../resources/js/jquery-1.9.1.js"></script>
+    <%--table--%>
+    <script src="../resources/js/handsontable.full.js"></script>
+    <link rel="stylesheet" media="screen" href="../resources/css/handsontable.full.css">
+
+    <%--dialog--%>
+    <link rel="stylesheet" media="screen" href="../resources/css/bootstrap-dialog.min.css">
+    <script src="../resources/js/bootstrap-dialog.min.js"></script>
+
+
+    <script src="../resources/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/AdminLTE.min.css">
+
+
 
     <style>
         .colorBtn {
@@ -138,39 +153,6 @@
         </section>
     </div>
 </section>
-
-<%--<div id="input-box" style="float:left;">--%>
-    <%--<div id="input-box-header">--%>
-        <%--<div id="color-div" style="margin: 5px 5px; float:left;">--%>
-            <%--<div class="colorBtn" style="background: #ce8483;  text-align:center;  color: white" onclick="addColor()">--%>
-                <%--<span>添加颜色</span>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-
-        <%--<div id="btn-box" style="margin: 5px 5px; float:right; margin-right: 10px;">--%>
-            <%--<div id="confirmBtn" class="confirmBtn" style="float:left;"--%>
-                 <%--onclick="selectField()">--%>
-                <%--<span style="height:40px; line-height:40px; ">选择</span>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-
-    <%--<div id="input-box-body">--%>
-        <%--&lt;%&ndash;隐藏的输入框&ndash;%&gt;--%>
-        <%--<textarea id="hidden-document-area" style="display: none;">${inputDocument}</textarea>--%>
-        <%--<pre id="pre-document" class=""--%>
-             <%--style="margin-top: 5px; overFlow-x: scroll ; border-width: 10px; height:500px;width: 100px; float:left;"></pre>--%>
-    <%--</div>--%>
-<%--</div>--%>
-
-<%--<div id="table-box" style="float:left;">--%>
-    <%--&lt;%&ndash;数据表格&ndash;%&gt;--%>
-    <%--<div>--%>
-        <%--<a style=" color: #000000;    text-decoration: none;   " href="to_scv">导出CSV</a>--%>
-        <%--<div id="handsontable-container"></div>--%>
-    <%--</div>--%>
-<%--</div>--%>
-
 
 <div style="clear: both;"></div>
 
