@@ -1,9 +1,0 @@
-[1] Gulwani S. Automating string processing in spreadsheets using input-output examples[J]. Acm Sigplan Notices, 2011, 46(1):317-330.
-[2] Le V, Gulwani S. FlashExtract: a framework for data extraction by examples[C]// ACM Sigplan Conference on Programming Language Design and Implementation. ACM, 2014:542-553.
-[3] Yessenov K, Tulsiani S, Menon A, et al. A colorful approach to text processing by example[C]// ACM Symposium on User Interface Software and Technology. ACM, 2013:495-504.
-[4] Polozov O, Gulwani S. FlashMeta: a framework for inductive program synthesis[C]// Systems, Programming, Languages and Applications: Software for Humanity. 2015:107-126.
-[5] Desai A, Gulwani S, Hingorani V, et al. Program synthesis using natural language[C]// International Conference on Software Engineering. ACM, 2015:345-356.
-[6] Gulwani S, Harris W R, Singh R. Spreadsheet data manipulation using examples[J]. Communications of the Acm, 2012, 55(8):97-105.
-[7] Singh R, Gulwani S. Predicting a Correct Program in Programming by Example[M]// Computer Aided Verification. Springer International Publishing, 2015.
-[8] Reed S, De Freitas N. Neural programmer-interpreters[J]. arXiv preprint arXiv:1511.06279, 2015.
-[9] Bielik P, Raychev V, Vechev M. PROGRAM SYNTHESIS FOR CHARACTER LEVEL LANGUAGE MODELING[J].
