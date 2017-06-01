@@ -158,7 +158,7 @@
 
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="ff-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="width: 80%;">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" id="ff-dialog-close-btn" class="close" data-dismiss="modal"

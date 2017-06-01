@@ -10,6 +10,14 @@
     </tr>
     <tr>
         <td>
+            <p>European Conference on Computer Vision</p>
+        </td>
+        <td>
+            <p><a href="http://eccv2012.unifi.it/"> http://eccv2012.unifi.it/</a></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <p>International Conference on Machine Learning</p>
         </td>
         <td>
@@ -30,14 +38,6 @@
         </td>
         <td>
             <p><a href="http://www.ecai2013.upit.ro/?i=2542"> http://www.ecai2013.upit.ro/?i=2542</a></p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p>European Conference on Computer Vision</p>
-        </td>
-        <td>
-            <p><a href="http://eccv2012.unifi.it/"> http://eccv2012.unifi.it/</a></p>
         </td>
     </tr>
     </tbody>
