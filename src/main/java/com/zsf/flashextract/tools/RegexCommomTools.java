@@ -33,7 +33,7 @@ public class RegexCommomTools {
 
     public static List<Regex> deDuplication(List<List<Regex>> regexs, boolean isStartWith) {
         List<Regex> deDuplicatedList = new ArrayList<Regex>();
-        if (regexs.size()<=0){
+        if (regexs.size() <= 0) {
             return deDuplicatedList;
         }
         List<Regex> baseRegexList = regexs.get(0);
@@ -173,25 +173,25 @@ public class RegexCommomTools {
      */
     public static void addDynamicToken(List<PlainField> fieldsByUser, List<Regex> usefulRegex) {
         // TODO: 2017/3/28 对于末尾的数字，是否要处理？ 就是这种href="/p/4
-        List<String> strings=new ArrayList<String>();
-        for (PlainField field:fieldsByUser){
+        List<String> strings = new ArrayList<String>();
+        for (PlainField field : fieldsByUser) {
             strings.add(field.getParentField().getText());
         }
         String str0 = strings.get(0);
-        int len=str0.length();
-        for (int i=0;i<len;i++){
-            for (int j=len;j>i;j--){
-                String subStr=str0.substring(i,j);
-                boolean needAddIn=true;
-                for (int k=1;k<strings.size();k++){
-                    if (!strings.get(k).contains(subStr)){
-                        needAddIn=false;
+        int len = str0.length();
+        for (int i = 0; i < len; i++) {
+            for (int j = len; j > i; j--) {
+                String subStr = str0.substring(i, j);
+                boolean needAddIn = true;
+                for (int k = 1; k < strings.size(); k++) {
+                    if (!strings.get(k).contains(subStr)) {
+                        needAddIn = false;
                         break;
                     }
                 }
-                if (needAddIn){
-                    doAddDynamicToken(subStr,usefulRegex);
-                    i=j-1;
+                if (needAddIn) {
+                    doAddDynamicToken(subStr, usefulRegex);
+                    i = j - 1;
                     break;
                 }
             }
@@ -200,25 +200,26 @@ public class RegexCommomTools {
 
     /**
      * 若subStr不能被usefulRegex中的任何一个匹配，那么就将他加入作为dynamicToken
+     *
      * @param subStr
      * @param usefulRegex
      */
-    private static void doAddDynamicToken(String subStr,List<Regex> usefulRegex) {
+    private static void doAddDynamicToken(String subStr, List<Regex> usefulRegex) {
         try {
-            for (Regex regex:usefulRegex){
-                if (!regex.needAddDynimicToken(subStr)){
+            for (Regex regex : usefulRegex) {
+                if (!regex.needAddDynimicToken(subStr)) {
                     return;
                 }
             }
             // [和]必须写成\[和\]才能作为regex
             // FIXME: 2017/4/22 还有一些其他的特殊符号，以后再处理
-            subStr=subStr.replaceAll("\\[","\\\\[");
-            subStr=subStr.replaceAll("\\]","\\\\]");
+            subStr = subStr.replaceAll("\\[", "\\\\[");
+            subStr = subStr.replaceAll("\\]", "\\\\]");
             Regex rightRegex = new DynamicRegex("DynamicTok(" + subStr + ")", subStr);
             if (!usefulRegex.contains(rightRegex)) {
                 usefulRegex.add(rightRegex);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
         }
     }
 
