@@ -1,0 +1,1126 @@
+﻿<div class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"><div class="a-carousel-row-inner"><div class="a-carousel-col a-carousel-left" style="height: 384px; visibility: visible;"><a class="a-button a-button-image a-carousel-button a-carousel-goto-prevpage" tabindex="0" href="#" style="top: 153.594px;" id="a-autoid-0"><span class="a-button-inner"><i class="a-icon a-icon-previous"><span class="a-icon-alt">Previous page</span></i></span></a></div><div class="a-carousel-col a-carousel-center"><div class="a-carousel-viewport" id="anonCarousel1" style="height: 384px;"><ol class="a-carousel" role="list" style="width: 11150px;"><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px;" role="listitem" aria-setsize="50" aria-posinset="1" aria-hidden="false">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B07DL1Y4GV?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B07DL1Y4GV?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="The Killer Collective" src="https://images-na.ssl-images-amazon.com/images/I/414o2j+P8oL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B07DL1Y4GV?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                The Killer Collective
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B07DL1Y4GV?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            2,041
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px;" role="listitem" aria-setsize="50" aria-posinset="2" aria-hidden="false">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B079JQ29M5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B079JQ29M5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="Winter Cottage" src="https://images-na.ssl-images-amazon.com/images/I/51+2TKKSfpL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B079JQ29M5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                Winter Cottage
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B079JQ29M5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            464
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px;" role="listitem" aria-setsize="50" aria-posinset="3" aria-hidden="false">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B07FDDPFPN?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B07FDDPFPN?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="The Victory Garden: A Novel" src="https://images-na.ssl-images-amazon.com/images/I/51C78P5ADYL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B07FDDPFPN?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                The Victory Garden: A Novel
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B07FDDPFPN?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            613
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$2.49</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="4" aria-hidden="false">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B074QL7WNM?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B074QL7WNM?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="The Tuscan Child" src="https://images-na.ssl-images-amazon.com/images/I/516RInLmgQL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B074QL7WNM?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                The Tuscan Child
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B074QL7WNM?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            3,641
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="5" aria-hidden="false">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B078JG8M8P?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B078JG8M8P?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="The Ragged Edge of Night" src="https://images-na.ssl-images-amazon.com/images/I/51r5AmZuZvL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B078JG8M8P?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                The Ragged Edge of Night
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B078JG8M8P?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            2,942
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="6" aria-hidden="false">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B07FTBNVGK?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B07FTBNVGK?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="The Beantown Girls" src="https://images-na.ssl-images-amazon.com/images/I/51m0A9QCXCL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B07FTBNVGK?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                The Beantown Girls
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B07FTBNVGK?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            1,335
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="7" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B07CGWQMHT?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B07CGWQMHT?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="Paper Wife: A Novel" src="https://images-na.ssl-images-amazon.com/images/I/51pS3ZRhtPL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B07CGWQMHT?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                Paper Wife: A Novel
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B07CGWQMHT?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            402
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="8" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B07D6R3FQ6?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B07D6R3FQ6?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="The Forgotten Hours" src="https://images-na.ssl-images-amazon.com/images/I/41NbnKqFoVL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B07D6R3FQ6?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                The Forgotten Hours
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B07D6R3FQ6?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4"></i>
+
+        <span class="a-size-small a-color-link">
+            1,014
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="9" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B07DNDY87J?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B07DNDY87J?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="The Snow Gypsy" src="https://images-na.ssl-images-amazon.com/images/I/51Wi2vWaM4L._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B07DNDY87J?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                The Snow Gypsy
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B07DNDY87J?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            1,732
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="10" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B01HBKAYMA?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B01HBKAYMA?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="In Farleigh Field: A Novel of World War II" src="https://images-na.ssl-images-amazon.com/images/I/51gYjsFWN7L._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B01HBKAYMA?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                In Farleigh Field: A Novel of...
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B01HBKAYMA?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4"></i>
+
+        <span class="a-size-small a-color-link">
+            5,231
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="11" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B00N58XLLE?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B00N58XLLE?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="Trail of Broken Wings" src="https://images-na.ssl-images-amazon.com/images/I/51QoeMRbsvL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B00N58XLLE?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                Trail of Broken Wings
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B00N58XLLE?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            6,720
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="12" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B078XBQ4N5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B078XBQ4N5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="What Have You Done" src="https://images-na.ssl-images-amazon.com/images/I/51kLVfQoG7L._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B078XBQ4N5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                What Have You Done
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B078XBQ4N5?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            2,523
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="13" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B06Y1264PX?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B06Y1264PX?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="I Am Watching You" src="https://images-na.ssl-images-amazon.com/images/I/51PeVt0WznL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B06Y1264PX?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                I Am Watching You
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B06Y1264PX?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            9,799
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="14" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B079DPT9MS?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B079DPT9MS?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="Murder Theory (The Naturalist Book 3)" src="https://images-na.ssl-images-amazon.com/images/I/51pBkye9iyL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B079DPT9MS?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                Murder Theory (The Naturalist Book 3)
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B079DPT9MS?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            276
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card dbs-shoveler-card" style="height: 384px; width: 202px; margin-left: 21px; visibility: hidden;" role="listitem" aria-setsize="50" aria-posinset="15" aria-hidden="true">
+                       <span class="dbs-shoveler-card-helper"></span>
+                       <a class="a-link-normal dbs-shoveler-card-url" href="/gp/product/B07CRDZYBR?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+
+
+
+
+
+
+
+
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;moreInfoData&quot;}">{"moreInfoExpandedRefTag":"ku_mw_rw_exp","isTOS":false,"isTablet":false}</script>
+
+
+
+
+
+          </a><a class="a-link-normal" href="/gp/product/B07CRDZYBR?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+             <div class="a-section dbs-product-image-container dbs-product-image-height">
+                     <img onload="window.uet &amp;&amp; uet.call &amp;&amp; uet(&quot;cf&quot;);" alt="Just After Midnight" src="https://images-na.ssl-images-amazon.com/images/I/51y7wHW-STL._PJku-sticker-v7,TopRight,0,-50._SY375_.jpg" class="a-dynamic-image product-image" data-a-dynamic-image="{}" style="max-width:177px;max-height:266px;">
+                     <br>
+             </div>
+          </a>
+
+
+
+        <div class="a-box-group a-spacing-top-micro">
+            <a class="a-size-small a-link-normal" href="/gp/product/B07CRDZYBR?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=259e37e8-4e37-487c-b00d-77f0f291c34e&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pd_rd_wg=b5VgV&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pd_rd_w=d4pWi&amp;pf_rd_i=154606011&amp;pd_rd_r=4760bd70-fbc2-4098-bce0-50bf90536f93">
+                Just After Midnight
+            </a>
+        </div>
+
+    <div class="a-box-group a-spacing-none">
+
+
+
+
+
+
+            <a class="a-size-small a-link-normal" href="/gp/product-reviews/B07CRDZYBR?pf_rd_m=A2R2RITDJNW1Q6&amp;storeType=ebooks&amp;pageType=STOREFRONT&amp;pf_rd_p=ae642e4b-ad2c-4298-8dd0-2f96f1bbdbdd&amp;pf_rd_r=6ZXB51AGRT1XZX51G46B&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_t=40901&amp;ref_=dbs_f_ebk_rwt_wigo_HCkdr_ms3_kmw_ae642e4b-ad2c-4298-8dd0-2f96f1b&amp;pf_rd_i=154606011">
+
+
+
+
+
+
+    <i class="a-icon a-icon-star-small a-star-small-4-5"></i>
+
+        <span class="a-size-small a-color-link">
+            568
+        </span>
+
+
+
+            </a>
+
+    </div>
+
+
+    
+
+
+
+	           <div class="a-box-group">
+                   <span class="a-size-small a-color-secondary">Kindle Price:</span>
+                   <span class="a-size-base a-color-price">$1.99</span>
+                </div>
+
+
+
+
+
+
+
+
+                   </li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="16" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="17" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="18" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="19" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="20" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="21" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="22" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="23" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="24" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="25" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="26" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="27" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="28" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="29" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="30" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="31" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="32" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="33" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="34" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="35" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="36" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="37" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="38" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="39" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="40" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="41" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="42" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="43" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="44" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="45" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="46" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="47" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="48" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="49" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li><li class="a-carousel-card a-carousel-card-empty" role="listitem" aria-setsize="50" aria-posinset="50" aria-hidden="true" style="margin-left: 21px; visibility: hidden; width: 202px;"></li></ol></div></div><div class="a-carousel-col a-carousel-right" style="height: 384px; visibility: visible;"><a class="a-button a-button-image a-carousel-button a-carousel-goto-nextpage" tabindex="0" href="#" style="top: 153.594px;" id="a-autoid-1"><span class="a-button-inner"><i class="a-icon a-icon-next"><span class="a-icon-alt">Next page</span></i></span></a></div></div></div>

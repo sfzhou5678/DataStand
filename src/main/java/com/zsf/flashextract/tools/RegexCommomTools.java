@@ -1,11 +1,10 @@
 package com.zsf.flashextract.tools;
 
-import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.field.LineField;
 import com.zsf.flashextract.field.PlainField;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
-import com.zsf.interpreter.model.Match;
+import com.zsf.model.Match;
 
 import java.util.ArrayList;
 import java.util.List;

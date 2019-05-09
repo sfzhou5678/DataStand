@@ -2,7 +2,7 @@ package com.zsf.interpreter.expressions.pos;
 
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.regex.Regex;
-import com.zsf.interpreter.model.Match;
+import com.zsf.model.Match;
 
 import java.util.ArrayList;
 import java.util.List;

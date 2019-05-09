@@ -1,0 +1,10 @@
+<HTML>
+<body>
+<table>
+<tr><td>Name</td><td>Email</td><td>Office</td></tr>
+<tr><td>Russell Smith</td><td>Russell.Smith@contoso.com</td><td>London</td></tr>
+<tr><td>David Jones</td><td>David.Jones@contoso.com</td><td>Manchester</td></tr>
+<tr><td>John Cameron</td><td>John.Cameron@contoso.com</td><td>New York</td></tr>
+</table>
+</body>
+</HTML>

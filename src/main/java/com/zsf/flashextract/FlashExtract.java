@@ -1,19 +1,18 @@
 package com.zsf.flashextract;
 
-import com.zsf.common.UsefulRegex;
+import com.zsf.interpreter.UsefulRegex;
 import com.zsf.flashextract.field.PlainField;
 import com.zsf.flashextract.region.ColorRegion;
 import com.zsf.flashextract.field.Field;
 import com.zsf.flashextract.message.MessageContainer;
 import com.zsf.flashextract.tools.Color;
 import com.zsf.flashextract.tools.FieldComparator;
-import com.zsf.interpreter.StringProcessor;
-import com.zsf.interpreter.expressions.Expression;
+import com.zsf.StringProcessor;
 import com.zsf.interpreter.expressions.regex.Regex;
-import com.zsf.interpreter.model.ExamplePair;
-import com.zsf.interpreter.model.ExamplePartition;
-import com.zsf.interpreter.model.ExpressionGroup;
-import com.zsf.interpreter.model.ResultMap;
+import com.zsf.model.ExamplePair;
+import com.zsf.model.ExampleCluster;
+import com.zsf.model.ExpressionGroup;
+import com.zsf.model.ResultMap;
 
 import java.util.*;
 
@@ -172,8 +171,8 @@ public class FlashExtract {
         if (colorRegion != null) {
             StringProcessor stringProcessor = new StringProcessor();
             List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
-            List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
-            List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
+            List<ExpressionGroup> expressionGroups = stringProcessor.combinateSubPrograms(resultMaps, 10);
+            List<ExampleCluster> partitions = stringProcessor.formatClustering(expressionGroups, examplePairs);
 
             return colorRegion.previewExp(partitions);
         } else {

@@ -1,0 +1,923 @@
+﻿<div class="column span-24 last">
+        <div style="float: left;" class="span-5 note">
+            <div class="title">
+                <label style="position: relative; top: 0px; left: 10px;">
+                    师资队伍
+                </label>
+            </div>
+            <div id="cont">
+                <a class="LeftMemu curLeftMemu" href="/public/szdw/index">教职员工</a><a class="LeftMemu" href="/public/szdw/ssds">硕士导师</a><a class="LeftMemu" href="/public/szdw/bsds">博士导师</a>
+            </div>
+        </div>
+        <div class="childpagebg column span-18 last">
+            <div id="main">
+    <div id="main">
+    <div style="margin: 10 10; top: 20px; height: 40px" title="师资队伍" id="page_nav_index">教职员工(按姓氏排序)</div>
+    <div class="lbox">
+        <ul class="titcon">
+            <li onmouseover="tab(this,20,20)" class="On"><font> 计算机科学系</font></li>
+            <li onmouseover="tab(this,21,20)" class="Off"><font>计算机工程系</font></li>
+            <li onmouseover="tab(this,22,20)" class="Off"><font>信息技术系</font></li>
+            <li onmouseover="tab(this,23,20)" class="Off"><font>基础系</font></li>
+            <li onmouseover="tab(this,24,20)" class="Off"><font>办公室</font></li>
+            <li onmouseover="tab(this,25,20)" class="Off"><font>实验室</font></li>
+        </ul>
+        <div class="cont" style="">
+            <div class="deptteacher" id="teacher_20" style="display: block;">
+                <div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30452"><img src="/uploaded/filename/public/teacherportrait/30452.jpg?id=F185278903141MO3LYT" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">Ran Liu</span> <br> 职称：<span class="zc">Associate Professor/Senior Engineer</span><br> 联系方式：<span class="lxfs">ran.liu_cqu@qq.com</span><br> 主要研究方向:<span class="major">Medical and stereo image processing; IC design; Biomedical Engineering</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30500"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">陈波</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/06013"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">陈自郁</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">chenziyu@cqu.edu.cn</span><br> 主要研究方向:<span class="major">群智能、图像处理和智能控制</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/06167"><img src="/uploaded/filename/public/teacherportrait/06167.jpg?id=F185278903142IUIHQP" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">但静培</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">时间序列数据挖掘、计算智能、神经网络等</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30733"><img src="/uploaded/filename/public/teacherportrait/30733.jpg?id=F1852789031432BAFRE" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">房斌</span> <br> 职称：<span class="zc">教授　博士生导师</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">模式识别与图像处理</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30651"><img src="/uploaded/filename/public/teacherportrait/30651.jpg?id=F185278903144T3N21L" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">葛亮</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">geliang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">计算机视觉，数据挖据，Web应用技术</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30017"><img src="/uploaded/filename/public/teacherportrait/30017.jpg?id=F1852789031454BIVMQ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">古平</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">guping2k@cqu.edu.cn</span><br> 主要研究方向:<span class="major">数据挖掘，机器学习</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10437"><img src="/uploaded/filename/public/teacherportrait/10437.jpg?id=F185278903146N1WJ31" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">郭平</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">guoping@cqu.edu.cn</span><br> 主要研究方向:<span class="major">生物计算，人工智能</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/06074"><img src="/uploaded/filename/public/teacherportrait/06074.jpg?id=F185278903147CNCLT2" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">何静媛</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">ibm_hjy@sina.com</span><br> 主要研究方向:<span class="major">机器学习，生物信息</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05037"><img src="/uploaded/filename/public/teacherportrait/05037.jpg?id=F185278903148H33UVZ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">何中市</span> <br> 职称：<span class="zc">教授　博士生导师</span><br> 联系方式：<span class="lxfs">zshe@cqu.edu.cn</span><br> 主要研究方向:<span class="major">模式识别、机器学习与数据挖掘、自然语言计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31450"><img src="/uploaded/filename/public/teacherportrait/31450.jpg?id=F185278903149XKGIAA" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李佳</span> <br> 职称：<span class="zc">教授 博士</span><br> 联系方式：<span class="lxfs">lijia@cqu.edu.cn</span><br> 主要研究方向:<span class="major">仿生计算、异步电路、细胞自动机</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05448"><img src="/uploaded/filename/public/teacherportrait/05448.jpg?id=F185278903150FSKKTL" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李双庆</span> <br> 职称：<span class="zc">副教授/博士</span><br> 联系方式：<span class="lxfs">sqlee@cqu.edu.cn</span><br> 主要研究方向:<span class="major">软件定义网络SDN、云计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30872"><img src="/uploaded/filename/public/teacherportrait/30872.jpg?id=F185278903151L3RGIT" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘骥</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">liujiboy@cqu.edu.cn</span><br> 主要研究方向:<span class="major">计算机图形学，云计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05171"><img src="/uploaded/filename/public/teacherportrait/05171.jpg?id=F185278903152NYUFRJ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">石锐</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">模式识别，图像处理与分析，信息系统与信息处理技术</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10442"><img src="/uploaded/filename/public/teacherportrait/10442.jpg?id=F185278903153EK55BE" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">王波</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">wangbo@cqu.edu.cn</span><br> 主要研究方向:<span class="major">智能建筑与智慧城市, 物联网与网络安全</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/01529"><img src="/uploaded/filename/public/teacherportrait/01529.jpg?id=F185278903154WFPWTR" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">王茜</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">wangqian@cqu.edu.cn</span><br> 主要研究方向:<span class="major">网络安全，电子商务，数据挖掘</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0291"><img src="/uploaded/filename/public/teacherportrait/Y0291.jpg?id=F185278903155HAZJTK" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">吴全旺</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">wqw AT cqu DOT edu DOT cn</span><br> 主要研究方向:<span class="major">云计算、服务计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31275"><img src="/uploaded/filename/public/teacherportrait/31275.jpg?id=F1852789031564WXBPW" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">夏云霓</span> <br> 职称：<span class="zc">教授 博士生导师</span><br> 联系方式：<span class="lxfs">xiayunni@hotmail.com</span><br> 主要研究方向:<span class="major">服务计算，软件工程，可信计算，云计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30416"><img src="/uploaded/filename/public/teacherportrait/30416.jpg?id=F185278903157ZBMI2L" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">邢永康</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">13320218299</span><br> 主要研究方向:<span class="major">人工智能 数据挖掘 分布式系统</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30932"><img src="/uploaded/filename/public/teacherportrait/30932.jpg?id=F185278903158OSMV0Q" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">杨广超</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">15923504788</span><br> 主要研究方向:<span class="major">模式识别</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/06075"><img src="/uploaded/filename/public/teacherportrait/06075.jpg?id=F185278903159YJSC23" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">杨瑞龙</span> <br> 职称：<span class="zc">博士</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">Information retrieval, data mining, web mining, web service, collaborative filte</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30875"><img src="/uploaded/filename/public/teacherportrait/30875.jpg?id=F1852789031604T51BH" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">叶莲</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">ylredleaf@cqu.edu.cn</span><br> 主要研究方向:<span class="major">人工智能、数据挖掘、机器学习</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30504"><img src="/uploaded/filename/public/teacherportrait/30504.jpg?id=F185278903161UY45YC" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">曾令秋</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">zenglq@cqu.edu.cn</span><br> 主要研究方向:<span class="major">计算机仿真和建模、智能交通与数据处理</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0029"><img src="/uploaded/filename/public/teacherportrait/Y0029.jpg?id=F185278903162U2JCKE" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张程</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">bootan@cqu.edu.cn</span><br> 主要研究方向:<span class="major">移动智能, 无线传感器网络</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30453"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张敏</span> <br> 职称：<span class="zc">讲师 </span><br> 联系方式：<span class="lxfs">zm@cqu.edu.cn</span><br> 主要研究方向:<span class="major">智能信息处理及机器学习</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30277"><img src="/uploaded/filename/public/teacherportrait/30277.jpg?id=F185278903163D2IOA0" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">周明强</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">zmqmail@cqu.edu.cn</span><br> 主要研究方向:<span class="major">软件工程、服务计算、计算机网络和复杂网络应用</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/01523"><img src="/uploaded/filename/public/teacherportrait/01523.jpg?id=F185278903164S3VT1L" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">朱庆生</span> <br> 职称：<span class="zc">教授　博士生导师</span><br> 联系方式：<span class="lxfs">qszhu@acm.org</span><br> 主要研究方向:<span class="major">面向服务的软件工程、数据挖掘与离群检测、机器学习与知识工程</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/01562"><img src="/uploaded/filename/public/teacherportrait/01562.jpg?id=F185278903165X55AEK" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">朱征宇</span> <br> 职称：<span class="zc">教授  博士生导师</span><br> 联系方式：<span class="lxfs">zhu_zhengyu@cqu.edu.cn</span><br> 主要研究方向:<span class="major">Web智能检索，电子商务应用，数据挖掘技术</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/06014"><img src="/uploaded/filename/public/teacherportrait/06014.jpg?id=F185278903166NCTWYY" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">邹东升</span> <br> 职称：<span class="zc">副教授、硕导</span><br> 联系方式：<span class="lxfs">dszou@cqu.edu.cn</span><br> 主要研究方向:<span class="major">数据挖掘、机器学习</span><br>
+                    </div>
+                </div>
+            </div><div class="deptteacher" id="teacher_21" style="display: none;">
+                <div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05215"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">陈四清</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30008"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">陈乙雄</span> <br> 职称：<span class="zc">博士</span><br> 联系方式：<span class="lxfs">chenyx@cqu.edu.cn</span><br> 主要研究方向:<span class="major">最优化理论与算法、移动计算、服务计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/T0092"><img src="/uploaded/filename/public/teacherportrait/T0092.jpg?id=F185278903167GITKV4" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">冯亮</span> <br> 职称：<span class="zc">研究员/博导</span><br> 联系方式：<span class="lxfs">liangf AT cqu DOT edu DOT cn</span><br> 主要研究方向:<span class="major">智能计算，大数据挖掘与优化，机器学习，多代理系统等</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30032"><img src="/uploaded/filename/public/teacherportrait/30032.jpg?id=F185278903168QHYMTZ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">冯永</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">fengyong@cqu.edu.cn; yong.feng@foxmail.com</span><br> 主要研究方向:<span class="major">①大数据分析与数据挖据；②大数据管理与智能推荐；③大数据集成与人工智能</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/02373"><img src="/uploaded/filename/public/teacherportrait/02373.jpg?id=F185278903169US15GT" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李华</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">lh@cqu.edu.cn</span><br> 主要研究方向:<span class="major">计算机网络、网络教育、大数据</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30879"><img src="/uploaded/filename/public/teacherportrait/30879.jpg?id=F185278903170XXQKGX" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李季</span> <br> 职称：<span class="zc">副教授/博士</span><br> 联系方式：<span class="lxfs">leedge@cqu.edu.cn</span><br> 主要研究方向:<span class="major">大数据、嵌入式系统、云计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05319"><img src="/uploaded/filename/public/teacherportrait/05319.jpg?id=F1852789031711MMR4T" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李学明</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">lixuemin@cqu.edu.cn</span><br> 主要研究方向:<span class="major">数据挖掘，大数据，高性能计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/T0006"><img src="/uploaded/filename/public/teacherportrait/T0006.jpg?id=F185278903172HNK3OM" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘铎</span> <br> 职称：<span class="zc">研究员 博士生导师</span><br> 联系方式：<span class="lxfs">liuduo@cqu.edu.cn 办公室：A区主教626</span><br> 主要研究方向:<span class="major">嵌入式智能终端、新型存储体系结构、物联网与大数据应用</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/T0056"><img src="/uploaded/filename/public/teacherportrait/T0056.jpg?id=F185278903173YUDIMP" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘凯</span> <br> 职称：<span class="zc">研究员/博导</span><br> 联系方式：<span class="lxfs">liukai0807@cqu.edu.cn</span><br> 主要研究方向:<span class="major">车联网，移动计算，普适计算，大数据，物联网</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0240"><img src="/uploaded/filename/public/teacherportrait/Y0240.jpg?id=F18527890317442F5DT" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘润宗</span> <br> 职称：<span class="zc">硕导/博士</span><br> 联系方式：<span class="lxfs">abslrz@cqu.edu.cn;  30313205@qq.com</span><br> 主要研究方向:<span class="major">模式识别、机器学习、机器视觉、认知科学</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/T0040"><img src="/uploaded/filename/public/teacherportrait/T0040.jpg?id=F1852789031751EUZN0" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘韦辰</span> <br> 职称：<span class="zc">研究员 博士</span><br> 联系方式：<span class="lxfs">wliu(at)cqu.edu.cn   办公室：主教616</span><br> 主要研究方向:<span class="major">嵌入式系统，实时系统，容错系统，多处理器系统，片上网络</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/01527"><img src="/uploaded/filename/public/teacherportrait/01527.jpg?id=F185278903176PHQD2A" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘卫宁</span> <br> 职称：<span class="zc">教授/博士</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">分布式计算与服务、电子商务与现代物流、RFID应用技术、信息物理融合、智能交通等</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/B0226"><img src="/uploaded/filename/public/teacherportrait/B0226.jpg?id=F185278903177LTO5ZC" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">沙行勉</span> <br> 职称：<span class="zc">国家”千人计划“特聘教授、长江学者、海外杰青，院长</span><br> 联系方式：<span class="lxfs">edwinsha@cqu.edu.cn</span><br> 主要研究方向:<span class="major">大数据存储和计算，嵌入式系统，多核系统和软件，物联网和智能计算，先进体系结构，信息安全，实时系统，云计算等。</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0301"><img src="/uploaded/filename/public/teacherportrait/Y0301.jpg?id=F185278903178INB225" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">尚家兴</span> <br> 职称：<span class="zc">讲师/博士</span><br> 联系方式：<span class="lxfs">shangjx@cqu.edu.cn</span><br> 主要研究方向:<span class="major">复杂网络、数据挖掘、社交网络分析、推荐系统、信息传播</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0078"><img src="/uploaded/filename/public/teacherportrait/Y0078.jpg?id=F185278903179GXJGKA" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">石亮</span> <br> 职称：<span class="zc">副教授，博士</span><br> 联系方式：<span class="lxfs">shiliang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">物联网、大数据、云计算、存储系统</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05550"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">宋伟</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0021"><img src="/uploaded/filename/public/teacherportrait/Y0021.jpg?id=F185278903180LJTXJS" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">谭玉娟</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">tanyujuan@cqu.edu.cn yujuan_tan@163.com</span><br> 主要研究方向:<span class="major">云存储，大数据，高性能计算机体系结构</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31438"><img src="/uploaded/filename/public/teacherportrait/31438.jpg?id=F185278903181XMZJMM" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">万里</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">wanli@cqu.edu.cn</span><br> 主要研究方向:<span class="major">大数据挖掘、社交网络分析、物联网及智能设备、信息系统、软件工程</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30470"><img src="/uploaded/filename/public/teacherportrait/30470.jpg?id=F185278903182RHCHP0" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">汪成亮</span> <br> 职称：<span class="zc">教授/博导</span><br> 联系方式：<span class="lxfs">wangcl@cqu.edu.cn</span><br> 主要研究方向:<span class="major">无线传感器网络；物联网；人工智能及应用</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31406"><img src="/uploaded/filename/public/teacherportrait/31406.jpg?id=F1852789031832T3QDV" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">文静</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">wj@cqu.edu.cn</span><br> 主要研究方向:<span class="major">工业自动化检测，智能系统，图像处理</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0135"><img src="/uploaded/filename/public/teacherportrait/Y0135.jpg?id=F185278903184DTWE40" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">肖春华</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">xiaochunhua@cqu.edu.cn 办公室：A区主教602</span><br> 主要研究方向:<span class="major">物联网技术与应用、嵌入式系统软硬件协同设计、片上SoC设计与多核处理器系统、可穿戴计算技术。 </span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/20059"><img src="/uploaded/filename/public/teacherportrait/20059.jpg?id=F1852789031852ILKDU" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">叶春晓</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">yecx@cqu.edu.cn</span><br> 主要研究方向:<span class="major">信息安全，大数据，云计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31523"><img src="/uploaded/filename/public/teacherportrait/31523.jpg?id=F185278903186FNGUT2" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">尹云飞</span> <br> 职称：<span class="zc">副教授、硕导</span><br> 联系方式：<span class="lxfs">yunfeiyin@gmail.com</span><br> 主要研究方向:<span class="major">数据挖掘与大数据工程；物联网系统与嵌入式开发；动漫制作与飞行仿真</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31558"><img src="/uploaded/filename/public/teacherportrait/31558.jpg?id=F185278903187J4LSTE" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张太平</span> <br> 职称：<span class="zc">博导</span><br> 联系方式：<span class="lxfs">tpzhang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">大数据分析与处理，模式识别，图像处理，机器学习</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05412"><img src="/uploaded/filename/public/teacherportrait/05412.jpg?id=F185278903188DIUQBP" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张玉芳</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">zhangyf@cqu.edu.cn</span><br> 主要研究方向:<span class="major">数据挖掘、集群系统、计算机网络</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31649"><img src="/uploaded/filename/public/teacherportrait/31649.jpg?id=F185278903189CMKFWX" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">郑林江</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">zlj_cqu@163.com</span><br> 主要研究方向:<span class="major">物联网（交通与制造领域）、行业大数据平台、数字航空</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/20196"><img src="/uploaded/filename/public/teacherportrait/20196.jpg?id=F185278903190GEL5TW" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">钟将</span> <br> 职称：<span class="zc">教授 博导</span><br> 联系方式：<span class="lxfs">zhongjiang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">大数据分析与挖掘、云网融合、网络安全</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30317"><img src="/uploaded/filename/public/teacherportrait/30317.jpg?id=F185278903191YHH0T4" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">周尚波</span> <br> 职称：<span class="zc">教授/博士</span><br> 联系方式：<span class="lxfs">shbzhou@cqu.edu.cn</span><br> 主要研究方向:<span class="major">视频信号处理，主要包括视频目标检测与跟踪、视频数据挖掘、视频检索等</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31689"><img src="/uploaded/filename/public/teacherportrait/31689.jpg?id=F185278903192LJ54CK" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">诸葛晴凤</span> <br> 职称：<span class="zc">教授  博士生导师</span><br> 联系方式：<span class="lxfs">qfzhuge@cqu.edu.cn</span><br> 主要研究方向:<span class="major">大数据处理系统，物联网系统，嵌入式系统，先进存储体系结构，调度与资源分配，数据分布优化，内存计算，软/硬件协同设计等</span><br>
+                    </div>
+                </div>
+            </div><div class="deptteacher" id="teacher_22" style="display: none;">
+                <div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0171"><img src="/uploaded/filename/public/teacherportrait/Y0171.jpg?id=F185278903193TYW4WJ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">陈超</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">ivanchao.chenATgmail.com; cschaochenATcqu.edu.cn</span><br> 主要研究方向:<span class="major">普适计算、大数据挖掘、智慧城市</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10402"><img src="/uploaded/filename/public/teacherportrait/10402.jpg?id=F185278903194W0TASY" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">邓绍江</span> <br> 职称：<span class="zc">教授/博士</span><br> 联系方式：<span class="lxfs">sj_deng@cqu.edu.cn</span><br> 主要研究方向:<span class="major">信息安全，传感器网络，体域网安全</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31434"><img src="/uploaded/filename/public/teacherportrait/31434.jpg?id=F185278903195BXT1GX" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">黄宏宇</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">hyhuang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">车辆自组织网络（车联网）、无线传感器网络、移动计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31021"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李东晖</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/Y0274"><img src="/uploaded/filename/public/teacherportrait/Y0274.jpg?id=F185278903196XODZSW" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘斌</span> <br> 职称：<span class="zc">讲师/博士</span><br> 联系方式：<span class="lxfs">binliu@cqu.edu.com</span><br> 主要研究方向:<span class="major">量子信息、量子密码</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05029"><img src="/uploaded/filename/public/teacherportrait/05029.jpg?id=F185278903197MWIMOC" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">罗军</span> <br> 职称：<span class="zc">副教授 </span><br> 联系方式：<span class="lxfs">lr@cqu.edu.cn</span><br> 主要研究方向:<span class="major">网络及数据库，大型MIS系统建模及设计，基于数据库的应用系统平台的架构</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30892"><img src="/uploaded/filename/public/teacherportrait/30892.jpg?id=F185278903198OX4F22" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">尚赵伟</span> <br> 职称：<span class="zc">教授 博士生导师</span><br> 联系方式：<span class="lxfs">szw@cqu.edu.cn</span><br> 主要研究方向:<span class="major">模式识别、大数据分析与理解、图像处理</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10228"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">涂风华</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31361"><img src="/uploaded/filename/public/teacherportrait/31361.jpg?id=F185278903199JCWHYX" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">吴长泽</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">13618392903</span><br> 主要研究方向:<span class="major">服务计算、可信计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05205"><img src="/uploaded/filename/public/teacherportrait/05205.jpg?id=F185278903200NJMNJ4" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">吴开贵</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">kaiguiwu@cqu.edu.cn</span><br> 主要研究方向:<span class="major">信息安全、软件演化、物联网技术</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/B0356"><img src="/uploaded/filename/public/teacherportrait/B0356.jpg?id=F185278903201WS1N0G" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">吴剀劼</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">kaijie@cqu.edu.cn</span><br> 主要研究方向:<span class="major">可信计算 硬件安全 容错计算 低功耗设计 实时嵌入式系统 软硬件协同设计</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30874"><img src="/uploaded/filename/public/teacherportrait/30874.jpg?id=F185278903202WTSIM3" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">向涛</span> <br> 职称：<span class="zc">教授、博士生导师</span><br> 联系方式：<span class="lxfs">txiang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">多媒体安全、云计算和大数据安全、智能手机安全、无线网络安全</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10400"><img src="/uploaded/filename/public/teacherportrait/10400.jpg?id=F1852789032031J2V3C" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">肖迪</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">dixiao@cqu.edu.cn</span><br> 主要研究方向:<span class="major">信息安全、多媒体安全、混沌密码学、密文域信号处理与云安全等</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30276"><img src="/uploaded/filename/public/teacherportrait/30276.jpg?id=F185278903204NFDN4K" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">杨吉云</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">yangjy@cqu.edu.cn</span><br> 主要研究方向:<span class="major">信息安全、无线传感网络、大数据分析与处理</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30019"><img src="/uploaded/filename/public/teacherportrait/30019.jpg?id=F185278903205K12AOW" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">郑洪英</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">zhenghongy@cqu.edu.cn</span><br> 主要研究方向:<span class="major">信息安全</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/11257"><img src="/uploaded/filename/public/teacherportrait/11257.jpg?id=F185278903206O2LYIH" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">钟世刚</span> <br> 职称：<span class="zc">讲师 博士</span><br> 联系方式：<span class="lxfs">zhongshigang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">神经网络和计算机智能</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30650"><img src="/uploaded/filename/public/teacherportrait/30650.jpg?id=F185278903207E5CPVC" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">周庆</span> <br> 职称：<span class="zc">教授 博士生导师</span><br> 联系方式：<span class="lxfs">tzhou@cqu.edu.cn</span><br> 主要研究方向:<span class="major">大数据挖掘 计算机教育 移动计算 云计算 信息安全</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10434"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">朱晓红</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div>
+            </div><div class="deptteacher" id="teacher_23" style="display: none;">
+                <div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/02385"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">陈策</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30714"><img src="/uploaded/filename/public/teacherportrait/30714.jpg?id=F1852789032082KIKOP" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">陈恒鑫</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">chenhengxin@cqu.edu.cn</span><br> 主要研究方向:<span class="major">模式识别、Web开发技术、虚拟现实</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10430"><img src="/uploaded/filename/public/teacherportrait/10430.jpg?id=F18527890320934ZY1Y" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">何频</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">hepin@cqu.edu.cn</span><br> 主要研究方向:<span class="major">计算机基础教育，计算机技术应用，建筑环境与设备工程</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10427"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">贺萍</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10411"><img src="/uploaded/filename/public/teacherportrait/10411.jpg?id=F18527890321000OGP0" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李杰</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">jsjx@cqu.edu.cn</span><br> 主要研究方向:<span class="major">计算机基础教育</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10440"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李芝兴</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">13635488167</span><br> 主要研究方向:<span class="major">Java、网络工程、图形学</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10417"><img src="/uploaded/filename/public/teacherportrait/10417.jpg?id=F185278903211SWQ3SH" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">林宝如</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">计算机基础教学研究</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30511"><img src="/uploaded/filename/public/teacherportrait/30511.jpg?id=F185278903212CS5LGS" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘慧君</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">290441667@qq.com</span><br> 主要研究方向:<span class="major">数据挖掘、复杂网络计算、Web开发技术</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/02375"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">龙小保</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05897"><img src="/uploaded/filename/public/teacherportrait/05897.jpg?id=F185278903213VD43RJ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">马振婴</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">13368204816</span><br> 主要研究方向:<span class="major">计算机基础课程教育</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10414"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">冉春林</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10428"><img src="/uploaded/filename/public/teacherportrait/10428.jpg?id=F1852789032140AUNHM" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">王欣如</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">xrwang@cqu.edu.cn</span><br> 主要研究方向:<span class="major">数据库应用，计算机基础教育</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30512"><img src="/uploaded/filename/public/teacherportrait/30512.jpg?id=F185278903215RUGUNZ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">伍星</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">13696449805</span><br> 主要研究方向:<span class="major">Web开发技术，金融数据挖掘，文本挖掘</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/20356"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">熊心志</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">13002388497</span><br> 主要研究方向:<span class="major">智能服务计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/01567"><img src="/uploaded/filename/public/teacherportrait/01567.jpg?id=F185278903216W2OJES" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">熊忠阳</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">zyxiong@cqu.edu.cn</span><br> 主要研究方向:<span class="major">并行计算,大数据,移动互联网及应用</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/02386"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">杨琳</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/01538"><img src="/uploaded/filename/public/teacherportrait/01538.jpg?id=F185278903217OZLEEB" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">曾一</span> <br> 职称：<span class="zc">教授</span><br> 联系方式：<span class="lxfs">zyjckxx@cqu.edu.cn</span><br> 主要研究方向:<span class="major">软件度量与软件测试、软件过程与软件管理、软件开发与信息系统集成、WEB服务发现与组合</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10449"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张全和</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs">15123955593</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div>
+            </div><div class="deptteacher" id="teacher_24" style="display: none;">
+                <div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31159"><img src="/uploaded/filename/public/teacherportrait/31159.jpg?id=F185278903218LZ1RKG" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">傅思思</span> <br> 职称：<span class="zc">秘书 硕士</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30992"><img src="/uploaded/filename/public/teacherportrait/30992.jpg?id=F185278903219N0H4EE" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">古曦</span> <br> 职称：<span class="zc">讲师/硕士</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">学生工作</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31722"><img src="/uploaded/filename/public/teacherportrait/31722.jpg?id=F185278903220VRL5AK" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">郭坤银</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">023-65103012</span><br> 主要研究方向:<span class="major">软件工程</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/C0015"><img src="/uploaded/filename/public/teacherportrait/C0015.jpg?id=F185278903221T2FOOO" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">黄利</span> <br> 职称：<span class="zc">教务</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/C0041"><img src="/uploaded/filename/public/teacherportrait/C0041.jpg?id=F18527890322220DYUV" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李若菡</span> <br> 职称：<span class="zc">助教/硕士</span><br> 联系方式：<span class="lxfs">023-65103012</span><br> 主要研究方向:<span class="major">思想政治教育</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/C0094"><img src="/uploaded/filename/public/teacherportrait/C0094.jpg?id=F185278903223VYGSSF" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘霜</span> <br> 职称：<span class="zc">硕士</span><br> 联系方式：<span class="lxfs">65111210</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/07046"><img src="/uploaded/filename/public/teacherportrait/07046.jpg?id=F185278903224CXDNY5" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">马前</span> <br> 职称：<span class="zc">副科级职员</span><br> 联系方式：<span class="lxfs">maqian@cqu.edu.cn</span><br> 主要研究方向:<span class="major">高等教育学</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/05300"><img src="/uploaded/filename/public/teacherportrait/05300.jpg?id=F185278903225HMVCBC" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">申卫洁</span> <br> 职称：<span class="zc">副处级</span><br> 联系方式：<span class="lxfs">65102502</span><br> 主要研究方向:<span class="major">行政管理</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/L201307030"><img src="/uploaded/filename/public/teacherportrait/L201307030.jpg?id=F185278903226RMRJLM" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">王婷</span> <br> 职称：<span class="zc">会计/硕士</span><br> 联系方式：<span class="lxfs">65112389</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/07015"><img src="/uploaded/filename/public/teacherportrait/07015.jpg?id=F1852789032275NJVOA" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">伍玲</span> <br> 职称：<span class="zc">科员 硕士</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/P201307018"><img src="/uploaded/filename/public/teacherportrait/P201307018.jpg?id=F185278903228Q34QLE" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">谢璧如</span> <br> 职称：<span class="zc">助理研究员/硕士</span><br> 联系方式：<span class="lxfs">65103012</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/09012"><img src="/uploaded/filename/public/teacherportrait/09012.jpg?id=F185278903229FCGXPA" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">杨婧</span> <br> 职称：<span class="zc">副科级职员</span><br> 联系方式：<span class="lxfs">65102502</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30718"><img src="/uploaded/filename/public/teacherportrait/30718.jpg?id=F185278903230TA3444" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张军</span> <br> 职称：<span class="zc">讲师</span><br> 联系方式：<span class="lxfs">02365111210</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div>
+            </div><div class="deptteacher" id="teacher_25" style="display: none;">
+                <div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/11988"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">黄俊</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10425"><img src="/uploaded/filename/public/teacherportrait/10425.jpg?id=F1852789032313TKC3J" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">黄仁</span> <br> 职称：<span class="zc">副教授</span><br> 联系方式：<span class="lxfs">hjxxl@cqu.edu.cn</span><br> 主要研究方向:<span class="major">嵌入式技术</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/C0200"><img src="/uploaded/filename/public/teacherportrait/C0200.jpg?id=F185278903232DJWIGV" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">黎荆妗</span> <br> 职称：<span class="zc">助理实验师</span><br> 联系方式：<span class="lxfs">yujl127@cqu.edu.cn</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/C0023"><img src="/uploaded/filename/public/teacherportrait/C0023.jpg?id=F1852789032330UZILB" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李红蕾</span> <br> 职称：<span class="zc">初级助理实验师</span><br> 联系方式：<span class="lxfs">18580870027</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/02388"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李建美</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/02378"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">李卓伟</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10420"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">刘伟扬</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/30503"><img src="/uploaded/filename/public/teacherportrait/30503.jpg?id=F185278903234AEZNKZ" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">孙天昊</span> <br> 职称：<span class="zc">高级实验师/博士</span><br> 联系方式：<span class="lxfs">sthing@cqu.edu.cn</span><br> 主要研究方向:<span class="major">电子商务，机器学习与计算智能，智能推荐系统与大数据处理</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/31793"><img src="/uploaded/filename/public/teacherportrait/31793.jpg?id=F185278903235MFQFNN" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">王翊</span> <br> 职称：<span class="zc">工程师</span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major">机器视觉，高性能计算</span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/02382"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">许和</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/C0126"><img src="/uploaded/filename/public/teacherportrait/C0126.jpg?id=F185278903236EZTNMC" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">袁金凤</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/01001"><img src="/uploaded/filename/public/teacherportrait/01001.jpg?id=F185278903237OJGKYA" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">曾俊哲</span> <br> 职称：<span class="zc">本科</span><br> 联系方式：<span class="lxfs">15923269021</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10447"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张惦坪</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/C0037"><img src="/uploaded/filename/public/teacherportrait/C0037.jpg?id=F18527890323821CD5K" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">张海鑫</span> <br> 职称：<span class="zc">实验师</span><br> 联系方式：<span class="lxfs">haixin@cqu.edu.cn</span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div><div class="teacherdiv">
+                    <div style="position: relative;float:left;width:100px;height:140px;margin: 5px 5px">
+                        <a href="/public/tindex/10436"><img src="/images/nophoto.jpg" style="width:100%;"></a>
+                    </div>
+                    <div style="position: relative;float:left;width:220px;height:100%;padding-top: 20px;">
+                        姓名：<span class="name">祝焱</span> <br> 职称：<span class="zc"></span><br> 联系方式：<span class="lxfs"></span><br> 主要研究方向:<span class="major"></span><br>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            
+        </div>
+        
+        <div class="bot">
+            <div class="in"></div>
+        </div>
+    </div>
+    
+    <script language="javascript">
+        //Tab
+        function tab(a, b, c) {
+            var d = $(a).parent().find("li");
+            var e = d.length + c;
+            var g = b - c;
+            var f;
+            for (i = c; i < e; i++) {
+                f = e - i - 1;
+                $(d).eq(f).attr("class", "Off");
+                $("#teacher_" + i).css("display", "none");
+            }
+            $(d).eq(g).attr("class", "On");
+            $("#teacher_" + b).css("display", "block");
+        }
+    </script>
+</div>
+</div>
+        </div>
+    </div>

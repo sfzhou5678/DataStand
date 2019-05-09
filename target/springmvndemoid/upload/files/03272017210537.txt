@@ -1,0 +1,19 @@
+﻿﻿<ul id="thread_list" class="threadlist_bright j_threadlist_bright">
+                <li class="thread_top_list_folder">
+                <ul id="thread_top_list" class="thread_top_list">
+                    <li class=" j_thread_list thread_top j_thread_list clearfix" data-field="{"id":4792917582,"author_name":"\u96e8\u8fb0\u54e5\u54e5\u662f\u4e5f","first_post_id":98181926516,"reply_num":54,"is_bakan":null,"vid":"","is_good":true,"is_top":true,"is_protal":null,"is_membertop":null,"frs_tpoint":null}">
+            <div class="t_con cleafix">
+                    <a href="javascript:;" title="点击隐藏本贴" data-field="{"tid":4792917582}" class="j_thread_hidden icon_thread_hidden"></a>
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">54</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    <i class="icon-top" alt="置顶" title="置顶"></i><i class="icon-good" alt="精品" title="精品"></i>
+    
+    <a href="/p/4792917582" title="【进吧必看】重庆大学吧吧规与导航2016.9.22" target="_blank" class="j_th_tit ">【进吧必看】重庆大学吧吧规与导航2016.9.22</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 雨辰哥哥是也" data-field="{"user_id":1056629546}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{"un":"\u96e8\u8fb0\u54e5\u54e5\u662f\u4e5f"}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%9B%A8%E8%BE%B0%E5%93%A5%E5%93%A5%E6%98%AF%E4%B9%9F&ie=utf-8&fr=frs" target="_blank">雨辰哥哥是也</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2016-09</span>

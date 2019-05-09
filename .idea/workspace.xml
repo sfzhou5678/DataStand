@@ -1,0 +1,2138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="springmvndemo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a98fa153-1290-4d0a-bc67-31231824dffb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tieba-SJTU.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/RMM流程.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/beam归并.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/对照DSL的类图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/循环表达式 记忆化搜索.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/WebMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/common/UsefulRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/FlashExtract.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/feregex/EndWith.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/feregex/StartWith.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/feregex/feinterfaces/DynimicRegexTools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/feregex/feinterfaces/LineSelector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/field/Field.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/field/LineField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/field/PlainField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/message/MessageContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/region/ColorRegion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/tools/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/tools/FieldComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/flashextract/tools/RegexCommomTools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/StringProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/DAG.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/Expression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/NonTerminalExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/Score.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/TerminalExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/linking/ConcatenateExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/linking/LinkingExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/loop/LoopExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/pos/AbsPosExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/pos/EndRegPos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/pos/PosExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/pos/RegPosExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/pos/StartRegPos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/regex/CombinedRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/regex/DynamicRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/regex/EpicRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/regex/NormalRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/regex/RareRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/regex/Regex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/string/ConstStrExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/string/RegSubStringExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/string/StringExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/expressions/string/SubStringExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/model/ExamplePair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/model/ExamplePartition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/model/ExpressionGroup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/model/Match.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/model/ResultMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/model/ValidationPair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/tool/ExpScoreComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/tool/ExpressionComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/tool/RunTimeMeasurer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/tool/StringTools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zsf/interpreter/tool/WordSegmentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test/MainController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/WebMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/common/UsefulRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/FlashExtract.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/feregex/EndWith.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/feregex/StartWith.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/feregex/feinterfaces/DynimicRegexTools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/feregex/feinterfaces/LineSelector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/field/Field.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/field/LineField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/field/PlainField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/message/MessageContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/region/ColorRegion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/tools/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/tools/FieldComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/flashextract/tools/RegexCommomTools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/StringProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/DAG.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/Expression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/NonTerminalExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/Score.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/TerminalExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/linking/ConcatenateExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/linking/LinkingExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/loop/LoopExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/pos/AbsPosExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/pos/EndRegPos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/pos/PosExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/pos/RegPosExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/pos/StartRegPos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/regex/CombinedRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/regex/DynamicRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/regex/EpicRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/regex/NormalRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/regex/RareRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/regex/Regex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/string/ConstStrExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/string/RegSubStringExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/string/StringExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/expressions/string/SubStringExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/model/ExamplePair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/model/ExamplePartition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/model/ExpressionGroup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/model/Match.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/model/ResultMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/model/ValidationPair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/tool/ExpScoreComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/tool/ExpressionComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/tool/RunTimeMeasurer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/tool/StringTools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/com/zsf/interpreter/tool/WordSegmentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/test/MainController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/classes/test/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/commons-lang3-3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/gson-2.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/jackson-annotations-2.6.0-xh.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/jackson-core-2.6.0-xh.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/jackson-databind-2.6.0-xh.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/jackson-jr-all-2.4.3-xh.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/servlet-api-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/lib/univocity-parsers-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/pages/handle_data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/pages/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/demopages/dialog示范.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/demopages/pre测试.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/demopages/textarea中获取index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/demopages/在pre中展示数据，并按json表示的region着色.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017130249.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017130539.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017132024.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017132058.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017132242.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017132922.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017150009.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017150208.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/03282017170845.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/04112017134958.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/04112017135220.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05142017230814.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05142017233916.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05142017234012.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05152017131328.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05162017094138.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05222017233704.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05222017234247.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05222017234857.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05292017142159.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05302017230802.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05302017231205.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/05312017135818.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/06012017182958.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/06012017183612.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/06012017190053.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/output/csv/06032017192732.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/css/bootstrap-dialog.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/css/handsontable.full.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/images/back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/js/bootstrap-dialog.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/js/handsontable.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/resources/js/jquery-1.9.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03272017210537.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03272017212006.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03272017212320.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017130240.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017130530.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017132017.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017132052.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017132235.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017132821.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017132913.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017145816.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017145918.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017150039.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017150123.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017163751.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017170524.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017170633.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/03282017170702.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04102017101532.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04102017101755.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04102017102709.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04102017102812.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04102017102820.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04102017103439.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017133847.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017133954.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017134100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017134128.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017134548.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017134710.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017134753.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017134831.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017134850.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04112017135026.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04172017172603.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04182017095103.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04182017095216.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04182017110146.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04182017110158.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04182017110208.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04182017110237.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04182017113613.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04192017160726.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017112014.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017112425.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017112503.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017112531.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017112638.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017112730.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017115140.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017115217.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017115324.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017115353.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017115452.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017142104.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017142323.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017142559.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017142711.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017142751.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017142824.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017144241.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017144351.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017144511.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017144518.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017144548.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017144746.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017144813.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145052.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145235.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145257.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145357.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145427.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145433.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145852.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017145918.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017150344.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/04242017151925.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019151932.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152034.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152104.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152153.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152158.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152238.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152402.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152505.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152528.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152735.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152856.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152927.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019152956.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019153048.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019153505.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019153513.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05052019153951.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05102017003555.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05102017204501.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05102017204509.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05102017204551.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05102017204754.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05102017204936.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05112017231553.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05112017232904.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05112017233002.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017124717.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017124815.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017124916.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017164429.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017164843.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017164938.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165027.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165231.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165300.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165418.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165537.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165654.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165656.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017165906.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017170154.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017170340.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017170606.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017170702.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017170943.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171017.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171107.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171142.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171313.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171337.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171410.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171449.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171514.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017171523.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017173631.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017173838.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017173951.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017174103.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017174335.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017175135.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017175454.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017175543.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017175639.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017175820.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017175918.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017175922.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017180514.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017180607.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017224510.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017224557.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017224631.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017225108.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017225448.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017225550.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017225724.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017225832.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017225911.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017230033.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017230052.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017230112.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017230305.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017230429.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017230601.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017230745.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017233047.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017233523.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017233528.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017233843.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017233926.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05142017234239.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017100550.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017100649.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017100659.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017100748.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017101650.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017101859.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017102008.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017102333.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017102408.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017102443.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017102755.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017103250.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017103538.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017105057.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017105211.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017130203.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017130225.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017130328.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017131130.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017131322.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05152017142741.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05162017093729.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05162017093753.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05162017093854.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017233353.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017233553.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017233935.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017234122.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017234357.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017234653.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017234712.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017234717.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05222017234759.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05252017201454.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05252017201536.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05252017203812.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05252017205507.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05252017210505.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05252017210509.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017115453.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017115529.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017115537.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017135824.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017135935.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017140321.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017141310.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017141315.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017141820.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017141824.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017142044.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017142331.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017142443.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017142637.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017142737.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017142846.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017142949.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143009.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143104.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143135.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143204.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143248.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143350.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143506.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017143729.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017144139.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017144922.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145024.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145249.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145355.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145533.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145630.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145736.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145835.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017145945.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017150120.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017150337.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017150443.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017150819.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017151228.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017151537.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017151633.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017151649.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017192116.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017192121.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05292017194052.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017093805.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017204600.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017230521.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017230531.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017230642.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017230955.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017231057.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017231250.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017232008.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017232040.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017232055.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017232831.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017232836.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017232852.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017233015.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017233119.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017233144.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017233249.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017233314.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017233327.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017130436.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017130450.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017130550.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017130717.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017131055.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017131252.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017131402.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017135259.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017135458.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017135659.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017140009.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017140206.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017140414.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017160030.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017160033.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017163240.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017163318.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05312017164011.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017154049.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017154053.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017154222.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017154449.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017182748.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017182849.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017183115.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017183345.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017183400.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017183434.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017183516.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017183659.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017183932.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017184625.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017185816.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017185900.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017185952.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06012017190200.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06032017192524.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06032017192604.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06032017192649.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06032017201206.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/06052017212240.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/09122017213637.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/12292017132839.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/12292017132917.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springmvndemo_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvndemo_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springmvndemo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvndemo_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/新建文本文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvndemoid/upload/files/05302017232349.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/common/UsefulRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/UsefulRegex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/FlashExtract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/FlashExtract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/field/LineField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/field/LineField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/ColorRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/ColorRegion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/RegexCommomTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/RegexCommomTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/StringProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/StringProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/DAG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/linking/ConcatenateExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/linking/ConcatenateExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/loop/LoopExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/loop/LoopExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/EndRegPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/EndRegPos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/RegPosExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/RegPosExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/StartRegPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/StartRegPos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/Regex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/RegSubStringExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/RegSubStringExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ExamplePair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/model/ExamplePair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ExamplePartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/model/ExampleCluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ExpressionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/model/ExpressionGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/model/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ResultMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/model/ResultMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ValidationPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/model/ValidationPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/ExpScoreComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/tool/ExpScoreComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/ExpressionComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/tool/ExpressionComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/RunTimeMeasurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/tool/RunTimeMeasurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/StringTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/tool/StringTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/WordSegmentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsf/tool/WordSegmentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/MainController.java" afterDir="false" />
+    </list>
+    <ignored path="springmvndemo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="D:\MyProjectsRepertory\WebProject\DataStand" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="springmvndemo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="346" column="105" lean-forward="true" selection-start-line="346" selection-start-column="7" selection-end-line="346" selection-end-column="105" />
+              <folding>
+                <marker date="1557372605015" expanded="true" signature="17408:17414" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/model/ExamplePair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/StringProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1558">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/tool/WordSegmentation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-370">
+              <caret line="121" column="28" lean-forward="true" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>../</find>
+      <find>../../</find>
+      <find>批量</find>
+      <find>data</find>
+      <find>匹配</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>../../</replace>
+      <replace>../</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/Regex.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/demopages/在pre中展示数据，并按json表示的region着色.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ExpressionGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/newregion/WebMain.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/newregion/tools/Color.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/DynamicRegex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/RareRegex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/newregion/MainDocument.java" />
+        <option value="$PROJECT_DIR$/../../JAVA_project/FEJava/data/错误数据/select时index出错/csdn.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/newregion/region/ColorRegion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/regex/RegexCommomTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/message/MessageSelectField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/message/MessageContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/demopages/dialog示范.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/loop/LoopExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/NormalRegex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/linking/ConcatenateExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/SubStringExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/RegSubStringExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/StartRegPos.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/AbsPosExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/MatchEndPos.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/pos/EndRegPos.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/FlashExtract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/ColorRegion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/tool/WordSegmentation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/model/ExamplePartition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/Expression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/common/UsefulRegex.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/data/CCF AI.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/handle_data.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/RegexCommomTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/MainController.java" />
+        <option value="$PROJECT_DIR$/data/Amazon.txt" />
+        <option value="$PROJECT_DIR$/data/tieba-SJTU.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/StringProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/StringProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/interpreter/DAG.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/tool/StringProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsf/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="mavenProperties">
+      <map>
+        <entry key="DarchetypeCatalog" value="internal" />
+      </map>
+    </option>
+    <option name="skipTests" value="true" />
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1036" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataStand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStand" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zsf" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="handle&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/webapp/WEB-INF/pages/handle_data.jsp&#10;usefu&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/common/UsefulRegex.java&#10;buildstartw&#9;PSI&#9;JAVA://com.zsf.flashextract.tools.RegexCommomTools#buildStartWith&#10;startwith&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/flashextract/feregex/StartWith.java&#10;mainc&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/test/MainController.java&#10;score&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/interpreter/expressions/Score.java&#10;maincon&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/test/MainController.java&#10;depre&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.linking.DeprecatedConcatenateExpression&#10;regexpre&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.RegExpression&#10;end&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.pos.MatchEndPos&#10;startp&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/interpreter/expressions/pos/StartRegPos.java&#10;start&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/interpreter/expressions/pos/StartRegPos.java&#10;subst&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/interpreter/expressions/string/SubStringExpression.java&#10;abspo&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.pos.AbsPosExpression&#10;regsu&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.string.RegSubStringExpression&#10;substr&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/interpreter/expressions/string/SubStringExpression.java&#10;concate&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.linking.ConcatenateExpression&#10;normal&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.regex.NormalRegex&#10;regex&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.regex.Regex&#10;con s&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.string.ConstStrExpression&#10;usef&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/common/UsefulRegex.java&#10;startwi&#9;PSI&#9;JAVA://com.zsf.flashextract.feregex.StartWith&#10;main&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/java/com/zsf/Main.java&#10;combine&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.regex.CombinedRegex&#10;string&#9;PSI&#9;JAVA://com.zsf.interpreter.StringProcessor&#10;loop&#9;PSI&#9;JAVA://com.zsf.interpreter.expressions.loop.LoopExpression&#10;colorre&#9;PSI&#9;JAVA://com.zsf.flashextract.region.ColorRegion&#10;flashex&#9;PSI&#9;JAVA://com.zsf.flashextract.FlashExtract&#10;messa&#9;PSI&#9;JAVA://com.zsf.flashextract.message.MessageSelectField&#10;handleda&#9;FILE&#9;file://D:/MyProjectsRepertory/WebProject/DataStand/src/main/webapp/WEB-INF/pages/handle_data.jsp&#10;handlef&#9;PSI&#9;JAVA://com.sun.xml.internal.ws.assembler.jaxws.HandlerTubeFactory" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProjectsRepertory\WebProject\DataStand\images" />
+      <recent name="D:\MyProjectsRepertory\WebProject\DataStand\data" />
+      <recent name="D:\MyProjectsRepertory\WebProject\DataStand\src\main\webapp\resources\css" />
+      <recent name="D:\MyProjectsRepertory\WebProject\DataStand\src\main\webapp\resources\js" />
+      <recent name="D:\MyProjectsRepertory\WebProject\DataStand\src\main\webapp\resources\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="true" type="AndroidRunConfigurationType">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType">
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zsf.Main" />
+      <module name="springmvndemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zsf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zsf.flashextract.region.newregion.WebMain" />
+      <module name="springmvndemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zsf.flashextract.region.newregion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zsf.WebMain" />
+      <module name="springmvndemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zsf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration name="All in springmvndemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvndemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.030" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="springmvndemo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/demo" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springmvndemo" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50960" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JProfiler">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springmvndemo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.WebMain" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.WebMain (1)" />
+      <item itemvalue="JUnit.All in springmvndemo" />
+      <item itemvalue="Tomcat Server.Unnamed" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in springmvndemo" />
+        <item itemvalue="Application.WebMain (1)" />
+        <item itemvalue="Application.WebMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a98fa153-1290-4d0a-bc67-31231824dffb" name="Default" comment="" />
+      <created>1475306780353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1475306780353</updated>
+      <workItem from="1475306782587" duration="2871000" />
+      <workItem from="1475653648390" duration="1025000" />
+      <workItem from="1477037232987" duration="43000" />
+      <workItem from="1489373482845" duration="9410000" />
+      <workItem from="1489454742800" duration="619000" />
+      <workItem from="1489476329546" duration="35000" />
+      <workItem from="1489556417628" duration="11822000" />
+      <workItem from="1489632056681" duration="644000" />
+      <workItem from="1489648527029" duration="659000" />
+      <workItem from="1489723064686" duration="4000" />
+      <workItem from="1489728980328" duration="3213000" />
+      <workItem from="1489972991203" duration="564000" />
+      <workItem from="1490075419822" duration="149000" />
+      <workItem from="1490578782858" duration="10585000" />
+      <workItem from="1490600234480" duration="3514000" />
+      <workItem from="1490618357105" duration="3214000" />
+      <workItem from="1490621592144" duration="27000" />
+      <workItem from="1490663832449" duration="10510000" />
+      <workItem from="1490851741617" duration="172000" />
+      <workItem from="1490851929902" duration="1115000" />
+      <workItem from="1490863522138" duration="2016000" />
+      <workItem from="1491375303652" duration="1121000" />
+      <workItem from="1491544875993" duration="185000" />
+      <workItem from="1491627990999" duration="269000" />
+      <workItem from="1491788816328" duration="339000" />
+      <workItem from="1491789156492" duration="7390000" />
+      <workItem from="1491805408031" duration="34000" />
+      <workItem from="1491875169907" duration="627000" />
+      <workItem from="1491887520724" duration="2862000" />
+      <workItem from="1491890395804" duration="21000" />
+      <workItem from="1491890417455" duration="692000" />
+      <workItem from="1492140652839" duration="284000" />
+      <workItem from="1492155333971" duration="199000" />
+      <workItem from="1492218805530" duration="75000" />
+      <workItem from="1492222297239" duration="1092000" />
+      <workItem from="1492228698950" duration="9000" />
+      <workItem from="1492237086514" duration="1245000" />
+      <workItem from="1492263172465" duration="28000" />
+      <workItem from="1492418863545" duration="1336000" />
+      <workItem from="1492479157993" duration="2122000" />
+      <workItem from="1492486546366" duration="440000" />
+      <workItem from="1492495956283" duration="4105000" />
+      <workItem from="1492581518808" duration="5006000" />
+      <workItem from="1492590944064" duration="139000" />
+      <workItem from="1492671359935" duration="3450000" />
+      <workItem from="1492752452892" duration="14000" />
+      <workItem from="1492928626149" duration="10887000" />
+      <workItem from="1492952006970" duration="192000" />
+      <workItem from="1492997932193" duration="12659000" />
+      <workItem from="1493195602427" duration="1805000" />
+      <workItem from="1493264440054" duration="1941000" />
+      <workItem from="1494347693323" duration="484000" />
+      <workItem from="1494387228188" duration="1641000" />
+      <workItem from="1494420267497" duration="1210000" />
+      <workItem from="1494422658136" duration="116000" />
+      <workItem from="1494490701456" duration="637000" />
+      <workItem from="1494503893874" duration="5387000" />
+      <workItem from="1494685308017" duration="1457000" />
+      <workItem from="1494686795342" duration="39000" />
+      <workItem from="1494727215432" duration="640000" />
+      <workItem from="1494736935733" duration="2986000" />
+      <workItem from="1494749605442" duration="6754000" />
+      <workItem from="1494770154297" duration="5013000" />
+      <workItem from="1494810458432" duration="7275000" />
+      <workItem from="1494829474402" duration="604000" />
+      <workItem from="1494897985447" duration="1278000" />
+      <workItem from="1495118919219" duration="199000" />
+      <workItem from="1495466966938" duration="527000" />
+      <workItem from="1495467534732" duration="641000" />
+      <workItem from="1495512100749" duration="726000" />
+      <workItem from="1495608585140" duration="666000" />
+      <workItem from="1495628838312" duration="1379000" />
+      <workItem from="1495697632219" duration="1392000" />
+      <workItem from="1495713200945" duration="4238000" />
+      <workItem from="1496029504842" duration="1222000" />
+      <workItem from="1496036920469" duration="5952000" />
+      <workItem from="1496056066306" duration="47000" />
+      <workItem from="1496056749855" duration="1000000" />
+      <workItem from="1496108111753" duration="1141000" />
+      <workItem from="1496131753138" duration="735000" />
+      <workItem from="1496138184706" duration="28000" />
+      <workItem from="1496148306203" duration="2686000" />
+      <workItem from="1496207043638" duration="2538000" />
+      <workItem from="1496217578632" duration="2438000" />
+      <workItem from="1496286704517" duration="33000" />
+      <workItem from="1496302813938" duration="2586000" />
+      <workItem from="1496320710426" duration="1227000" />
+      <workItem from="1496488917114" duration="635000" />
+      <workItem from="1496491880407" duration="134000" />
+      <workItem from="1496664708372" duration="940000" />
+      <workItem from="1496973714661" duration="269000" />
+      <workItem from="1496974006157" duration="1258000" />
+      <workItem from="1496988419458" duration="155000" />
+      <workItem from="1499440895568" duration="95000" />
+      <workItem from="1501298285415" duration="102000" />
+      <workItem from="1501469415565" duration="174000" />
+      <workItem from="1503130702128" duration="384000" />
+      <workItem from="1505223337268" duration="118000" />
+      <workItem from="1505548314392" duration="168000" />
+      <workItem from="1505738305391" duration="469000" />
+      <workItem from="1506568239726" duration="1485000" />
+      <workItem from="1507972418759" duration="115000" />
+      <workItem from="1514525163534" duration="229000" />
+      <workItem from="1554813717235" duration="293000" />
+      <workItem from="1556977869445" duration="10210000" />
+      <workItem from="1557059738620" duration="116000" />
+      <workItem from="1557366054706" duration="5348000" />
+    </task>
+    <task id="LOCAL-00001" summary="暂存">
+      <created>1489389128464</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1489389128464</updated>
+    </task>
+    <task id="LOCAL-00002" summary="补充流程文件">
+      <created>1489389232052</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1489389232052</updated>
+    </task>
+    <task id="LOCAL-00003" summary="替换为了新版FE内核">
+      <created>1489558033355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1489558033355</updated>
+    </task>
+    <task id="LOCAL-00004" summary="在demoPages中加入【pre，json，着色】的例子">
+      <created>1489567458233</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1489567458233</updated>
+    </task>
+    <task id="LOCAL-00005" summary="textarea切换为pre(利用了一个隐藏的textarea), 下一步准备何时的数据格式即可完成前后端连接">
+      <created>1489577416562</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1489577416562</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fe切换为最新版(分color)">
+      <created>1489731956579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1489731956579</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改了Regex的score评分方式(长reg的额外得分上限变成0.2，避免了reg爆炸高的问题 )">
+      <created>1490597543664</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490597543664</updated>
+    </task>
+    <task id="LOCAL-00008" summary="通过file.sep解决奇怪的bug">
+      <created>1490621324892</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490621324892</updated>
+    </task>
+    <task id="LOCAL-00009" summary="解决csvWriter乱码的问题(将 utf8无BOM 转换成 utf8withBOM )">
+      <created>1490684078448</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1490684078448</updated>
+    </task>
+    <task id="LOCAL-00010" summary="小稳定性">
+      <created>1490687543670</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1490687543670</updated>
+    </task>
+    <task id="LOCAL-00011" summary="准备重构dynamicToken 看todo">
+      <created>1490690206874</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1490690206874</updated>
+    </task>
+    <task id="LOCAL-00012" summary="准备加入dialog">
+      <created>1491804606445</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1491804606445</updated>
+    </task>
+    <task id="LOCAL-00013" summary="可以编辑title&#10;下一步&#10;1. 修复长英文的匹配能力(刘然的职称、研究方向)[可能是dynamicToken导致的]&#10;2. 手动选择表达式[表达式列表悬浮框&amp;后台表达式切换]&#10;3. 更新UI">
+      <created>1491890345157</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1491890345157</updated>
+    </task>
+    <task id="LOCAL-00014" summary="整理注释">
+      <created>1492500694225</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1492500694225</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修改Loop部分的注释(Loop处理不是很好，等待后序改进)">
+      <created>1493003098802</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1493003098802</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修改doSelectTopK -&gt; searchDAG">
+      <created>1493005671986</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1493005671986</updated>
+    </task>
+    <task id="LOCAL-00017" summary="调整评分，可以处理邮箱的END_POS">
+      <created>1493006250613</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1493006250613</updated>
+    </task>
+    <task id="LOCAL-00018" summary="修复showSelectedFields方法中的一个小bug">
+      <created>1493017000068</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1493017000069</updated>
+    </task>
+    <task id="LOCAL-00019" summary="修复邮箱的if else功能">
+      <created>1493018591531</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1493018591531</updated>
+    </task>
+    <task id="LOCAL-00020" summary="更新了color的样式">
+      <created>1494756011026</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1494756011026</updated>
+    </task>
+    <task id="LOCAL-00021" summary="1. 调整界面布局，&quot;选择&quot;按钮的bgcolor会发生变化&#10;2. 文本框的大小会动态调整了">
+      <created>1494776704020</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1494776704020</updated>
+    </task>
+    <task id="LOCAL-00022" summary="加入bootstrap更新界面">
+      <created>1494815880247</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1494815880247</updated>
+    </task>
+    <task id="LOCAL-00023" summary="更新首页样式">
+      <created>1494824656936</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1494824656936</updated>
+    </task>
+    <task id="LOCAL-00024" summary="更新&quot;toCSV&quot;按钮样式">
+      <created>1494825255645</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1494825255645</updated>
+    </task>
+    <task id="LOCAL-00025" summary="准备下载css/js">
+      <created>1496029669635</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1496029669635</updated>
+    </task>
+    <task id="LOCAL-00026" summary="移动css/js至本地">
+      <created>1496039918679</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1496039918679</updated>
+    </task>
+    <task id="LOCAL-00027" summary="更新check-in数据">
+      <created>1496041386920</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1496041386920</updated>
+    </task>
+    <task id="LOCAL-00028" summary="调整data">
+      <created>1496042282939</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1496042282939</updated>
+    </task>
+    <task id="LOCAL-00029" summary="调整dialog的宽度，增加数据">
+      <created>1496322422776</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1496322422776</updated>
+    </task>
+    <task id="LOCAL-00030" summary="微调">
+      <created>1496974068937</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1496974068937</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_springmvndemo - 2017.12.29 at 13h 27m 00s.xml">
+      <configuration name="All in springmvndemo" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="212398000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14198287" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Nl-Palette" order="5" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850778" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.51224947" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43875277" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3281768" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3289183" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289183" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50319827" side_tool="true" weight="0.44530386" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.41828573" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3281768" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4968017" weight="0.41982183" />
+      <window_info anchor="bottom" id="JProfiler" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Designer" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Properties" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
+      <window_info anchor="right" id="Codota" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="fe切换为最新版(分color)" />
+    <MESSAGE value="修改了Regex的score评分方式(长reg的额外得分上限变成0.2，避免了reg爆炸高的问题 )" />
+    <MESSAGE value="通过file.sep解决奇怪的bug" />
+    <MESSAGE value="解决csvWriter乱码的问题(将 utf8无BOM 转换成 utf8withBOM )" />
+    <MESSAGE value="小稳定性" />
+    <MESSAGE value="准备重构dynamicToken 看todo" />
+    <MESSAGE value="准备加入dialog" />
+    <MESSAGE value="可以编辑title&#10;下一步&#10;1. 修复长英文的匹配能力(刘然的职称、研究方向)[可能是dynamicToken导致的]&#10;2. 手动选择表达式[表达式列表悬浮框&amp;后台表达式切换]&#10;3. 更新UI" />
+    <MESSAGE value="整理注释" />
+    <MESSAGE value="修改Loop部分的注释(Loop处理不是很好，等待后序改进)" />
+    <MESSAGE value="修改doSelectTopK -&gt; searchDAG" />
+    <MESSAGE value="调整评分，可以处理邮箱的END_POS" />
+    <MESSAGE value="修复showSelectedFields方法中的一个小bug" />
+    <MESSAGE value="修复邮箱的if else功能" />
+    <MESSAGE value="更新了color的样式" />
+    <MESSAGE value="1. 调整界面布局，&quot;选择&quot;按钮的bgcolor会发生变化&#10;2. 文本框的大小会动态调整了" />
+    <MESSAGE value="加入bootstrap更新界面" />
+    <MESSAGE value="更新首页样式" />
+    <MESSAGE value="更新&quot;toCSV&quot;按钮样式" />
+    <MESSAGE value="准备下载css/js" />
+    <MESSAGE value="移动css/js至本地" />
+    <MESSAGE value="更新check-in数据" />
+    <MESSAGE value="调整data" />
+    <MESSAGE value="调整dialog的宽度，增加数据" />
+    <MESSAGE value="微调" />
+    <option name="LAST_COMMIT_MESSAGE" value="微调" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/newregion/region/ColorRegion.java</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/newregion/region/ColorRegion.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test/MainController.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test/MainController.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test/MainController.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/Main.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/tool/WordSegmentation.java</url>
+          <line>161</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/RegexCommomTools.java</url>
+          <line>214</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/RegexCommomTools.java</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/ColorRegion.java</url>
+          <line>146</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/Main.java</url>
+          <line>343</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zsf/StringProcessor.java</url>
+          <line>441</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/AdminLTE.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap-dialog.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/handsontable.full.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/CCF AI.html" />
+    <entry file="file://$USER_HOME$/Desktop/main.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/handle_data.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+          <folding>
+            <marker date="1496974137796" expanded="true" signature="21377:21385" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1073" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/FlashExtract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/message/MessageContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/FieldComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/model/ExampleCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/网站流程.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/model/ValidationPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demopages/dialog示范.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1277">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demopages/在pre中展示数据，并按json表示的region着色.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demopages/pre测试.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demopages/textarea中获取index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Amazon.txt" />
+    <entry file="file://$PROJECT_DIR$/data/tieba-SJTU.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="2034" column="39" lean-forward="true" selection-start-line="2034" selection-start-column="39" selection-end-line="2034" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/新建文本文档 (2).txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="64" column="14" lean-forward="true" selection-end-line="88" />
+          <folding>
+            <marker date="1496974137806" expanded="true" signature="2413:2422" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/WebMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/DynamicRegex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/regex/Regex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="96" column="28" lean-forward="true" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/tools/RegexCommomTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/flashextract/region/ColorRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="225" column="9" lean-forward="true" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
+          <folding>
+            <element signature="e#5158#5171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/model/ResultMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/tool/ExpScoreComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/model/ExpressionGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#359#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/ConstStrExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/RegSubStringExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/StringExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/string/SubStringExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="124" column="1" lean-forward="true" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/linking/ConcatenateExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="152" column="36" lean-forward="true" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/DAG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/UsefulRegex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/model/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/TerminalExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/beam归并.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/interpreter/expressions/NonTerminalExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/循环表达式 记忆化搜索.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/model/ExamplePair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="346" column="105" lean-forward="true" selection-start-line="346" selection-start-column="7" selection-end-line="346" selection-end-column="105" />
+          <folding>
+            <marker date="1557372605015" expanded="true" signature="17408:17414" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/StringProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1558">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsf/tool/WordSegmentation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-370">
+          <caret line="121" column="28" lean-forward="true" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>springmvndemo:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|springmvndemo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: commons-logging:commons-logging:1.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

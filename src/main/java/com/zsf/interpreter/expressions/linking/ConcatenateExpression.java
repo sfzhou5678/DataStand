@@ -3,7 +3,7 @@ package com.zsf.interpreter.expressions.linking;
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.string.ConstStrExpression;
-import com.zsf.interpreter.model.ExpressionGroup;
+import com.zsf.model.ExpressionGroup;
 
 import java.util.ArrayList;
 import java.util.List;

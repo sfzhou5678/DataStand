@@ -1,0 +1,44 @@
+﻿<table style="width: 850px;" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+        <td>
+            <p>International Conference on Computer Vision</p>
+        </td>
+        <td>
+            <p><a href="http://www.iccv2013.org/">http://www.iccv2013.org/</a></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>European Conference on Computer Vision</p>
+        </td>
+        <td>
+            <p><a href="http://eccv2012.unifi.it/"> http://eccv2012.unifi.it/</a></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>International Conference on Machine Learning</p>
+        </td>
+        <td>
+            <p><a href="http://icml.cc/2013/">http://icml.cc/2013/</a></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>International Joint Conference on Artificial Intelligence</p>
+        </td>
+        <td>
+            <p><a href="http://www.ijcai.org/">http://www.ijcai.org</a></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>European Conference on Artificial Intelligence</p>
+        </td>
+        <td>
+            <p><a href="http://www.ecai2013.upit.ro/?i=2542"> http://www.ecai2013.upit.ro/?i=2542</a></p>
+        </td>
+    </tr>
+    </tbody>
+</table>

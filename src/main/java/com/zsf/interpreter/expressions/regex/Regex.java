@@ -2,7 +2,7 @@ package com.zsf.interpreter.expressions.regex;
 
 import com.zsf.flashextract.feregex.feinterfaces.DynimicRegexTools;
 import com.zsf.interpreter.expressions.Score;
-import com.zsf.interpreter.model.Match;
+import com.zsf.model.Match;
 
 import java.util.ArrayList;
 import java.util.List;

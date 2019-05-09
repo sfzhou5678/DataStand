@@ -1,6 +1,6 @@
 package com.zsf.flashextract.region;
 
-import com.zsf.interpreter.StringProcessor;
+import com.zsf.StringProcessor;
 import com.zsf.flashextract.tools.RegexCommomTools;
 import com.zsf.flashextract.FlashExtract;
 import com.zsf.flashextract.field.Field;
@@ -11,9 +11,9 @@ import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.regex.DynamicRegex;
 import com.zsf.interpreter.expressions.regex.Regex;
-import com.zsf.interpreter.model.*;
-import com.zsf.interpreter.tool.ExpScoreComparator;
-import com.zsf.interpreter.tool.RunTimeMeasurer;
+import com.zsf.model.*;
+import com.zsf.tool.ExpScoreComparator;
+import com.zsf.tool.RunTimeMeasurer;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -211,7 +211,7 @@ public class ColorRegion {
         }
         StringProcessor stringProcessor = new StringProcessor();
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
-        List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
+        List<ExpressionGroup> expressionGroups = stringProcessor.combinateSubPrograms(resultMaps, 10);
 
         this.expressionGroup = expressionGroups.get(0);
         if (expressionGroup != null && expressionGroup.getExpressions().size() > 0) {
@@ -330,13 +330,13 @@ public class ColorRegion {
     /**
      * 将新的expression应用到plainField上(只返回预览效果，不保存结果)
      */
-    public List<String> previewExp(List<ExamplePartition> partitions) {
+    public List<String> previewExp(List<ExampleCluster> partitions) {
         if (fieldsGenerated != null && fieldsGenerated.size() > 0) {
             List<String> previewDatas = new ArrayList<String>();
             for (PlainField field : fieldsGenerated) {
                 // 下面这一块加入了partition，暂时未发现问题
                 int partitionIndex = StringProcessor.lookupPartitionIndex(field.getEditedText(), partitions);
-                ExamplePartition partition = partitions.get(partitionIndex);
+                ExampleCluster partition = partitions.get(partitionIndex);
 
                 ExpressionGroup topNExpression = StringProcessor.getTopNExpressions(partition, field.getEditedText(), 5);
                 Expression expression=topNExpression.getExpressions().get(0);

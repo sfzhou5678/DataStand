@@ -1,0 +1,154 @@
+﻿一、SJTU news
+[doGenerateLineSelectors] 运行时间： 14ms
+[startWith(DynamicTok(    <a href="info/1003/1335))]
+[generateSubString] 运行时间： 296ms
+[generateLoop] 运行时间： 18ms
+[generateSubString] 运行时间： 101ms
+[generateLoop] 运行时间： 2ms
+
+[doGenerateLineSelectors] 运行时间： 3ms
+[generateSubString] 运行时间： 95ms
+[generateLoop] 运行时间： 2ms
+[generateSubString] 运行时间： 61ms
+[generateLoop] 运行时间： 1ms
+[generateSubString] 运行时间： 38ms
+[generateLoop] 运行时间： 1ms
+[selectTopKExps] 运行时间： 68ms
+
+
+[doGenerateLineSelectors] 运行时间： 6ms
+[generateSubString] 运行时间： 101ms
+[generateLoop] 运行时间： 1ms
+[generateSubString] 运行时间： 71ms
+[generateLoop] 运行时间： 1ms
+[generateSubString] 运行时间： 42ms
+[generateLoop] 运行时间： 1ms
+[generateSubString] 运行时间： 58ms
+[generateLoop] 运行时间： 1ms
+[selectTopKExps] 运行时间： 36ms
+
+
+二、check-in
+[doGenerateLineSelectors] 运行时间： 6ms
+[generateSubString] 运行时间： 80ms
+[generateLoop] 运行时间： 7ms
+[generateSubString] 运行时间： 2ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 20ms
+
+[generateSubString] 运行时间： 7ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 1ms
+
+[generateSubString] 运行时间： 12ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 2ms
+
+[generateSubString] 运行时间： 3ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 2ms
+
+[generateSubString] 运行时间： 11ms
+[generateLoop] 运行时间： 1ms
+[selectTopKExps] 运行时间： 5ms
+
+[generateSubString] 运行时间： 6ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 4ms
+
+
+三、crime
+
+[doGenerateLineSelectors] 运行时间： 5ms
+[generateSubString] 运行时间： 20ms
+[generateLoop] 运行时间： 1ms
+[generateSubString] 运行时间： 19ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 12ms
+
+
+[generateSubString] 运行时间： 8ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 6ms
+
+[generateSubString] 运行时间： 5ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 2ms
+
+[generateSubString] 运行时间： 4ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 1ms
+
+[generateSubString] 运行时间： 50ms
+[generateLoop] 运行时间： 7ms
+[selectTopKExps] 运行时间： 12ms
+
+
+四、sjtu teacher
+[doGenerateLineSelectors] 运行时间： 1ms
+[generateSubString] 运行时间： 3ms
+[generateLoop] 运行时间： 0ms
+[generateSubString] 运行时间： 1ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 3ms
+
+五、CQU teacher
+[doGenerateLineSelectors] 运行时间： 9ms
+[generateSubString] 运行时间： 55ms
+[generateLoop] 运行时间： 0ms
+[generateSubString] 运行时间： 10ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 21ms
+
+[generateSubString] 运行时间： 327ms
+[generateLoop] 运行时间： 6ms
+[selectTopKExps] 运行时间： 18ms
+
+[generateSubString] 运行时间： 79ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 5ms
+
+[generateSubString] 运行时间： 22ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 1ms
+
+
+[doGenerateLineSelectors] 运行时间： 3ms
+[generateSubString] 运行时间： 48ms
+[generateLoop] 运行时间： 1ms
+[generateSubString] 运行时间： 26ms
+[generateLoop] 运行时间： 0ms
+
+六、CQU-tieba
+[doGenerateLineSelectors] 运行时间： 2ms
+[generateSubString] 运行时间： 44ms
+[generateLoop] 运行时间： 0ms
+[generateSubString] 运行时间： 31ms
+[generateLoop] 运行时间： 1ms
+[selectTopKExps] 运行时间： 11ms
+
+[doGenerateLineSelectors] 运行时间： 3ms
+[generateSubString] 运行时间： 66ms
+[generateLoop] 运行时间： 0ms
+[generateSubString] 运行时间： 44ms
+[generateLoop] 运行时间： 0ms
+[generateSubString] 运行时间： 13ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 17ms
+
+[doGenerateLineSelectors] 运行时间： 3ms
+[generateSubString] 运行时间： 3ms
+[generateLoop] 运行时间： 0ms
+[generateSubString] 运行时间： 1ms
+[generateLoop] 运行时间： 0ms
+[selectTopKExps] 运行时间： 12ms
+
+
+7、雷锋网
+[doGenerateLineSelectors] 运行时间： 2ms
+[endWith(DynamicTok(" class="headTit">)), endWith(ChineseTok+DynamicTok(" class="headTit">))]
+[generateSubString] 运行时间： 122ms
+[generateLoop] 运行时间： 2ms
+[generateSubString] 运行时间： 114ms
+[generateLoop] 运行时间： 1ms
+[selectTopKExps] 运行时间： 21ms

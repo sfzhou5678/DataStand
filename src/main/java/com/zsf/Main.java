@@ -1,10 +1,9 @@
 package com.zsf;
 
-import com.zsf.interpreter.StringProcessor;
 import com.zsf.interpreter.expressions.Expression;
 import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.pos.PosExpression;
-import com.zsf.interpreter.model.*;
+import com.zsf.model.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -148,7 +147,7 @@ public class Main {
         }
     }
 
-    private static void showPartitions(List<ExamplePartition> partitions) {
+    private static void showPartitions(List<ExampleCluster> partitions) {
         for (int i = 0; i < partitions.size(); i++) {
             System.out.println(String.format("Partition %d :", i));
             partitions.get(i).showDetails(true, false);
@@ -166,11 +165,11 @@ public class Main {
      * @param newInput
      * @param partitions
      */
-    private static ExpressionGroup predictOutput(String newInput, List<ExamplePartition> partitions) {
+    private static ExpressionGroup predictOutput(String newInput, List<ExampleCluster> partitions) {
         int partitionIndex = StringProcessor.lookupPartitionIndex(newInput, partitions);
 
         System.out.println("==========所属partition=" + partitionIndex + " ==========");
-        ExamplePartition partition = partitions.get(partitionIndex);
+        ExampleCluster partition = partitions.get(partitionIndex);
 
         ExpressionGroup topNExpression = StringProcessor.getTopNExpressions(partition, newInput, 5);
 
@@ -183,7 +182,7 @@ public class Main {
      * @param validationPairs
      * @param partitions
      */
-    private static void handleNewInput(List<ValidationPair> validationPairs, List<ExamplePartition> partitions) {
+    private static void handleNewInput(List<ValidationPair> validationPairs, List<ExampleCluster> partitions) {
         for (ValidationPair v : validationPairs) {
             ExpressionGroup topNExpression = predictOutput(v.getInputString(), partitions);
             displayOutput(v, topNExpression);
@@ -244,14 +243,14 @@ public class Main {
 //        examplePairs.add(new ExamplePair("Association for Computing Machinery", "ACM"));
 //        examplePairs.add(new ExamplePair("Shanghai Jiao Tong University", "SJTU"));
 
-        examplePairs.add(new ExamplePair("<td>Russell Smith</td> <td>1992-07-14</td>", "Russell Smith,生日:1992-07-14"));
+//        examplePairs.add(new ExamplePair("<td>Russell Smith</td> <td>1992-07-14</td>", "Russell Smith,生日:1992-07-14"));
 
 
-//        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
-//        examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
-//        examplePairs.add(new ExamplePair("15688888888", "手机"));
-//        examplePairs.add(new ExamplePair("", "缺失"));
-//        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "特殊"));
+        examplePairs.add(new ExamplePair("ran.liu_cqu@qq.com", "qq.com"));
+        examplePairs.add(new ExamplePair("lijia@cqu.edu.cn", "cqu.edu.cn"));
+        examplePairs.add(new ExamplePair("15688888888", "手机"));
+        examplePairs.add(new ExamplePair("", "缺失"));
+        examplePairs.add(new ExamplePair("wqw AT cqu DOT edu DOT cn", "特殊"));
 
 //        examplePairs.add(new ExamplePair("[252166]:2011-12-20,Tuesday", "252166,2011-12-20,Tuesday"));
 
@@ -288,6 +287,7 @@ public class Main {
         testPairs.add(new ValidationPair("13320218299","手机"));
         testPairs.add(new ValidationPair("","缺失"));
         testPairs.add(new ValidationPair("wqw AT cqu DOT edu DOT cn","特殊"));
+        testPairs.add(new ValidationPair("wqw @ cqu DOT edu DOT cn","特殊"));
 
 
 //        testPairs.add(new ValidationPair("guoping@cqu.edu.cn",""));
@@ -342,19 +342,20 @@ public class Main {
         StringProcessor stringProcessor = new StringProcessor();
 
         List<ResultMap> resultMaps = stringProcessor.generateExpressionsByExamples(examplePairs);
-        List<ExpressionGroup> expressionGroups = stringProcessor.selectTopKExps(resultMaps, 10);
-        List<ExamplePartition> partitions = stringProcessor.generatePartitions(expressionGroups, examplePairs);
+        int beamWidth=10;
+        List<ExpressionGroup> expressionGroups = stringProcessor.combinateSubPrograms(resultMaps, beamWidth);
+        List<ExampleCluster> clusters = stringProcessor.formatClustering(expressionGroups, examplePairs);
 
         int count=0;
-        for (ExamplePartition partition : partitions) {
+        for (ExampleCluster cluster : clusters) {
             System.out.println("============"+count+++"================");
-            for (ExamplePair examplePair : partition.getExamplePairs()) {
+            for (ExamplePair examplePair : cluster.getExamplePairs()) {
                 System.out.println(examplePair);
             }
-            for (Expression expression : partition.getUsefulExpression().getExpressions()) {
+            for (Expression expression : cluster.getUsefulExpression().getExpressions()) {
                 System.out.println(expression);
             }
         }
-        handleNewInput(testPairs, partitions);
+        handleNewInput(testPairs, clusters);
     }
 }

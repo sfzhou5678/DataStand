@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/jquery/jquery-1.10.2.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.js"></script>
+    <link rel="stylesheet" media="screen"
+          href="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.full.css">
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/lodash/lodash.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/underscore.string/underscore.string.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/moment/moment.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numeral/numeral.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/numericjs/numeric.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/js-md5/md5.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/jstat/jstat.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/lib/formulajs/formula.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/parser.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/RuleJS/js/ruleJS.js"></script>
+    <script src="http://handsontable.github.io/handsontable-ruleJS/lib/handsontable/handsontable.formula.js"></script>
+
+    <script type="text/javascript" src="../../resources/js/jquery-1.9.1.js"></script>
+    <script>
+        var inputDocument = "hello\nworld!!!\n--zsf";
+        var colors=["#87cbff","#95f090","#EEAD0E"];
+        // 假设regionList的pos都是有序的
+        var regionList = [{"parentField":{"color":{"color":0},"beginPos":431,"endPos":726,"text":"                        姓名：\u003cspan class\u003d\"name\"\u003eRan Liu\u003c/span\u003e \u003cbr\u003e 职称：\u003cspan class\u003d\"zc\"\u003eAssociate Professor/Senior Engineer\u003c/span\u003e\u003cbr\u003e 联系方式：\u003cspan class\u003d\"lxfs\"\u003eran.liu_cqu@qq.com\u003c/span\u003e\u003cbr\u003e 主要研究方向:\u003cspan class\u003d\"major\"\u003eMedical and stereo image processing; IC design; Biomedical Engineering\u003c/span\u003e\u003cbr\u003e"},"color":{"color":1},"beginPos":477,"endPos":484,"text":"Ran Liu"},{"parentField":{"color":{"color":0},"beginPos":1152,"endPos":1319,"text":"                        姓名：\u003cspan class\u003d\"name\"\u003e陈波\u003c/span\u003e \u003cbr\u003e 职称：\u003cspan class\u003d\"zc\"\u003e\u003c/span\u003e\u003cbr\u003e 联系方式：\u003cspan class\u003d\"lxfs\"\u003e\u003c/span\u003e\u003cbr\u003e 主要研究方向:\u003cspan class\u003d\"major\"\u003e\u003c/span\u003e\u003cbr\u003e"},"color":{"color":1},"beginPos":1198,"endPos":1200,"text":"陈波"},{"parentField":{"color":{"color":0},"beginPos":1745,"endPos":1947,"text":"                        姓名：\u003cspan class\u003d\"name\"\u003e陈自郁\u003c/span\u003e \u003cbr\u003e 职称：\u003cspan class\u003d\"zc\"\u003e讲师\u003c/span\u003e\u003cbr\u003e 联系方式：\u003cspan class\u003d\"lxfs\"\u003echenziyu@cqu.edu.cn\u003c/span\u003e\u003cbr\u003e 主要研究方向:\u003cspan class\u003d\"major\"\u003e群智能、图像处理和智能控制\u003c/span\u003e\u003cbr\u003e"},"color":{"color":1},"beginPos":1791,"endPos":1794,"text":"陈自郁"},{"parentField":{"color":{"color":0},"beginPos":2428,"endPos":2617,"text":"                        姓名：\u003cspan class\u003d\"name\"\u003e但静培\u003c/span\u003e \u003cbr\u003e 职称：\u003cspan class\u003d\"zc\"\u003e讲师\u003c/span\u003e\u003cbr\u003e 联系方式：\u003cspan class\u003d\"lxfs\"\u003e\u003c/span\u003e\u003cbr\u003e 主要研究方向:\u003cspan class\u003d\"major\"\u003e时间序列数据挖掘、计算智能、神经网络等\u003c/span\u003e\u003cbr\u003e"},"color":{"color":1},"beginPos":2474,"endPos":2477,"text":"但静培"},{"parentField":{"color":{"color":0},"beginPos":3098,"endPos":3282,"text":"                        姓名：\u003cspan class\u003d\"name\"\u003e房斌\u003c/span\u003e \u003cbr\u003e 职称：\u003cspan class\u003d\"zc\"\u003e教授　博士生导师\u003c/span\u003e\u003cbr\u003e 联系方式：\u003cspan class\u003d\"lxfs\"\u003e\u003c/span\u003e\u003cbr\u003e 主要研究方向:\u003cspan class\u003d\"major\"\u003e模式识别与图像处理\u003c/span\u003e\u003cbr\u003e"},"color":{"color":1},"beginPos":3144,"endPos":3146,"text":"房斌"},{"parentField":{"color":{"color":0},"beginPos":3763,"endPos":3969,"text":"                        姓名：\u003cspan class\u003d\"name\"\u003e葛亮\u003c/span\u003e \u003cbr\u003e 职称：\u003cspan class\u003d\"zc\"\u003e副教授\u003c/span\u003e\u003cbr\u003e 联系方式：\u003cspan class\u003d\"lxfs\"\u003egeliang@cqu.edu.cn\u003c/span\u003e\u003cbr\u003e 主要研究方向:\u003cspan class\u003d\"major\"\u003e计算机视觉，数据挖据，Web应用技术\u003c/span\u003e\u003cbr\u003e"},"color":{"color":1},"beginPos":3809,"endPos":3811,"text":"葛亮"}];
+        /**
+         * select就是替换掉pre的内容
+         *
+         * 替换规则根据regionList的index确定。由<没选中的>+<选中的>一段一段拼接而成
+         */
+        function doSelect(parentClasses,parentStyle,parentBeginPos,parentEndPos,childRegions) {
+            // fixme 可能还要看情况加一个parentText？
+            var innerHtml = "";
+            var lastBeginPos = parentBeginPos;
+            // 假设regionList的pos都是有序的
+            function generateSpan(classes,style, text, beginPos, endPos) {
+                var span = "<span class=\"" + classes + "\" style=\""+style+"\" data-start=\"" + beginPos + "\" data-end=\"" + endPos + "\">" + text + "</span>";
+                return span;
+            }
+
+            for (var index in childRegions) {
+                var region = childRegions[index];
+
+                // 先处理这个region之前的内容
+                if (region.beginPos!=lastBeginPos){
+                    var baseSpan = generateSpan(parentClasses,parentStyle,inputDocument.substr(lastBeginPos, region.beginPos - lastBeginPos),
+                            lastBeginPos, region.beginPos);
+                    innerHtml+=baseSpan;
+                }
+                // 在处理当前region
+                style="background: "+colors[region.color];
+                if (region.childRegions.length>=1){
+                    // 情况1. 这个region还包含子regions
+                    innerHtml+=doSelect("justtext",style,region.beginPos,region.endPos,region.childRegions);
+                }else {
+                    // 情况2. 普通的着色region
+                    var curSpan = generateSpan("justtext", style,inputDocument.substr(region.beginPos, (region.endPos - region.beginPos)),
+                            region.beginPos, region.endPos);
+                    innerHtml += curSpan;
+                }
+                lastBeginPos = region.endPos;
+            }
+            var lastSpan = generateSpan("justtext", parentStyle,inputDocument.substr(lastBeginPos, parentEndPos - lastBeginPos));
+            innerHtml += lastSpan;
+
+            return innerHtml;
+        }
+
+        function showRegions() {
+            var textarea = document.getElementById("pre-document");
+            textarea.innerHTML = doSelect("jusettext","",0,inputDocument.length,regionList);
+        }
+    </script>
+</head>
+<body>
+<pre id="pre-document" class="fileDisplay extractText"
+     style="border-width: 10px; width: 1049.55px;"><span><span
+        class="justtext" data-start="0" data-end="4018">hello
+world!!!
+--zsf</span></span></pre>
+<input type="button" value="select" onclick="showRegions()">
+</body>
+</html>

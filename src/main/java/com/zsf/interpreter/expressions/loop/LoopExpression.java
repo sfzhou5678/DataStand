@@ -5,7 +5,7 @@ import com.zsf.interpreter.expressions.NonTerminalExpression;
 import com.zsf.interpreter.expressions.pos.PosExpression;
 import com.zsf.interpreter.expressions.regex.Regex;
 import com.zsf.interpreter.expressions.string.RegSubStringExpression;
-import com.zsf.interpreter.model.Match;
+import com.zsf.model.Match;
 
 import java.util.List;
 

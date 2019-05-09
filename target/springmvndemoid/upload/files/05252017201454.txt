@@ -1,0 +1,452 @@
+﻿<ul class="clr">
+                        
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201703/owPyzbouwzaIjz9C.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e4bce74dbcc.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://static.leiphone.com/uploads/new/article/pic/201704/58e4bce74dbcc.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" title="Facebook的数据预测工具Prophet有何优势？用贝叶斯推理一探究竟" alt="" style="display: inline;">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201703/owPyzbouwzaIjz9C.html" target="_blank" title="Facebook的数据预测工具Prophet有何优势？用贝叶斯推理一探究竟" class="headTit">
+				Facebook的数据预测工具Prophet有何优势？用贝叶斯推理一探究竟			</a>
+			</h3>
+			<div class="des">
+				研究人员让Prophet在两个数据集上运行，一个是摩纳哥夏威夷火山上的大气二氧化碳含量，一个美国出生人口数。你猜Prophet预测效果如何？			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/xia" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/57e09190225de_100_100.jpg" alt="" width="50" height="50">夏睿				</a>
+				<div class="time">04月05日 17:46</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/Prophet" title="Prophet" target="_blank">Prophet</a><a href="http://www.leiphone.com/tag/%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%97%B6%E5%BA%8F%E9%A2%84%E6%B5%8B" title="大规模时序预测" target="_blank">大规模时序预测</a><a href="http://www.leiphone.com/tag/Facebook" title="Facebook" target="_blank">Facebook</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/ihmmqT1BVeJvIiPa.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e4b64f39a1d.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://static.leiphone.com/uploads/new/article/pic/201704/58e4b64f39a1d.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" title="远场语音交互体验的思考：Alexa为什么不用屏幕和多轮对话？| 深度" alt="" style="display: inline;">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/ihmmqT1BVeJvIiPa.html" target="_blank" title="远场语音交互体验的思考：Alexa为什么不用屏幕和多轮对话？| 深度" class="headTit">
+				远场语音交互体验的思考：Alexa为什么不用屏幕和多轮对话？| 深度			</a>
+			</h3>
+			<div class="des">
+				AI行业不存在谁灭谁的问题，AI只是通过技术升级推动行业的进步，宗旨还是造福人类社会			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/saodilaoseng" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/04/42/17/89_avatar_pic_100_100.jpg?updateTime=1" alt="" width="50" height="50">陈孝良				</a>
+				<div class="time">04月05日 17:18</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/Amazon" title="Amazon" target="_blank">Amazon</a><a href="http://www.leiphone.com/tag/Alexa" title="Alexa" target="_blank">Alexa</a><a href="http://www.leiphone.com/tag/Echo" title="Echo" target="_blank">Echo</a><a href="http://www.leiphone.com/tag/%E6%99%BA%E8%83%BD%E9%9F%B3%E7%AE%B1" title="智能音箱" target="_blank">智能音箱</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/xRiQjGMRKnJaXuOe.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e4af8109455.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://static.leiphone.com/uploads/new/article/pic/201704/58e4af8109455.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" title="谷歌推出有界负载的一致性哈希算法，解决服务器负载均衡问题" alt="" style="display: inline;">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/xRiQjGMRKnJaXuOe.html" target="_blank" title="谷歌推出有界负载的一致性哈希算法，解决服务器负载均衡问题" class="headTit">
+				谷歌推出有界负载的一致性哈希算法，解决服务器负载均衡问题			</a>
+			</h3>
+			<div class="des">
+				谷歌研究院最近在其博客中提出了一种有界负载的一致性哈希算法，解决服务器的负载均衡问题。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/suannaigeda5521" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/05/00/77/23_avatar_pic_100_100.jpg?updateTime=1" alt="" width="50" height="50">晞萌				</a>
+				<div class="time">04月05日 16:49</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E8%B0%B7%E6%AD%8C" title="谷歌" target="_blank">谷歌</a><a href="http://www.leiphone.com/tag/%E5%93%88%E5%B8%8C" title="哈希" target="_blank">哈希</a><a href="http://www.leiphone.com/tag/%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95" title="哈希算法" target="_blank">哈希算法</a><a href="http://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" title="人工智能" target="_blank">人工智能</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/GTOE0a0vA32d8izC.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e49e8fac417.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://static.leiphone.com/uploads/new/article/pic/201704/58e49e8fac417.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" title="亚洲首度德州扑克人机对战即将开赌！| 附李开复演讲全文" alt="" style="display: inline;">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/GTOE0a0vA32d8izC.html" target="_blank" title="亚洲首度德州扑克人机对战即将开赌！| 附李开复演讲全文" class="headTit">
+				亚洲首度德州扑克人机对战即将开赌！| 附李开复演讲全文			</a>
+			</h3>
+			<div class="des">
+				李开复：柯洁与AlphaGo的对战胜率为0，而龙之队对冷扑的胜率是10%，呼吁大家观看德扑人机对战，关注AI的应用			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/gulei300" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/05/00/27/84_avatar_pic_100_100.jpg?updateTime=1" alt="" width="50" height="50">谷磊				</a>
+				<div class="time">04月05日 16:17</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E5%BE%B7%E5%B7%9E%E6%89%91%E5%85%8B" title="德州扑克" target="_blank">德州扑克</a><a href="http://www.leiphone.com/tag/%E5%86%B7%E6%89%91%E5%A4%A7%E5%B8%88" title="冷扑大师" target="_blank">冷扑大师</a><a href="http://www.leiphone.com/tag/%E6%9D%8E%E5%BC%80%E5%A4%8D" title="李开复" target="_blank">李开复</a><a href="http://www.leiphone.com/tag/%E4%B8%AD%E5%9B%BD%E9%BE%99%E4%B9%8B%E9%98%9F" title="中国龙之队" target="_blank">中国龙之队</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/uPx6CKkk1BPRrWDP.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e4470501fc3.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://static.leiphone.com/uploads/new/article/pic/201704/58e4470501fc3.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" title="《纽约客》深度：人工智能之于医生——助手还是对手？" alt="" style="display: inline;">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/uPx6CKkk1BPRrWDP.html" target="_blank" title="《纽约客》深度：人工智能之于医生——助手还是对手？" class="headTit">
+				《纽约客》深度：人工智能之于医生——助手还是对手？			</a>
+			</h3>
+			<div class="des">
+				借助深度学习技术，AI 在疾病的诊断能力和准确度上一定会超越人类，但这样是否会削弱医生探索的能力，变成只把能做的做得更好的人呢？AI 诊疗的未来真的一片光明吗？			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/%E8%80%81%E5%90%95IO" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/04/05/45/31_avatar_pic_100_100.jpg?updateTime=1" alt="" width="50" height="50">大壮旅				</a>
+				<div class="time">04月05日 14:00</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E7%9A%AE%E8%82%A4%E7%97%85" title="皮肤病" target="_blank">皮肤病</a><a href="http://www.leiphone.com/tag/%E7%BA%BD%E7%BA%A6%E5%AE%A2" title="纽约客" target="_blank">纽约客</a><a href="http://www.leiphone.com/tag/%E5%8C%BB%E7%94%9F" title="医生" target="_blank">医生</a><a href="http://www.leiphone.com/tag/%E6%9C%BA%E5%99%A8" title="机器" target="_blank">机器</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201703/qSPav6WbksGmW3Vh.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58df220a4d312.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://static.leiphone.com/uploads/new/article/pic/201704/58df220a4d312.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" title="深度神经网络发展历程全回顾：如何加速DNN运算？" alt="" style="display: inline;">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201703/qSPav6WbksGmW3Vh.html" target="_blank" title="深度神经网络发展历程全回顾：如何加速DNN运算？" class="headTit">
+				深度神经网络发展历程全回顾：如何加速DNN运算？			</a>
+			</h3>
+			<div class="des">
+				深度神经网络应用数量呈爆炸式增加，已经被大量应用图像声音等各个领域，许多任务的准确性已超越人类。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/gaoyunhe3173" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/05/01/30/34_avatar_pic_100_100.jpg?updateTime=1" alt="" width="50" height="50">高云河				</a>
+				<div class="time">04月05日 10:12</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0" title="深度学习" target="_blank">深度学习</a><a href="http://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" title="人工智能" target="_blank">人工智能</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/71NuCYoXwsODZfuI.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e391df114e1.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="能够学习的人工神经突触 人造大脑已在地平线？" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/71NuCYoXwsODZfuI.html" target="_blank" title="能够学习的人工神经突触 人造大脑已在地平线？" class="headTit">
+				能够学习的人工神经突触 人造大脑已在地平线？			</a>
+			</h3>
+			<div class="des">
+				法国科研人员首次开发出能预测人工神经突触如何工作的物理模型。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/sanchuan441" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/583916c1736ec_100_100.png" alt="" width="50" height="50">三川				</a>
+				<div class="time">04月04日 20:30</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%AA%81%E8%A7%A6" title="人工神经突触" target="_blank">人工神经突触</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/CQAFv6xW7qXPDs26.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e26d360380a.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="星瀚资本创始人杨歌：AI的误解、困境和爆发" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/CQAFv6xW7qXPDs26.html" target="_blank" title="星瀚资本创始人杨歌：AI的误解、困境和爆发" class="headTit">
+				星瀚资本创始人杨歌：AI的误解、困境和爆发			</a>
+			</h3>
+			<div class="des">
+				赶紧醒醒吧，要不又跑偏了！			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/xinzhizao" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/7_100_100.jpg" alt="" width="50" height="50">新智造				</a>
+				<div class="time">04月04日 11:24</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E6%98%9F%E7%80%9A%E8%B5%84%E6%9C%AC" title="星瀚资本" target="_blank">星瀚资本</a><a href="http://www.leiphone.com/tag/%E6%9D%A8%E6%AD%8C" title="杨歌" target="_blank">杨歌</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/MQ6FewKKwoAwsKCC.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e1fbd7944dd.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="阿里推出多智能体双向协调网络BicNet，玩《星际争霸》堪比人类" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/MQ6FewKKwoAwsKCC.html" target="_blank" title="阿里推出多智能体双向协调网络BicNet，玩《星际争霸》堪比人类" class="headTit">
+				阿里推出多智能体双向协调网络BicNet，玩《星际争霸》堪比人类			</a>
+			</h3>
+			<div class="des">
+				过去十年中，人工智能取得了长足的进步，在图像和语音识别上已经在某种程度上超越了人类。而通过反馈奖励，单个的AI智能体也能在雅达利这样的视频游戏和围棋中战胜人类。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/simon" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/5506aa481a78e_100_100.jpg" alt="" width="50" height="50">张驰				</a>
+				<div class="time">04月03日 15:37</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/BiCNet%E7%BD%91%E7%BB%9C" title="BiCNet网络" target="_blank">BiCNet网络</a><a href="http://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" title="人工智能" target="_blank">人工智能</a><a href="http://www.leiphone.com/tag/%E6%98%9F%E9%99%85%E4%BA%89%E9%9C%B8" title="星际争霸" target="_blank">星际争霸</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/9z3J83hxQhWtRWHs.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e0e961b9520.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="阿里发布机器学习平台PAI2.0，Hinton带头在加拿大设立“向量学院” | AI科技评论周刊" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/9z3J83hxQhWtRWHs.html" target="_blank" title="阿里发布机器学习平台PAI2.0，Hinton带头在加拿大设立“向量学院” | AI科技评论周刊" class="headTit">
+				阿里发布机器学习平台PAI2.0，Hinton带头在加拿大设立“向量学院” | AI科技评论周刊			</a>
+			</h3>
+			<div class="des">
+				这里是本周AI圈大新闻。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/yameng" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/57e80067c19d8_100_100.jpeg" alt="" width="50" height="50">亚萌				</a>
+				<div class="time">04月02日 20:07</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E9%98%BF%E9%87%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0" title="阿里机器学习平台" target="_blank">阿里机器学习平台</a><a href="http://www.leiphone.com/tag/%E5%BE%AE%E8%BD%AFRuuh" title="微软Ruuh" target="_blank">微软Ruuh</a><a href="http://www.leiphone.com/tag/%E5%90%B4%E6%81%A9%E8%BE%BE" title="吴恩达" target="_blank">吴恩达</a><a href="http://www.leiphone.com/tag/%E4%BB%BB%E6%AD%A3%E9%9D%9E" title="任正非" target="_blank">任正非</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/VH0AwIHEEL8AHOpQ.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e0cb38efb8f.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="美国科学院院士张首晟：摩尔定律即将失效，人工智能怎么化解这个尴尬？ | 2017 IT领袖峰会" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/VH0AwIHEEL8AHOpQ.html" target="_blank" title="美国科学院院士张首晟：摩尔定律即将失效，人工智能怎么化解这个尴尬？ | 2017 IT领袖峰会" class="headTit">
+				美国科学院院士张首晟：摩尔定律即将失效，人工智能怎么化解这个尴尬？ | 2017 IT领袖峰会			</a>
+			</h3>
+			<div class="des">
+				美国科学院院士张首晟认为计算能力、大数据以及算法的突破是人工智能取得突破发展的主要原因。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/chetoujun" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/552684b8c4a3b_100_100.jpg" alt="" width="50" height="50">程弢				</a>
+				<div class="time">04月02日 18:02</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/IT%E9%A2%86%E8%A2%96%E5%B3%B0%E4%BC%9A" title="IT领袖峰会" target="_blank">IT领袖峰会</a><a href="http://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" title="人工智能" target="_blank">人工智能</a><a href="http://www.leiphone.com/tag/%E9%94%A1%E7%83%AF" title="锡烯" target="_blank">锡烯</a><a href="http://www.leiphone.com/tag/%E6%91%A9%E5%B0%94%E5%AE%9A%E5%BE%8B" title="摩尔定律" target="_blank">摩尔定律</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/gYJPpf2BxIPtxs3V.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e0ae3358654.jpg?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="李彦宏、马化腾、沈向洋三巨头对话人工智能的应用和未来 | 2017 IT领袖峰会" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/gYJPpf2BxIPtxs3V.html" target="_blank" title="李彦宏、马化腾、沈向洋三巨头对话人工智能的应用和未来 | 2017 IT领袖峰会" class="headTit">
+				李彦宏、马化腾、沈向洋三巨头对话人工智能的应用和未来 | 2017 IT领袖峰会			</a>
+			</h3>
+			<div class="des">
+				2017深圳IT领袖峰会，马化腾、李彦宏、沈向洋高端对话。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/yameng" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/57e80067c19d8_100_100.jpeg" alt="" width="50" height="50">亚萌				</a>
+				<div class="time">04月02日 15:54</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/it%E9%A2%86%E8%A2%96%E5%B3%B0%E4%BC%9A+2017" title="it领袖峰会 2017" target="_blank">it领袖峰会 2017</a><a href="http://www.leiphone.com/tag/%E9%A9%AC%E5%8C%96%E8%85%BE" title="马化腾" target="_blank">马化腾</a><a href="http://www.leiphone.com/tag/%E6%9D%8E%E5%BD%A6%E5%AE%8F" title="李彦宏" target="_blank">李彦宏</a><a href="http://www.leiphone.com/tag/%E6%B2%88%E5%90%91%E6%B4%8B" title="沈向洋" target="_blank">沈向洋</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/wLpMBiYQTAKePG6R.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58e06ec8547ca.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="清华大学国家金融研究院院长朱民 ：中国还不是人工智能大国 | 2017 IT领袖峰会" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/wLpMBiYQTAKePG6R.html" target="_blank" title="清华大学国家金融研究院院长朱民 ：中国还不是人工智能大国 | 2017 IT领袖峰会" class="headTit">
+				清华大学国家金融研究院院长朱民 ：中国还不是人工智能大国 | 2017 IT领袖峰会			</a>
+			</h3>
+			<div class="des">
+				作为第一个演讲嘉宾，清华大学国家金融研究院院长朱民发表了主题为“中国与世界人工智能的未来”的演讲。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/chetoujun" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/author_avatar/552684b8c4a3b_100_100.jpg" alt="" width="50" height="50">程弢				</a>
+				<div class="time">04月02日 11:18</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" title="人工智能" target="_blank">人工智能</a><a href="http://www.leiphone.com/tag/IT%E9%A2%86%E8%A2%96%E5%B3%B0%E4%BC%9A" title="IT领袖峰会" target="_blank">IT领袖峰会</a><a href="http://www.leiphone.com/tag/%E6%9C%B1%E6%B0%91" title="朱民" target="_blank">朱民</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201703/hVh2HUwyza9gxmGa.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58df6c4625894.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="Facebook团队新成果Modout：通过随机正则化方法进行多模型架构学习" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201703/hVh2HUwyza9gxmGa.html" target="_blank" title="Facebook团队新成果Modout：通过随机正则化方法进行多模型架构学习" class="headTit">
+				Facebook团队新成果Modout：通过随机正则化方法进行多模型架构学习			</a>
+			</h3>
+			<div class="des">
+				Modout是一种基于随机正则化的模型选择方法，它在多模型设定中特别有用。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/xuelixiusidun8605" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/05/00/39/92_avatar_pic_100_100.jpg?updateTime=1" alt="" width="50" height="50">雪莉•休斯敦				</a>
+				<div class="time">04月02日 10:51</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/%E9%9A%8F%E6%9C%BA%E6%AD%A3%E5%88%99%E5%8C%96" title="随机正则化" target="_blank">随机正则化</a><a href="http://www.leiphone.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" title="人工智能" target="_blank">人工智能</a><a href="http://www.leiphone.com/tag/Facebook" title="Facebook" target="_blank">Facebook</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+<li>
+	<div class="box">
+		<div class="img">
+			<a href="http://www.leiphone.com/category/ai" date-category="132" class="sort rgzn">人工智能</a>
+			<a href="http://www.leiphone.com/news/201704/VdeDFdEGpkuwO0ii.html" target="_blank">
+				<img class="lazy" data-original="http://static.leiphone.com/uploads/new/article/pic/201704/58df5d2f70096.png?imageMogr2/thumbnail/!480x290r/gravity/Center/crop/480x290/quality/90" src="http://www.leiphone.com/resWeb/images/article/miss-main-pic.jpg" title="愚人节学术特辑：MIT教授宣布解决P=NP难题；宣扬暴力主义的GANs目前已被GUNs取代" alt="">
+			</a>
+		</div>
+		<div class="word">
+			<h3>
+			<a href="http://www.leiphone.com/news/201704/VdeDFdEGpkuwO0ii.html" target="_blank" title="愚人节学术特辑：MIT教授宣布解决P=NP难题；宣扬暴力主义的GANs目前已被GUNs取代" class="headTit">
+				愚人节学术特辑：MIT教授宣布解决P=NP难题；宣扬暴力主义的GANs目前已被GUNs取代			</a>
+			</h3>
+			<div class="des">
+				P/NP已被MIT教授攻克；GUNs已经取代GANs……愚人节的学术圈同样很欢乐。			</div>
+			<div class="msg clr">
+				<a href="http://www.leiphone.com/author/guoxin" target="_blank" class="aut" rel="nofollow">
+					<img src="http://www.leiphone.com/uploads/new/avatar/04/00/26/97_avatar_pic_100_100.jpg?updateTime=1" alt="" width="50" height="50">奕欣				</a>
+				<div class="time">04月01日 21:10</div>
+				<div class="tags">
+					<em></em>
+							            <a href="http://www.leiphone.com/tag/P%2FNP%E9%97%AE%E9%A2%98" title="P/NP问题" target="_blank">P/NP问题</a><a href="http://www.leiphone.com/tag/%E5%A4%9A%E9%A1%B9%E5%BC%8F%E9%97%AE%E9%A2%98" title="多项式问题" target="_blank">多项式问题</a><a href="http://www.leiphone.com/tag/%E6%9E%97%E5%85%83%E5%BA%86" title="林元庆" target="_blank">林元庆</a>		            				</div>
+			</div>
+		</div>
+	</div>
+</li>
+
+                    </ul>

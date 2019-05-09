@@ -1,0 +1,41 @@
+﻿<div id="text">
+                        <p align="center" class="title">正高级 </p>
+                        <hr>
+                        
+                        <div id="teacherphoto">
+                            <a href="/teacher/teacherdetail.aspx?id=1">
+                                <img src="/upload/201611/03/201611031556504223.jpg" height="250" alt="陈海波"></a>
+                            <div class="name">陈海波</div>
+                        </div>
+                        
+                        <div id="teacherphoto">
+                            <a href="/teacher/teacherdetail.aspx?id=3">
+                                <img src="/upload/201611/04/201611041942143676.jpg" height="250" alt="傅育熙"></a>
+                            <div class="name">傅育熙</div>
+                        </div>
+                        
+                        <div id="teacherphoto">
+                            <a href="/teacher/teacherdetail.aspx?id=4">
+                                <img src="/upload/201611/07/201611072025318595.jpg" height="250" alt="胡飞"></a>
+                            <div class="name">胡飞</div>
+                        </div>
+                        
+                        <div id="teacherphoto">
+                            <a href="/teacher/teacherdetail.aspx?id=5">
+                                <img src="/upload/201611/07/201611072029192433.jpg" height="250" alt="戚正伟"></a>
+                            <div class="name">戚正伟</div>
+                        </div>
+                        
+                        <div id="teacherphoto">
+                            <a href="/teacher/teacherdetail.aspx?id=6">
+                                <img src="/upload/201611/07/201611072032216063.jpg" height="250" alt="杨旭波"></a>
+                            <div class="name">杨旭波</div>
+                        </div>
+                        
+                        <div id="teacherphoto">
+                            <a href="/teacher/teacherdetail.aspx?id=7">
+                                <img src="/upload/201611/07/201611072035261783.jpg" height="250" alt="臧斌宇"></a>
+                            <div class="name">臧斌宇</div>
+                        </div>
+                        
+                    </div>

@@ -1,0 +1,2132 @@
+﻿<ul id="thread_list" class="threadlist_bright j_threadlist_bright">
+                <li class="thread_top_list_folder">
+                <ul id="thread_top_list" class="thread_top_list">
+                    <li class=" j_thread_list thread_top j_thread_list clearfix" data-field="{&quot;id&quot;:4792917582,&quot;author_name&quot;:&quot;\u96e8\u8fb0\u54e5\u54e5\u662f\u4e5f&quot;,&quot;first_post_id&quot;:98181926516,&quot;reply_num&quot;:54,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:true,&quot;is_top&quot;:true,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+                    <a href="javascript:;" title="点击隐藏本贴" data-field="{&quot;tid&quot;:4792917582}" class="j_thread_hidden icon_thread_hidden"></a>
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">54</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    <i class="icon-top" alt="置顶" title="置顶"></i><i class="icon-good" alt="精品" title="精品"></i>
+    
+    <a href="/p/4792917582" title="【进吧必看】重庆大学吧吧规与导航2016.9.22" target="_blank" class="j_th_tit ">【进吧必看】重庆大学吧吧规与导航2016.9.22</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 雨辰哥哥是也" data-field="{&quot;user_id&quot;:1056629546}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u96e8\u8fb0\u54e5\u54e5\u662f\u4e5f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%9B%A8%E8%BE%B0%E5%93%A5%E5%93%A5%E6%98%AF%E4%B9%9F&amp;ie=utf-8&amp;fr=frs" target="_blank">雨辰哥哥是也</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2016-09</span>
+</div>
+            </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list thread_top j_thread_list clearfix" data-field="{&quot;id&quot;:4922950830,&quot;author_name&quot;:&quot;\u5c18\u57c3is\u5929\u4f7f&quot;,&quot;first_post_id&quot;:102048081870,&quot;reply_num&quot;:822,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:true,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+                    <a href="javascript:;" title="点击隐藏本贴" data-field="{&quot;tid&quot;:4922950830}" class="j_thread_hidden icon_thread_hidden"></a>
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">822</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    <i class="icon-top" alt="置顶" title="置顶"></i>
+    
+    <a href="/p/4922950830" title="二手、租房、兼职——2017第一季度交易集中帖" target="_blank" class="j_th_tit ">二手、租房、兼职——2017第一季度交易集中帖</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 尘埃is天使" data-field="{&quot;user_id&quot;:1060029991}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u5c18\u57c3is\u5929\u4f7f&quot;}" title="该用户已经连续签到209天了，连续30天一举“橙”名" class="frs-author-name sign_highlight j_user_card " href="/home/main/?un=%E5%B0%98%E5%9F%83is%E5%A4%A9%E4%BD%BF&amp;ie=utf-8&amp;fr=frs" target="_blank">尘埃is天使</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">1-1</span>
+</div>
+            </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list thread_top j_thread_list clearfix" data-field="{&quot;id&quot;:4910835418,&quot;author_name&quot;:&quot;\u5c18\u57c3is\u5929\u4f7f&quot;,&quot;first_post_id&quot;:101697474972,&quot;reply_num&quot;:6,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:true,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+                    <a href="javascript:;" title="点击隐藏本贴" data-field="{&quot;tid&quot;:4910835418}" class="j_thread_hidden icon_thread_hidden"></a>
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">6</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    <i class="icon-top" alt="置顶" title="置顶"></i>
+    
+    <a href="/p/4910835418" title="【申诉】帖子被删请在此贴申诉，禁止单开主题帖" target="_blank" class="j_th_tit ">【申诉】帖子被删请在此贴申诉，禁止单开主题帖</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 尘埃is天使" data-field="{&quot;user_id&quot;:1060029991}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u5c18\u57c3is\u5929\u4f7f&quot;}" title="该用户已经连续签到209天了，连续30天一举“橙”名" class="frs-author-name sign_highlight j_user_card " href="/home/main/?un=%E5%B0%98%E5%9F%83is%E5%A4%A9%E4%BD%BF&amp;ie=utf-8&amp;fr=frs" target="_blank">尘埃is天使</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2016-12</span>
+</div>
+            </div>
+                    </div>
+    </div>
+</li>
+                </ul>
+                                <a id="thread_top_folder" class="icon_top_folder" href="javascript:;"></a>
+            </li>
+        <li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5042024011,&quot;author_name&quot;:&quot;\u8471\u8471\u513f\u548c\u849c\u82d7\u513f&quot;,&quot;first_post_id&quot;:105597262535,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">0</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5042024011" title="最近A区电信炸的厉害呀！！" target="_blank" class="j_th_tit ">最近A区电信炸的厉害呀！！</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 葱葱儿和蒜苗儿" data-field="{&quot;user_id&quot;:606036140}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u8471\u8471\u513f\u548c\u849c\u82d7\u513f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%91%B1%E8%91%B1%E5%84%BF%E5%92%8C%E8%92%9C%E8%8B%97%E5%84%BF&amp;ie=utf-8&amp;fr=frs" target="_blank">葱葱儿和蒜苗儿</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">10:20</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            
+        </div>
+
+
+                    </div>
+
+                    
+
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 葱葱儿和蒜苗儿">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u8471\u8471\u513f\u548c\u849c\u82d7\u513f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%91%B1%E8%91%B1%E5%84%BF%E5%92%8C%E8%92%9C%E8%8B%97%E5%84%BF&amp;ie=utf-8&amp;fr=frs" target="_blank">葱葱儿和蒜苗儿</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:20        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5042023542,&quot;author_name&quot;:&quot;Retima_&quot;,&quot;first_post_id&quot;:105597254250,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">0</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5042023542" title="18重大mti翻硕找组织…" target="_blank" class="j_th_tit ">18重大mti翻硕找组织…</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: Retima_" data-field="{&quot;user_id&quot;:392316724}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;Retima_&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=Retima_&amp;ie=utf-8&amp;fr=frs" target="_blank">Retima_</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">10:20</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            请问小伙伴们 有没有加到18重大翻硕的群啊 能拉我一下嘛我找不到啊 我准备18考重大翻硕啊谢谢你萌 你萌
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: Retima_">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;Retima_&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=Retima_&amp;ie=utf-8&amp;fr=frs" target="_blank">Retima_</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:20        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+
+
+
+<li class="f198c37445  clearfix">
+    <div class="t_con clearfix">
+        <div class="col2_left">
+            <div class="threadlist_rep_num center_text" title="广告">热门</div>
+        </div>
+        <div class="col2_right">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left notStarList">
+                    <a class="j_click_stats" href="http://www.baidu.com/baidu.php?url=7zCK00KQuKSSMDLHYFZbspPBGZ7lo9JxhJaNERhnn903AwaBX_fG_Uy-aVlkanlmddEwm0ezpAiBMujrhVxdrcBlFyLieUJcWE8o42ziRpjPcH6t5ogds_rg-tFtlq5V6WFfDZSDA5vP9FERBd1LJu7g9vWs4rGhvo4V-EOx4-rLm2kaW6.7b_aECsFLqAK2cQMuJ_jnALLyFWl8hspN9h9mlX1WE_R.U1Yk0ZDqdVWZeQH1YpT0IjvYtqAM0A-V5HnknsKM5g93nfKdpHY0TA-b5Hc0mv-b5HfsPfKVIjY1nHfv0AVG5H00TMfqPWn10ANGujYznjT4PHf4nHNxnW0kPW03nHRzn0KBpHYs0AdW5H00TgKGujYs0Z7Wpyfqn0KzuLw9u1Ys0AqvUjYknjRznBdbX-tknjbLridbX-tknH0vPzYdg1DknHcLQHn0Uy-b5H00pg7Y5H00mycqn7ts0ANzu1Ys0ZKs5H63PjcvrjDdnfK8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KhIjYs0ZKC5H00ULnqn0KBI1Ys0A4Y5H00TLCq0ZF-TgfqnHf4njR3nHfYn1bLnsK1pyfqPH6LPvn1uyfdPH7Wrj0sn0K9m1Yk0ZGY5H00UyPxuMFEUHYs0APzm1YdPWTvPs" title="大学电信报名处,2017春季热招中" target="_blank" data-locate="frs_标题">大学电信报名处,2017春季热招中</a>
+                    <span></span>
+                </div>
+            </div>
+            <div class="threadlist_detail clearfix">
+                <div class="threadlist_text pull_left">
+                    <div class="threadlist_abs threadlist_abs_onlyline">升职加薪学历不够,落户上海积分不够,孩子回老家中高考?读东华大学,名校文凭,帮您人..</div>
+                    <div class="small_wrap j_small_wrap" is_handle="true">
+                        <ul class="threadlist_media"><li>
+    <div class="vpic_wrap">
+        <a class="j_click_stats" href="http://www.baidu.com/baidu.php?url=7zCK00KQuKSSMDLHYFZbspPBGZ7lo9JxhJaNERhnn903AwaBX_fG_Uy-aVlkanlmddEwm0ezpAiBMujrhVxdrcBlFyLieUJcWE8o42ziRpjPcH6t5ogds_rg-tFtlq5V6WFfDZSDA5vP9FERBd1LJu7g9vWs4rGhvo4V-EOx4-rLm2kaW6.7b_aECsFLqAK2cQMuJ_jnALLyFWl8hspN9h9mlX1WE_R.U1Yk0ZDqdVWZeQH1YpT0IjvYtqAM0A-V5HnknsKM5g93nfKdpHY0TA-b5Hc0mv-b5HfsPfKVIjY1nHfv0AVG5H00TMfqPWn10ANGujYznjT4PHf4nHNxnW0kPW03nHRzn0KBpHYs0AdW5H00TgKGujYs0Z7Wpyfqn0KzuLw9u1Ys0AqvUjYknjRznBdbX-tknjbLridbX-tknH0vPzYdg1DknHcLQHn0Uy-b5H00pg7Y5H00mycqn7ts0ANzu1Ys0ZKs5H63PjcvrjDdnfK8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KhIjYs0ZKC5H00ULnqn0KBI1Ys0A4Y5H00TLCq0ZF-TgfqnHf4njR3nHfYn1bLnsK1pyfqPH6LPvn1uyfdPH7Wrj0sn0K9m1Yk0ZGY5H00UyPxuMFEUHYs0APzm1YdPWTvPs" target="_blank">
+            <img src="https://t12.baidu.com/it/u=3765667303,3887177555&amp;fm=72" alt="贴吧图片">
+            
+        </a>
+    </div>
+</li><li>
+    <div class="vpic_wrap">
+        <a class="j_click_stats" href="http://www.baidu.com/baidu.php?url=7zCK00KQuKSSMDLHYFZbspPBGZ7lo9JxhJaNERhnn903AwaBX_fG_Uy-aVlkanlmddEwm0ezpAiBMujrhVxdrcBlFyLieUJcWE8o42ziRpjPcH6t5ogds_rg-tFtlq5V6WFfDZSDA5vP9FERBd1LJu7g9vWs4rGhvo4V-EOx4-rLm2kaW6.7b_aECsFLqAK2cQMuJ_jnALLyFWl8hspN9h9mlX1WE_R.U1Yk0ZDqdVWZeQH1YpT0IjvYtqAM0A-V5HnknsKM5g93nfKdpHY0TA-b5Hc0mv-b5HfsPfKVIjY1nHfv0AVG5H00TMfqPWn10ANGujYznjT4PHf4nHNxnW0kPW03nHRzn0KBpHYs0AdW5H00TgKGujYs0Z7Wpyfqn0KzuLw9u1Ys0AqvUjYknjRznBdbX-tknjbLridbX-tknH0vPzYdg1DknHcLQHn0Uy-b5H00pg7Y5H00mycqn7ts0ANzu1Ys0ZKs5H63PjcvrjDdnfK8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KhIjYs0ZKC5H00ULnqn0KBI1Ys0A4Y5H00TLCq0ZF-TgfqnHf4njR3nHfYn1bLnsK1pyfqPH6LPvn1uyfdPH7Wrj0sn0K9m1Yk0ZGY5H00UyPxuMFEUHYs0APzm1YdPWTvPs" target="_blank">
+            <img src="https://t11.baidu.com/it/u=28372157,316191104&amp;fm=72" alt="贴吧图片">
+            
+        </a>
+    </div>
+</li><li>
+    <div class="vpic_wrap">
+        <a class="j_click_stats" href="http://www.baidu.com/baidu.php?url=7zCK00KQuKSSMDLHYFZbspPBGZ7lo9JxhJaNERhnn903AwaBX_fG_Uy-aVlkanlmddEwm0ezpAiBMujrhVxdrcBlFyLieUJcWE8o42ziRpjPcH6t5ogds_rg-tFtlq5V6WFfDZSDA5vP9FERBd1LJu7g9vWs4rGhvo4V-EOx4-rLm2kaW6.7b_aECsFLqAK2cQMuJ_jnALLyFWl8hspN9h9mlX1WE_R.U1Yk0ZDqdVWZeQH1YpT0IjvYtqAM0A-V5HnknsKM5g93nfKdpHY0TA-b5Hc0mv-b5HfsPfKVIjY1nHfv0AVG5H00TMfqPWn10ANGujYznjT4PHf4nHNxnW0kPW03nHRzn0KBpHYs0AdW5H00TgKGujYs0Z7Wpyfqn0KzuLw9u1Ys0AqvUjYknjRznBdbX-tknjbLridbX-tknH0vPzYdg1DknHcLQHn0Uy-b5H00pg7Y5H00mycqn7ts0ANzu1Ys0ZKs5H63PjcvrjDdnfK8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KhIjYs0ZKC5H00ULnqn0KBI1Ys0A4Y5H00TLCq0ZF-TgfqnHf4njR3nHfYn1bLnsK1pyfqPH6LPvn1uyfdPH7Wrj0sn0K9m1Yk0ZGY5H00UyPxuMFEUHYs0APzm1YdPWTvPs" target="_blank">
+            <img src="https://t10.baidu.com/it/u=2905529106,168854573&amp;fm=72" alt="贴吧图片">
+            
+        </a>
+    </div>
+</li></ul>
+                    </div>
+                </div>
+                <div class="threadlist_author pull_right">
+                    <span class="tb_icon_author_rely" title="最后回复人：慧承网">
+                        <i class="icon_author"></i>
+                        <a class="j_click_stats" href="http://www.baidu.com/baidu.php?url=7zCK00KQuKSSMDLHYFZbspPBGZ7lo9JxhJaNERhnn903AwaBX_fG_Uy-aVlkanlmddEwm0ezpAiBMujrhVxdrcBlFyLieUJcWE8o42ziRpjPcH6t5ogds_rg-tFtlq5V6WFfDZSDA5vP9FERBd1LJu7g9vWs4rGhvo4V-EOx4-rLm2kaW6.7b_aECsFLqAK2cQMuJ_jnALLyFWl8hspN9h9mlX1WE_R.U1Yk0ZDqdVWZeQH1YpT0IjvYtqAM0A-V5HnknsKM5g93nfKdpHY0TA-b5Hc0mv-b5HfsPfKVIjY1nHfv0AVG5H00TMfqPWn10ANGujYznjT4PHf4nHNxnW0kPW03nHRzn0KBpHYs0AdW5H00TgKGujYs0Z7Wpyfqn0KzuLw9u1Ys0AqvUjYknjRznBdbX-tknjbLridbX-tknH0vPzYdg1DknHcLQHn0Uy-b5H00pg7Y5H00mycqn7ts0ANzu1Ys0ZKs5H63PjcvrjDdnfK8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KhIjYs0ZKC5H00ULnqn0KBI1Ys0A4Y5H00TLCq0ZF-TgfqnHf4njR3nHfYn1bLnsK1pyfqPH6LPvn1uyfdPH7Wrj0sn0K9m1Yk0ZGY5H00UyPxuMFEUHYs0APzm1YdPWTvPs" target="_blank" data-locate="frs_用户名">慧承网</a>
+                    </span>
+                    <span class="pull_right label_text">广告</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<style>
+    li.f198c37445 .vpic_wrap img{
+        width: 120px;
+        height: 90px;
+    }
+    li.f198c37445 .threadlist_media li{
+        height:auto;
+        border-bottom:none;
+    }
+    li.f198c37445 .threadlist_rep_num{
+        color:#333;
+        line-height:25px;
+    }
+    li.f198c37445 .vpic_wrap {
+        position:relative;
+    }
+    li.f198c37445 .vpic_wrap .source{
+        position:absolute;
+        right:0;
+        bottom:0;
+        width: 20px;
+        height:16px;
+        background:url(//tb2.bdstatic.com/tb/img/source_d9d0a31.png) no-repeat;
+        font-family:"Arial";
+        font-weight:bold;
+        text-align:center;
+        line-height: 19px;
+        text-indent:6px;
+        color:#fff;
+        opacity:0.8;
+    }
+    li.f198c37445 .label_text{
+        color: #666;
+        padding-top:2px;
+    }
+</style>
+
+
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041607137,&quot;author_name&quot;:&quot;\u4ed6\u4e0d\u61c2288&quot;,&quot;first_post_id&quot;:105588533113,&quot;reply_num&quot;:20,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">20</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041607137" title="3月26号下午那个穿洛丽塔的小" target="_blank" class="j_th_tit ">3月26号下午那个穿洛丽塔的小</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 他不懂288" data-field="{&quot;user_id&quot;:833894607}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u4ed6\u4e0d\u61c2288&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E4%BB%96%E4%B8%8D%E6%87%82288&amp;ie=utf-8&amp;fr=frs" target="_blank">他不懂288</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">00:21</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            3月26号下午那个穿洛丽塔的小姐姐，你和我照了照片当时走的急忘了要你联系方式，希望你看见了能私密
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 他不懂288">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u4ed6\u4e0d\u61c2288&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E4%BB%96%E4%B8%8D%E6%87%82288&amp;ie=utf-8&amp;fr=frs" target="_blank">他不懂288</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:18        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5039106165,&quot;author_name&quot;:&quot;\u8f7b\u6c34\u9761\u9761&quot;,&quot;first_post_id&quot;:105533498482,&quot;reply_num&quot;:225,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">225</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5039106165" title="163的妹纸感觉不好找男朋友" target="_blank" class="j_th_tit ">163的妹纸感觉不好找男朋友</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 轻水靡靡" data-field="{&quot;user_id&quot;:1043545935}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u8f7b\u6c34\u9761\u9761&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%BD%BB%E6%B0%B4%E9%9D%A1%E9%9D%A1&amp;ie=utf-8&amp;fr=frs" target="_blank">轻水靡靡</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-25</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            感觉和170的站在一起一样高 什么鬼我真的只想找个高一点的男朋友
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5039106165" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=65fda69129a446237e9fad60a8125e37/3b44f6246b600c338f9b0223134c510fd8f9a126.jpg" attr="82998" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=65fda69129a446237e9fad60a8125e37/3b44f6246b600c338f9b0223134c510fd8f9a126.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=8f4b4d19741ed21b79c92eed9d55dfc4/f636afc379310a55bbc6021fbe4543a98326107e.jpg" class="threadlist_pic j_m_pic " style="display: inline; width: 92px; height: 90px;"></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: fcdacj">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;fcdacj&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=fcdacj&amp;ie=utf-8&amp;fr=frs" target="_blank">fcdacj</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:16        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041871950,&quot;author_name&quot;:&quot;\u4e09\u4e24\u5e74guhj&quot;,&quot;first_post_id&quot;:105594396725,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">1</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041871950" title="找人。因为刚好遇见你" target="_blank" class="j_th_tit ">找人。因为刚好遇见你</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 三两年guhj" data-field="{&quot;user_id&quot;:1727387224}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u4e09\u4e24\u5e74guhj&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E4%B8%89%E4%B8%A4%E5%B9%B4guhj&amp;ie=utf-8&amp;fr=frs" target="_blank">三两年guhj</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">08:19</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            3月25日6点钟左右。做的轻轨一号线。石桥铺站之前都是站着的。依靠在轻轨门上。带着耳机。手上带着白
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: fcdacj">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;fcdacj&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=fcdacj&amp;ie=utf-8&amp;fr=frs" target="_blank">fcdacj</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:16        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5042012996,&quot;author_name&quot;:&quot;\u75af\u5929\u6c14\u91cc\u7684\u6a31\u82b1&quot;,&quot;first_post_id&quot;:105597071676,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">2</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5042012996" title="无所不知的贴吧大佬来看看吧" target="_blank" class="j_th_tit ">无所不知的贴吧大佬来看看吧</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 疯天气里的樱花" data-field="{&quot;user_id&quot;:810844381}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u75af\u5929\u6c14\u91cc\u7684\u6a31\u82b1&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%96%AF%E5%A4%A9%E6%B0%94%E9%87%8C%E7%9A%84%E6%A8%B1%E8%8A%B1&amp;ie=utf-8&amp;fr=frs" target="_blank">疯天气里的樱花</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">10:13</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            额。。萌新想入一个电钢在寝室里用不知道合不合适。然后想问问大佬们有什么好的建议么？
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 疯天气里的樱花">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u75af\u5929\u6c14\u91cc\u7684\u6a31\u82b1&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%96%AF%E5%A4%A9%E6%B0%94%E9%87%8C%E7%9A%84%E6%A8%B1%E8%8A%B1&amp;ie=utf-8&amp;fr=frs" target="_blank">疯天气里的樱花</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:15        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5042010881,&quot;author_name&quot;:&quot;534543703&quot;,&quot;first_post_id&quot;:105597034164,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">0</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5042010881" title="有没有环境工程读研的学长学姐~" target="_blank" class="j_th_tit ">有没有环境工程读研的学长学姐~</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 534543703" data-field="{&quot;user_id&quot;:127206333}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;534543703&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=534543703&amp;ie=utf-8&amp;fr=frs" target="_blank">534543703</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">10:12</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            想考贵校的环境工程研究生 有木有热心的学长学姐帮忙答疑下
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 534543703">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;534543703&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=534543703&amp;ie=utf-8&amp;fr=frs" target="_blank">534543703</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:12        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5022698881,&quot;author_name&quot;:&quot;\u65e0\u8bd1\u7684\u4f59\u751f&quot;,&quot;first_post_id&quot;:105197543528,&quot;reply_num&quot;:22,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">22</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5022698881" title="削个，椰子皮" target="_blank" class="j_th_tit ">削个，椰子皮</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 无译的余生" data-field="{&quot;user_id&quot;:989287786}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u65e0\u8bd1\u7684\u4f59\u751f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%97%A0%E8%AF%91%E7%9A%84%E4%BD%99%E7%94%9F&amp;ie=utf-8&amp;fr=frs" target="_blank">无译的余生</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-15</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            当一下雷锋 学习、影视资源帮找
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 朴家大少_">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u6734\u5bb6\u5927\u5c11_&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%9C%B4%E5%AE%B6%E5%A4%A7%E5%B0%91_&amp;ie=utf-8&amp;fr=frs" target="_blank">朴家大少_</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:08        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5036735399,&quot;author_name&quot;:&quot;\u84dd\u51b0\u6708\u4f18&quot;,&quot;first_post_id&quot;:105483407161,&quot;reply_num&quot;:69,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">69</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5036735399" title="求家教" target="_blank" class="j_th_tit ">求家教</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 蓝冰月优" data-field="{&quot;user_id&quot;:414873813}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u84dd\u51b0\u6708\u4f18&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%93%9D%E5%86%B0%E6%9C%88%E4%BC%98&amp;ie=utf-8&amp;fr=frs" target="_blank">蓝冰月优</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-23</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            本人高三，渝高中学的，家在石桥铺，想要一个理综和数学都挺好的家教，价格好商量，我可以周日去大
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5036735399" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="94740" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=9e1773fa00f79052ef4a4f3c3cc3fbf3/3b470c338744ebf8a4ff64d6d0f9d72a6159a770.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=c3ade7c207f41bd5da53e8fc61e183cb/78310a55b319ebc409f676708b26cffc1f171648.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 阿八先生">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u963f\u516b\u5148\u751f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%98%BF%E5%85%AB%E5%85%88%E7%94%9F&amp;ie=utf-8&amp;fr=frs" target="_blank">阿八先生</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:05        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4999105729,&quot;author_name&quot;:&quot;534450184\u4f7f\u8005&quot;,&quot;first_post_id&quot;:104662430498,&quot;reply_num&quot;:23,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">23</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4999105729" title="重庆大学对上海有招生名额吗" target="_blank" class="j_th_tit ">重庆大学对上海有招生名额吗</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 534450184使者" data-field="{&quot;user_id&quot;:77271487}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;534450184\u4f7f\u8005&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=534450184%E4%BD%BF%E8%80%85&amp;ie=utf-8&amp;fr=frs" target="_blank">534450184使者</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -3850px  0;top:0px;left:0px" data-slot="1" data-name="starmaster" data-field="{&quot;name&quot;:&quot;starmaster&quot;,&quot;end_time&quot;:&quot;1735660800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u624b\u6e381\u661f\u8fbe\u4eba&quot;,&quot;intro&quot;:&quot;\u5728\u624b\u6e38\u73a9\u5bb6\u5427\u6210\u4e3a\u624b\u6e381\u661f\u8fbe\u4eba\u8ba4\u8bc1\u7528\u6237\uff0c\u5373\u53ef\u83b7\u53d6\u54e6~&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/f?kw=\u73a9\u5bb6\u8ba4\u8bc1&amp;ie=utf-8&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;2&quot;,&quot;sprite&quot;:{&quot;1&quot;:&quot;1489115418,76&quot;,&quot;2&quot;:&quot;1489115418,77&quot;,&quot;3&quot;:&quot;1489115418,78&quot;,&quot;4&quot;:&quot;1489115418,79&quot;,&quot;5&quot;:&quot;1489115418,80&quot;,&quot;6&quot;:&quot;1489115418,81&quot;}}" target="_blank" href="http://tieba.baidu.com/f?kw=玩家认证&amp;ie=utf-8" class="j_icon_slot" title="手游1星达人" locate="starmaster_2#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            学长学姐你们好呀，本人是上课在读高三生，想报考贵校。但最近看上海官方发表的投档分数线的书竟然
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm4999105729" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="852" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=388eed72a844ad342eea8f85e09220cd/f3eb7cd98d1001e990ac5b90b10e7bec55e79740.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=232fc3ae4390f60304b09c4f0929b11b/a8ec8a13632762d05eaeeb20a9ec08fa503dc699.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="83144" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=acaf2000ad0f4bfb8c859656337f54c9/e76243a98226cffc30baf02db0014a90f703ea40.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=ab989f72ee1190ef01fb92d7fe209f16/b03533fa828ba61e867e87b04834970a314e5998.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="91545" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=7672d3438313632715b8ca31a1bf8cd5/e2dc43166d224f4a47093c8c00f790529922d140.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=5c6ae592f1dcd100cd9cf82942b04510/0e2442a7d933c895b6eed7e4d81373f083020098.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        <div class="small_pic_num center_text">共&nbsp;4&nbsp;张</div>
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 朴家大少_">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u6734\u5bb6\u5927\u5c11_&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%9C%B4%E5%AE%B6%E5%A4%A7%E5%B0%91_&amp;ie=utf-8&amp;fr=frs" target="_blank">朴家大少_</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:04        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041997774,&quot;author_name&quot;:&quot;\u5230\u5e95\u600e\u4e48\u600e\u4e48\u5462&quot;,&quot;first_post_id&quot;:105596808174,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">0</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041997774" title="画画" target="_blank" class="j_th_tit ">画画</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 到底怎么怎么呢" data-field="{&quot;user_id&quot;:1583730031}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u5230\u5e95\u600e\u4e48\u600e\u4e48\u5462&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E6%80%8E%E4%B9%88%E5%91%A2&amp;ie=utf-8&amp;fr=frs" target="_blank">到底怎么怎么呢</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">10:03</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+             
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5041997774" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="93371" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=3817b6b25cfbb2fb347e50107f7a0c9d/87ed7bcb0a46f21fdff0e0bcff246b600e33aec4.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=a20477dc9b45d688a302b2ac94f97f1e/4afbfbedab64034f19097ce9a6c379310b551d1c.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="11992" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=5f94de24bbfb43161a4a727810946a1a/2bec0a46f21fbe09099a7dfb62600c338544adc4.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=9efa199adf88d43ff0a991fa4d25d01b/faedab64034f78f095cf241c70310a55b2191c1c.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="65899" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=360239244a166d2238221d96761325ce/5a61f21fbe096b6395dde0bf05338744e9f8acc4.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=f1bc5d57dd3f8794d3ff4826e2200cf4/aa64034f78f0f736cc3af2ee0355b319eac4131c.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        <div class="small_pic_num center_text">共&nbsp;7&nbsp;张</div>
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 到底怎么怎么呢">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u5230\u5e95\u600e\u4e48\u600e\u4e48\u5462&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E6%80%8E%E4%B9%88%E5%91%A2&amp;ie=utf-8&amp;fr=frs" target="_blank">到底怎么怎么呢</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:03        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041988049,&quot;author_name&quot;:&quot;\u7838\u95e8\u5c31\u53eb\u7ebf\u7ebf\u5427&quot;,&quot;first_post_id&quot;:105596644850,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">1</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041988049" title="求天气" target="_blank" class="j_th_tit ">求天气</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 砸门就叫线线吧" data-field="{&quot;user_id&quot;:1414674411}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u7838\u95e8\u5c31\u53eb\u7ebf\u7ebf\u5427&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%A0%B8%E9%97%A8%E5%B0%B1%E5%8F%AB%E7%BA%BF%E7%BA%BF%E5%90%A7&amp;ie=utf-8&amp;fr=frs" target="_blank">砸门就叫线线吧</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">09:57</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            过两天准备去重庆自己玩，求各位小哥哥小姐姐告诉我穿衣指南
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 涅槃之叶">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u6d85\u69c3\u4e4b\u53f6&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%B6%85%E6%A7%83%E4%B9%8B%E5%8F%B6&amp;ie=utf-8&amp;fr=frs" target="_blank">涅槃之叶</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:03        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041269576,&quot;author_name&quot;:&quot;\u73c2\u82e1\u8bfa&quot;,&quot;first_post_id&quot;:105580945890,&quot;reply_num&quot;:64,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">64</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041269576" title="今天看到了好多情侣基本上都是萌身高差这种" target="_blank" class="j_th_tit ">今天看到了好多情侣基本上都是萌身高差这种</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 珂苡诺" data-field="{&quot;user_id&quot;:653835738}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u73c2\u82e1\u8bfa&quot;}" title="该用户已经连续签到703天了，连续30天一举“橙”名" class="frs-author-name sign_highlight j_user_card " href="/home/main/?un=%E7%8F%82%E8%8B%A1%E8%AF%BA&amp;ie=utf-8&amp;fr=frs" target="_blank">珂苡诺</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -4800px  0;top:0px;left:0px" data-slot="1" data-name="signprize" data-field="{&quot;name&quot;:&quot;signprize&quot;,&quot;end_time&quot;:&quot;1490716800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u9ad8\u7ea7\u6838\u5fc3\u7528\u6237&quot;,&quot;intro&quot;:&quot;\u624b\u673a\u7aef\u8fde\u7eed\u7b7e\u523090\u5929\u53ef\u83b7\u5f97\u672c\u5370\u8bb0&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/mo\/q\/medal&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;3&quot;,&quot;sprite&quot;:{&quot;3&quot;:&quot;1489115418,96&quot;,&quot;2&quot;:&quot;1489115418,95&quot;,&quot;1&quot;:&quot;1489115418,94&quot;}}" target="_blank" href="http://tieba.baidu.com/mo/q/medal" class="j_icon_slot" title="高级核心用户" locate="signprize_3#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            谁来和我萌身高差呀 
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5041269576" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="56749" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=68bf64616581800a6eb0810c81051fc3/6069251f95cad1c81e6161c9763e6709c83d5129.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=b5147f1472cb0a4685228b315b58f424/cb8065380cd791232e3a099aa4345982b3b78002.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 涅槃之叶">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u6d85\u69c3\u4e4b\u53f6&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%B6%85%E6%A7%83%E4%B9%8B%E5%8F%B6&amp;ie=utf-8&amp;fr=frs" target="_blank">涅槃之叶</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            10:01        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+
+
+
+<li class="uf5a9c4c23  clearfix">
+    <div class="t_con clearfix">
+        <div class="col2_left">
+            <div class="threadlist_rep_num center_text" title="热门">热门</div>
+        </div>
+        <div class="col2_right ">
+    <div class="threadlist_lz clearfix">
+        <div class="threadlist_title pull_left notStarList">
+            <a class="j_click_stats" href="http://www.baidu.com/baidu.php?url=7zCK00KQuKSSMDLHY0jDBC19nbP8vC_DAo2ZSSf8wq1qrURcF9N800tDvW54iXd2kz8ySgLQcKoVULPwLRC1E4SyG_wthE2Dx7tRhrtS5pQTkVWNWcxMhhvS-W2f6jiARnssM81Q0L02XtMLltQIOoucPBfgpJHK5boapKrwAjYpzbZsDs.7b_iRTx-Z6BC_kgwC6ksXM2hA9MhHZf6LNdd1qlthBE_h8snkuQQClhTdzpSz1ZjYT5UCzX5uum_HZdIP6YojPakYvUth4f.U1Yz0ZDqdVWZeQH1YpT0IjLyvQH11xWa4eLnYOLwGqil0A-V5HnknsKM5g93nfKdpHY0TA-b5Hc0mv-b5HfsPfKVIjYs0AVG5H00TMfqPWn10ANGujYznjT4PHf4nHNxnW0kPW03nHRzn0KBpHYs0AdW5H00TgKGujYs0Z7Wpyfqn0KzuLw9u1Ys0AqvUjYknjRznBdbX-tknjbLridbX-tknH0vPzYdg1DknHcLQHn0Uy-b5H00pg7Y5H00mycqn7ts0ANzu1Ys0ZKs5H63PjcvrjDdnfK8IM0qna3snj0snj0sn0KVIZ0qn0KbuAqs5H00ThCqn0KhIjYs0ZKC5H00ULnqn0KBI1Ys0A4Y5H00TLCq0ZF-TgfqnHf4njR3nHfYn1bLnsK1pyfqPH6LPvn1uyfdPH7Wrj0sn0K9m1Yk0ZGY5H00UyPxuMFEUHYs0APzm1YzPjTd" title="重大网络教育学院2017年新公布,上海3月报名咨询入口" target="_blank" data-locate="frs_标题">重大网络教育学院2017年新公布,上海3月报名咨询入口</a>
+            <span></span>
+        </div>
+    </div>
+    <div class="threadlist_detail clearfix">
+        <div class="threadlist_text pull_left">
+            <div class="threadlist_abs threadlist_abs_onlyline">2017年上海重大网络教育学院与报名须知,自考学历报名--考试-考证,贴心服务!上海正规..</div>
+        </div>
+        <div class="threadlist_author pull_right">
+            <span class="tb_icon_author" title="热门推荐">
+                <i class="icon_author"></i>
+                <span>热门推荐</span>
+            </span>
+            <span class="pull_right label_text">广告</span>
+        </div>
+    </div>
+</div>
+    </div>
+</li>
+
+<style>
+li.uf5a9c4c23 .col2_right_top{
+    border-top: 1px dotted #dbdbdb;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+li.uf5a9c4c23 .threadlist_rep_num{
+    color:#333;
+    line-height:25px;
+}
+li.uf5a9c4c23 .label_text{
+    color: #666;
+    padding-top:2px;
+}
+</style>
+
+
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041902233,&quot;author_name&quot;:&quot;\u7c73\u864e\u65e0\u6094&quot;,&quot;first_post_id&quot;:105595034344,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">2</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041902233" title="求助贴" target="_blank" class="j_th_tit ">求助贴</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 米虎无悔" data-field="{&quot;user_id&quot;:1325905589}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u7c73\u864e\u65e0\u6094&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%B1%B3%E8%99%8E%E6%97%A0%E6%82%94&amp;ie=utf-8&amp;fr=frs" target="_blank">米虎无悔</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">08:51</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            啊咧，汉子一枚，清明节放假想到重庆耍一耍，到重大找一下小伙伴，求助吧友重大附近有没有特便宜的
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5041902233" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="33072" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=9f17af57dd3f8794d3aa402ce22b22cd/e6da5266d0160924a64aeef4dd0735fae7cd349c.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=9e41c9a1c38065387beaa41ba7e6a044/a6efce1b9d16fdfaa2038a01bd8f8c5495ee7bf5.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="20355" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=54222031346d55fbc5937e245d126373/5cd4d7ca7bcb0a4680aac7d66263f6246a60af78.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=b17bba22f5039245a1b5e107b7afa6c2/a50f4bfbfbedab6471fa012ffe36afc378311e50.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 米虎无悔">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u7c73\u864e\u65e0\u6094&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%B1%B3%E8%99%8E%E6%97%A0%E6%82%94&amp;ie=utf-8&amp;fr=frs" target="_blank">米虎无悔</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:56        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4987364219,&quot;author_name&quot;:&quot;\u7ef4\u5c3cvs\u52a0\u83f2\u732b&quot;,&quot;first_post_id&quot;:104280644127,&quot;reply_num&quot;:112,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">112</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4987364219" title="感谢重大的学姐给小学妹带来动力～" target="_blank" class="j_th_tit ">感谢重大的学姐给小学妹带来动力～</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 维尼vs加菲猫" data-field="{&quot;user_id&quot;:329368795}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u7ef4\u5c3cvs\u52a0\u83f2\u732b&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%BB%B4%E5%B0%BCvs%E5%8A%A0%E8%8F%B2%E7%8C%AB&amp;ie=utf-8&amp;fr=frs" target="_blank">维尼vs加菲猫</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2-19</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            坐标吉林，高三党，上周重大的两位学姐回高中来宣讲，碰巧我不在班（太遗憾了）听同学说我想考重庆
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm4987364219" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="78835" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=5844dd59bbfb43161a4a727810946a1a/2bec0a46f21fbe090e4a7e8662600c338744ad37.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=992a1ae7df88d43ff0a991fa4d25d31b/faedab64034f78f0921f276170310a55b3191c0f.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="35834" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=dc9c41481cce36d3a2518b320ac316be/e2369313b07eca80e2118475982397dda1448337.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=f4d90aa053afa40f3cc6ced59b5f024f/86d6277f9e2f0708af119792e024b899a901f208.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="24547" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=d0d5cc94a5af2eddd4a441ebbd202dd0/7f09b9389b504fc273be0297ecdde71191ef6d62.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=20c4b1d8d3b44aed594ebeec83278501/58ee3d6d55fbb2fbe5caea80464a20a44723dcbb.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        <div class="small_pic_num center_text">共&nbsp;8&nbsp;张</div>
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 砸门就叫线线吧">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u7838\u95e8\u5c31\u53eb\u7ebf\u7ebf\u5427&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%A0%B8%E9%97%A8%E5%B0%B1%E5%8F%AB%E7%BA%BF%E7%BA%BF%E5%90%A7&amp;ie=utf-8&amp;fr=frs" target="_blank">砸门就叫线线吧</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:55        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5038827129,&quot;author_name&quot;:&quot;\u5c0f\u4f69\u4f6932&quot;,&quot;first_post_id&quot;:105527735714,&quot;reply_num&quot;:23,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">23</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5038827129" title="以后就常在重庆大学驻足了" target="_blank" class="j_th_tit ">以后就常在重庆大学驻足了</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 小佩佩32" data-field="{&quot;user_id&quot;:2750628558}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u5c0f\u4f69\u4f6932&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%B0%8F%E4%BD%A9%E4%BD%A932&amp;ie=utf-8&amp;fr=frs" target="_blank">小佩佩32</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-25</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+             
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5038827129" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="6938" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=45418603b53eb1354492bfb9962e84ea/81efa786c9177f3ea24256e679cf3bc79e3d568a.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=cf0d6dc4b7096b6381195e583c088644/902397dda144ad349cc92d6cd9a20cf430ad85e3.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: _______安魂曲">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;_______\u5b89\u9b42\u66f2&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=_______%E5%AE%89%E9%AD%82%E6%9B%B2&amp;ie=utf-8&amp;fr=frs" target="_blank">_______安魂曲</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:54        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5038505381,&quot;author_name&quot;:&quot;\u6c5f\u5357\u82b1\u5bb6\u516b\u516c\u5b50&quot;,&quot;first_post_id&quot;:105520685679,&quot;reply_num&quot;:20,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">20</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5038505381" title="录取啦录取啦，不过我可能是重大最水的一名研究僧" target="_blank" class="j_th_tit ">录取啦录取啦，不过我可能是重大最水的一名研究僧</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 江南花家八公子" data-field="{&quot;user_id&quot;:946790422}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u6c5f\u5357\u82b1\u5bb6\u516b\u516c\u5b50&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%B1%9F%E5%8D%97%E8%8A%B1%E5%AE%B6%E5%85%AB%E5%85%AC%E5%AD%90&amp;ie=utf-8&amp;fr=frs" target="_blank">江南花家八公子</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-25</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            先说说我的自身经历吧，90后里面年纪最大的，考了重大的研，虽然成绩不咋地，但已经被录取，虽然费了
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 貌瘦天下肥">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u8c8c\u7626\u5929\u4e0b\u80a5&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%B2%8C%E7%98%A6%E5%A4%A9%E4%B8%8B%E8%82%A5&amp;ie=utf-8&amp;fr=frs" target="_blank">貌瘦天下肥</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:44        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041281081,&quot;author_name&quot;:&quot;dream123xin&quot;,&quot;first_post_id&quot;:105581200845,&quot;reply_num&quot;:37,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">37</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041281081" title="好想找一个男朋友，但发现自己没有喜欢的人。" target="_blank" class="j_th_tit ">好想找一个男朋友，但发现自己没有喜欢的人。</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: dream123xin" data-field="{&quot;user_id&quot;:1843408824}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;dream123xin&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=dream123xin&amp;ie=utf-8&amp;fr=frs" target="_blank">dream123xin</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: YansEnthusiasm">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;YansEnthusiasm&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=YansEnthusiasm&amp;ie=utf-8&amp;fr=frs" target="_blank">YansEnthusiasm</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:43        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4923559943,&quot;author_name&quot;:&quot;\u82a5\u00b7\u672b\u00b7\u00b7&quot;,&quot;first_post_id&quot;:102066812508,&quot;reply_num&quot;:32,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">32</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4923559943" title="计算机学院可爱的研究生学长学姐们！！！" target="_blank" class="j_th_tit ">计算机学院可爱的研究生学长学姐们！！！</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 芥·末··" data-field="{&quot;user_id&quot;:213759117}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u82a5\u00b7\u672b\u00b7\u00b7&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%8A%A5%C2%B7%E6%9C%AB%C2%B7%C2%B7&amp;ie=utf-8&amp;fr=frs" target="_blank">芥·末··</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -3800px  0;top:0px;left:0px" data-slot="1" data-name="starmaster" data-field="{&quot;name&quot;:&quot;starmaster&quot;,&quot;end_time&quot;:&quot;1735660800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u624b\u6e380\u661f\u8fbe\u4eba&quot;,&quot;intro&quot;:&quot;\u5728\u624b\u6e38\u73a9\u5bb6\u5427\u6210\u4e3a\u624b\u6e380\u661f\u8fbe\u4eba\u8ba4\u8bc1\u7528\u6237\uff0c\u5373\u53ef\u83b7\u53d6\u54e6~&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/f?kw=\u73a9\u5bb6\u8ba4\u8bc1&amp;ie=utf-8&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;1&quot;,&quot;sprite&quot;:{&quot;1&quot;:&quot;1489115418,76&quot;,&quot;2&quot;:&quot;1489115418,77&quot;,&quot;3&quot;:&quot;1489115418,78&quot;,&quot;4&quot;:&quot;1489115418,79&quot;,&quot;5&quot;:&quot;1489115418,80&quot;,&quot;6&quot;:&quot;1489115418,81&quot;}}" target="_blank" href="http://tieba.baidu.com/f?kw=玩家认证&amp;ie=utf-8" class="j_icon_slot" title="手游0星达人" locate="starmaster_1#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">1-2</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            露珠想考重大计算机学院的研究生 想请问学长学姐们本学院的优势专业和方向 看到0812下面好多数据挖掘 
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm4923559943" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="87861" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=89817db65de736d15846840aab6063fb/f7c8ce1b9d16fdfa9edef584bd8f8c5495ee7bd4.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=16f098750e082838680ddc1c88a2a801/91529822720e0cf3e6457d910346f21fbe09aa2d.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 芥·末··">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u82a5\u00b7\u672b\u00b7\u00b7&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%8A%A5%C2%B7%E6%9C%AB%C2%B7%C2%B7&amp;ie=utf-8&amp;fr=frs" target="_blank">芥·末··</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:41        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5023425035,&quot;author_name&quot;:&quot;koujack888&quot;,&quot;first_post_id&quot;:105210380272,&quot;reply_num&quot;:27,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">27</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5023425035" title="西南大学要建医学院了，你们怎么看？" target="_blank" class="j_th_tit ">西南大学要建医学院了，你们怎么看？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: koujack888" data-field="{&quot;user_id&quot;:578770681}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;koujack888&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=koujack888&amp;ie=utf-8&amp;fr=frs" target="_blank">koujack888</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-15</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            华龙网3月14日11时10分讯 记者从西南大学官网获悉。3月9日至10日，西南大学副校长丁忠民率队赴电子科技
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 威威一站很倾城">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u5a01\u5a01\u4e00\u7ad9\u5f88\u503e\u57ce&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%A8%81%E5%A8%81%E4%B8%80%E7%AB%99%E5%BE%88%E5%80%BE%E5%9F%8E&amp;ie=utf-8&amp;fr=frs" target="_blank">威威一站很倾城</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:41        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041442334,&quot;author_name&quot;:&quot;h1\u4e03\u4e03_&quot;,&quot;first_post_id&quot;:105584726331,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">1</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041442334" title="高三党求助" target="_blank" class="j_th_tit ">高三党求助</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: h1七七_" data-field="{&quot;user_id&quot;:2345192724}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;h1\u4e03\u4e03_&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=h1%E4%B8%83%E4%B8%83_&amp;ie=utf-8&amp;fr=frs" target="_blank">h1七七_</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            我是重庆本地的高三学生，请问小哥哥小姐姐们考重大一般要超重本多少分
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: YansEnthusiasm">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;YansEnthusiasm&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=YansEnthusiasm&amp;ie=utf-8&amp;fr=frs" target="_blank">YansEnthusiasm</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:40        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5026220871,&quot;author_name&quot;:&quot;\u54ce\u5440\u5440boom&quot;,&quot;first_post_id&quot;:105265835100,&quot;reply_num&quot;:5,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">5</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5026220871" title="研究生宿舍是什么样的，条件好吗" target="_blank" class="j_th_tit ">研究生宿舍是什么样的，条件好吗</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 哎呀呀boom" data-field="{&quot;user_id&quot;:2027248534}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u54ce\u5440\u5440boom&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%93%8E%E5%91%80%E5%91%80boom&amp;ie=utf-8&amp;fr=frs" target="_blank">哎呀呀boom</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-17</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            重大的想考研的院校，但是想看看住宿情况再做决定，有图最好啦
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 古风古风h">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u53e4\u98ce\u53e4\u98ceh&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%8F%A4%E9%A3%8E%E5%8F%A4%E9%A3%8Eh&amp;ie=utf-8&amp;fr=frs" target="_blank">古风古风h</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:38        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041518319,&quot;author_name&quot;:&quot;\u4e03\u6708\u7684\u9752\u6625\u6765\u5566&quot;,&quot;first_post_id&quot;:105586469409,&quot;reply_num&quot;:5,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">5</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041518319" title="重大有个外号叫洞主的研究僧？" target="_blank" class="j_th_tit ">重大有个外号叫洞主的研究僧？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 七月的青春来啦" data-field="{&quot;user_id&quot;:1393910360}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u4e03\u6708\u7684\u9752\u6625\u6765\u5566&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E4%B8%83%E6%9C%88%E7%9A%84%E9%9D%92%E6%98%A5%E6%9D%A5%E5%95%A6&amp;ie=utf-8&amp;fr=frs" target="_blank">七月的青春来啦</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            突然听闻重大有一个很厉害的研究生，外号叫什么洞主，有没有人讲一下啊？😂 
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5041518319" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="46937" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=1a46bab8d9160924dc70aa19e43719c3/8914c895d143ad4b7da89b2e8b025aafa50f0605.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=67549ed74236acaf59e096f44ce28f10/bd315c6034a85edf210a23cd40540923dc54755e.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: happy夜dream">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;happy\u591cdream&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=happy%E5%A4%9Cdream&amp;ie=utf-8&amp;fr=frs" target="_blank">happy夜dream</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:37        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5035972697,&quot;author_name&quot;:&quot;greatdarling\u4e36&quot;,&quot;first_post_id&quot;:105468016968,&quot;reply_num&quot;:220,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">220</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5035972697" title="【讨论】男朋友究竟有什么用?" target="_blank" class="j_th_tit ">【讨论】男朋友究竟有什么用?</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: greatdarling丶" data-field="{&quot;user_id&quot;:1298288185}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;greatdarling\u4e36&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=greatdarling%E4%B8%B6&amp;ie=utf-8&amp;fr=frs" target="_blank">greatdarling丶</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-23</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            一个月见一次，不出去玩，吃一顿饭，还发现他乱搞? excuseme?有什么用? 虽然我白痴找不到路，想出去玩，b
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5035972697" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="65069" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=ce68279d4aa98226b8942325bab29538/e076f8198618367aff18da3527738bd4b21ce568.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=b14260c733292df597c3ac1d8c0a5e60/c8177f3e6709c93d5563ab1f963df8dcd0005440.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: greatdarling丶">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;greatdarling\u4e36&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=greatdarling%E4%B8%B6&amp;ie=utf-8&amp;fr=frs" target="_blank">greatdarling丶</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:24        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5038245116,&quot;author_name&quot;:&quot;1483621597&quot;,&quot;first_post_id&quot;:105514850923,&quot;reply_num&quot;:5,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">5</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5038245116" title="有重庆大学辛辛那提项目的学长学姐么" target="_blank" class="j_th_tit ">有重庆大学辛辛那提项目的学长学姐么</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 1483621597" data-field="{&quot;user_id&quot;:416631022}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;1483621597&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=1483621597&amp;ie=utf-8&amp;fr=frs" target="_blank">1483621597</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-24</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            本人今年高考，自招想报这个项目，但不知道前景和花费如何，希望学长学姐们帮帮我
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: rsyz896">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;rsyz896&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=rsyz896&amp;ie=utf-8&amp;fr=frs" target="_blank">rsyz896</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:16        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4697326114,&quot;author_name&quot;:&quot;\u76ee\u4e0e\u6728\u77b3&quot;,&quot;first_post_id&quot;:94877635610,&quot;reply_num&quot;:12,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">12</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4697326114" title="下半年想在重大复习，有没有哪位重大的同学可以出租宿舍的。" target="_blank" class="j_th_tit ">下半年想在重大复习，有没有哪位重大的同学可以出租宿舍的。</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 目与木瞳" data-field="{&quot;user_id&quot;:701567463}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u76ee\u4e0e\u6728\u77b3&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%9B%AE%E4%B8%8E%E6%9C%A8%E7%9E%B3&amp;ie=utf-8&amp;fr=frs" target="_blank">目与木瞳</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2016-07</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            如题，想下半年在重大复习，求出租宿舍。妹纸一枚。
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 风之尘羽">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u98ce\u4e4b\u5c18\u7fbd&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%A3%8E%E4%B9%8B%E5%B0%98%E7%BE%BD&amp;ie=utf-8&amp;fr=frs" target="_blank">风之尘羽</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:12        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5040664613,&quot;author_name&quot;:&quot;\u7329\u7ea2\u7684\u59e8\u5988\u5dfe&quot;,&quot;first_post_id&quot;:105567457281,&quot;reply_num&quot;:6,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">6</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5040664613" title="还不了昵称了，我的天" target="_blank" class="j_th_tit ">还不了昵称了，我的天</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 猩红的姨妈巾" data-field="{&quot;user_id&quot;:2499067598}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u7329\u7ea2\u7684\u59e8\u5988\u5dfe&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%8C%A9%E7%BA%A2%E7%9A%84%E5%A7%A8%E5%A6%88%E5%B7%BE&amp;ie=utf-8&amp;fr=frs" target="_blank">猩红的姨妈巾</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            换了个贴吧号
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5040664613" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="18602" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=e3fe0e03bd8f8c54e386cd2d0a1901cc/dd96cb134954092391fbab939b58d109b2de4970.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=5d7054318313632715edc23ba1b4a2ec/d62a6059252dd42a649bc9460a3b5bb5c8eab849.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 刘老二012">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u5218\u8001\u4e8c012&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%88%98%E8%80%81%E4%BA%8C012&amp;ie=utf-8&amp;fr=frs" target="_blank">刘老二012</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            09:02        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5017899373,&quot;author_name&quot;:&quot;maybe\u5f00\u68ee&quot;,&quot;first_post_id&quot;:105098914025,&quot;reply_num&quot;:67,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">67</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5017899373" title="重大的人不热情？" target="_blank" class="j_th_tit ">重大的人不热情？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: maybe开森" data-field="{&quot;user_id&quot;:2944761197}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;maybe\u5f00\u68ee&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=maybe%E5%BC%80%E6%A3%AE&amp;ie=utf-8&amp;fr=frs" target="_blank">maybe开森</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-11</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            啷个不热情哎 
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5017899373" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="97093" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=61364095f11986184112e7867add024a/ce08070828381f303b09485da0014c086f06f0de.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=db0e2d905f4e9258a63486e6acb9d058/b812c8fcc3cec3fd2e2e6281df88d43f87942736.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 为了那段时光">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u4e3a\u4e86\u90a3\u6bb5\u65f6\u5149&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E4%B8%BA%E4%BA%86%E9%82%A3%E6%AE%B5%E6%97%B6%E5%85%89&amp;ie=utf-8&amp;fr=frs" target="_blank">为了那段时光</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            08:59        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5023719731,&quot;author_name&quot;:&quot;\u6211\u5e26\u4f60\u53bb\u515c\u98ce\u554a&quot;,&quot;first_post_id&quot;:105216180061,&quot;reply_num&quot;:170,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">170</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5023719731" title="重大汉子那么多，我可以撩一个走嘛？" target="_blank" class="j_th_tit ">重大汉子那么多，我可以撩一个走嘛？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 我带你去兜风啊" data-field="{&quot;user_id&quot;:1422939248}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u6211\u5e26\u4f60\u53bb\u515c\u98ce\u554a&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%88%91%E5%B8%A6%E4%BD%A0%E5%8E%BB%E5%85%9C%E9%A3%8E%E5%95%8A&amp;ie=utf-8&amp;fr=frs" target="_blank">我带你去兜风啊</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -3850px  0;top:0px;left:0px" data-slot="1" data-name="starmaster" data-field="{&quot;name&quot;:&quot;starmaster&quot;,&quot;end_time&quot;:&quot;1735660800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u624b\u6e381\u661f\u8fbe\u4eba&quot;,&quot;intro&quot;:&quot;\u5728\u624b\u6e38\u73a9\u5bb6\u5427\u6210\u4e3a\u624b\u6e381\u661f\u8fbe\u4eba\u8ba4\u8bc1\u7528\u6237\uff0c\u5373\u53ef\u83b7\u53d6\u54e6~&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/f?kw=\u73a9\u5bb6\u8ba4\u8bc1&amp;ie=utf-8&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;2&quot;,&quot;sprite&quot;:{&quot;1&quot;:&quot;1489115418,76&quot;,&quot;2&quot;:&quot;1489115418,77&quot;,&quot;3&quot;:&quot;1489115418,78&quot;,&quot;4&quot;:&quot;1489115418,79&quot;,&quot;5&quot;:&quot;1489115418,80&quot;,&quot;6&quot;:&quot;1489115418,81&quot;}}" target="_blank" href="http://tieba.baidu.com/f?kw=玩家认证&amp;ie=utf-8" class="j_icon_slot" title="手游1星达人" locate="starmaster_2#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-15</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5023719731" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="42512" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=c65701404e10b912bf94fefcf3cdd03a/823c0ef41bd5ad6ed682221188cb39dbb7fd3cfc.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=31c19a9b3c2ac65c6705667bcbc9b311/9a504fc2d5628535ee9b94da99ef76c6a6ef63d5.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 我带你去兜风啊">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u6211\u5e26\u4f60\u53bb\u515c\u98ce\u554a&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%88%91%E5%B8%A6%E4%BD%A0%E5%8E%BB%E5%85%9C%E9%A3%8E%E5%95%8A&amp;ie=utf-8&amp;fr=frs" target="_blank">我带你去兜风啊</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            08:45        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5037275359,&quot;author_name&quot;:&quot;yyx1212&quot;,&quot;first_post_id&quot;:105495123438,&quot;reply_num&quot;:28,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">28</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5037275359" title="川大玻璃杯事件" target="_blank" class="j_th_tit ">川大玻璃杯事件</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: yyx1212" data-field="{&quot;user_id&quot;:12740969}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;yyx1212&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=yyx1212&amp;ie=utf-8&amp;fr=frs" target="_blank">yyx1212</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-24</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            我也要带个玻璃杯去图书馆了 
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5037275359" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="19341" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=09cd61f2dd0735fa91a546bbae61238a/813473f082025aaf06dabd22f2edab64024f1a12.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=8c08551575d98d1076d40c391104ba0e/8cb1cb13495409237f81a0979b58d109b2de496b.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="28287" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=66b471d8a88b87d65017a31d37380401/4db20a7b02087bf4df799400fbd3572c10dfcf6e.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=b92976d310d8bc3ec60806c2b2b0a41e/a5c27d1ed21b0ef4ce7d5bb7d4c451da80cb3e46.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="90635" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=67bb95fe6bd0f703e6e79dde38ca7d04/3d054f4a20a44623e45f668b9122720e0df3d76e.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=157427d9b3a1cd1105b672288929cafc/d833c895d143ad4b3cbb85298b025aafa50f0646.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        <div class="small_pic_num center_text">共&nbsp;7&nbsp;张</div>
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 钰煊的微笑">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u94b0\u714a\u7684\u5fae\u7b11&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%92%B0%E7%85%8A%E7%9A%84%E5%BE%AE%E7%AC%91&amp;ie=utf-8&amp;fr=frs" target="_blank">钰煊的微笑</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            08:35        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5031713632,&quot;author_name&quot;:&quot;\u5fc3\u5c9b55&quot;,&quot;first_post_id&quot;:105381617425,&quot;reply_num&quot;:83,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">83</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5031713632" title="男朋友会不会在这里" target="_blank" class="j_th_tit ">男朋友会不会在这里</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 心岛55" data-field="{&quot;user_id&quot;:1069696323}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u5fc3\u5c9b55&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%BF%83%E5%B2%9B55&amp;ie=utf-8&amp;fr=frs" target="_blank">心岛55</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-20</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            听说重大男生特别多 重医男生好少 最好是重庆的小帅哥 
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5031713632" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="82343" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=a3aab075c411728b30788420f8cceff7/f4e57d1ed21b0ef4697fa7bad4c451da80cb3e61.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=c4aa30273387e9504217f36420035143/2e2eb9389b504fc2a7c88fe1ecdde71191ef6dba.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 钰煊的微笑">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u94b0\u714a\u7684\u5fae\u7b11&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%92%B0%E7%85%8A%E7%9A%84%E5%BE%AE%E7%AC%91&amp;ie=utf-8&amp;fr=frs" target="_blank">钰煊的微笑</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            08:34        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5014682931,&quot;author_name&quot;:&quot;\u503e\u6210\u9b45\u6bbf&quot;,&quot;first_post_id&quot;:105032008910,&quot;reply_num&quot;:4,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">4</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5014682931" title="虎溪校区校医院拔牙吗？医生怎么样？拔智齿的话价格是多少？" target="_blank" class="j_th_tit ">虎溪校区校医院拔牙吗？医生怎么样？拔智齿的话价格是多少？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 倾成魅殿" data-field="{&quot;user_id&quot;:410078218}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u503e\u6210\u9b45\u6bbf&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%80%BE%E6%88%90%E9%AD%85%E6%AE%BF&amp;ie=utf-8&amp;fr=frs" target="_blank">倾成魅殿</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-9</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            如题
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 倾成魅殿">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u503e\u6210\u9b45\u6bbf&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%80%BE%E6%88%90%E9%AD%85%E6%AE%BF&amp;ie=utf-8&amp;fr=frs" target="_blank">倾成魅殿</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            08:33        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041645146,&quot;author_name&quot;:&quot;\u5927\u4e50yeol&quot;,&quot;first_post_id&quot;:105589386017,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">1</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041645146" title="高三学妹咨询贴" target="_blank" class="j_th_tit ">高三学妹咨询贴</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 大乐yeol" data-field="{&quot;user_id&quot;:816243934}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u5927\u4e50yeol&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%A4%A7%E4%B9%90yeol&amp;ie=utf-8&amp;fr=frs" target="_blank">大乐yeol</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -3800px  0;top:0px;left:0px" data-slot="1" data-name="starmaster" data-field="{&quot;name&quot;:&quot;starmaster&quot;,&quot;end_time&quot;:&quot;1735660800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u624b\u6e380\u661f\u8fbe\u4eba&quot;,&quot;intro&quot;:&quot;\u5728\u624b\u6e38\u73a9\u5bb6\u5427\u6210\u4e3a\u624b\u6e380\u661f\u8fbe\u4eba\u8ba4\u8bc1\u7528\u6237\uff0c\u5373\u53ef\u83b7\u53d6\u54e6~&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/f?kw=\u73a9\u5bb6\u8ba4\u8bc1&amp;ie=utf-8&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;1&quot;,&quot;sprite&quot;:{&quot;1&quot;:&quot;1489115418,76&quot;,&quot;2&quot;:&quot;1489115418,77&quot;,&quot;3&quot;:&quot;1489115418,78&quot;,&quot;4&quot;:&quot;1489115418,79&quot;,&quot;5&quot;:&quot;1489115418,80&quot;,&quot;6&quot;:&quot;1489115418,81&quot;}}" target="_blank" href="http://tieba.baidu.com/f?kw=玩家认证&amp;ie=utf-8" class="j_icon_slot" title="手游0星达人" locate="starmaster_1#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">00:58</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            有在重大学城乡规划，建筑，工程造价，风景园林的吗
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 涅槃之叶">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u6d85\u69c3\u4e4b\u53f6&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%B6%85%E6%A7%83%E4%B9%8B%E5%8F%B6&amp;ie=utf-8&amp;fr=frs" target="_blank">涅槃之叶</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            08:23        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4423873728,&quot;author_name&quot;:&quot;\u673a\u667a\u4e0d\u8822\u4e94\u5927\u738b&quot;,&quot;first_post_id&quot;:85994603434,&quot;reply_num&quot;:39,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">39</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4423873728" title="导师要我过来问一下，有没有本科985的考研同学想调剂到东北大学的" target="_blank" class="j_th_tit ">导师要我过来问一下，有没有本科985的考研同学想调剂到东北大学的</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 机智不蠢五大王" data-field="{&quot;user_id&quot;:1414703594}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u673a\u667a\u4e0d\u8822\u4e94\u5927\u738b&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%9C%BA%E6%99%BA%E4%B8%8D%E8%A0%A2%E4%BA%94%E5%A4%A7%E7%8E%8B&amp;ie=utf-8&amp;fr=frs" target="_blank">机智不蠢五大王</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2016-03</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            说是学院有预留名额 导师信息如下，八五别误删 boss主要是做磁性薄膜，材料各向异性的
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm4423873728" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="18043" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=14a759475443fbf2c579ae21804ee6b9/09a5b2b7d0a20cf4e356829071094b36adaf9966.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=7d38304e0d55b3199cf9827d73928026/6f061d950a7b0208a90f43ae65d9f2d3562cc8bf.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="23208" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=fdd9e52ef4deb48ffb3ca9dcc02f1610/0ef88db1cb1349540900972b514e9258d1094a0d.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=570f5ba0aeec8a13141a57e8c738908f/d8f9d72a6059252dd409624b339b033b5bb5b966.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="59601" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=1725624b339b033b2cddf4d825fe1aea/967b10385343fbf2711ed96cb77eca8065388f72.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=0b9a9b3caa4bd11304cdb73a6a94a50f/8ad4b31c8701a18b44d96d00992f07082838fe4b.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        <div class="small_pic_num center_text">共&nbsp;5&nbsp;张</div>
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 大仔拥抱丽江">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u5927\u4ed4\u62e5\u62b1\u4e3d\u6c5f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%A4%A7%E4%BB%94%E6%8B%A5%E6%8A%B1%E4%B8%BD%E6%B1%9F&amp;ie=utf-8&amp;fr=frs" target="_blank">大仔拥抱丽江</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            07:59        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4983048605,&quot;author_name&quot;:&quot;\u4e07\u7fbd1993&quot;,&quot;first_post_id&quot;:104135020393,&quot;reply_num&quot;:16,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">16</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4983048605" title="有木有前辈，预估一下重大mpacc今年分数线得多少啊？" target="_blank" class="j_th_tit ">有木有前辈，预估一下重大mpacc今年分数线得多少啊？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 万羽1993" data-field="{&quot;user_id&quot;:731307175}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u4e07\u7fbd1993&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E4%B8%87%E7%BE%BD1993&amp;ie=utf-8&amp;fr=frs" target="_blank">万羽1993</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2-16</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 011包包">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;011\u5305\u5305&quot;}" class="frs-author-name j_user_card  vip_red " href="/home/main/?un=011%E5%8C%85%E5%8C%85&amp;ie=utf-8&amp;fr=frs" target="_blank">011包包</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            07:58        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5039455889,&quot;author_name&quot;:&quot;a196638011&quot;,&quot;first_post_id&quot;:105540452096,&quot;reply_num&quot;:17,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">17</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5039455889" title="冒个泡，随手拍，胆小的勿入" target="_blank" class="j_th_tit ">冒个泡，随手拍，胆小的勿入</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: a196638011" data-field="{&quot;user_id&quot;:277016681}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;a196638011&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=a196638011&amp;ie=utf-8&amp;fr=frs" target="_blank">a196638011</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -3800px  0;top:0px;left:0px" data-slot="1" data-name="starmaster" data-field="{&quot;name&quot;:&quot;starmaster&quot;,&quot;end_time&quot;:&quot;1735660800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u624b\u6e380\u661f\u8fbe\u4eba&quot;,&quot;intro&quot;:&quot;\u5728\u624b\u6e38\u73a9\u5bb6\u5427\u6210\u4e3a\u624b\u6e380\u661f\u8fbe\u4eba\u8ba4\u8bc1\u7528\u6237\uff0c\u5373\u53ef\u83b7\u53d6\u54e6~&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/f?kw=\u73a9\u5bb6\u8ba4\u8bc1&amp;ie=utf-8&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;1&quot;,&quot;sprite&quot;:{&quot;1&quot;:&quot;1489115418,76&quot;,&quot;2&quot;:&quot;1489115418,77&quot;,&quot;3&quot;:&quot;1489115418,78&quot;,&quot;4&quot;:&quot;1489115418,79&quot;,&quot;5&quot;:&quot;1489115418,80&quot;,&quot;6&quot;:&quot;1489115418,81&quot;}}" target="_blank" href="http://tieba.baidu.com/f?kw=玩家认证&amp;ie=utf-8" class="j_icon_slot" title="手游0星达人" locate="starmaster_1#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-25</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+             
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5039455889" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="3129" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=0abdcaeaa6c379317d3d8e2bdbf49b7c/1ab7f603738da9774b5f8ec7b951f8198718e395.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=ef5bc026a651f3dec3b2b96ca4d5f11f/960a304e251f95caa3859a5ac0177f3e660952ed.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="49817" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=e1fedacd99ef76c6d087f329ad26d1c3/6a0e2df5e0fe9925b81261bc3da85edf8cb171e2.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=19b637a70b087bf47dec57e1c2e8562c/f7246b600c338744efdb2790580fd9f9d72aa03b.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="97491" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=f95bf22017178a82ce6977a2c6335fb4/665ddab44aed2e73f0a98ec08e01a18b86d6fa45.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=5688dd229025bc312b5d01906ee48fb1/c83d70cf3bc79f3d83a1ecdcb3a1cd11738b299d.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        <div class="small_pic_num center_text">共&nbsp;4&nbsp;张</div>
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 风子轩001">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u98ce\u5b50\u8f69001&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%A3%8E%E5%AD%90%E8%BD%A9001&amp;ie=utf-8&amp;fr=frs" target="_blank">风子轩001</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            07:20        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5039794673,&quot;author_name&quot;:&quot;\u6b63\u7248\u4f60\u77e5\u9053\u7684&quot;,&quot;first_post_id&quot;:105548026253,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">2</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5039794673" title="外地人在重庆" target="_blank" class="j_th_tit ">外地人在重庆</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 正版你知道的" data-field="{&quot;user_id&quot;:1751594486}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u6b63\u7248\u4f60\u77e5\u9053\u7684&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%AD%A3%E7%89%88%E4%BD%A0%E7%9F%A5%E9%81%93%E7%9A%84&amp;ie=utf-8&amp;fr=frs" target="_blank">正版你知道的</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -3800px  0;top:0px;left:0px" data-slot="1" data-name="starmaster" data-field="{&quot;name&quot;:&quot;starmaster&quot;,&quot;end_time&quot;:&quot;1735660800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u624b\u6e380\u661f\u8fbe\u4eba&quot;,&quot;intro&quot;:&quot;\u5728\u624b\u6e38\u73a9\u5bb6\u5427\u6210\u4e3a\u624b\u6e380\u661f\u8fbe\u4eba\u8ba4\u8bc1\u7528\u6237\uff0c\u5373\u53ef\u83b7\u53d6\u54e6~&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/f?kw=\u73a9\u5bb6\u8ba4\u8bc1&amp;ie=utf-8&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;1&quot;,&quot;sprite&quot;:{&quot;1&quot;:&quot;1489115418,76&quot;,&quot;2&quot;:&quot;1489115418,77&quot;,&quot;3&quot;:&quot;1489115418,78&quot;,&quot;4&quot;:&quot;1489115418,79&quot;,&quot;5&quot;:&quot;1489115418,80&quot;,&quot;6&quot;:&quot;1489115418,81&quot;}}" target="_blank" href="http://tieba.baidu.com/f?kw=玩家认证&amp;ie=utf-8" class="j_icon_slot" title="手游0星达人" locate="starmaster_1#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-25</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            一个外地人在重庆读书有点不懂的事想问一下。重庆长寿湖镇的夏橙，沙田柚和脐血都挺好吃，为什么会
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5039794673" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="86127" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=659f65eaa6c379317d3d8e2bdbf49b7c/1ab7f603738da977247d21c7b951f8198718e3b7.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=80796f26a651f3dec3b2b96ca4d5f11f/960a304e251f95cacca7355ac0177f3e6609528f.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="44557" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=714f6fc34834970a4726182da5fafdf1/6be09f3df8dcd100633d5fcd7b8b4710b8122f64.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=5ed87924134c510faec4e2125062272d/0df431adcbef760992aa3e7327dda3cc7dd99ebd.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 风子轩001">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u98ce\u5b50\u8f69001&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E9%A3%8E%E5%AD%90%E8%BD%A9001&amp;ie=utf-8&amp;fr=frs" target="_blank">风子轩001</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            07:20        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041825002,&quot;author_name&quot;:&quot;5647625\u770b\u89c1\u4e86&quot;,&quot;first_post_id&quot;:105593340090,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">0</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041825002" title="大四的同学。谁认识 龚正琼 女 理科 这个人的告诉我 有惊喜" target="_blank" class="j_th_tit ">大四的同学。谁认识 龚正琼 女 理科 这个人的告诉我 有惊喜</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 5647625看见了" data-field="{&quot;user_id&quot;:1948104040}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;5647625\u770b\u89c1\u4e86&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=5647625%E7%9C%8B%E8%A7%81%E4%BA%86&amp;ie=utf-8&amp;fr=frs" target="_blank">5647625看见了</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">07:09</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 5647625看见了">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;5647625\u770b\u89c1\u4e86&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=5647625%E7%9C%8B%E8%A7%81%E4%BA%86&amp;ie=utf-8&amp;fr=frs" target="_blank">5647625看见了</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            07:09        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5036089743,&quot;author_name&quot;:&quot;TortoRoddl&quot;,&quot;first_post_id&quot;:105470154464,&quot;reply_num&quot;:11,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">11</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5036089743" title="有没有学霸帮我解析一下这两句话的结构(ಥ_ಥ)" target="_blank" class="j_th_tit ">有没有学霸帮我解析一下这两句话的结构(ಥ_ಥ)</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: TortoRoddl" data-field="{&quot;user_id&quot;:677222312}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;TortoRoddl&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=TortoRoddl&amp;ie=utf-8&amp;fr=frs" target="_blank">TortoRoddl</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-23</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            Existing infrastructures can be improved by retrofitting, which involves simply modifying the equipment that is already in service. Many cri
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5036089743" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="98343" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=41e0fbd7d0f9d72a1731181fe41a040d/851eb6003af33a87b2fc9ff2cf5c10385243b568.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=2025348906b30f24359aec0bf8aed343/f9198618367adab4114184ab82d4b31c8601e441.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 春晴负">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u6625\u6674\u8d1f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E6%98%A5%E6%99%B4%E8%B4%9F&amp;ie=utf-8&amp;fr=frs" target="_blank">春晴负</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            06:49        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4939632914,&quot;author_name&quot;:&quot;\u4f1a\u6253\u67b6\u7684\u5c0f\u4e38\u5b50&quot;,&quot;first_post_id&quot;:102596962429,&quot;reply_num&quot;:109,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">109</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4939632914" title="有没有那种乖妹儿跟我回家(>^ω^<)" target="_blank" class="j_th_tit ">有没有那种乖妹儿跟我回家(&gt;^ω^&lt;)</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 会打架的小丸子" data-field="{&quot;user_id&quot;:861796730}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u4f1a\u6253\u67b6\u7684\u5c0f\u4e38\u5b50&quot;}" title="该用户已经连续签到31天了，连续30天一举“橙”名" class="frs-author-name sign_highlight j_user_card " href="/home/main/?un=%E4%BC%9A%E6%89%93%E6%9E%B6%E7%9A%84%E5%B0%8F%E4%B8%B8%E5%AD%90&amp;ie=utf-8&amp;fr=frs" target="_blank">会打架的小丸子</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -4750px  0;top:0px;left:0px" data-slot="1" data-name="signprize" data-field="{&quot;name&quot;:&quot;signprize&quot;,&quot;end_time&quot;:&quot;1490716800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u4e2d\u7ea7\u6838\u5fc3\u7528\u6237&quot;,&quot;intro&quot;:&quot;\u624b\u673a\u7aef\u8fde\u7eed\u7b7e\u523030\u5929\u53ef\u83b7\u5f97\u672c\u5370\u8bb0&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/mo\/q\/medal&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;2&quot;,&quot;sprite&quot;:{&quot;3&quot;:&quot;1489115418,96&quot;,&quot;2&quot;:&quot;1489115418,95&quot;,&quot;1&quot;:&quot;1489115418,94&quot;}}" target="_blank" href="http://tieba.baidu.com/mo/q/medal" class="j_icon_slot" title="中级核心用户" locate="signprize_2#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">1-14</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            我也是老司机了！
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm4939632914" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="69270" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=efb74afa037b02080c9c37e352e9deea/a724918fa0ec08fad08c71f850ee3d6d54fbda8c.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=a4aec2a5d8c8a786be2a4a065732c83d/0824ab18972bd407b44bb1a272899e510eb309e4.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: Professoryuer">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;Professoryuer&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=Professoryuer&amp;ie=utf-8&amp;fr=frs" target="_blank">Professoryuer</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            06:10        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041555473,&quot;author_name&quot;:&quot;\u73a9\u4f1a\u9177\u8dd1&quot;,&quot;first_post_id&quot;:105587333299,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">1</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041555473" title="城乡规划的学长学姐" target="_blank" class="j_th_tit ">城乡规划的学长学姐</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 玩会酷跑" data-field="{&quot;user_id&quot;:1625861529}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u73a9\u4f1a\u9177\u8dd1&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E7%8E%A9%E4%BC%9A%E9%85%B7%E8%B7%91&amp;ie=utf-8&amp;fr=frs" target="_blank">玩会酷跑</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            求助，城乡规划的学长学姐
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: kidoSAMA是也">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;kidoSAMA\u662f\u4e5f&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=kidoSAMA%E6%98%AF%E4%B9%9F&amp;ie=utf-8&amp;fr=frs" target="_blank">kidoSAMA是也</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            02:37        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041480342,&quot;author_name&quot;:&quot;tab40413&quot;,&quot;first_post_id&quot;:105585587739,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">1</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041480342" title="重大有沒有h1z1群？" target="_blank" class="j_th_tit ">重大有沒有h1z1群？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: tab40413" data-field="{&quot;user_id&quot;:703721174}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;tab40413&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=tab40413&amp;ie=utf-8&amp;fr=frs" target="_blank">tab40413</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 小白兔YJY">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u5c0f\u767d\u5154YJY&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%B0%8F%E7%99%BD%E5%85%94YJY&amp;ie=utf-8&amp;fr=frs" target="_blank">小白兔YJY</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            02:03        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5038966308,&quot;author_name&quot;:&quot;\u602a\u5496526&quot;,&quot;first_post_id&quot;:105530405586,&quot;reply_num&quot;:39,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">39</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5038966308" title="就想求两本书" target="_blank" class="j_th_tit ">就想求两本书</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 怪咖526" data-field="{&quot;user_id&quot;:1065132126}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u602a\u5496526&quot;}" title="该用户已经连续签到90天了，连续30天一举“橙”名" class="frs-author-name sign_highlight j_user_card " href="/home/main/?un=%E6%80%AA%E5%92%96526&amp;ie=utf-8&amp;fr=frs" target="_blank">怪咖526</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-25</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            解忧杂货店和湘行散记
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 吻痕彡">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u543b\u75d5\u5f61&quot;}" class="frs-author-name j_user_card  vip_red " href="/home/main/?un=%E5%90%BB%E7%97%95%E5%BD%A1&amp;ie=utf-8&amp;fr=frs" target="_blank">吻痕彡</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            02:02        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5041332137,&quot;author_name&quot;:&quot;\u8273\u9aa8\u9648\u76ae&quot;,&quot;first_post_id&quot;:105582323080,&quot;reply_num&quot;:10,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">10</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5041332137" title="那个求重庆汉子会玩王者的组cp" target="_blank" class="j_th_tit ">那个求重庆汉子会玩王者的组cp</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 艳骨陈皮" data-field="{&quot;user_id&quot;:2616961925}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u8273\u9aa8\u9648\u76ae&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%89%B3%E9%AA%A8%E9%99%88%E7%9A%AE&amp;ie=utf-8&amp;fr=frs" target="_blank">艳骨陈皮</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "><a style="background: url(//tb1.bdstatic.com/tb/cms/com/icon/104_14.png?stamp=1489115418) no-repeat -3800px  0;top:0px;left:0px" data-slot="1" data-name="starmaster" data-field="{&quot;name&quot;:&quot;starmaster&quot;,&quot;end_time&quot;:&quot;1735660800&quot;,&quot;category_id&quot;:104,&quot;slot_no&quot;:&quot;1&quot;,&quot;title&quot;:&quot;\u624b\u6e380\u661f\u8fbe\u4eba&quot;,&quot;intro&quot;:&quot;\u5728\u624b\u6e38\u73a9\u5bb6\u5427\u6210\u4e3a\u624b\u6e380\u661f\u8fbe\u4eba\u8ba4\u8bc1\u7528\u6237\uff0c\u5373\u53ef\u83b7\u53d6\u54e6~&quot;,&quot;intro_url&quot;:&quot;http:\/\/tieba.baidu.com\/f?kw=\u73a9\u5bb6\u8ba4\u8bc1&amp;ie=utf-8&quot;,&quot;price&quot;:0,&quot;value&quot;:&quot;1&quot;,&quot;sprite&quot;:{&quot;1&quot;:&quot;1489115418,76&quot;,&quot;2&quot;:&quot;1489115418,77&quot;,&quot;3&quot;:&quot;1489115418,78&quot;,&quot;4&quot;:&quot;1489115418,79&quot;,&quot;5&quot;:&quot;1489115418,80&quot;,&quot;6&quot;:&quot;1489115418,81&quot;}}" target="_blank" href="http://tieba.baidu.com/f?kw=玩家认证&amp;ie=utf-8" class="j_icon_slot" title="手游0星达人" locate="starmaster_1#icon">  <div class=" j_icon_slot_refresh"></div></a></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-26</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            我是铂金段位(๑• . •๑)自己打的，找个重庆的汉子组cp语音开黑，你可以普通话和重庆话自由转换的嘻
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5041332137" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="36102" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=309b432cbb119313c716f7b2550820ee/80850cf431adcbef15d1f3e8a5af2edda2cc9f1a.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=698d0bc7e2c4b7453494b71effc71c17/0b7b02087bf40ad101014a0d5e2c11dfa8ecce73.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="91714" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=3de0238e46c2d562f25dd8efd721bcd6/a3f9b48f8c5494ee74c782f724f5e0fe98257e1a.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=6dfc0047a0014c08193b28ad3a400008/7acb0a46f21fbe09efbb4efa62600c338644ad73.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="81262" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=76bfc81132c79f3d8fb4ec328a91e128/ac249245d688d43f38161c1c741ed21b0ff43b4c.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=e43771341cce36d3a20483380ac83887/203fb80e7bec54e7895397f0b0389b504ec26aa5.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 吻痕彡">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u543b\u75d5\u5f61&quot;}" class="frs-author-name j_user_card  vip_red " href="/home/main/?un=%E5%90%BB%E7%97%95%E5%BD%A1&amp;ie=utf-8&amp;fr=frs" target="_blank">吻痕彡</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            02:02        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:5028864995,&quot;author_name&quot;:&quot;\u5357\u65b9younib&quot;,&quot;first_post_id&quot;:105322238722,&quot;reply_num&quot;:13,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">13</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/5028864995" title="准备复读   😳学长学姐多指教" target="_blank" class="j_th_tit ">准备复读   😳学长学姐多指教</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: 南方younib" data-field="{&quot;user_id&quot;:2461124644}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;\u5357\u65b9younib&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E5%8D%97%E6%96%B9younib&amp;ie=utf-8&amp;fr=frs" target="_blank">南方younib</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">3-19</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            我属于懒的学习还想考好大学的人 每天画不完的速写 晚上加课到很晚很晚 甚至一个通宵 每天中午画不完
+        </div>
+
+            <div class="small_wrap j_small_wrap" is_handle="true">
+                <a href="#" onclick="return false;" class="small_btn_pre j_small_pic_pre" style="display:none"></a>
+                <a href="#" onclick="return false;" class="small_btn_next j_small_pic_next" style="display:none"></a>
+                <div class="small_list j_small_list cleafix">
+                    <div class="small_list_gallery">
+                        <ul class="threadlist_media j_threadlist_media clearfix" id="fm5028864995" style="float: left;"><li><a class="thumbnail vpic_wrap"><img src="" attr="2001" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=9ee173f200f79052ef4a4f3c3cc3fbf3/3b470c338744ebf8a40964ded0f9d72a6159a7fa.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=c35be7ca07f41bd5da53e8fc61e180cb/78310a55b319ebc4090076788b26cffc1f1716d2.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><a class="thumbnail vpic_wrap"><img src="" attr="48463" data-original="http://imgsrc.baidu.com/forum/wh%3D200%2C90%3B/sign=4537e1b38c35e5dd9079addd46f68bd6/dc7394eef01f3a292700d42f9025bc315d607c29.jpg" bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=a3f478d967061d957d4637304bcf08d1/f31fbe096b63f624619538e28e44ebf81b4ca302.jpg" class="threadlist_pic j_m_pic "></a><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+                        
+                    </div>
+                </div>
+            </div>                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 老故事kurus">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u8001\u6545\u4e8bkurus&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E8%80%81%E6%95%85%E4%BA%8Bkurus&amp;ie=utf-8&amp;fr=frs" target="_blank">老故事kurus</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            01:59        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+<li class=" j_thread_list clearfix" data-field="{&quot;id&quot;:4853589141,&quot;author_name&quot;:&quot;LJ\u4f0a\u7b11\u800c\u8fc7&quot;,&quot;first_post_id&quot;:100018371454,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:null,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:null,&quot;is_top&quot;:null,&quot;is_protal&quot;:null,&quot;is_membertop&quot;:null,&quot;frs_tpoint&quot;:null}">
+            <div class="t_con cleafix">
+        
+                    <div class="col2_left j_threadlist_li_left">
+                <span class="threadlist_rep_num center_text" title="回复">1</span>
+            </div>
+                <div class="col2_right j_threadlist_li_right ">
+            <div class="threadlist_lz clearfix">
+                <div class="threadlist_title pull_left j_th_tit ">
+    
+    
+    <a href="/p/4853589141" title="有18年考重大经管学院研究生的研友吗？" target="_blank" class="j_th_tit ">有18年考重大经管学院研究生的研友吗？</a>
+</div><div class="threadlist_author pull_right">
+    <span class="tb_icon_author " title="主题作者: LJ伊笑而过" data-field="{&quot;user_id&quot;:852344685}"><i class="icon_author"></i><span class="frs-author-name-wrap"><a data-field="{&quot;un&quot;:&quot;LJ\u4f0a\u7b11\u800c\u8fc7&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=LJ%E4%BC%8A%E7%AC%91%E8%80%8C%E8%BF%87&amp;ie=utf-8&amp;fr=frs" target="_blank">LJ伊笑而过</a></span><span class="icon_wrap  icon_wrap_theme1 frs_bright_icons "></span>    </span>
+    <span class="pull-right is_show_create_time" title="创建时间">2016-11</span>
+</div>
+            </div>
+                            <div class="threadlist_detail clearfix">
+                    <div class="threadlist_text pull_left">
+                                <div class="threadlist_abs threadlist_abs_onlyline ">
+            如题，找研友！找学长学姐，现在还没有开始准备，人都还有点懵 希望能有人指点指点
+        </div>
+
+                    </div>
+
+                    
+<div class="threadlist_author pull_right">
+        <span class="tb_icon_author_rely j_replyer" title="最后回复人: 书巍">
+            <i class="icon_replyer"></i>
+            <a data-field="{&quot;un&quot;:&quot;\u4e66\u5dcd&quot;}" class="frs-author-name j_user_card " href="/home/main/?un=%E4%B9%A6%E5%B7%8D&amp;ie=utf-8&amp;fr=frs" target="_blank">书巍</a>        </span>
+        <span class="threadlist_reply_date pull_right j_reply_data" title="最后回复时间">
+            01:18        </span>
+</div>
+                </div>
+                    </div>
+    </div>
+</li>
+
+
+
+
+
+
+
+
+
+
+</ul>
